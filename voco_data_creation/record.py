@@ -25,9 +25,20 @@ debug = False
 
 
 #TBU
-audio_data_directory = "/home/bartek/Projects/ASR/model_training/audio_data/"
 
 
+voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
+
+audio_data_directory = voco_data_base + "audio_data/"
+audio_records_directory = voco_data_base + "audio_records/"
+
+
+dirs = [audio_data_directory, audio_records_directory]
+
+
+for x in dirs:
+	if not os.path.exists(x):
+	    os.makedirs(x)
 
 
 recording_list_file = open('recording_list.txt','r')
@@ -46,7 +57,7 @@ except IOError:
 #
 
 try:
-    with open("audio_records/naming_list_counter.txt") as f:
+    with open(audio_records_directory + "naming_list_counter.txt") as f:
         naming_list_counter = int(f.read())
 except IOError:
     naming_list_counter = 0
@@ -58,7 +69,7 @@ if debug:
 #
 # create spk2gender
 #
-outputfile=open('audio_records/spk2gender','w')
+outputfile=open(audio_records_directory + 'spk2gender','w')
 outputfile.write("bartek m \n")
 
 
@@ -72,7 +83,7 @@ for line in recording_list:
     counter = parts[0]
     phrase = parts[1]
     
-    UID = str(naming_list_counter).zfill(4)
+    UID = "REC" + str(naming_list_counter).zfill(8)
 
     if debug:
         print(line)
@@ -87,7 +98,7 @@ for line in recording_list:
     while word_accepted == False:
 
 
-        print("--------------------------------" + str(recording_list_counter) + "--------------------------------")			
+        print("--------------------------------" + str(recording_list_counter) + "--------------------------------")
         print("")
         print("Phrase:            " + phrase)
         raw_input("Press enter to start...")
@@ -145,7 +156,7 @@ for line in recording_list:
 
             data = stream.read(chunk)
             rms[window_length-1] = audioop.rms(data, 2)
-
+                        
             audio_sample.append(data)
             audio_sample_recording_list_counter += 1
 
@@ -218,15 +229,13 @@ for line in recording_list:
         break
     word_accepted = False
 
-    #file_list = ["data/spk2gender","data/wav.scp","data/text","data/utt2spk","data/corpus.txt"]
-
-    outputfile=open('audio_records/wav.scp','a')
+    outputfile=open(audio_records_directory + 'wav.scp','a')
     outputfile.write(UID + " " + audio_sample_file_path  + "\n")
 
-    outputfile=open('audio_records/text','a')
-    outputfile.write(UID + " " + phrase + "\n")
+    outputfile=open(audio_records_directory + "text",'a')
+    outputfile.write(UID + " " + phrase)
 
-    outputfile=open('audio_records/utt2spk','a')
+    outputfile=open(audio_records_directory + 'utt2spk','a')
     outputfile.write(UID + " bartek" + "\n")
 
     recording_list_counter += 1
@@ -234,7 +243,7 @@ for line in recording_list:
         f.write(str(recording_list_counter))
 
     naming_list_counter += 1
-    with open("audio_records/naming_list_counter.txt", "w") as f:
+    with open(audio_records_directory + "naming_list_counter.txt", "w") as f:
         f.write(str(naming_list_counter))
 
 
