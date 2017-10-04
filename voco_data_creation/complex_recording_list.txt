@@ -1,0 +1,100 @@
+00001cmplx	cmplx	switch back
+00002cmplx	cmplx	switch back
+00003cmplx	cmplx	switch back
+00004cmplx	cmplx	switch max
+00005cmplx	cmplx	switch back
+00006cmplx	cmplx	switch back
+00007cmplx	cmplx	switch back
+00008cmplx	cmplx	switch firefox
+00009cmplx	cmplx	window maximise
+00010cmplx	cmplx	return
+00011cmplx	cmplx	escape
+00012cmplx	cmplx	return
+00013cmplx	cmplx	escape
+00014cmplx	cmplx	escape
+00015cmplx	cmplx	window minimise
+00016cmplx	cmplx	switch terminal
+00017cmplx	cmplx	switch back
+00018cmplx	cmplx	window top
+00019cmplx	cmplx	switch terminal
+00020cmplx	cmplx	escape
+00021cmplx	cmplx	switch back
+00022cmplx	cmplx	switch terminal
+00023cmplx	cmplx	window left
+00024cmplx	cmplx	switch max
+00025cmplx	cmplx	switch
+00026cmplx	cmplx	escape
+00027cmplx	cmplx	escape
+00028cmplx	cmplx	switch back
+00029cmplx	cmplx	escape
+00030cmplx	cmplx	escape
+00031cmplx	cmplx	window top
+00032cmplx	cmplx	switch terminal
+00033cmplx	cmplx	switch terminal
+00034cmplx	cmplx	switch max
+00035cmplx	cmplx	switch terminal
+00036cmplx	cmplx	escape
+00037cmplx	cmplx	escape
+00038cmplx	cmplx	switch firefox
+00039cmplx	cmplx	escape
+00040cmplx	cmplx	switch back
+00041cmplx	cmplx	escape
+00042cmplx	cmplx	switch max
+00043cmplx	cmplx	return
+00044cmplx	cmplx	window left
+00045cmplx	cmplx	return
+00046cmplx	cmplx	window top
+00047cmplx	cmplx	window left
+00048cmplx	cmplx	window minimise
+00049cmplx	cmplx	window minimise
+00050cmplx	cmplx	window left
+00051cmplx	cmplx	sierra sierra 
+00052cmplx	cmplx	sierra echo foxtrot left kilo 
+00053cmplx	cmplx	whisky juliet one yankee 
+00054cmplx	cmplx	down sierra eight six left down 
+00055cmplx	cmplx	papa nine 
+00056cmplx	cmplx	uniform hotel five 
+00057cmplx	cmplx	two oscar golf down 
+00058cmplx	cmplx	two golf 
+00059cmplx	cmplx	x-ray six 
+00060cmplx	cmplx	kilo echo november four down golf 
+00061cmplx	cmplx	sierra foxtrot 
+00062cmplx	cmplx	kilo mike quebec 
+00063cmplx	cmplx	uniform november romeo delta golf 
+00064cmplx	cmplx	right juliet november six 
+00065cmplx	cmplx	papa seven bravo juliet down 
+00066cmplx	cmplx	seven echo up zulu uniform papa 
+00067cmplx	cmplx	four papa x-ray nine tango left 
+00068cmplx	cmplx	ten oscar 
+00069cmplx	cmplx	right four juliet six uniform 
+00070cmplx	cmplx	seven bravo kilo 
+00071cmplx	cmplx	four foxtrot ten 
+00072cmplx	cmplx	india seven sierra 
+00073cmplx	cmplx	foxtrot juliet three zulu papa zulu 
+00074cmplx	cmplx	india seven left yankee left four 
+00075cmplx	cmplx	delta six up down 
+00076cmplx	cmplx	alpha seven 
+00077cmplx	cmplx	delta hotel two lima sierra 
+00078cmplx	cmplx	one down one left 
+00079cmplx	cmplx	juliet whisky lima 
+00080cmplx	cmplx	delta india 
+00081cmplx	cmplx	left papa left tango six india 
+00082cmplx	cmplx	one bravo zulu one india quebec 
+00083cmplx	cmplx	five five juliet delta eight 
+00084cmplx	cmplx	alpha two foxtrot golf six 
+00085cmplx	cmplx	four five india bravo sierra 
+00086cmplx	cmplx	x-ray x-ray 
+00087cmplx	cmplx	foxtrot oscar charlie 
+00088cmplx	cmplx	november uniform three 
+00089cmplx	cmplx	nine nine 
+00090cmplx	cmplx	left three four 
+00091cmplx	cmplx	zulu india kilo echo 
+00092cmplx	cmplx	hotel sierra 
+00093cmplx	cmplx	charlie hotel two ten down six 
+00094cmplx	cmplx	echo oscar alpha india x-ray hotel 
+00095cmplx	cmplx	echo three november left 
+00096cmplx	cmplx	lima three five tango right 
+00097cmplx	cmplx	zulu five 
+00098cmplx	cmplx	nine sierra lima india 
+00099cmplx	cmplx	down nine 
+00100cmplx	cmplx	down foxtrot 

@@ -1,0 +1,36 @@
+shared split sil sil_B sil_E sil_I sil_S
+shared split spn spn_B spn_E spn_I spn_S
+shared split aa_B aa_E aa_I aa_S
+shared split ae_B ae_E ae_I ae_S
+shared split ah_B ah_E ah_I ah_S
+shared split ao_B ao_E ao_I ao_S
+shared split aw_B aw_E aw_I aw_S
+shared split ay_B ay_E ay_I ay_S
+shared split b_B b_E b_I b_S
+shared split ch_B ch_E ch_I ch_S
+shared split d_B d_E d_I d_S
+shared split eh_B eh_E eh_I eh_S
+shared split er_B er_E er_I er_S
+shared split ey_B ey_E ey_I ey_S
+shared split f_B f_E f_I f_S
+shared split g_B g_E g_I g_S
+shared split hh_B hh_E hh_I hh_S
+shared split ih_B ih_E ih_I ih_S
+shared split iy_B iy_E iy_I iy_S
+shared split jh_B jh_E jh_I jh_S
+shared split k_B k_E k_I k_S
+shared split l_B l_E l_I l_S
+shared split m_B m_E m_I m_S
+shared split n_B n_E n_I n_S
+shared split ng_B ng_E ng_I ng_S
+shared split ow_B ow_E ow_I ow_S
+shared split p_B p_E p_I p_S
+shared split r_B r_E r_I r_S
+shared split s_B s_E s_I s_S
+shared split t_B t_E t_I t_S
+shared split th_B th_E th_I th_S
+shared split uw_B uw_E uw_I uw_S
+shared split v_B v_E v_I v_S
+shared split w_B w_E w_I w_S
+shared split y_B y_E y_I y_S
+shared split z_B z_E z_I z_S

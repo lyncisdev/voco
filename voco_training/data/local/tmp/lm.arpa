@@ -1,0 +1,59 @@
+
+\data\
+ngram 1=52
+
+\1-grams:
+-0.7168108	</s>
+-99	<s>
+-1.907143	alpha
+-2.208173	back
+-1.810233	bravo
+-2.032081	charlie
+-1.731051	delta
+-1.46781	down
+-1.664105	echo
+-2.032081	eight
+-2.208173	escape
+-2.208173	firefox
+-1.664105	five
+-1.606112	four
+-1.606112	foxtrot
+-1.731051	golf
+-1.731051	hotel
+-1.509202	india
+-1.606112	juliet
+-1.731051	kilo
+-1.430021	left
+-1.810233	lima
+-2.208173	max
+-2.208173	maximise
+-2.208173	mike
+-2.208173	minimise
+-1.664105	nine
+-1.731051	november
+-1.731051	one
+-1.810233	oscar
+-1.664105	papa
+-2.032081	quebec
+-2.208173	return
+-1.907143	right
+-2.208173	romeo
+-1.664105	seven
+-1.46781	sierra
+-1.55496	six
+-1.731051	switch
+-1.907143	tango
+-1.907143	ten
+-2.208173	terminal
+-1.731051	three
+-2.208173	top
+-1.731051	two
+-1.731051	uniform
+-2.032081	up
+-2.032081	whisky
+-1.810233	window
+-1.731051	x-ray
+-2.032081	yankee
+-1.664105	zulu
+
+\end\

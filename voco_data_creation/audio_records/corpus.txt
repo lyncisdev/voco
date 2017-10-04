@@ -1,0 +1,61 @@
+alpha seven 
+alpha two foxtrot golf six 
+charlie hotel two ten down six 
+delta hotel two lima sierra 
+delta india 
+delta six up down 
+down foxtrot 
+down nine 
+down sierra eight six left down 
+echo oscar alpha india x-ray hotel 
+echo three november left 
+escape 
+five five juliet delta eight 
+four five india bravo sierra 
+four foxtrot ten 
+four papa x-ray nine tango left 
+foxtrot juliet three zulu papa zulu 
+foxtrot oscar charlie 
+hotel sierra 
+india seven left yankee left four 
+india seven sierra 
+juliet whisky lima 
+kilo echo november four down golf 
+kilo mike quebec 
+left papa left tango six india 
+left three four 
+lima three five tango right 
+nine nine 
+nine sierra lima india 
+november uniform three 
+one bravo zulu one india quebec 
+one down one left 
+papa nine 
+papa seven bravo juliet down 
+return 
+right four juliet six uniform 
+right juliet november six 
+seven bravo kilo 
+seven echo up zulu uniform papa 
+sierra echo foxtrot left kilo 
+sierra foxtrot 
+sierra sierra 
+switch 
+switch back 
+switch firefox 
+switch max 
+switch terminal 
+ten oscar 
+two golf 
+two oscar golf down 
+uniform hotel five 
+uniform november romeo delta golf 
+whisky juliet one yankee 
+window left 
+window maximise 
+window minimise 
+window top 
+x-ray six 
+x-ray x-ray 
+zulu five 
+zulu india kilo echo 

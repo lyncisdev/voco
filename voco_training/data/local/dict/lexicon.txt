@@ -1,0 +1,52 @@
+!SIL sil
+<UNK> spn
+alpha ae l f ah 
+back b ae k 
+bravo b r aa v ow 
+charlie ch aa r l iy 
+delta d eh l t ah 
+down d aw n 
+echo eh k ow 
+eight ey t 
+escape ih s k ey p 
+firefox f ay r f aa k s 
+five f ay v 
+four f ao r 
+foxtrot f aa k s t r aa t 
+golf g aa l f 
+hotel hh ow t eh l 
+india ih n d iy ah 
+juliet jh uw l iy eh t 
+kilo k ih l ow 
+left l eh f t 
+lima l ay m ah 
+max m ae k s 
+maximise m ae k s ah m ay z 
+mike m ay k 
+minimise m ih n ah m ay z 
+nine n ay n 
+november n ow v eh m b er 
+one w ah n 
+oscar ao s k er 
+papa p aa p ah 
+quebec k w ah b eh k 
+return r ih t er n 
+right r ay t 
+romeo r ow m iy ow 
+seven s eh v ah n 
+sierra s iy eh r ah 
+six s ih k s 
+switch s w ih ch 
+tango t ae ng g ow 
+ten t eh n 
+terminal t er m ah n ah l 
+three th r iy 
+top t aa p 
+two t uw 
+uniform y uw n ah f ao r m 
+up ah p 
+whisky w ih s k iy 
+window w ih n d ow 
+x-ray eh k s r ey 
+yankee y ae ng k iy 
+zulu z uw l uw 
