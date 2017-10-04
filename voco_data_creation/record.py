@@ -1,6 +1,6 @@
 import sys
 import wave
-#import pyaudio
+import pyaudio
 import audioop
 import unicodedata
 import time
@@ -11,7 +11,7 @@ import re
 mic = -1
 chunk = 0
 byterate = 16000
-#pa = pyaudio.PyAudio()
+pa = pyaudio.PyAudio()
 sample_rate = byterate
 stream = None 
 word_accepted = False
