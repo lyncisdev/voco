@@ -7,35 +7,85 @@
 
 
 import re
-from random import randint
+import random
 import subprocess
+import pprint
 
 ################[INPUTS]################
 
-utt_list_file = open('utt_list.txt','r')
+command_file = open('commands.csv','r')
 
 recording_list_file = open('recording_list.txt', 'w')
 
-n = 2;
 
-################[CODE]################
+# load tree
 
-utt_list = utt_list_file.readlines()
+commands = command_file.readlines()
 
-new_utt_list = []
+unmixed_command_list = []
+mixed_command_list = []
 
-for x in utt_list:
-	if x[0]!="#":
-		new_utt_list.append(x)
 
-utt_list = new_utt_list
+#Final,Frequency,Group
 
-num_utt = len(utt_list)
-num_samples = num_utt * n
 
-for x in range(0,num_samples):
-	i = randint(0, num_utt-1)
-	recording_list_file.write(utt_list[i])
+for x in commands[1:]:
+    parts = re.split(r',', x)
+
+    phrase = parts[0]
+    freq = int(parts[1])
+    group = int(parts[2])
+    
+    if group == 0:
+        for x in range(1,freq):
+            unmixed_command_list.append(phrase)
+    else:
+        for x in range(1,freq):
+            mixed_command_list.append(phrase)   
+    
+
+#print(mixed_command_list)
+#print(unmixed_command_list)
+
+
+recording_list = []
+
+for x in range(0,50):
+    i = random.randint(0,len(unmixed_command_list)-1)
+    recording_list.append(unmixed_command_list[i])
+    
+
+for x in range(0,50):
+    tmp = ""
+    for y in range(0,random.randint(2,6)):
+        i = random.randint(0,len(mixed_command_list)-1)
+        
+        tmp += mixed_command_list[i]
+        tmp += " "
+        
+    recording_list.append(tmp)
+
+
+count = 0
+for x in recording_list:	
+    recording_list_file.write(str(count).zfill(3) + "," + x + "\n")
+    count +=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
