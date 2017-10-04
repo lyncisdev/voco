@@ -12,7 +12,7 @@ cmd=run.pl
 stage=0
 decode_mbr=true
 word_ins_penalty=0.0
-min_lmwt=9
+min_lmwt=11
 max_lmwt=11
 #end configuration section.
 

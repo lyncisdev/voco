@@ -10,13 +10,12 @@ import re
 import subprocess
 import pdb
 
-from process_line import process_line
-from scan import scan
-from parse import parse
-from execute import execute
-from errors import GrammaticalError
-from ast import printAST
-
+from silvius.process_line import process_line
+#from scan import scan
+#from parse import parse
+#from execute import execute
+#from errors import GrammaticalError
+#from ast import printAST
 
 
 basedir= "decode/data/"
@@ -109,7 +108,7 @@ try:
 
     if mic == -1:
         mic = pa.get_default_input_device_info()['index']
-        if debug:			    
+        if debug:
             print >> sys.stderr, "Selecting default mic"
     if debug:
         print >> sys.stderr, "Using mic #", mic
@@ -154,6 +153,8 @@ above_gate=False
 while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
+    
+    
     print(rms)
     
     #set above gate
@@ -164,26 +165,26 @@ while (True):
     
     if above_gate == False:
         if rec == True:
+            
             # stop recording, write file
 #            print("Recording stopped")
+
             UID = "LIVE" + str(session_counter).zfill(5) + "_" + str(recording_counter).zfill(5)
+    
             audio_sample_file_path = basedir + UID + ".wav"
+        
             write_audio_data(audio_sample, audio_sample_file_path,byterate)
             write_audio_records(basedir,session_counter,audio_sample_file_path, UID)
+            
             result = subprocess.check_output("./kaldi_decode.sh", shell=True)
             result = result.split(" ",1)[1].strip()
-            print(result)
+            
             if len(result) >= 2:
                 try:
-#                    cmd = process_line(result)
-#                    scan_result = scan(result)
-#                    pdb.set_trace()
-#                    ast = parse(scan_result)
-#                    printAST(ast)
-#                    execute(ast, f == sys.stdin)
-#                    execute(ast, True)
+                    
                     print("-----------------")
                     print(result)
+#                    cmd = process_line(result)
 #                    print(cmd)
 #                    os.system(cmd)
         
@@ -191,7 +192,6 @@ while (True):
                     print "Error:", e
                 
                 
-            
             recording_counter +=1
             rec = False
             

@@ -1,0 +1,6 @@
+Moved silvius code into sepperate directory - update links
+
+remove cmd.sh
+move path.sh into decode directory
+
+standardize data directory in data_creation and main

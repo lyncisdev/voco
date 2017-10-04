@@ -1,5 +1,3 @@
-# Main
-
 from scan import scan
 from parse import parse
 from execute import execute
@@ -240,34 +238,3 @@ def process_line(line):
         cmd = ""
         
     return cmd
-    
-#
-#if __name__ == '__main__':
-#
-#    line = []
-#    
-##    line.append("copy bravo charlie")
-##    line.append("bravo charlie")
-##    line.append("space sky Tango five november slap")
-##    line.append("window tile")
-##    line.append("window top")
-##    line.append("switch")
-##    line.append("switch firefox")
-##    line.append("switch terminal")
-##    line.append("switch something")
-##    line.append("run")
-##    line.append("emacs buffers")
-##    line.append("five slap")
-##    line.append("run")
-#    
-#    print('')
-#    print('')
-#    
-#    for i in line:
-#        
-#
-#        print('------')
-#        print(i)
-#        cmd = process_line(i)
-#        print(cmd)
-#        os.system(cmd)        
