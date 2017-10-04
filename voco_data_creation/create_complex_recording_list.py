@@ -15,7 +15,7 @@ import pprint
 
 command_file = open('commands.csv','r')
 
-recording_list_file = open('complex_recording_list.txt', 'w')
+recording_list_file = open('recording_list.txt', 'w')
 
 
 # load tree
@@ -44,9 +44,6 @@ for x in commands[1:]:
             mixed_command_list.append(phrase)   
     
 
-# format
-# []
-#
 #print(mixed_command_list)
 #print(unmixed_command_list)
 
@@ -69,9 +66,9 @@ for x in range(0,50):
     recording_list.append(tmp)
 
 
-count = 1
+count = 0
 for x in recording_list:	
-    recording_list_file.write(str(count).zfill(5) + "cmplx" + "\tcmplx\t" + x + "\n")
+    recording_list_file.write(str(count).zfill(3) + "," + x + "\n")
     count +=1
 
 
