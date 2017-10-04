@@ -1,0 +1,100 @@
+000,window maximise
+001,switch back
+002,return
+003,switch
+004,switch max
+005,escape
+006,switch max
+007,escape
+008,switch terminal
+009,return
+010,return
+011,switch
+012,switch terminal
+013,switch max
+014,switch max
+015,escape
+016,window top
+017,switch
+018,escape
+019,window left
+020,switch back
+021,window top
+022,switch back
+023,switch max
+024,switch terminal
+025,escape
+026,switch firefox
+027,return
+028,escape
+029,switch
+030,window left
+031,window center
+032,switch terminal
+033,return
+034,window minimise
+035,switch terminal
+036,return
+037,escape
+038,switch back
+039,return
+040,escape
+041,escape
+042,switch back
+043,switch max
+044,return
+045,switch back
+046,switch firefox
+047,switch max
+048,window top
+049,switch
+050,foxtrot right 
+051,charlie november victor oscar ten echo 
+052,zulu tango 
+053,november november ten 
+054,romeo four hotel five yankee down 
+055,left up delta sierra six 
+056,down delta down yankee echo 
+057,hotel zulu 
+058,uniform sierra two 
+059,november india ten zulu delta foxtrot 
+060,seven right november sierra left 
+061,victor lima ten right alpha whisky 
+062,romeo up juliet up alpha 
+063,up delta charlie juliet tango sierra 
+064,victor victor six sierra bravo 
+065,down delta echo whisky papa six 
+066,golf ten 
+067,nine up yankee hotel six 
+068,two x-ray quebec bravo up foxtrot 
+069,lima three 
+070,kilo oscar zulu 
+071,alpha quebec charlie zulu 
+072,mike oscar six lima 
+073,hotel five 
+074,papa eight eight papa oscar ten 
+075,one zulu quebec 
+076,up two five five 
+077,lima yankee three down mike 
+078,tango uniform 
+079,seven golf november six 
+080,golf seven four 
+081,one nine nine kilo 
+082,up delta six 
+083,charlie uniform india 
+084,zulu delta foxtrot down ten 
+085,eight up right six papa three 
+086,juliet left 
+087,down x-ray oscar three quebec tango 
+088,delta up 
+089,quebec eight alpha juliet right 
+090,papa charlie 
+091,up quebec november left tango romeo 
+092,ten quebec victor whisky mike mike 
+093,left golf 
+094,kilo four 
+095,november hotel 
+096,echo nine zulu victor november 
+097,charlie five alpha down mike 
+098,down quebec 
+099,oscar oscar 
