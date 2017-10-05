@@ -155,7 +155,7 @@ while (True):
     rms = audioop.rms(data, 2)
     
     
-    print(rms)
+#    print(rms)
     
     #set above gate
     if rms >= gate:
@@ -184,9 +184,9 @@ while (True):
                     
                     print("-----------------")
                     print(result)
-#                    cmd = process_line(result)
-#                    print(cmd)
-#                    os.system(cmd)
+                    cmd = process_line(result)
+                    print(cmd)
+                    os.system(cmd)
         
                 except GrammaticalError as e:
                     print "Error:", e

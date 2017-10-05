@@ -8,7 +8,7 @@ export PATH=$PWD/utils/:$KALDI_ROOT/src/bin:$KALDI_ROOT/tools/openfst/bin:$KALDI
 
 
 # Defining audio data directory (modify it for your installation directory!)
-export DATA_ROOT="/home/bartek/Projects/ASR/model_training/audio_data"
+export DATA_ROOT="/home/bartek/Projects/ASR/voco_data/data/"
 
 
 # Enable SRILM

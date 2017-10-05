@@ -1,5 +1,5 @@
 # compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_ali/tree exp/mono_ali/final.mdl data/lang/L.fst "ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train/split1/1/text|" ark:- | gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.0 1 exp/mono_ali/final.mdl - |" ark:- "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,t:|gzip -c >exp/mono_ali/ali.1.gz" 
-# Started at Tue Oct  3 21:48:23 SAST 2017
+# Started at Wed Oct  4 21:11:47 SAST 2017
 #
 compile-train-graphs --read-disambig-syms=data/lang/phones/disambig.int exp/mono_ali/tree exp/mono_ali/final.mdl data/lang/L.fst 'ark:utils/sym2int.pl --map-oov 2 -f 2- data/lang/words.txt data/train/split1/1/text|' ark:- 
 gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/mono_ali/final.mdl - |' ark:- 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,t:|gzip -c >exp/mono_ali/ali.1.gz' 
@@ -9,10 +9,10 @@ LOG (gmm-boost-silence[5.1.46~1-0d031]:main():gmm-boost-silence.cc:93) Boosted w
 LOG (gmm-boost-silence[5.1.46~1-0d031]:main():gmm-boost-silence.cc:103) Wrote model to -
 add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
-LOG (apply-cmvn[5.1.46~1-0d031]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 90 utterances, errors on 0
-LOG (compile-train-graphs[5.1.46~1-0d031]:main():compile-train-graphs.cc:145) compile-train-graphs: succeeded for 90 graphs, failed for 0
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:129) Overall log-likelihood per frame is -85.1369 over 12601 frames.
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:131) Retried 0 out of 90 utterances.
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:133) Done 90, errors on 0
-# Accounting: time=1 threads=1
-# Ended (code 0) at Tue Oct  3 21:48:24 SAST 2017, elapsed time 1 seconds
+LOG (compile-train-graphs[5.1.46~1-0d031]:main():compile-train-graphs.cc:145) compile-train-graphs: succeeded for 271 graphs, failed for 0
+LOG (apply-cmvn[5.1.46~1-0d031]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 271 utterances, errors on 0
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:129) Overall log-likelihood per frame is -80.8555 over 44061 frames.
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:131) Retried 0 out of 271 utterances.
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:133) Done 271, errors on 0
+# Accounting: time=3 threads=1
+# Ended (code 0) at Wed Oct  4 21:11:50 SAST 2017, elapsed time 3 seconds

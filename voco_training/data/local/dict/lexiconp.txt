@@ -2,7 +2,9 @@
 <UNK> 1.0	spn
 alpha 1.0	ae l f ah 
 back 1.0	b ae k 
+bottom 1.0	b aa t ah m 
 bravo 1.0	b r aa v ow 
+center 1.0	s eh n t er 
 charlie 1.0	ch aa r l iy 
 delta 1.0	d eh l t ah 
 down 1.0	d aw n 
@@ -45,6 +47,7 @@ top 1.0	t aa p
 two 1.0	t uw 
 uniform 1.0	y uw n ah f ao r m 
 up 1.0	ah p 
+victor 1.0	v ih k t er 
 whisky 1.0	w ih s k iy 
 window 1.0	w ih n d ow 
 x-ray 1.0	eh k s r ey 

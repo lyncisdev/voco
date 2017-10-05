@@ -1,100 +1,100 @@
-000,window maximise
-001,switch back
+000,switch back
+001,window left
 002,return
-003,switch
-004,switch max
-005,escape
-006,switch max
-007,escape
-008,switch terminal
-009,return
-010,return
-011,switch
-012,switch terminal
-013,switch max
-014,switch max
-015,escape
-016,window top
-017,switch
-018,escape
-019,window left
-020,switch back
-021,window top
+003,escape
+004,escape
+005,switch firefox
+006,switch terminal
+007,return
+008,return
+009,window bottom
+010,switch back
+011,window minimise
+012,return
+013,window right
+014,escape
+015,return
+016,switch back
+017,switch back
+018,switch firefox
+019,switch terminal
+020,window maximise
+021,switch max
 022,switch back
-023,switch max
-024,switch terminal
-025,escape
-026,switch firefox
-027,return
-028,escape
-029,switch
-030,window left
-031,window center
-032,switch terminal
-033,return
-034,window minimise
-035,switch terminal
-036,return
-037,escape
-038,switch back
-039,return
-040,escape
-041,escape
-042,switch back
-043,switch max
-044,return
-045,switch back
-046,switch firefox
-047,switch max
-048,window top
-049,switch
-050,foxtrot right 
-051,charlie november victor oscar ten echo 
-052,zulu tango 
-053,november november ten 
-054,romeo four hotel five yankee down 
-055,left up delta sierra six 
-056,down delta down yankee echo 
-057,hotel zulu 
-058,uniform sierra two 
-059,november india ten zulu delta foxtrot 
-060,seven right november sierra left 
-061,victor lima ten right alpha whisky 
-062,romeo up juliet up alpha 
-063,up delta charlie juliet tango sierra 
-064,victor victor six sierra bravo 
-065,down delta echo whisky papa six 
-066,golf ten 
-067,nine up yankee hotel six 
-068,two x-ray quebec bravo up foxtrot 
-069,lima three 
-070,kilo oscar zulu 
-071,alpha quebec charlie zulu 
-072,mike oscar six lima 
-073,hotel five 
-074,papa eight eight papa oscar ten 
-075,one zulu quebec 
-076,up two five five 
-077,lima yankee three down mike 
-078,tango uniform 
-079,seven golf november six 
-080,golf seven four 
-081,one nine nine kilo 
-082,up delta six 
-083,charlie uniform india 
-084,zulu delta foxtrot down ten 
-085,eight up right six papa three 
-086,juliet left 
-087,down x-ray oscar three quebec tango 
-088,delta up 
-089,quebec eight alpha juliet right 
-090,papa charlie 
-091,up quebec november left tango romeo 
-092,ten quebec victor whisky mike mike 
-093,left golf 
-094,kilo four 
-095,november hotel 
-096,echo nine zulu victor november 
-097,charlie five alpha down mike 
-098,down quebec 
-099,oscar oscar 
+023,window right
+024,switch back
+025,return
+026,return
+027,switch firefox
+028,switch
+029,window maximise
+030,hotel india 
+031,zulu four lima november right 
+032,victor eight golf 
+033,foxtrot hotel 
+034,foxtrot three mike 
+035,up left oscar hotel 
+036,five nine alpha november 
+037,romeo quebec bravo whisky 
+038,kilo sierra yankee 
+039,romeo oscar nine four 
+040,oscar oscar tango 
+041,papa delta two 
+042,charlie one down 
+043,sierra four hotel whisky 
+044,golf quebec one 
+045,delta hotel tango 
+046,one hotel two delta lima 
+047,uniform lima x-ray lima 
+048,juliet x-ray india quebec tango 
+049,x-ray up golf victor victor 
+050,tango two down eight 
+051,mike four tango zulu yankee 
+052,hotel ten down 
+053,november whisky six yankee 
+054,seven x-ray left 
+055,alpha papa 
+056,uniform kilo uniform 
+057,lima victor 
+058,charlie papa two 
+059,left charlie up 
+060,charlie kilo left delta 
+061,right nine right left six 
+062,right bravo 
+063,kilo kilo oscar seven 
+064,x-ray echo right three victor 
+065,india six 
+066,oscar foxtrot x-ray romeo tango 
+067,bravo alpha quebec 
+068,four up left uniform papa 
+069,three kilo down left nine 
+070,eight five three 
+071,tango five ten 
+072,right delta 
+073,juliet quebec x-ray bravo one 
+074,five one 
+075,november up papa two yankee 
+076,four three golf foxtrot 
+077,tango whisky oscar echo 
+078,tango echo down bravo 
+079,seven one papa yankee 
+080,golf bravo papa lima quebec 
+081,foxtrot india tango 
+082,zulu foxtrot four 
+083,five quebec right kilo nine 
+084,right ten echo four six 
+085,quebec up whisky 
+086,bravo bravo 
+087,one charlie 
+088,mike right 
+089,six sierra 
+090,up india right 
+091,left up sierra 
+092,mike hotel 
+093,india one 
+094,november right 
+095,victor mike kilo 
+096,yankee sierra 
+097,alpha three 
+098,five down up hotel 
+099,hotel up two 

@@ -2,7 +2,9 @@
 <UNK> spn
 alpha ae l f ah 
 back b ae k 
+bottom b aa t ah m 
 bravo b r aa v ow 
+center s eh n t er 
 charlie ch aa r l iy 
 delta d eh l t ah 
 down d aw n 
@@ -45,6 +47,7 @@ top t aa p
 two t uw 
 uniform y uw n ah f ao r m 
 up ah p 
+victor v ih k t er 
 whisky w ih s k iy 
 window w ih n d ow 
 x-ray eh k s r ey 

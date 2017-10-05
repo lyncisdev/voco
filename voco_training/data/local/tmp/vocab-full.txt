@@ -4,7 +4,9 @@
 <unk>
 alpha
 back
+bottom
 bravo
+center
 charlie
 delta
 down
@@ -47,6 +49,7 @@ top
 two
 uniform
 up
+victor
 whisky
 window
 x-ray

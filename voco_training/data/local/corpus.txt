@@ -1,61 +1,203 @@
-alpha seven 
-alpha two foxtrot golf six 
-charlie hotel two ten down six 
-delta hotel two lima sierra 
-delta india 
-delta six up down 
-down foxtrot 
-down nine 
-down sierra eight six left down 
-echo oscar alpha india x-ray hotel 
-echo three november left 
+alpha papa 
+alpha quebec charlie zulu 
+alpha right 
+alpha three 
+bravo alpha quebec 
+bravo bravo 
+bravo delta bravo 
+bravo hotel six one 
+bravo lima three 
+bravo right 
+charlie five alpha down mike 
+charlie kilo left delta 
+charlie mike 
+charlie november victor oscar ten echo 
+charlie one down 
+charlie papa papa 
+charlie papa two 
+charlie uniform india 
+delta hotel tango 
+delta up 
+down delta down yankee echo 
+down delta echo whisky papa six 
+down quebec 
+down victor left 
+down x-ray oscar three quebec tango 
+echo nine zulu victor november 
+echo november foxtrot 
+eight five three 
+eight mike whisky two three 
+eight right 
+eight up right six papa three 
 escape 
-five five juliet delta eight 
-four five india bravo sierra 
-four foxtrot ten 
-four papa x-ray nine tango left 
-foxtrot juliet three zulu papa zulu 
-foxtrot oscar charlie 
-hotel sierra 
-india seven left yankee left four 
-india seven sierra 
-juliet whisky lima 
-kilo echo november four down golf 
-kilo mike quebec 
-left papa left tango six india 
-left three four 
-lima three five tango right 
-nine nine 
-nine sierra lima india 
-november uniform three 
-one bravo zulu one india quebec 
-one down one left 
-papa nine 
-papa seven bravo juliet down 
+five down up hotel 
+five left 
+five nine alpha november 
+five one 
+five quebec down 
+five quebec right kilo nine 
+five romeo down left 
+four echo right 
+four three golf foxtrot 
+four up left uniform papa 
+foxtrot hotel 
+foxtrot india tango 
+foxtrot right 
+foxtrot three mike 
+golf bravo papa lima quebec 
+golf hotel foxtrot juliet whisky 
+golf quebec one 
+golf seven four 
+golf ten 
+golf victor four ten ten 
+hotel five 
+hotel hotel left zulu 
+hotel india 
+hotel ten down 
+hotel up two 
+hotel zulu 
+india one 
+india six 
+juliet echo uniform zulu 
+juliet left 
+juliet one hotel two yankee 
+juliet quebec x-ray bravo one 
+juliet x-ray india quebec tango 
+kilo four 
+kilo kilo oscar seven 
+kilo oscar zulu 
+kilo sierra yankee 
+left charlie up 
+left down papa papa 
+left golf 
+left uniform x-ray 
+left up delta sierra six 
+left up sierra 
+left whisky up 
+lima lima 
+lima three 
+lima victor 
+lima yankee three down mike 
+mike four tango zulu yankee 
+mike hotel 
+mike nine sierra juliet india 
+mike oscar six lima 
+mike right 
+mike uniform four 
+nine down down delta 
+nine romeo nine four november 
+nine ten sierra quebec 
+nine up yankee hotel six 
+november hotel 
+november india ten zulu delta foxtrot 
+november november ten 
+november right 
+november two sierra mike right 
+november up papa two yankee 
+november whisky six yankee 
+one charlie 
+one hotel two delta lima 
+one nine nine kilo 
+one zulu quebec 
+oscar foxtrot x-ray romeo tango 
+oscar one four 
+oscar oscar 
+oscar oscar tango 
+oscar whisky 
+papa charlie 
+papa delta two 
+papa eight eight papa oscar ten 
+papa papa delta papa 
+quebec down x-ray x-ray 
+quebec eight alpha juliet right 
+quebec four foxtrot 
+quebec oscar 
+quebec tango alpha one 
+quebec up whisky 
 return 
-right four juliet six uniform 
-right juliet november six 
-seven bravo kilo 
-seven echo up zulu uniform papa 
-sierra echo foxtrot left kilo 
-sierra foxtrot 
-sierra sierra 
+right bravo 
+right delta 
+right eight whisky delta november 
+right india four 
+right nine right left six 
+right ten echo four six 
+romeo echo 
+romeo eight echo golf 
+romeo four hotel five yankee down 
+romeo one golf 
+romeo one golf five down 
+romeo oscar nine four 
+romeo quebec bravo whisky 
+romeo up juliet up alpha 
+romeo victor right golf 
+seven golf november six 
+seven one papa yankee 
+seven right november sierra left 
+seven x-ray left 
+sierra four hotel whisky 
+sierra golf charlie 
+sierra victor uniform zulu 
+six golf 
+six mike 
+six sierra 
+six six bravo up 
 switch 
 switch back 
 switch firefox 
 switch max 
 switch terminal 
-ten oscar 
-two golf 
-two oscar golf down 
-uniform hotel five 
-uniform november romeo delta golf 
-whisky juliet one yankee 
+tango echo down bravo 
+tango five ten 
+tango two down eight 
+tango uniform 
+tango whisky oscar echo 
+ten hotel mike nine 
+ten mike foxtrot hotel 
+ten papa bravo 
+ten quebec victor whisky mike mike 
+three kilo down left nine 
+two bravo nine up four 
+two x-ray quebec bravo up foxtrot 
+uniform kilo uniform 
+uniform lima x-ray lima 
+uniform seven hotel 
+uniform sierra two 
+up alpha three charlie 
+up charlie six three uniform 
+up delta charlie juliet tango sierra 
+up delta six 
+up five oscar zulu ten 
+up india right 
+up left oscar hotel 
+up quebec november left tango romeo 
+up six 
+up three x-ray 
+up two five five 
+up x-ray november four four 
+victor eight golf 
+victor lima one sierra 
+victor lima ten right alpha whisky 
+victor mike kilo 
+victor victor six sierra bravo 
+victor zulu 
+whisky three foxtrot ten 
+window bottom 
+window center 
 window left 
 window maximise 
 window minimise 
+window right 
 window top 
-x-ray six 
-x-ray x-ray 
-zulu five 
-zulu india kilo echo 
+x-ray bravo delta bravo 
+x-ray echo right three victor 
+x-ray four romeo 
+x-ray up golf victor victor 
+yankee papa foxtrot sierra x-ray 
+yankee seven zulu oscar 
+yankee sierra 
+zulu alpha 
+zulu delta foxtrot down ten 
+zulu four lima november right 
+zulu foxtrot four 
+zulu sierra 
+zulu tango 

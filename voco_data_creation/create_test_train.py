@@ -2,36 +2,44 @@ import os
 import shutil
 import math
 import random
+import sys
 
+try:
+    base_directory = sys.argv[1]
+#    print(base_directory)
+except:
+    print('Please pass voco_data base directory')
 
+src_dir = base_directory + "/audio_records/"
+train_dir = base_directory +"/data/train/"
+test_dir = base_directory + "/data/test/"
+local_dir = base_directory + "/data/local/"
 
-src_dir = "audio_records/"
-train_dir = "data/train/"
-test_dir = "data/test/"
-
-dirs = ["data/test", "data/train", "data/test", "data/local/dict"]
-
-
-
-l = len(open(src_dir +'text').readlines())
-
+dirs = [train_dir, test_dir, local_dir, local_dir + "dict"]
 
 for x in dirs:
-	if not os.path.exists(x):
-	    os.makedirs(x)
+    if not os.path.exists(x):
+        os.makedirs(x)
 
-shutil.copy2(src_dir + "silence_phones.txt","data/local/dict")
-shutil.copy2(src_dir + "nonsilence_phones.txt","data/local/dict")
-shutil.copy2(src_dir + "optional_silence.txt","data/local/dict")
-shutil.copy2(src_dir + "lexicon.txt","data/local/dict")
-shutil.copy2(src_dir + "corpus.txt","data/local")
+        
+
+        
+shutil.copy2(src_dir + "silence_phones.txt",local_dir + "dict")
+shutil.copy2(src_dir + "nonsilence_phones.txt",local_dir + "dict")
+shutil.copy2(src_dir + "optional_silence.txt",local_dir + "dict")
+shutil.copy2(src_dir + "lexicon.txt",local_dir + "dict")
+shutil.copy2(src_dir + "corpus.txt",local_dir)
 
 
-shutil.copy2(src_dir + "spk2gender","data/train")
-shutil.copy2(src_dir + "spk2gender","data/test")
+shutil.copy2(src_dir + "spk2gender",train_dir)
+shutil.copy2(src_dir + "spk2gender",test_dir)
 
 
 split_assignments = []
+l = len(open(src_dir +'text').readlines())
+
+
+
 for x in range(0,l):
 	if random.uniform(0,1) < 0.9:	
 		split_assignments.append(True)

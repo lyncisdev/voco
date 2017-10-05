@@ -18,7 +18,7 @@ word_accepted = False
 breaking = False
 
 gate = 750
-window_length = 10
+window_length = 12
 
 debug = False
 
