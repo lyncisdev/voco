@@ -1,6 +1,6 @@
 import sys
 import wave
-import pyaudio
+#import pyaudi  o
 import audioop
 import unicodedata
 import time
@@ -9,20 +9,10 @@ import os
 import re
 import subprocess
 import pdb
+from datetime import datetime
+import time
 
 from silvius.process_line import process_line
-#from scan import scan
-#from parse import parse
-#from execute import execute
-#from errors import GrammaticalError
-#from ast import printAST
-
-
-basedir= "decode/data/"
-debug=False
-
-outputfile=open(basedir + 'spk2gender','w')
-outputfile.write("bartek m \n")
 
 #----------------------------------------------------------------------------
 # write_audio_file function
@@ -90,17 +80,55 @@ def write_audio_records(basedir,session_counter,audio_sample_file_path, UID):
     with open("session_counter.txt", "w") as f:
         f.write(str(session_counter))
     
+
     
+#----------------------------------------------------------------------------
+# write_audio_file function
+
+def write_log(basedir,UID, transc, cmd, decode_duration, audio_sample_file_path):
+    
+    outputfile=open(basedir + 'log','a')
+    
+    time_stamp = str(datetime.now())
+    
+    outputfile.write(time_stamp + "," + UID + "," + transc + "," + cmd + "," + decode_duration + "," + audio_sample_file_path + "\n")
+    
+    
+
 #----------------------------------------------------------------------------
 # open stream
 
 mic = -1
 chunk = 0
 byterate = 16000
-pa = pyaudio.PyAudio()
+#pa = pyaudio.PyAudio()
 sample_rate = byterate
 stream = None
+
 debug=False
+listen_mode = False
+
+
+basedir= "decode/data/"
+
+voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
+
+
+#allow listen and debug mode
+try:
+    options = sys.argv
+    
+    for x in options:
+        if x == "listen":
+            listen_mode = True
+            print("listen_mode = True")
+        if x == "debug":
+            debug = True
+            print("debug = True")
+
+except:
+    print("")
+
 
 try:
     # try adjusting this if you want fewer network packets
@@ -133,6 +161,11 @@ except IOError, e:
 
     print >> sys.stderr, "\nLISTENING TO MICROPHONE"
     last_state = None
+
+    
+#create skp2gender
+outputfile=open(basedir + 'spk2gender','w')
+outputfile.write("bartek m \n")
 
 #----------------------------------------------------------------------------
 
@@ -169,7 +202,9 @@ while (True):
             # stop recording, write file
 #            print("Recording stopped")
 
-            UID = "LIVE" + str(session_counter).zfill(5) + "_" + str(recording_counter).zfill(5)
+            decoding_start = time.time()
+    
+            UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(recording_counter).zfill(5)
     
             audio_sample_file_path = basedir + UID + ".wav"
         
@@ -179,6 +214,8 @@ while (True):
             result = subprocess.check_output("./kaldi_decode.sh", shell=True)
             result = result.split(" ",1)[1].strip()
             
+            decoding_end = time.time()
+            
             if len(result) >= 2:
                 try:
                     
@@ -186,10 +223,17 @@ while (True):
                     print(result)
                     cmd = process_line(result)
                     print(cmd)
-                    os.system(cmd)
+                    
+                    if not listen_mode:
+                        os.system(cmd)
         
-                except GrammaticalError as e:
-                    print "Error:", e
+                    decode_duration = decoding_end - decoding_start
+            
+                    write_log(basedir,UID,result,cmd,decode_duration,audio_sample_file_path)
+                    
+                except:
+                    print "Error"
+                    write_log()
                 
                 
             recording_counter +=1
