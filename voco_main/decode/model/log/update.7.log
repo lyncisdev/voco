@@ -1,5 +1,5 @@
 # gmm-est --mix-up=4160 --power=0.25 --write-occs=exp/tri1/8.occs exp/tri1/7.mdl "gmm-sum-accs - exp/tri1/7.*.acc |" exp/tri1/8.mdl 
-# Started at Wed Oct  4 21:12:06 SAST 2017
+# Started at Tue Oct 24 21:11:54 SAST 2017
 #
 gmm-est --mix-up=4160 --power=0.25 --write-occs=exp/tri1/8.occs exp/tri1/7.mdl 'gmm-sum-accs - exp/tri1/7.*.acc |' exp/tri1/8.mdl 
 gmm-sum-accs - exp/tri1/7.1.acc 
@@ -39,5 +39,5 @@ LOG (gmm-est[5.1.46~1-0d031]:main():gmm-est.cc:116) GMM update: Overall avg like
 WARNING (gmm-est[5.1.46~1-0d031]:GetSplitTargets():model-common.cc:134) Could not split up to 4160 due to min-count = 20 (or no counts at all)
 LOG (gmm-est[5.1.46~1-0d031]:SplitByCount():am-diag-gmm.cc:116) Split 305 states with target = 4160, power = 0.25, perturb_factor = 0.01 and min_count = 20, split #Gauss from 2036 to 2058
 LOG (gmm-est[5.1.46~1-0d031]:main():gmm-est.cc:146) Written model to exp/tri1/8.mdl
-# Accounting: time=0 threads=1
-# Ended (code 0) at Wed Oct  4 21:12:06 SAST 2017, elapsed time 0 seconds
+# Accounting: time=1 threads=1
+# Ended (code 0) at Tue Oct 24 21:11:55 SAST 2017, elapsed time 1 seconds

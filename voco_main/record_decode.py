@@ -1,6 +1,6 @@
 import sys
 import wave
-#import pyaudi  o
+import pyaudio
 import audioop
 import unicodedata
 import time
@@ -101,13 +101,13 @@ def write_log(basedir,UID, transc, cmd, decode_duration, audio_sample_file_path)
 mic = -1
 chunk = 0
 byterate = 16000
-#pa = pyaudio.PyAudio()
+pa = pyaudio.PyAudio()
 sample_rate = byterate
 stream = None
 
 debug=False
-listen_mode = False
-
+noexec_mode = False
+playback_mode = False
 
 basedir= "decode/data/"
 
@@ -117,15 +117,19 @@ voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 #allow listen and debug mode
 try:
     options = sys.argv
-    
+
     for x in options:
-        if x == "listen":
-            listen_mode = True
-            print("listen_mode = True")
+        if x == "noexec":
+            noexeclisten_mode = True
+            print("noexec_mode = True")
         if x == "debug":
             debug = True
             print("debug = True")
-
+        if x == "playback":
+            playback_mode = True
+            print("playback_mode = True")
+        if x == "help":
+            print("noexec, debug, playback")
 except:
     print("")
 
@@ -186,59 +190,58 @@ above_gate=False
 while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
-    
-    
-#    print(rms)
-    
+
+    if debug:
+        print(rms)
+
     #set above gate
     if rms >= gate:
         above_gate = True
     else:
         above_gate = False
-    
+
     if above_gate == False:
         if rec == True:
-            
+
             # stop recording, write file
 #            print("Recording stopped")
 
             decoding_start = time.time()
-    
+
             UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(recording_counter).zfill(5)
-    
+
             audio_sample_file_path = basedir + UID + ".wav"
-        
+
             write_audio_data(audio_sample, audio_sample_file_path,byterate)
             write_audio_records(basedir,session_counter,audio_sample_file_path, UID)
-            
+
             result = subprocess.check_output("./kaldi_decode.sh", shell=True)
             result = result.split(" ",1)[1].strip()
-            
             decoding_end = time.time()
-            
+
             if len(result) >= 2:
-                try:
-                    
+               # try:
                     print("-----------------")
                     print(result)
                     cmd = process_line(result)
                     print(cmd)
-                    
-                    if not listen_mode:
+
+                    if playback_mode:
+                        os.system("aplay " + audio_sample_file_path)
+
+                    if not noexec_mode:
                         os.system(cmd)
-        
+
                     decode_duration = decoding_end - decoding_start
-            
-                    write_log(basedir,UID,result,cmd,decode_duration,audio_sample_file_path)
-                    
-                except:
-                    print "Error"
-                    write_log()
-                
-                
+
+                    print(decode_duration)
+
+
+                   # write_log(basedir,UID,result,cmd,decode_duration,audio_sample_file_:
+
+                   # write_log()
             recording_counter +=1
             rec = False
-            
     else:
         if rec == True:
             #contine recording
@@ -251,25 +254,3 @@ while (True):
             audio_sample = []
             audio_sample.append(data)
             rec = True
-            
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,21 @@
+* Data creation procedure
+
+Tweak frequencies in commands.xls
+Export to CSV
+
+
+create the input list for record.py by running:
+python create_recording_list.py
+
+reset recording_list_counter
+
+
+record the test data by running:
+python record.py 
+
+prepare for training by:
+./create_dataset.sh
+
+
+
+ 
