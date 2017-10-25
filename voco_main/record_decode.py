@@ -51,17 +51,17 @@ def write_audio_data(audio_sample,audio_sample_file_path, byterate):
 #    os.system("aplay " + audio_sample_file_path)
 
 
-    
+
 #----------------------------------------------------------------------------
 # write_audio_file function
 
 def write_audio_records(basedir,session_counter,audio_sample_file_path, UID):
     outputfile=open(basedir + 'wav_sample.scp','w')
     outputfile.write(UID + " " + audio_sample_file_path  + "\n")
-    
+
     outputfile=open(basedir + 'wav.scp','a')
     outputfile.write(UID + " " + audio_sample_file_path  + "\n")
-    
+
     #outputfile=open(basedir + 'text','w')
     #outputfile.write(UID + " " + phrase + "\n")
 
@@ -70,30 +70,28 @@ def write_audio_records(basedir,session_counter,audio_sample_file_path, UID):
 
     outputfile=open(basedir + 'utt2spk_sample','w')
     outputfile.write(UID + " bartek" + "\n")
-    
+
     #outputfile=open(basedir + 'spk2utt','w')
     #outputfile.write("bartek " + UID + "\n")
-    
+
     outputfile=open(basedir + 'spk2utt_sample','w')
     outputfile.write("bartek " + UID + "\n")
-    
+
     with open("session_counter.txt", "w") as f:
         f.write(str(session_counter))
-    
 
-    
+
+
 #----------------------------------------------------------------------------
 # write_audio_file function
 
 def write_log(basedir,UID, transc, cmd, decode_duration, audio_sample_file_path):
-    
+
     outputfile=open(basedir + 'log','a')
-    
+
     time_stamp = str(datetime.now())
-    
+
     outputfile.write(time_stamp + "," + UID + "," + transc + "," + cmd + "," + decode_duration + "," + audio_sample_file_path + "\n")
-    
-    
 
 #----------------------------------------------------------------------------
 # open stream
@@ -204,7 +202,7 @@ while (True):
         if rec == True:
 
             # stop recording, write file
-#            print("Recording stopped")
+            # print("Recording stopped")
 
             decoding_start = time.time()
 
@@ -222,9 +220,12 @@ while (True):
             if len(result) >= 2:
                # try:
                     print("-----------------")
-                    print(result)
+
+                    print(result + "\n")
+
                     cmd = process_line(result)
-                    print(cmd)
+
+                    print(cmd + "\n")
 
                     if playback_mode:
                         os.system("aplay " + audio_sample_file_path)
@@ -234,12 +235,13 @@ while (True):
 
                     decode_duration = decoding_end - decoding_start
 
-                    print(decode_duration)
+                    print("decode duration: " + decode_duration)
 
 
-                   # write_log(basedir,UID,result,cmd,decode_duration,audio_sample_file_:
+                    write_log(basedir,UID,result,cmd,decode_duration,audio_sample_file_path)
 
                    # write_log()
+
             recording_counter +=1
             rec = False
     else:

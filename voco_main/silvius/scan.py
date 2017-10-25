@@ -8,7 +8,7 @@ import re
 keywords = [
     'act',
     'ampersand',
-    'arch',
+    'alpha',
     'backslash',
     'bang',
     'bravo',

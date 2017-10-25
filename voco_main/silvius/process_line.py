@@ -26,7 +26,7 @@ escape_keywords = [
 silvius_keywords = [
     'act',
     'ampersand',
-    'arch',
+    'alpha',
     'backslash',
     'bang',
     'bravo',
@@ -205,7 +205,7 @@ function_dict = {
     'copy':     c_copypaste_commands,
     'paste':    c_copypaste_commands
 }
-    
+
 
 def check_escape_keywords(line):
     word_array = line.lower().split()
@@ -214,12 +214,12 @@ def check_escape_keywords(line):
     else:
         return False
 
-    
-    
-    
-def process_line(line):   
+
+
+
+def process_line(line):
     word_array = line.lower().split()
-    
+
     if word_array[0] in escape_keywords:
         try:
             level_0 = word_array[0]
@@ -227,14 +227,19 @@ def process_line(line):
             cmd = function_dict[level_0](word_array)
         except:
             cmd = ""
-        
+
     elif word_array[0] in silvius_keywords:
+
         tokens = scan(line)
+
         ast = parse(tokens)
-#        printAST(ast)
+
+        # printAST(ast)
+
         # make this return the XDO command
+
         cmd = execute(ast, True)
     else:
         cmd = ""
-        
+
     return cmd
