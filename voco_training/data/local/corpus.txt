@@ -3,6 +3,8 @@ alpha papa
 alpha quebec charlie zulu 
 alpha right 
 alpha three 
+ampersand november escape rate bang 
+ampersand ten escape 
 bravo alpha quebec 
 bravo bravo 
 bravo delta alpha victor 
@@ -20,13 +22,21 @@ charlie one down
 charlie papa papa 
 charlie papa two 
 charlie uniform india 
+colon foxtrot 
+colon star star backslash 
+delta escape 
 delta hotel tango 
 delta three space 
 delta up 
+dollar escape rate 
+dot slap 
+double hash escape bang slap 
+double slap 
 down delta down yankee echo 
 down delta echo whisky papa six 
 down mike 
 down quebec 
+down single dot 
 down space 
 down three space space juliet 
 down victor left 
@@ -35,12 +45,21 @@ echo nine four space golf
 echo nine zulu victor november 
 echo november foxtrot 
 echo quebec 
+echo question percent equal 
+eight escape 
 eight five golf space 
 eight five three 
 eight mike whisky two three 
 eight right 
 eight up right six papa three 
+equal slash slap slap 
 escape 
+escape bravo ampersand escape 
+escape escape ampersand hash 
+escape hash 
+escape one kilo 
+escape percent slap papa ampersand 
+escape slap 
 five down up hotel 
 five left 
 five nine alpha november 
@@ -48,7 +67,9 @@ five one
 five quebec down 
 five quebec right kilo nine 
 five romeo down left 
+five slap 
 five space 
+five tab 
 four echo right 
 four space up golf nine 
 four three golf foxtrot 
@@ -73,18 +94,22 @@ hotel right space
 hotel ten down 
 hotel up two 
 hotel zulu 
+india escape 
 india kilo tango one 
 india one 
 india right bravo oscar 
 india six 
 india space quebec two 
 juliet echo uniform zulu 
+juliet escape 
+juliet four late two 
 juliet left 
 juliet lima lima 
 juliet one hotel two yankee 
 juliet quebec x-ray bravo one 
 juliet sierra 
 juliet x-ray india quebec tango 
+kilo alpha single slap space 
 kilo four 
 kilo four oscar 
 kilo kilo oscar seven 
@@ -131,6 +156,7 @@ november two sierra mike right
 november up papa two yankee 
 november whisky six yankee 
 one charlie 
+one double ampersand 
 one hotel two delta lima 
 one nine nine kilo 
 one uniform 
@@ -147,16 +173,23 @@ papa charlie
 papa delta two 
 papa eight 
 papa eight eight papa oscar ten 
+papa hash oscar 
 papa papa delta papa 
 papa romeo left space bravo 
+percent backslash 
+plus backslash slap slap percent 
+plus tab slap two 
 quebec delta ten 
 quebec down x-ray x-ray 
 quebec eight alpha juliet right 
 quebec four foxtrot 
+quebec lima slap 
 quebec oscar 
 quebec space two three 
 quebec tango alpha one 
 quebec up whisky 
+question question 
+question slap slap 
 return 
 right bravo 
 right delta 
@@ -181,10 +214,13 @@ romeo space five
 romeo up juliet up alpha 
 romeo victor right golf 
 romeo whisky left 
+seven 
+seven backslash double 
 seven golf november six 
 seven one papa yankee 
 seven right november sierra left 
 seven x-ray left 
+sierra escape escape 
 sierra four hotel whisky 
 sierra golf charlie 
 sierra hotel 
@@ -193,31 +229,57 @@ six golf
 six mike 
 six sierra 
 six six bravo up 
+six space 
 six x-ray 
+slap alpha uniform equal escape 
+slap double colon slap 
+slap escape 
+slap question ampersand 
+slap slap 
+slap slap single 
+slap slap tab plus question 
+slap space 
+slap star slap yankee 
+slap victor 
+slap yankee 
+slash slap dot ampersand 
 space charlie quebec golf 
+space colon 
+space escape 
 space kilo 
 space november 
+space one single underscore 
 space right space juliet 
 space romeo x-ray hotel right 
 space six romeo 
 space six yankee kilo space 
+space slap 
+space slap quebec 
+space space 
 space space foxtrot oscar 
 space space six left 
 space space space space space 
+space tango escape 
 space up tango three 
 space victor one lima 
+space whisky 
 space whisky space papa delta 
 space yankee yankee delta november 
+star colon 
+star november hotel question star 
 switch 
 switch back 
 switch firefox 
 switch max 
 switch terminal 
+tab escape double 
+tab up slap backslash 
 tango echo down bravo 
 tango five ten 
 tango two down eight 
 tango uniform 
 tango whisky oscar echo 
+ten golf slap 
 ten hotel mike nine 
 ten mike foxtrot hotel 
 ten papa bravo 
@@ -225,9 +287,11 @@ ten quebec victor whisky mike mike
 three four space 
 three kilo down left nine 
 two bravo nine up four 
+two carrot dollar right november 
 two four one space left 
 two x-ray quebec bravo up foxtrot 
 two x-ray three up 
+underscore bang slap 
 uniform kilo uniform 
 uniform lima x-ray lima 
 uniform seven hotel 
@@ -249,6 +313,7 @@ victor eight golf
 victor lima one sierra 
 victor lima ten right alpha whisky 
 victor mike kilo 
+victor space slap 
 victor victor six sierra bravo 
 victor zulu 
 whisky three foxtrot ten 
@@ -266,9 +331,11 @@ x-ray kilo seven
 x-ray up golf victor victor 
 x-ray x-ray right 
 yankee bravo 
+yankee escape mike 
 yankee papa foxtrot sierra x-ray 
 yankee seven zulu oscar 
 yankee sierra 
+yankee slap yankee 
 zulu alpha 
 zulu delta foxtrot down ten 
 zulu four lima november right 

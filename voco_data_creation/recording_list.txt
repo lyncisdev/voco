@@ -1,71 +1,50 @@
-000,escape
-001,nine up uniform space victor 
-002,bravo delta alpha victor 
-003,papa bravo victor 
-004,india kilo tango one 
-005,two four one space left 
-006,india right bravo oscar 
-007,yankee bravo 
-008,bravo right 
-009,bravo x-ray right space 
-010,left victor 
-011,space yankee yankee delta november 
-012,foxtrot juliet seven space 
-013,november kilo two space 
-014,foxtrot november yankee 
-015,space up tango three 
-016,three four space 
-017,sierra hotel 
-018,down mike 
-019,bravo three left november november 
-020,two x-ray three up 
-021,space right space juliet 
-022,romeo four sierra 
-023,x-ray x-ray right 
-024,mike left 
-025,oscar echo left 
-026,lima india 
-027,up juliet up 
-028,right hotel delta right oscar 
-029,right quebec quebec foxtrot charlie 
-030,space kilo 
-031,bravo right 
-032,space november 
-033,space six romeo 
-034,eight five golf space 
-035,zulu x-ray 
-036,down three space space juliet 
-037,echo quebec 
-038,five space 
-039,space space foxtrot oscar 
-040,november seven quebec up mike 
-041,kilo four oscar 
-042,romeo space five 
-043,quebec space two three 
-044,papa eight 
-045,left alpha lima mike yankee 
-046,delta three space 
-047,right hotel whisky ten 
-048,kilo space x-ray space 
-049,space victor one lima 
-050,right victor whisky seven 
-051,one uniform 
-052,space charlie quebec golf 
-053,space six yankee kilo space 
-054,down space 
-055,space whisky space papa delta 
-056,quebec delta ten 
-057,lima mike x-ray lima four 
-058,space space space space space 
-059,romeo romeo right oscar 
-060,four space up golf nine 
-061,hotel right space 
-062,left lima nine space left 
-063,echo nine four space golf 
-064,romeo whisky left 
-065,nine two 
-066,hotel bravo space 
-067,papa romeo left space bravo 
-068,november foxtrot charlie kilo golf 
-069,x-ray kilo seven 
-070,space space six left 
+000,one double ampersand 
+001,question question 
+002,five slap 
+003,star colon 
+004,plus tab slap two 
+005,ampersand november escape rate bang 
+006,slap double colon slap 
+007,delta escape 
+008,slap escape 
+009,slap star slap yankee 
+010,slash slap dot ampersand 
+011,star november hotel question star 
+012,space slap 
+013,question slap slap 
+014,underscore bang slap 
+015,tab up slap backslash 
+016,escape hash 
+017,seven backslash double 
+018,india escape 
+019,tab escape double 
+020,double slap 
+021,slap victor 
+022,escape escape ampersand hash 
+023,escape percent slap papa ampersand 
+024,equal slash slap slap 
+025,slap slap tab plus question 
+026,five tab 
+027,colon foxtrot 
+028,slap alpha uniform equal escape 
+029,dollar escape rate 
+030,slap slap single 
+031,colon star star backslash 
+032,escape bravo ampersand escape 
+033,space one single underscore 
+034,echo question percent equal 
+035,two carrot dollar right november 
+036,kilo alpha single slap space 
+037,double hash escape bang slap 
+038,quebec lima slap 
+039,juliet four late two 
+040,papa hash oscar 
+041,slap question ampersand 
+042,space colon 
+043,down single dot 
+044,ampersand ten escape 
+045,slap slap 
+046,percent backslash 
+047,plus backslash slap slap percent 
+048,slap space 
+049,dot slap 

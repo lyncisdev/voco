@@ -27,6 +27,7 @@ shared split ow_B ow_E ow_I ow_S
 shared split p_B p_E p_I p_S
 shared split r_B r_E r_I r_S
 shared split s_B s_E s_I s_S
+shared split sh_B sh_E sh_I sh_S
 shared split t_B t_E t_I t_S
 shared split th_B th_E th_I th_S
 shared split uw_B uw_E uw_I uw_S

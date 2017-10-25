@@ -1,0 +1,125 @@
+2017-10-25 18:59:09.895501,LIVE00000049_00000,alpha victor charlie,/usr/bin/xdotool key a key v key c,0.256360054016,decode/data/LIVE00000049_00000.wav
+2017-10-25 18:59:29.671512,LIVE00000050_00000,alpha bravo charlie,/usr/bin/xdotool key a key b key c,0.231270074844,decode/data/LIVE00000050_00000.wav
+2017-10-25 18:59:34.106970,LIVE00000050_00001,slap slap,/usr/bin/xdotool key Return key Return,0.179276943207,decode/data/LIVE00000050_00001.wav
+2017-10-25 18:59:37.898515,LIVE00000050_00002,escape,,0.230961084366,decode/data/LIVE00000050_00002.wav
+2017-10-25 18:59:52.105015,LIVE00000050_00003,space alpha eight uniform,/usr/bin/xdotool key space key a key 8 key u,0.225704908371,decode/data/LIVE00000050_00003.wav
+2017-10-25 18:59:59.631475,LIVE00000050_00004,space alpha uniform slap,/usr/bin/xdotool key space key a key u key Return,0.270998954773,decode/data/LIVE00000050_00004.wav
+2017-10-25 19:01:06.676423,LIVE00000051_00000,escape,,0.166427135468,decode/data/LIVE00000051_00000.wav
+2017-10-25 19:01:39.541190,LIVE00000052_00000,eight,/usr/bin/xdotool key 8,0.184864997864,decode/data/LIVE00000052_00000.wav
+2017-10-25 19:01:43.281717,LIVE00000052_00001,eight,/usr/bin/xdotool key 8,0.184704065323,decode/data/LIVE00000052_00001.wav
+2017-10-25 19:01:47.758002,LIVE00000052_00002,escape,,0.17243885994,decode/data/LIVE00000052_00002.wav
+2017-10-25 19:02:40.622476,LIVE00000053_00000,escape,/usr/bin/xdotool key Escape,0.170295000076,decode/data/LIVE00000053_00000.wav
+2017-10-25 19:02:58.870420,LIVE00000054_00000,space bravo bravo,/usr/bin/xdotool key space key b key b,0.311496973038,decode/data/LIVE00000054_00000.wav
+2017-10-25 19:03:13.766367,LIVE00000054_00001,romeo oscar charlie,/usr/bin/xdotool key r key o key c,0.229117155075,decode/data/LIVE00000054_00001.wav
+2017-10-25 19:03:21.193952,LIVE00000054_00002,slap,/usr/bin/xdotool key Return,0.225795984268,decode/data/LIVE00000054_00002.wav
+2017-10-25 19:03:35.359093,LIVE00000054_00003,down,/usr/bin/xdotool key Down,0.181802988052,decode/data/LIVE00000054_00003.wav
+2017-10-25 19:03:39.098761,LIVE00000054_00004,down,/usr/bin/xdotool key Down,0.178116083145,decode/data/LIVE00000054_00004.wav
+2017-10-25 19:03:45.901796,LIVE00000054_00005,space bravo bravo,/usr/bin/xdotool key space key b key b,0.221494197845,decode/data/LIVE00000054_00005.wav
+2017-10-25 19:03:56.308266,LIVE00000054_00006,down,/usr/bin/xdotool key Down,0.184699058533,decode/data/LIVE00000054_00006.wav
+2017-10-25 19:03:59.334359,LIVE00000054_00007,down,/usr/bin/xdotool key Down,0.219155073166,decode/data/LIVE00000054_00007.wav
+2017-10-25 19:04:03.093211,LIVE00000054_00008,slap,/usr/bin/xdotool key Return,0.23824596405,decode/data/LIVE00000054_00008.wav
+2017-10-25 19:04:09.855146,LIVE00000054_00009,space bravo bravo,/usr/bin/xdotool key space key b key b,0.238049030304,decode/data/LIVE00000054_00009.wav
+2017-10-25 19:04:17.369717,LIVE00000054_00010,romeo echo charlie oscar,/usr/bin/xdotool key r key e key c key o,0.249448060989,decode/data/LIVE00000054_00010.wav
+2017-10-25 19:04:20.228251,LIVE00000054_00011,slap,/usr/bin/xdotool key Return,0.171012878418,decode/data/LIVE00000054_00011.wav
+2017-10-25 19:04:33.698212,LIVE00000054_00012,space sierra,/usr/bin/xdotool key space key s,0.174019813538,decode/data/LIVE00000054_00012.wav
+2017-10-25 19:04:41.971605,LIVE00000054_00013,escape,/usr/bin/xdotool key Escape,0.224813938141,decode/data/LIVE00000054_00013.wav
+2017-10-25 19:04:55.877334,LIVE00000054_00014,space plus sierra,/usr/bin/xdotool key space key plus key s,0.234643936157,decode/data/LIVE00000054_00014.wav
+2017-10-25 19:05:01.748315,LIVE00000054_00015,escape,/usr/bin/xdotool key Escape,0.183747053146,decode/data/LIVE00000054_00015.wav
+2017-10-25 19:05:07.069699,LIVE00000054_00016,space bravo bravo,/usr/bin/xdotool key space key b key b,0.23246383667,decode/data/LIVE00000054_00016.wav
+2017-10-25 19:05:23.523413,LIVE00000054_00017,romeo oscar charlie,/usr/bin/xdotool key r key o key c,0.231473922729,decode/data/LIVE00000054_00017.wav
+2017-10-25 19:05:26.433904,LIVE00000054_00018,slash,/usr/bin/xdotool key slash,0.182608127594,decode/data/LIVE00000054_00018.wav
+2017-10-25 19:05:30.933122,LIVE00000054_00019,escape,/usr/bin/xdotool key Escape,0.198199033737,decode/data/LIVE00000054_00019.wav
+2017-10-25 19:05:34.738611,LIVE00000054_00020,space bravo bravo,/usr/bin/xdotool key space key b key b,0.232308864594,decode/data/LIVE00000054_00020.wav
+2017-10-25 19:05:39.221151,LIVE00000054_00021,romeo oscar charlie,/usr/bin/xdotool key r key o key c,0.22337603569,decode/data/LIVE00000054_00021.wav
+2017-10-25 19:05:45.131074,LIVE00000054_00022,slap,/usr/bin/xdotool key Return,0.189574956894,decode/data/LIVE00000054_00022.wav
+2017-10-25 19:06:03.170644,LIVE00000054_00023,eight sierra sierra,/usr/bin/xdotool key 8 key s key s,0.239065885544,decode/data/LIVE00000054_00023.wav
+2017-10-25 19:06:09.053386,LIVE00000054_00024,escape,/usr/bin/xdotool key Escape,0.175302028656,decode/data/LIVE00000054_00024.wav
+2017-10-25 19:06:17.434758,LIVE00000054_00025,space sierra sierra,/usr/bin/xdotool key space key s key s,0.293901205063,decode/data/LIVE00000054_00025.wav
+2017-10-25 19:09:57.870953,LIVE00000057_00002,space bravo bravo,/usr/bin/xdotool key space key b key b,0.234290122986,decode/data/LIVE00000057_00002.wav
+2017-10-25 19:12:32.217854,LIVE00000058_00000,alpha,/usr/bin/xdotool key a,0.206622123718,decode/data/LIVE00000058_00000.wav
+2017-10-25 19:13:21.978840,LIVE00000059_00000,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.233422994614,decode/data/LIVE00000059_00000.wav
+2017-10-25 19:13:29.456968,LIVE00000059_00001,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.220705032349,decode/data/LIVE00000059_00001.wav
+2017-10-25 19:13:59.304219,LIVE00000059_00002,four,/usr/bin/xdotool key 4,0.180154800415,decode/data/LIVE00000059_00002.wav
+2017-10-25 19:14:03.777794,LIVE00000059_00003,back,,0.185679912567,decode/data/LIVE00000059_00003.wav
+2017-10-25 19:14:07.529176,LIVE00000059_00004,hash,/usr/bin/xdotool key numbersign,0.177065134048,decode/data/LIVE00000059_00004.wav
+2017-10-25 19:14:12.042176,LIVE00000059_00005,right up,/usr/bin/xdotool key Right key Up,0.188080072403,decode/data/LIVE00000059_00005.wav
+2017-10-25 19:14:29.944491,LIVE00000059_00006,back,,0.177016019821,decode/data/LIVE00000059_00006.wav
+2017-10-25 19:14:35.223368,LIVE00000059_00007,back space back space,,0.220556974411,decode/data/LIVE00000059_00007.wav
+2017-10-25 19:15:00.700228,LIVE00000059_00008,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.22240114212,decode/data/LIVE00000059_00008.wav
+2017-10-25 19:15:14.924825,LIVE00000059_00009,space sierra sierra,/usr/bin/xdotool key space key s key s,0.231086015701,decode/data/LIVE00000059_00009.wav
+2017-10-25 19:15:54.190121,LIVE00000059_00010,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.22843503952,decode/data/LIVE00000059_00010.wav
+2017-10-25 19:16:02.449298,LIVE00000059_00011,charlie oscar romeo,/usr/bin/xdotool key c key o key r,0.247093915939,decode/data/LIVE00000059_00011.wav
+2017-10-25 19:16:05.308199,LIVE00000059_00012,slash,/usr/bin/xdotool key slash,0.162328004837,decode/data/LIVE00000059_00012.wav
+2017-10-25 19:16:12.820899,LIVE00000059_00013,slap,/usr/bin/xdotool key Return,0.19109416008,decode/data/LIVE00000059_00013.wav
+2017-10-25 19:16:24.123365,LIVE00000059_00014,space foxtrot up,/usr/bin/xdotool key space key f key Up,0.241379976273,decode/data/LIVE00000059_00014.wav
+2017-10-25 19:16:28.590903,LIVE00000059_00015,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.222513914108,decode/data/LIVE00000059_00015.wav
+2017-10-25 19:16:38.249132,LIVE00000059_00016,colon,/usr/bin/xdotool key colon,0.193808078766,decode/data/LIVE00000059_00016.wav
+2017-10-25 19:16:50.204356,LIVE00000059_00018,escape,/usr/bin/xdotool key Escape,0.181292057037,decode/data/LIVE00000059_00018.wav
+2017-10-25 19:16:53.998639,LIVE00000059_00019,eight bravo bang,/usr/bin/xdotool key 8 key b key exclam,0.185516119003,decode/data/LIVE00000059_00019.wav
+2017-10-25 19:17:00.762048,LIVE00000059_00020,space bravo bravo,/usr/bin/xdotool key space key b key b,0.229576826096,decode/data/LIVE00000059_00020.wav
+2017-10-25 19:17:05.936162,LIVE00000059_00021,up,/usr/bin/xdotool key Up,0.21000790596,decode/data/LIVE00000059_00021.wav
+2017-10-25 19:17:19.836241,LIVE00000059_00022,sierra charlie alpha,/usr/bin/xdotool key s key c key a,0.228838205338,decode/data/LIVE00000059_00022.wav
+2017-10-25 19:17:24.992037,LIVE00000059_00023,slap,/usr/bin/xdotool key Return,0.192754030228,decode/data/LIVE00000059_00023.wav
+2017-10-25 19:18:03.144255,LIVE00000059_00024,space bravo bravo,/usr/bin/xdotool key space key b key b,0.166718959808,decode/data/LIVE00000059_00024.wav
+2017-10-25 19:18:11.355648,LIVE00000059_00025,escape,/usr/bin/xdotool key Escape,0.177676916122,decode/data/LIVE00000059_00025.wav
+2017-10-25 19:18:15.179952,LIVE00000059_00026,space bravo bravo,/usr/bin/xdotool key space key b key b,0.235413074493,decode/data/LIVE00000059_00026.wav
+2017-10-25 19:18:24.181350,LIVE00000059_00027,alpha romeo sierra,/usr/bin/xdotool key a key r key s,0.244673013687,decode/data/LIVE00000059_00027.wav
+2017-10-25 19:18:27.810284,LIVE00000059_00028,slap,/usr/bin/xdotool key Return,0.181881904602,decode/data/LIVE00000059_00028.wav
+2017-10-25 19:18:33.880562,LIVE00000059_00029,space sierra sierra,/usr/bin/xdotool key space key s key s,0.238543987274,decode/data/LIVE00000059_00029.wav
+2017-10-25 19:18:42.818570,LIVE00000059_00030,alpha lima,/usr/bin/xdotool key a key l,0.220654010773,decode/data/LIVE00000059_00030.wav
+2017-10-25 19:18:55.481532,LIVE00000059_00031,alpha,/usr/bin/xdotool key a,0.174587011337,decode/data/LIVE00000059_00031.wav
+2017-10-25 19:19:04.824788,LIVE00000059_00032,up,/usr/bin/xdotool key Up,0.173175811768,decode/data/LIVE00000059_00032.wav
+2017-10-25 19:19:07.060843,LIVE00000059_00033,up,/usr/bin/xdotool key Up,0.171778917313,decode/data/LIVE00000059_00033.wav
+2017-10-25 19:19:10.056429,LIVE00000059_00034,slap,/usr/bin/xdotool key Return,0.173902988434,decode/data/LIVE00000059_00034.wav
+2017-10-25 19:20:13.794066,LIVE00000059_00035,up,/usr/bin/xdotool key Up,0.33873295784,decode/data/LIVE00000059_00035.wav
+2017-10-25 19:20:36.827679,LIVE00000059_00036,space,/usr/bin/xdotool key space,0.185611009598,decode/data/LIVE00000059_00036.wav
+2017-10-25 19:20:44.323470,LIVE00000059_00037,alpha,/usr/bin/xdotool key a,0.200857162476,decode/data/LIVE00000059_00037.wav
+2017-10-25 19:20:50.275959,LIVE00000059_00038,escape,/usr/bin/xdotool key Escape,0.174873113632,decode/data/LIVE00000059_00038.wav
+2017-10-25 19:20:54.095096,LIVE00000059_00039,space bravo,/usr/bin/xdotool key space key b,0.234870195389,decode/data/LIVE00000059_00039.wav
+2017-10-25 19:21:01.285461,LIVE00000059_00040,star november,/usr/bin/xdotool key asterisk key n,0.312397003174,decode/data/LIVE00000059_00040.wav
+2017-10-25 19:21:07.183348,LIVE00000059_00041,star november,/usr/bin/xdotool key asterisk key n,0.23060798645,decode/data/LIVE00000059_00041.wav
+2017-10-25 19:21:22.813536,LIVE00000059_00042,escape,/usr/bin/xdotool key Escape,0.174251079559,decode/data/LIVE00000059_00042.wav
+2017-10-25 19:21:25.901651,LIVE00000059_00043,space bravo bravo,/usr/bin/xdotool key space key b key b,0.239765882492,decode/data/LIVE00000059_00043.wav
+2017-10-25 19:21:40.776547,LIVE00000059_00044,charlie oscar,/usr/bin/xdotool key c key o,0.172079086304,decode/data/LIVE00000059_00044.wav
+2017-10-25 19:21:44.506359,LIVE00000059_00045,romeo,/usr/bin/xdotool key r,0.18164896965,decode/data/LIVE00000059_00045.wav
+2017-10-25 19:21:46.743273,LIVE00000059_00046,slap,/usr/bin/xdotool key Return,0.173148870468,decode/data/LIVE00000059_00046.wav
+2017-10-25 19:21:52.806234,LIVE00000059_00047,space sierra sierra,/usr/bin/xdotool key space key s key s,0.223534822464,decode/data/LIVE00000059_00047.wav
+2017-10-25 19:22:04.016896,LIVE00000059_00048,sierra kilo yankee,/usr/bin/xdotool key s key k key y,0.2174949646,decode/data/LIVE00000059_00048.wav
+2017-10-25 19:22:14.430036,LIVE00000059_00049,escape,/usr/bin/xdotool key Escape,0.184883832932,decode/data/LIVE00000059_00049.wav
+2017-10-25 19:22:18.197272,LIVE00000059_00050,space bravo bravo,/usr/bin/xdotool key space key b key b,0.184406042099,decode/data/LIVE00000059_00050.wav
+2017-10-25 19:22:35.428166,LIVE00000059_00051,escape,/usr/bin/xdotool key Escape,0.24725985527,decode/data/LIVE00000059_00051.wav
+2017-10-25 19:22:50.401908,LIVE00000059_00052,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.222210884094,decode/data/LIVE00000059_00052.wav
+2017-10-25 19:23:06.423465,LIVE00000059_00053,lima oscar,/usr/bin/xdotool key l key o,0.179193019867,decode/data/LIVE00000059_00053.wav
+2017-10-25 19:23:10.147490,LIVE00000059_00054,slap,/usr/bin/xdotool key Return,0.174565076828,decode/data/LIVE00000059_00054.wav
+2017-10-25 19:32:21.694238,LIVE00000060_00000,eight up,/usr/bin/xdotool key 8 key Up,0.23023891449,decode/data/LIVE00000060_00000.wav
+2017-10-25 19:32:28.375994,LIVE00000060_00001,escape,/usr/bin/xdotool key Escape,0.184517860413,decode/data/LIVE00000060_00001.wav
+2017-10-25 19:32:32.993050,LIVE00000060_00002,space bravo bravo,/usr/bin/xdotool key space key b key b,0.311623096466,decode/data/LIVE00000060_00002.wav
+2017-10-25 19:32:43.445086,LIVE00000060_00003,escape space bravo,/usr/bin/xdotool key Escape key space key b,0.294517993927,decode/data/LIVE00000060_00003.wav
+2017-10-25 19:32:57.585682,LIVE00000060_00004,plus,/usr/bin/xdotool key plus,0.219198942184,decode/data/LIVE00000060_00004.wav
+2017-10-25 19:33:04.390136,LIVE00000060_00005,space bravo sierra,/usr/bin/xdotool key space key b key s,0.293967008591,decode/data/LIVE00000060_00005.wav
+2017-10-25 19:33:17.018589,LIVE00000060_00006,eight,/usr/bin/xdotool key 8,0.206961870193,decode/data/LIVE00000060_00006.wav
+2017-10-25 19:33:20.746224,LIVE00000060_00007,india,/usr/bin/xdotool key i,0.194509029388,decode/data/LIVE00000060_00007.wav
+2017-10-25 19:33:32.213038,LIVE00000060_00008,tango echo sierra tango,/usr/bin/xdotool key t key e key s key t,0.441334009171,decode/data/LIVE00000060_00008.wav
+2017-10-25 19:33:37.946443,LIVE00000060_00009,slap,/usr/bin/xdotool key Return,0.194566011429,decode/data/LIVE00000060_00009.wav
+2017-10-25 19:33:51.720001,LIVE00000060_00010,tango hotel india sierra space,/usr/bin/xdotool key t key h key i key s key space,0.506526947021,decode/data/LIVE00000060_00010.wav
+2017-10-25 19:33:56.057033,LIVE00000060_00011,india sierra space,/usr/bin/xdotool key i key s key space,0.352030992508,decode/data/LIVE00000060_00011.wav
+2017-10-25 19:33:58.914793,LIVE00000060_00012,alpha space,/usr/bin/xdotool key a key space,0.219180107117,decode/data/LIVE00000060_00012.wav
+2017-10-25 19:34:03.494784,LIVE00000060_00013,tango echo sierra tango,/usr/bin/xdotool key t key e key s key t,0.309511899948,decode/data/LIVE00000060_00013.wav
+2017-10-25 19:34:05.633279,LIVE00000060_00014,bang,/usr/bin/xdotool key exclam,0.205468893051,decode/data/LIVE00000060_00014.wav
+2017-10-25 19:34:08.620130,LIVE00000060_00015,slap,/usr/bin/xdotool key Return,0.201858997345,decode/data/LIVE00000060_00015.wav
+2017-10-25 19:34:15.179640,LIVE00000060_00016,tango hotel india sierra slap,/usr/bin/xdotool key t key h key i key s key Return,0.40021109581,decode/data/LIVE00000060_00016.wav
+2017-10-25 19:34:20.214327,LIVE00000060_00017,space,/usr/bin/xdotool key space,0.202290058136,decode/data/LIVE00000060_00017.wav
+2017-10-25 19:34:26.322259,LIVE00000060_00018,tango alpha kilo,/usr/bin/xdotool key t key a key k,0.32466506958,decode/data/LIVE00000060_00018.wav
+2017-10-25 19:34:29.254169,LIVE00000060_00019,echo sierra,/usr/bin/xdotool key e key s,0.264541149139,decode/data/LIVE00000060_00019.wav
+2017-10-25 19:34:32.190404,LIVE00000060_00020,space,/usr/bin/xdotool key space,0.208833932877,decode/data/LIVE00000060_00020.wav
+2017-10-25 19:34:41.298652,LIVE00000060_00021,victor echo romeo,/usr/bin/xdotool key v key e key r,0.344702959061,decode/data/LIVE00000060_00021.wav
+2017-10-25 19:34:42.651628,LIVE00000060_00022,yankee,/usr/bin/xdotool key y,0.20244884491,decode/data/LIVE00000060_00022.wav
+2017-10-25 19:34:45.644776,LIVE00000060_00023,space,/usr/bin/xdotool key space,0.200842142105,decode/data/LIVE00000060_00023.wav
+2017-10-25 19:34:49.404285,LIVE00000060_00024,lima oscar,/usr/bin/xdotool key l key o,0.221287965775,decode/data/LIVE00000060_00024.wav
+2017-10-25 19:34:53.994751,LIVE00000060_00025,november golf,/usr/bin/xdotool key n key g,0.321362018585,decode/data/LIVE00000060_00025.wav
+2017-10-25 19:35:02.095390,LIVE00000060_00026,space,/usr/bin/xdotool key space,0.197989940643,decode/data/LIVE00000060_00026.wav
+2017-10-25 19:35:03.597511,LIVE00000060_00027,bravo,/usr/bin/xdotool key b,0.204034090042,decode/data/LIVE00000060_00027.wav
+2017-10-25 19:35:07.426900,LIVE00000060_00028,escape,/usr/bin/xdotool key Escape,0.293001890182,decode/data/LIVE00000060_00028.wav
+2017-10-25 19:35:14.061148,LIVE00000060_00029,space bravo,/usr/bin/xdotool key space key b,0.197950124741,decode/data/LIVE00000060_00029.wav
+2017-10-25 19:35:20.839182,LIVE00000060_00030,delta,/usr/bin/xdotool key d,0.244379997253,decode/data/LIVE00000060_00030.wav
+2017-10-25 19:35:24.533030,LIVE00000060_00031,up,/usr/bin/xdotool key Up,0.199250936508,decode/data/LIVE00000060_00031.wav

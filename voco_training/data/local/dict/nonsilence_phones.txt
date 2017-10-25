@@ -25,6 +25,7 @@ ow
 p
 r
 s
+sh
 t
 th
 uw

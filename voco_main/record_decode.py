@@ -259,35 +259,46 @@ while (True):
 
             if len(result) >= 2:
 
-                cmd = process_line(result)
+                try:
 
-                time_end = time.time()
-                time_duration = time_end - time_start
-                duration_dict['process'] = time_duration
-                time_start = time_end
+                    cmd = process_line(result)
 
-                duration_dict['total'] = duration_dict['write_files'] + duration_dict['decode'] + duration_dict['process']
-
-
-                print("-----------------")
-                print(result + "\n")
-                print(cmd + "\n")
-                print(duration_dict)
+                    time_end = time.time()
+                    time_duration = time_end - time_start
+                    duration_dict['process'] = time_duration
+                    time_start = time_end
 
 
+                    if not noexec_mode:
+                        os.system(cmd)
 
-                if playback_mode:
-                    os.system("aplay " + audio_sample_file_path)
+                    time_end = time.time()
+                    time_duration = time_end - time_start
+                    duration_dict['execute'] = time_duration
 
 
+                    duration_dict['total'] = duration_dict['write_files'] + duration_dict['decode'] + duration_dict['process'] + duration_dict['execute']
 
-                if not noexec_mode:
-                    os.system(cmd)
+                    if debug:
+                        print("-----------------")
+                        print(result + "\n")
+                        print(duration_dict['total'])
 
-                write_log(basedir, UID, result, cmd, str(duration_dict['total']),
-                          audio_sample_file_path)
 
-                print("Wrote log to:" + basedir + "log")
+                    print(cmd + "\n")
+
+                    if playback_mode:
+                        os.system("aplay " + audio_sample_file_path)
+
+                    write_log(basedir, UID, result, cmd, str(duration_dict['total']),
+                              audio_sample_file_path)
+                    if debug:
+                        print("Wrote log to:" + basedir + "log")
+
+                except Exception as e:
+                    print(result)
+                    print e
+
 
 
             recording_counter += 1

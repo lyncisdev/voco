@@ -1,25 +1,36 @@
 !SIL 1.0	sil
 <UNK> 1.0	spn
 alpha 1.0	ae l f ah 
+ampersand 1.0	ae m p er s ae n d 
 back 1.0	b ae k 
+backslash 1.0	b ae k s l ae sh 
+bang 1.0	b ae ng 
 bottom 1.0	b aa t ah m 
 bravo 1.0	b r aa v ow 
+carrot 1.0	k ae r ah t 
 center 1.0	s eh n t er 
 charlie 1.0	ch aa r l iy 
+colon 1.0	k ow l ah n 
 delta 1.0	d eh l t ah 
+dollar 1.0	d aa l er 
+dot 1.0	d aa t 
+double 1.0	d ah b ah l 
 down 1.0	d aw n 
 echo 1.0	eh k ow 
 eight 1.0	ey t 
+equal 1.0	iy k w ah l 
 escape 1.0	ih s k ey p 
 firefox 1.0	f ay r f aa k s 
 five 1.0	f ay v 
 four 1.0	f ao r 
 foxtrot 1.0	f aa k s t r aa t 
 golf 1.0	g aa l f 
+hash 1.0	hh ae sh 
 hotel 1.0	hh ow t eh l 
 india 1.0	ih n d iy ah 
 juliet 1.0	jh uw l iy eh t 
 kilo 1.0	k ih l ow 
+late 1.0	l ey t 
 left 1.0	l eh f t 
 lima 1.0	l ay m ah 
 max 1.0	m ae k s 
@@ -31,21 +42,31 @@ november 1.0	n ow v eh m b er
 one 1.0	w ah n 
 oscar 1.0	ao s k er 
 papa 1.0	p aa p ah 
+percent 1.0	p er s eh n t 
+plus 1.0	p l ah s 
 quebec 1.0	k w ah b eh k 
+question 1.0	k w eh s ch ah n 
+rate 1.0	r ey t 
 return 1.0	r ih t er n 
 right 1.0	r ay t 
 romeo 1.0	r ow m iy ow 
 seven 1.0	s eh v ah n 
 sierra 1.0	s iy eh r ah 
+single 1.0	s ih ng g ah l 
 six 1.0	s ih k s 
+slap 1.0	s l ae p 
+slash 1.0	s l ae sh 
 space 1.0	s p ey s 
+star 1.0	s t aa r 
 switch 1.0	s w ih ch 
+tab 1.0	t ae b 
 tango 1.0	t ae ng g ow 
 ten 1.0	t eh n 
 terminal 1.0	t er m ah n ah l 
 three 1.0	th r iy 
 top 1.0	t aa p 
 two 1.0	t uw 
+underscore 1.0	ah n d er s k ao r 
 uniform 1.0	y uw n ah f ao r m 
 up 1.0	ah p 
 victor 1.0	v ih k t er 

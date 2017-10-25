@@ -27,6 +27,7 @@ ow_B ow_E ow_I ow_S
 p_B p_E p_I p_S
 r_B r_E r_I r_S
 s_B s_E s_I s_S
+sh_B sh_E sh_I sh_S
 t_B t_E t_I t_S
 th_B th_E th_I th_S
 uw_B uw_E uw_I uw_S

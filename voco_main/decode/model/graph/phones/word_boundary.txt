@@ -116,6 +116,10 @@ s_B begin
 s_E end
 s_I internal
 s_S singleton
+sh_B begin
+sh_E end
+sh_I internal
+sh_S singleton
 t_B begin
 t_E end
 t_I internal

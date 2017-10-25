@@ -192,6 +192,7 @@ class CoreParser(GenericParser):
 
     def p_character(self, args):
         '''
+            character ::= escape
             character ::= act
             character ::= colon
             character ::= single quote
@@ -218,6 +219,7 @@ class CoreParser(GenericParser):
             character ::= along
         '''
         value = {
+            'escape': 'Escape',
             'act'   : 'Escape',
             'colon' : 'colon',
             'single': 'apostrophe',

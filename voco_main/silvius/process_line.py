@@ -37,6 +37,7 @@ silvius_keywords = [
     'dollar',
     'dot',
     'down',
+    'escape',
     'echo',
     'eco',
     'eight',

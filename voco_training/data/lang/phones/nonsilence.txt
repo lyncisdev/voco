@@ -106,6 +106,10 @@ s_B
 s_E
 s_I
 s_S
+sh_B
+sh_E
+sh_I
+sh_S
 t_B
 t_E
 t_I

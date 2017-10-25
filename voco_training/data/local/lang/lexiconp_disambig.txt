@@ -1,25 +1,36 @@
 !SIL	1.0	sil_S
 <UNK>	1.0	spn_S
 alpha	1.0	ae_B l_I f_I ah_E
+ampersand	1.0	ae_B m_I p_I er_I s_I ae_I n_I d_E
 back	1.0	b_B ae_I k_E
+backslash	1.0	b_B ae_I k_I s_I l_I ae_I sh_E
+bang	1.0	b_B ae_I ng_E
 bottom	1.0	b_B aa_I t_I ah_I m_E
 bravo	1.0	b_B r_I aa_I v_I ow_E
+carrot	1.0	k_B ae_I r_I ah_I t_E
 center	1.0	s_B eh_I n_I t_I er_E
 charlie	1.0	ch_B aa_I r_I l_I iy_E
+colon	1.0	k_B ow_I l_I ah_I n_E
 delta	1.0	d_B eh_I l_I t_I ah_E
+dollar	1.0	d_B aa_I l_I er_E
+dot	1.0	d_B aa_I t_E
+double	1.0	d_B ah_I b_I ah_I l_E
 down	1.0	d_B aw_I n_E
 echo	1.0	eh_B k_I ow_E
 eight	1.0	ey_B t_E
+equal	1.0	iy_B k_I w_I ah_I l_E
 escape	1.0	ih_B s_I k_I ey_I p_E
 firefox	1.0	f_B ay_I r_I f_I aa_I k_I s_E
 five	1.0	f_B ay_I v_E
 four	1.0	f_B ao_I r_E
 foxtrot	1.0	f_B aa_I k_I s_I t_I r_I aa_I t_E
 golf	1.0	g_B aa_I l_I f_E
+hash	1.0	hh_B ae_I sh_E
 hotel	1.0	hh_B ow_I t_I eh_I l_E
 india	1.0	ih_B n_I d_I iy_I ah_E
 juliet	1.0	jh_B uw_I l_I iy_I eh_I t_E
 kilo	1.0	k_B ih_I l_I ow_E
+late	1.0	l_B ey_I t_E
 left	1.0	l_B eh_I f_I t_E
 lima	1.0	l_B ay_I m_I ah_E
 max	1.0	m_B ae_I k_I s_E
@@ -31,21 +42,31 @@ november	1.0	n_B ow_I v_I eh_I m_I b_I er_E
 one	1.0	w_B ah_I n_E
 oscar	1.0	ao_B s_I k_I er_E
 papa	1.0	p_B aa_I p_I ah_E
+percent	1.0	p_B er_I s_I eh_I n_I t_E
+plus	1.0	p_B l_I ah_I s_E
 quebec	1.0	k_B w_I ah_I b_I eh_I k_E
+question	1.0	k_B w_I eh_I s_I ch_I ah_I n_E
+rate	1.0	r_B ey_I t_E
 return	1.0	r_B ih_I t_I er_I n_E
 right	1.0	r_B ay_I t_E
 romeo	1.0	r_B ow_I m_I iy_I ow_E
 seven	1.0	s_B eh_I v_I ah_I n_E
 sierra	1.0	s_B iy_I eh_I r_I ah_E
+single	1.0	s_B ih_I ng_I g_I ah_I l_E
 six	1.0	s_B ih_I k_I s_E
+slap	1.0	s_B l_I ae_I p_E
+slash	1.0	s_B l_I ae_I sh_E
 space	1.0	s_B p_I ey_I s_E
+star	1.0	s_B t_I aa_I r_E
 switch	1.0	s_B w_I ih_I ch_E
+tab	1.0	t_B ae_I b_E
 tango	1.0	t_B ae_I ng_I g_I ow_E
 ten	1.0	t_B eh_I n_E
 terminal	1.0	t_B er_I m_I ah_I n_I ah_I l_E
 three	1.0	th_B r_I iy_E
 top	1.0	t_B aa_I p_E
 two	1.0	t_B uw_E
+underscore	1.0	ah_B n_I d_I er_I s_I k_I ao_I r_E
 uniform	1.0	y_B uw_I n_I ah_I f_I ao_I r_I m_E
 up	1.0	ah_B p_E
 victor	1.0	v_B ih_I k_I t_I er_E

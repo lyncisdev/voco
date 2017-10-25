@@ -1,116 +1,106 @@
 # lattice-scale --inv-acoustic-scale=11 "ark:gunzip -c exp/tri1_ali/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/tri1_ali/graph/words.txt ark:- ark,t:exp/tri1_ali/decode/scoring/11.tra 
-# Started at Wed Oct 25 07:12:30 SAST 2017
+# Started at Wed Oct 25 18:47:47 SAST 2017
 #
 lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
 lattice-best-path --word-symbol-table=exp/tri1_ali/graph/words.txt ark:- ark,t:exp/tri1_ali/decode/scoring/11.tra 
 lattice-scale --inv-acoustic-scale=11 'ark:gunzip -c exp/tri1_ali/decode/lat.*.gz|' ark:- 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000002, best cost 14.8561 + 771.119 = 785.975 over 100 frames.
-REC00000002 return 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000012, best cost 20.4269 + 757.773 = 778.2 over 100 frames.
-REC00000012 switch terminal 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000013, best cost 21.5814 + 830.925 = 852.507 over 107 frames.
-REC00000013 switch max 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000016, best cost 19.4314 + 801.654 = 821.085 over 107 frames.
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000016, best cost 20.2158 + 791.273 = 811.489 over 107 frames.
 REC00000016 window top 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000017, best cost 12.1038 + 748.164 = 760.268 over 100 frames.
-REC00000017 switch 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000030, best cost 18.39 + 795.215 = 813.605 over 107 frames.
-REC00000030 window left 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000038, best cost 19.5784 + 709.454 = 729.032 over 100 frames.
-REC00000038 switch back 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000055, best cost 36.5641 + 1730.03 = 1766.59 over 228 frames.
-REC00000055 left up delta sierra six 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000073, best cost 18.3538 + 1054.64 = 1073 over 145 frames.
-REC00000073 hotel five 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000089, best cost 42.5341 + 1759.28 = 1801.81 over 222 frames.
-REC00000089 quebec eight eight alpha juliet right 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000098, best cost 16.4364 + 819.546 = 835.983 over 113 frames.
-REC00000098 down quebec 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000102, best cost 20.4286 + 930.122 = 950.551 over 126 frames.
-REC00000102 window left 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000106, best cost 16.6444 + 920.583 = 937.227 over 126 frames.
-REC00000106 escape 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000112, best cost 21.819 + 958.575 = 980.394 over 132 frames.
-REC00000112 window center 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000123, best cost 14.2316 + 885.111 = 899.342 over 132 frames.
-REC00000123 return 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000129, best cost 21.0571 + 898.989 = 920.046 over 126 frames.
-REC00000129 switch back 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000132, best cost 33.2599 + 1810.44 = 1843.7 over 241 frames.
-REC00000132 x-ray bravo delta bravo 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000141, best cost 40.689 + 2354.6 = 2395.28 over 299 frames.
-REC00000141 eight mike whisky two three 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000150, best cost 35.1918 + 1830.75 = 1865.94 over 241 frames.
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000022, best cost 21.8826 + 817.877 = 839.76 over 113 frames.
+REC00000022 switch back 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000042, best cost 24.5346 + 802.443 = 826.978 over 100 frames.
+REC00000042 switch back 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000049, best cost 11.9421 + 626.27 = 638.212 over 81 frames.
+REC00000049 switch 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000052, best cost 17.3302 + 807.333 = 824.663 over 107 frames.
+REC00000052 zulu tango 
+LOG (lattice-scale[5.1.46~1-0d031]:main():lattice-scale.cc:90) Done 47 lattices.
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000059, best cost 46.4019 + 2109.78 = 2156.18 over 260 frames.
+REC00000059 november india ten zulu delta foxtrot 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000074, best cost 45.2928 + 1906.24 = 1951.54 over 241 frames.
+REC00000074 papa eight eight papa oscar ten 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000083, best cost 25.4395 + 1109.44 = 1134.88 over 139 frames.
+REC00000083 charlie uniform india 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000124, best cost 22.106 + 940.649 = 962.755 over 132 frames.
+REC00000124 switch LOG (lattice-add-penalty[5.1.46~1-0d031]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 47 lattices.
+max 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000135, best cost 31.0703 + 1437.18 = 1468.25 over 184 frames.
+REC00000135 up alpha three charlie 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000142, best cost 46.9931 + 2181.3 = 2228.3 over 280 frames.
+REC00000142 romeo one golf five down 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000146, best cost 38.7232 + 1948.96 = 1987.69 over 260 frames.
+REC00000146 up x-ray november four four 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000147, best cost 19.8102 + 1043.24 = 1063.05 over 139 frames.
+REC00000147 romeo echo 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000148, best cost 22.6408 + 1231.79 = 1254.43 over 164 frames.
+REC00000148 quebec oscar 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000150, best cost 33.8515 + 1841.89 = 1875.74 over 241 frames.
 REC00000150 whisky three foxtrot ten 
-LOG (lattice-scale[5.1.46~1-0d031]:main():lattice-scale.cc:90) Done 52 lattices.
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000168, best cost 39.0439 + 2026.54 = 2065.58 over 267 frames.
-REC00000168 right eight whisky delta november 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000172, best cost 24.6544 + 1421.27 = 1445.93 over 184 frames.
-REC00000172 up three x-ray 
-LOG (lattice-add-penalty[5.1.46~1-0d031]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 52 lattices.
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000174, best cost 26.5718 + 1576.39 = 1602.96 over 209 frames.
-REC00000174 uniform seven hotel 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000177, best cost 34.9791 + 1700.11 = 1735.08 over 222 frames.
-REC00000177 november two sierra mike right 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000183, best cost 24.5583 + 1439.72 = 1464.28 over 184 frames.
-REC00000183 left uniform x-ray 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000191, best cost 16.5966 + 851.673 = 868.27 over 120 frames.
-REC00000191 up six 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000193, best cost 34.4696 + 1493.05 = 1527.52 over 203 frames.
-REC00000193 golf victor four ten ten 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000204, best cost 22.3599 + 1040.67 = 1063.03 over 145 frames.
-REC00000204 escape 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000209, best cost 20.5288 + 1145.45 = 1165.98 over 152 frames.
-REC00000209 window delta 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000214, best cost 15.6093 + 993.732 = 1009.34 over 139 frames.
-REC00000214 escape 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000218, best cost 23.0393 + 1117.69 = 1140.73 over 152 frames.
-REC00000218 switch firefox 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000219, best cost 22.0361 + 1063.86 = 1085.9 over 152 frames.
-REC00000219 switch terminal 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000250, best cost 30.3841 + 1335.08 = 1365.46 over 177 frames.
-REC00000250 tango two down eight 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000253, best cost 31.8492 + 1493 = 1524.85 over 196 frames.
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000159, best cost 28.9137 + 1367.3 = 1396.22 over 184 frames.
+REC00000159 six six bravo up 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000162, best cost 37.8373 + 1850.12 = 1887.96 over 235 frames.
+REC00000162 juliet echo uniform zulu 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000170, best cost 31.9814 + 1762.81 = 1794.79 over 235 frames.
+REC00000170 hotel hotel left zulu 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000179, best cost 19.6195 + 994.616 = 1014.24 over 139 frames.
+REC00000179 five left 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000190, best cost 31.9639 + 1670.52 = 1702.48 over 222 frames.
+REC00000190 sierra victor uniform zulu 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000196, best cost 22.4704 + 1069.15 = 1091.62 over 152 frames.
+REC00000196 right india four 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000201, best cost 20.0444 + 1117.03 = 1137.08 over 152 frames.
+REC00000201 window left 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000205, best cost 24.5801 + 1317.43 = 1342.01 over 184 frames.
+REC00000205 switch firefox 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000226, best cost 16.5928 + 901.543 = 918.136 over 132 frames.
+REC00000226 return 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000253, best cost 32.5883 + 1490.09 = 1522.68 over 196 frames.
 REC00000253 november whisky six yankee 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000261, best cost 35.0831 + 1393.82 = 1428.9 over 177 frames.
-REC00000261 right nine right left six 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000272, best cost 18.3961 + 1059.94 = 1078.34 over 145 frames.
-REC00000272 right delta 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000277, best cost 33.3935 + 1613.02 = 1646.41 over 209 frames.
-REC00000277 tango whisky oscar echo 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000281, best cost 27.8385 + 1359.19 = 1387.03 over 171 frames.
-REC00000281 foxtrot india tango 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000288, best cost 17.0269 + 927.134 = 944.161 over 126 frames.
-REC00000288 mike right 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000290, best cost 24.5621 + 1255.06 = 1279.62 over 171 frames.
-REC00000290 up india right 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000293, best cost 19.8464 + 990.971 = 1010.82 over 139 frames.
-REC00000293 india one 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000304, best cost 20.0115 + 1080.42 = 1100.43 over 139 frames.
-REC00000304 alpha oscar 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000305, best cost 38.5483 + 2137.79 = 2176.33 over 260 frames.
-REC00000305 space romeo x-ray hotel right 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000310, best cost 32.099 + 1462.24 = 1494.33 over 177 frames.
-REC00000310 bravo delta alpha victor 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000327, best cost 36.2518 + 1734.79 = 1771.05 over 216 frames.
-REC00000327 bravo three left november november 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000340, best cost 19.9892 + 1231.46 = 1251.45 over 158 frames.
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000258, best cost 24.3232 + 1178.74 = 1203.06 over 158 frames.
+REC00000258 charlie papa two 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000270, best cost 26.0504 + 1370.29 = 1396.34 over 184 frames.
+REC00000270 eight five three 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000271, best cost 24.8476 + 1325.23 = 1350.08 over 184 frames.
+REC00000271 tango five ten 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000276, best cost 41.2416 + 1545.67 = 1586.91 over 196 frames.
+REC00000276 four three back golf foxtrot 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000278, best cost 33.5081 + 1461.5 = 1495.01 over 196 frames.
+REC00000278 tango echo down bravo 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000285, best cost 25.5457 + 1363.21 = 1388.75 over 177 frames.
+REC00000285 quebec up whisky 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000295, best cost 27.0661 + 1446.51 = 1473.57 over 190 frames.
+REC00000295 victor mike kilo 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000299, best cost 22.9791 + 1192.41 = 1215.39 over 158 frames.
+REC00000299 hotel up two 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000306, best cost 20.4991 + 1127.42 = 1147.92 over 152 frames.
+REC00000306 juliet sierra 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000319, best cost 39.0568 + 1796.79 = 1835.84 over 216 frames.
+REC00000319 space yankee yankee delta november 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000322, best cost 25.7068 + 1419.02 = 1444.73 over 177 frames.
+REC00000322 foxtrot november yankee 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000324, best cost 24.7762 + 1181.17 = 1205.94 over 139 frames.
+REC00000324 three four space 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000340, best cost 20.0207 + 1218.29 = 1238.31 over 158 frames.
 REC00000340 space november 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000343, best cost 19.0074 + 1201.88 = 1220.89 over 152 frames.
-REC00000343 zulu x-ray 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000344, best cost 35.4192 + 1617.89 = 1653.3 over 203 frames.
-REC00000344 down three space space juliet 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000345, best cost 21.8676 + 1140.45 = 1162.32 over 145 frames.
-REC00000345 echo quebec 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000348, best cost 43.8416 + 1986.82 = 2030.66 over 248 frames.
-REC00000348 november seven up quebec up mike 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000356, best cost 33.1492 + 1742.03 = 1775.18 over 222 frames.
-REC00000356 kilo space x-ray space 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000370, best cost 35.8818 + 1650.84 = 1686.72 over 209 frames.
-REC00000370 left lima nine space left 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000376, best cost 40.8941 + 2304.89 = 2345.78 over 286 frames.
-REC00000376 november foxtrot charlie kilo golf 
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:124) Overall cost per frame is 7.78255 = 0.153067 [graph] + 7.62948 [acoustic] over 8907 frames.
-LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:128) Done 52 lattices, failed for 0
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000350, best cost 26.325 + 1481.32 = 1507.65 over 196 frames.
+REC00000350 romeo space five 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000368, best cost 36.2751 + 1749.14 = 1785.42 over 235 frames.
+REC00000368 four space up golf nine 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000375, best cost 38.3617 + 1998.94 = 2037.3 over 260 frames.
+REC00000375 papa romeo left space bravo 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000392, best cost 20.345 + 1160.85 = 1181.19 over 158 frames.
+REC00000392 space whisky 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000394, best cost 24.3971 + 1307.7 = 1332.1 over 171 frames.
+REC00000394 victor space slap 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000401, best cost 19.3573 + 932.542 = 951.899 over 132 frames.
+REC00000401 five slap 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000421, best cost 36.7036 + 2041.72 = 2078.42 over 260 frames.
+REC00000421 escape escape ampersand hash 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000424, best cost 44.2903 + 2137.05 = 2181.34 over 280 frames.
+REC00000424 slap slap tab plus question 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:99) For utterance REC00000430, best cost 37.9874 + 1889.7 = 1927.69 over 235 frames.
+REC00000430 colon star star backslash 
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:124) Overall cost per frame is 7.77511 = 0.155336 [graph] + 7.61977 [acoustic] over 8591 frames.
+LOG (lattice-best-path[5.1.46~1-0d031]:main():lattice-best-path.cc:128) Done 47 lattices, failed for 0
 # Accounting: time=0 threads=1
-# Ended (code 0) at Wed Oct 25 07:12:30 SAST 2017, elapsed time 0 seconds
+# Ended (code 0) at Wed Oct 25 18:47:47 SAST 2017, elapsed time 0 seconds
