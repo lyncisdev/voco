@@ -14,6 +14,26 @@ import time
 
 from silvius.process_line import process_line
 
+
+
+mic = -1
+chunk = 0
+byterate = 16000
+pa = pyaudio.PyAudio()
+sample_rate = byterate
+stream = None
+
+debug = False
+noexec_mode = False
+playback_mode = False
+
+basedir = "decode/data/"
+
+voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
+
+
+
+
 #----------------------------------------------------------------------------
 # write_audio_file function
 #----------------------------------------------------------------------------
@@ -97,56 +117,43 @@ def write_log(basedir, UID, transc, cmd, decode_duration,
     outputfile.write(time_stamp + "," + UID + "," + transc + "," + cmd + "," +
                      decode_duration + "," + audio_sample_file_path + "\n")
 
-def setup_mic():
-    #----------------------------------------------------------------------------
-    # open stream
-    #----------------------------------------------------------------------------
 
-    mic = -1
-    chunk = 0
-    byterate = 16000
-    pa = pyaudio.PyAudio()
-    sample_rate = byterate
-    stream = None
+#----------------------------------------------------------------------------
+# open stream
+#----------------------------------------------------------------------------
 
-    debug = False
-    noexec_mode = False
-    playback_mode = False
+#----------------------------------------------------------------------------
+# allow listen and debug mode
+#----------------------------------------------------------------------------
 
-    basedir = "decode/data/"
+try:
+    options = sys.argv
 
-    voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
+    for x in options:
+        if x == "noexec":
+            noexec_mode = True
+            print("noexec_mode = True")
+        if x == "debug":
+            debug = True
+            print("debug = True")
+        if x == "playback":
+            playback_mode = True
+            print("playback_mode = True")
+        if x == "help":
+            print("noexec, debug, playback")
+except:
+    print("input argument error")
 
-    #----------------------------------------------------------------------------
-    # allow listen and debug mode
-    #----------------------------------------------------------------------------
-    try:
-        options = sys.argv
-
-        for x in options:
-            if x == "noexec":
-                noexeclisten_mode = True
-                print("noexec_mode = True")
-            if x == "debug":
-                debug = True
-                print("debug = True")
-            if x == "playback":
-                playback_mode = True
-                print("playback_mode = True")
-            if x == "help":
-                print("noexec, debug, playback")
-    except:
-        print("")
-
-    try:
+try:
     chunk = 12 * 512 * 2 * sample_rate / byterate
 
     if mic == -1:
         mic = pa.get_default_input_device_info()['index']
         if debug:
             print >> sys.stderr, "Selecting default mic"
-    if debug:
-        print >> sys.stderr, "Using mic #", mic
+
+        if debug:
+            print >> sys.stderr, "Using mic #", mic
     stream = pa.open(
         rate=sample_rate,
         format=pyaudio.paInt16,
@@ -155,26 +162,24 @@ def setup_mic():
         input_device_index=mic,
         frames_per_buffer=chunk)
 
-    except IOError, e:
-        if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
-            new_sample_rate = int(
-                pa.get_device_info_by_index(mic)['defaultSampleRate'])
-            if (sample_rate != new_sample_rate):
-                sample_rate = new_sample_rate
-        print >> sys.stderr, "\n", e
-        print >> sys.stderr, "\nCould not open microphone. Please try a different device."
-        global fatal_error
-        fatal_error = True
-        sys.exit(0)
+except IOError, e:
+    if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
+        new_sample_rate = int(
+            pa.get_device_info_by_index(mic)['defaultSampleRate'])
+        if (sample_rate != new_sample_rate):
+            sample_rate = new_sample_rate
+    print >> sys.stderr, "\n", e
+    print >> sys.stderr, "\nCould not open microphone. Please try a different device."
+    global fatal_error
+    fatal_error = True
+    sys.exit(0)
 
-        print >> sys.stderr, "\nLISTENING TO MICROPHONE"
-        last_state = None
+    print >> sys.stderr, "\nLISTENING TO MICROPHONE"
+    last_state = None
 
 #----------------------------------------------------------------------------
 # set_up mic
-#----------------------------------------------------------------------------
-
-setup_mic()
+#------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------
 # create skp2gender - only needs to be created once
@@ -261,6 +266,8 @@ while (True):
                 duration_dict['process'] = time_duration
                 time_start = time_end
 
+                duration_dict['total'] = duration_dict['write_files'] + duration_dict['decode'] + duration_dict['process']
+
 
                 print("-----------------")
                 print(result + "\n")
@@ -272,10 +279,12 @@ while (True):
                 if playback_mode:
                     os.system("aplay " + audio_sample_file_path)
 
+
+
                 if not noexec_mode:
                     os.system(cmd)
 
-                write_log(basedir, UID, result, cmd, decode_duration,
+                write_log(basedir, UID, result, cmd, str(duration_dict['total']),
                           audio_sample_file_path)
 
                 print("Wrote log to:" + basedir + "log")
