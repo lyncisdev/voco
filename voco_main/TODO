@@ -1,7 +1,0 @@
-remove cmd.sh
-move path.sh into decode directory
-
-update record to name based on recording counter in main dir
-
-all local files stay local only the actual data is placed in the main dir (also the supporting audio records data)
-
