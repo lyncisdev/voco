@@ -1,100 +1,71 @@
-000,switch back
-001,window left
-002,return
-003,escape
-004,escape
-005,switch firefox
-006,switch terminal
-007,return
-008,return
-009,window bottom
-010,switch back
-011,window minimise
-012,return
-013,window right
-014,escape
-015,return
-016,switch back
-017,switch back
-018,switch firefox
-019,switch terminal
-020,window maximise
-021,switch max
-022,switch back
-023,window right
-024,switch back
-025,return
-026,return
-027,switch firefox
-028,switch
-029,window maximise
-030,hotel india 
-031,zulu four lima november right 
-032,victor eight golf 
-033,foxtrot hotel 
-034,foxtrot three mike 
-035,up left oscar hotel 
-036,five nine alpha november 
-037,romeo quebec bravo whisky 
-038,kilo sierra yankee 
-039,romeo oscar nine four 
-040,oscar oscar tango 
-041,papa delta two 
-042,charlie one down 
-043,sierra four hotel whisky 
-044,golf quebec one 
-045,delta hotel tango 
-046,one hotel two delta lima 
-047,uniform lima x-ray lima 
-048,juliet x-ray india quebec tango 
-049,x-ray up golf victor victor 
-050,tango two down eight 
-051,mike four tango zulu yankee 
-052,hotel ten down 
-053,november whisky six yankee 
-054,seven x-ray left 
-055,alpha papa 
-056,uniform kilo uniform 
-057,lima victor 
-058,charlie papa two 
-059,left charlie up 
-060,charlie kilo left delta 
-061,right nine right left six 
-062,right bravo 
-063,kilo kilo oscar seven 
-064,x-ray echo right three victor 
-065,india six 
-066,oscar foxtrot x-ray romeo tango 
-067,bravo alpha quebec 
-068,four up left uniform papa 
-069,three kilo down left nine 
-070,eight five three 
-071,tango five ten 
-072,right delta 
-073,juliet quebec x-ray bravo one 
-074,five one 
-075,november up papa two yankee 
-076,four three golf foxtrot 
-077,tango whisky oscar echo 
-078,tango echo down bravo 
-079,seven one papa yankee 
-080,golf bravo papa lima quebec 
-081,foxtrot india tango 
-082,zulu foxtrot four 
-083,five quebec right kilo nine 
-084,right ten echo four six 
-085,quebec up whisky 
-086,bravo bravo 
-087,one charlie 
-088,mike right 
-089,six sierra 
-090,up india right 
-091,left up sierra 
-092,mike hotel 
-093,india one 
-094,november right 
-095,victor mike kilo 
-096,yankee sierra 
-097,alpha three 
-098,five down up hotel 
-099,hotel up two 
+000,escape
+001,nine up uniform space victor 
+002,bravo delta alpha victor 
+003,papa bravo victor 
+004,india kilo tango one 
+005,two four one space left 
+006,india right bravo oscar 
+007,yankee bravo 
+008,bravo right 
+009,bravo x-ray right space 
+010,left victor 
+011,space yankee yankee delta november 
+012,foxtrot juliet seven space 
+013,november kilo two space 
+014,foxtrot november yankee 
+015,space up tango three 
+016,three four space 
+017,sierra hotel 
+018,down mike 
+019,bravo three left november november 
+020,two x-ray three up 
+021,space right space juliet 
+022,romeo four sierra 
+023,x-ray x-ray right 
+024,mike left 
+025,oscar echo left 
+026,lima india 
+027,up juliet up 
+028,right hotel delta right oscar 
+029,right quebec quebec foxtrot charlie 
+030,space kilo 
+031,bravo right 
+032,space november 
+033,space six romeo 
+034,eight five golf space 
+035,zulu x-ray 
+036,down three space space juliet 
+037,echo quebec 
+038,five space 
+039,space space foxtrot oscar 
+040,november seven quebec up mike 
+041,kilo four oscar 
+042,romeo space five 
+043,quebec space two three 
+044,papa eight 
+045,left alpha lima mike yankee 
+046,delta three space 
+047,right hotel whisky ten 
+048,kilo space x-ray space 
+049,space victor one lima 
+050,right victor whisky seven 
+051,one uniform 
+052,space charlie quebec golf 
+053,space six yankee kilo space 
+054,down space 
+055,space whisky space papa delta 
+056,quebec delta ten 
+057,lima mike x-ray lima four 
+058,space space space space space 
+059,romeo romeo right oscar 
+060,four space up golf nine 
+061,hotel right space 
+062,left lima nine space left 
+063,echo nine four space golf 
+064,romeo whisky left 
+065,nine two 
+066,hotel bravo space 
+067,papa romeo left space bravo 
+068,november foxtrot charlie kilo golf 
+069,x-ray kilo seven 
+070,space space six left 

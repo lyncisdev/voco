@@ -38,6 +38,7 @@ romeo 1.0	r ow m iy ow
 seven 1.0	s eh v ah n 
 sierra 1.0	s iy eh r ah 
 six 1.0	s ih k s 
+space 1.0	s p ey s 
 switch 1.0	s w ih ch 
 tango 1.0	t ae ng g ow 
 ten 1.0	t eh n 

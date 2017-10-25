@@ -6,7 +6,7 @@ window bottom,2,0
 window center,2,0
 window maximise,2,0
 window minimise,2,0
-switch,3,0
+switch ,3,0
 switch back,4,0
 switch firefox,4,0
 switch max,4,0
@@ -51,11 +51,11 @@ seven,3,1
 eight,3,1
 nine,3,1
 ten,3,1
-colon,1,1
+colon ,1,1
 single,1,1
 double,1,1
 equal,1,1
-space,1,1
+space,25,1
 tab,1,1
 bang,1,1
 hash,1,1
@@ -77,6 +77,6 @@ escape,5,0
 alt,1,0
 control,1,0
 super,1,0
-space,1,0
+space,25,0
 slap,1,0
 return,5,0

@@ -249,8 +249,8 @@ for line in recording_list:
 
 
 
-
-
+print("")
+print("recording list completed!")
 
 
 

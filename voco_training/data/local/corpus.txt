@@ -1,13 +1,17 @@
+alpha oscar 
 alpha papa 
 alpha quebec charlie zulu 
 alpha right 
 alpha three 
 bravo alpha quebec 
 bravo bravo 
+bravo delta alpha victor 
 bravo delta bravo 
 bravo hotel six one 
 bravo lima three 
 bravo right 
+bravo three left november november 
+bravo x-ray right space 
 charlie five alpha down mike 
 charlie kilo left delta 
 charlie mike 
@@ -17,14 +21,21 @@ charlie papa papa
 charlie papa two 
 charlie uniform india 
 delta hotel tango 
+delta three space 
 delta up 
 down delta down yankee echo 
 down delta echo whisky papa six 
+down mike 
 down quebec 
+down space 
+down three space space juliet 
 down victor left 
 down x-ray oscar three quebec tango 
+echo nine four space golf 
 echo nine zulu victor november 
 echo november foxtrot 
+echo quebec 
+eight five golf space 
 eight five three 
 eight mike whisky two three 
 eight right 
@@ -37,11 +48,15 @@ five one
 five quebec down 
 five quebec right kilo nine 
 five romeo down left 
+five space 
 four echo right 
+four space up golf nine 
 four three golf foxtrot 
 four up left uniform papa 
 foxtrot hotel 
 foxtrot india tango 
+foxtrot juliet seven space 
+foxtrot november yankee 
 foxtrot right 
 foxtrot three mike 
 golf bravo papa lima quebec 
@@ -50,36 +65,51 @@ golf quebec one
 golf seven four 
 golf ten 
 golf victor four ten ten 
+hotel bravo space 
 hotel five 
 hotel hotel left zulu 
 hotel india 
+hotel right space 
 hotel ten down 
 hotel up two 
 hotel zulu 
+india kilo tango one 
 india one 
+india right bravo oscar 
 india six 
+india space quebec two 
 juliet echo uniform zulu 
 juliet left 
+juliet lima lima 
 juliet one hotel two yankee 
 juliet quebec x-ray bravo one 
+juliet sierra 
 juliet x-ray india quebec tango 
 kilo four 
+kilo four oscar 
 kilo kilo oscar seven 
 kilo oscar zulu 
 kilo sierra yankee 
+kilo space x-ray space 
+left alpha lima mike yankee 
 left charlie up 
 left down papa papa 
 left golf 
+left lima nine space left 
 left uniform x-ray 
 left up delta sierra six 
 left up sierra 
+left victor 
 left whisky up 
+lima india 
 lima lima 
+lima mike x-ray lima four 
 lima three 
 lima victor 
 lima yankee three down mike 
 mike four tango zulu yankee 
 mike hotel 
+mike left 
 mike nine sierra juliet india 
 mike oscar six lima 
 mike right 
@@ -87,60 +117,97 @@ mike uniform four
 nine down down delta 
 nine romeo nine four november 
 nine ten sierra quebec 
+nine two 
+nine up uniform space victor 
 nine up yankee hotel six 
+november foxtrot charlie kilo golf 
 november hotel 
 november india ten zulu delta foxtrot 
+november kilo two space 
 november november ten 
 november right 
+november seven quebec up mike 
 november two sierra mike right 
 november up papa two yankee 
 november whisky six yankee 
 one charlie 
 one hotel two delta lima 
 one nine nine kilo 
+one uniform 
 one zulu quebec 
+oscar echo left 
 oscar foxtrot x-ray romeo tango 
 oscar one four 
 oscar oscar 
 oscar oscar tango 
+oscar uniform space lima victor 
 oscar whisky 
+papa bravo victor 
 papa charlie 
 papa delta two 
+papa eight 
 papa eight eight papa oscar ten 
 papa papa delta papa 
+papa romeo left space bravo 
+quebec delta ten 
 quebec down x-ray x-ray 
 quebec eight alpha juliet right 
 quebec four foxtrot 
 quebec oscar 
+quebec space two three 
 quebec tango alpha one 
 quebec up whisky 
 return 
 right bravo 
 right delta 
 right eight whisky delta november 
+right hotel delta right oscar 
+right hotel whisky ten 
 right india four 
 right nine right left six 
+right quebec quebec foxtrot charlie 
 right ten echo four six 
+right victor whisky seven 
 romeo echo 
 romeo eight echo golf 
 romeo four hotel five yankee down 
+romeo four sierra 
 romeo one golf 
 romeo one golf five down 
 romeo oscar nine four 
 romeo quebec bravo whisky 
+romeo romeo right oscar 
+romeo space five 
 romeo up juliet up alpha 
 romeo victor right golf 
+romeo whisky left 
 seven golf november six 
 seven one papa yankee 
 seven right november sierra left 
 seven x-ray left 
 sierra four hotel whisky 
 sierra golf charlie 
+sierra hotel 
 sierra victor uniform zulu 
 six golf 
 six mike 
 six sierra 
 six six bravo up 
+six x-ray 
+space charlie quebec golf 
+space kilo 
+space november 
+space right space juliet 
+space romeo x-ray hotel right 
+space six romeo 
+space six yankee kilo space 
+space space foxtrot oscar 
+space space six left 
+space space space space space 
+space up tango three 
+space victor one lima 
+space whisky space papa delta 
+space yankee yankee delta november 
 switch 
 switch back 
 switch firefox 
@@ -155,9 +222,12 @@ ten hotel mike nine
 ten mike foxtrot hotel 
 ten papa bravo 
 ten quebec victor whisky mike mike 
+three four space 
 three kilo down left nine 
 two bravo nine up four 
+two four one space left 
 two x-ray quebec bravo up foxtrot 
+two x-ray three up 
 uniform kilo uniform 
 uniform lima x-ray lima 
 uniform seven hotel 
@@ -168,6 +238,7 @@ up delta charlie juliet tango sierra
 up delta six 
 up five oscar zulu ten 
 up india right 
+up juliet up 
 up left oscar hotel 
 up quebec november left tango romeo 
 up six 
@@ -191,7 +262,10 @@ window top
 x-ray bravo delta bravo 
 x-ray echo right three victor 
 x-ray four romeo 
+x-ray kilo seven 
 x-ray up golf victor victor 
+x-ray x-ray right 
+yankee bravo 
 yankee papa foxtrot sierra x-ray 
 yankee seven zulu oscar 
 yankee sierra 
@@ -201,3 +275,4 @@ zulu four lima november right
 zulu foxtrot four 
 zulu sierra 
 zulu tango 
+zulu x-ray 

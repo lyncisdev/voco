@@ -39,6 +39,7 @@ romeo romeo r_B ow_I m_I iy_I ow_E
 seven seven s_B eh_I v_I ah_I n_E
 sierra sierra s_B iy_I eh_I r_I ah_E
 six six s_B ih_I k_I s_E
+space space s_B p_I ey_I s_E
 switch switch s_B w_I ih_I ch_E
 tango tango t_B ae_I ng_I g_I ow_E
 ten ten t_B eh_I n_E

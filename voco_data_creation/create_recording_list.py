@@ -50,7 +50,7 @@ for x in commands[1:]:
 
 recording_list = []
 
-for x in range(0,30):
+for x in range(0,1):
     i = random.randint(0,len(unmixed_command_list)-1)
     recording_list.append(unmixed_command_list[i])
     
