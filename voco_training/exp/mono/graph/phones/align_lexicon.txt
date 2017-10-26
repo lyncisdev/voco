@@ -19,6 +19,7 @@ double double d_B ah_I b_I ah_I l_E
 down down d_B aw_I n_E
 echo echo eh_B k_I ow_E
 eight eight ey_B t_E
+enter enter eh_B n_I t_I er_E
 equal equal iy_B k_I w_I ah_I l_E
 escape escape ih_B s_I k_I ey_I p_E
 firefox firefox f_B ay_I r_I f_I aa_I k_I s_E
@@ -51,10 +52,12 @@ rate rate r_B ey_I t_E
 return return r_B ih_I t_I er_I n_E
 right right r_B ay_I t_E
 romeo romeo r_B ow_I m_I iy_I ow_E
+scratch scratch s_B k_I r_I ae_I ch_E
 seven seven s_B eh_I v_I ah_I n_E
 sierra sierra s_B iy_I eh_I r_I ah_E
 single single s_B ih_I ng_I g_I ah_I l_E
 six six s_B ih_I k_I s_E
+sky sky s_B k_I ay_E
 slap slap s_B l_I ae_I p_E
 slash slash s_B l_I ae_I sh_E
 space space s_B p_I ey_I s_E
@@ -75,4 +78,5 @@ whisky whisky w_B ih_I s_I k_I iy_E
 window window w_B ih_I n_I d_I ow_E
 x-ray x-ray eh_B k_I s_I r_I ey_E
 yankee yankee y_B ae_I ng_I k_I iy_E
+zero zero z_B iy_I r_I ow_E
 zulu zulu z_B uw_I l_I uw_E

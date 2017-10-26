@@ -1,50 +1,50 @@
-000,one double ampersand 
-001,question question 
-002,five slap 
-003,star colon 
-004,plus tab slap two 
-005,ampersand november escape rate bang 
-006,slap double colon slap 
-007,delta escape 
-008,slap escape 
-009,slap star slap yankee 
-010,slash slap dot ampersand 
-011,star november hotel question star 
-012,space slap 
-013,question slap slap 
-014,underscore bang slap 
-015,tab up slap backslash 
-016,escape hash 
-017,seven backslash double 
-018,india escape 
-019,tab escape double 
-020,double slap 
-021,slap victor 
-022,escape escape ampersand hash 
-023,escape percent slap papa ampersand 
-024,equal slash slap slap 
-025,slap slap tab plus question 
-026,five tab 
-027,colon foxtrot 
-028,slap alpha uniform equal escape 
-029,dollar escape rate 
-030,slap slap single 
-031,colon star star backslash 
-032,escape bravo ampersand escape 
-033,space one single underscore 
-034,echo question percent equal 
-035,two carrot dollar right november 
-036,kilo alpha single slap space 
-037,double hash escape bang slap 
-038,quebec lima slap 
-039,juliet four late two 
-040,papa hash oscar 
-041,slap question ampersand 
-042,space colon 
-043,down single dot 
-044,ampersand ten escape 
-045,slap slap 
-046,percent backslash 
-047,plus backslash slap slap percent 
-048,slap space 
-049,dot slap 
+000,zero india yankee sky 
+001,zero zero sky 
+002,six victor 
+003,hotel sky 
+004,scratch down zero zero 
+005,zero golf delta sky zero 
+006,enter scratch enter 
+007,scratch scratch enter zero romeo 
+008,enter sky scratch zero sky 
+009,alpha scratch enter delta 
+010,oscar papa sky sky tango 
+011,enter zero 
+012,enter enter 
+013,scratch enter oscar 
+014,sky scratch 
+015,sky enter enter 
+016,enter zero sky 
+017,scratch zero mike 
+018,four mike seven 
+019,zero hotel zero 
+020,india scratch enter 
+021,scratch scratch eight zero 
+022,uniform zero lima 
+023,one zero zero 
+024,three nine 
+025,zero golf juliet 
+026,enter tango 
+027,sky zero papa scratch enter 
+028,alpha sky echo 
+029,scratch zero zero zero sky 
+030,x-ray zero zulu sky four 
+031,kilo zero sky 
+032,enter echo enter 
+033,right sky enter kilo 
+034,zero down scratch scratch sky 
+035,enter lima scratch 
+036,delta scratch enter sky victor 
+037,sky scratch zero 
+038,enter sky 
+039,sky sky enter 
+040,scratch sky 
+041,sky zero 
+042,sky enter zero enter enter 
+043,zero scratch 
+044,zero zero 
+045,scratch delta 
+046,scratch sky scratch hotel 
+047,lima scratch sky enter zero 
+048,enter left five scratch sierra 
+049,sky zero left alpha 

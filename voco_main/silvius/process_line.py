@@ -39,13 +39,14 @@ silvius_keywords = [
     'down',
     'escape',
     'echo',
+    'enter',
     'eco',
     'eight',
     'equal',
     'expert',
     'five',
     'four',
-    'fox',
+    'foxtrot',
     'golf',
     'hash',
     'hotel',
@@ -65,7 +66,7 @@ silvius_keywords = [
     'percent',
     'plus',
     'phrase',
-    'queen',
+    'quebec',
     'question',
     'rate',
     'right',
@@ -92,7 +93,7 @@ silvius_keywords = [
     'whiskey',
     'whisky',
     'word',
-    'xray',
+    'x-ray',
     'yankee',
     'zero',
     'zulu'
@@ -235,7 +236,7 @@ def process_line(line):
 
         ast = parse(tokens)
 
-        # printAST(ast)
+        printAST(ast)
 
         # make this return the XDO command
 

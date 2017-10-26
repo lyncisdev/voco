@@ -27,10 +27,12 @@ debug = False
 noexec_mode = False
 playback_mode = False
 
-basedir = "decode/data/"
 
 voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
+# ln -sv ~/Projects/ASR/voco_data/staging/ ~/Projects/ASR/voco/voco_main/decode/data
+
+basedir = voco_data_base + "staging/"
 
 
 
@@ -88,16 +90,11 @@ def write_audio_records(basedir, session_counter, audio_sample_file_path, UID):
     outputfile = open(basedir + 'wav.scp', 'a')
     outputfile.write(UID + " " + audio_sample_file_path + "\n")
 
-    # write audio records to the main directory
+    outputfile=open(basedir + 'utt2spk','a')
+    outputfile.write(UID + " bartek" + "\n")
 
-    #outputfile=open(basedir + 'text','w')
-    #outputfile.write(UID + " " + phrase + "\n")
-
-    #outputfile=open(basedir + 'utt2spk','w')
-    #outputfile.write(UID + " bartek" + "\n")
-
-    #outputfile=open(basedir + 'spk2utt','w')
-    #outputfile.write("bartek " + UID + "\n")
+    outputfile=open(basedir + 'spk2utt','a')
+    outputfile.write("bartek " + UID + "\n")
 
     with open("session_counter.txt", "w") as f:
         f.write(str(session_counter))

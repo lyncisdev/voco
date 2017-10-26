@@ -18,6 +18,7 @@ double d ah b ah l
 down d aw n 
 echo eh k ow 
 eight ey t 
+enter eh n t er 
 equal iy k w ah l 
 escape ih s k ey p 
 firefox f ay r f aa k s 
@@ -50,10 +51,12 @@ rate r ey t
 return r ih t er n 
 right r ay t 
 romeo r ow m iy ow 
+scratch s k r ae ch 
 seven s eh v ah n 
 sierra s iy eh r ah 
 single s ih ng g ah l 
 six s ih k s 
+sky s k ay 
 slap s l ae p 
 slash s l ae sh 
 space s p ey s 
@@ -74,4 +77,5 @@ whisky w ih s k iy
 window w ih n d ow 
 x-ray eh k s r ey 
 yankee y ae ng k iy 
+zero z iy r ow 
 zulu z uw l uw 

@@ -20,6 +20,7 @@ double
 down
 echo
 eight
+enter
 equal
 escape
 firefox
@@ -52,10 +53,12 @@ rate
 return
 right
 romeo
+scratch
 seven
 sierra
 single
 six
+sky
 slap
 slash
 space
@@ -76,4 +79,5 @@ whisky
 window
 x-ray
 yankee
+zero
 zulu

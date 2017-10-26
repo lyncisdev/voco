@@ -1,2 +1,2 @@
 compute-cmvn-stats --spk2utt=ark:data/test/spk2utt scp:data/test/feats.scp ark,scp:/home/bartek/Projects/ASR/voco/voco_training/mfcc/cmvn_test.ark,/home/bartek/Projects/ASR/voco/voco_training/mfcc/cmvn_test.scp 
-LOG (compute-cmvn-stats[5.1.46~1-0d031]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 47 utterances; 0 had errors.
+LOG (compute-cmvn-stats[5.1.46~1-0d031]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 50 utterances; 0 had errors.

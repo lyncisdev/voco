@@ -18,6 +18,7 @@ double 1.0	d ah b ah l
 down 1.0	d aw n 
 echo 1.0	eh k ow 
 eight 1.0	ey t 
+enter 1.0	eh n t er 
 equal 1.0	iy k w ah l 
 escape 1.0	ih s k ey p 
 firefox 1.0	f ay r f aa k s 
@@ -50,10 +51,12 @@ rate 1.0	r ey t
 return 1.0	r ih t er n 
 right 1.0	r ay t 
 romeo 1.0	r ow m iy ow 
+scratch 1.0	s k r ae ch 
 seven 1.0	s eh v ah n 
 sierra 1.0	s iy eh r ah 
 single 1.0	s ih ng g ah l 
 six 1.0	s ih k s 
+sky 1.0	s k ay 
 slap 1.0	s l ae p 
 slash 1.0	s l ae sh 
 space 1.0	s p ey s 
@@ -74,4 +77,5 @@ whisky 1.0	w ih s k iy
 window 1.0	w ih n d ow 
 x-ray 1.0	eh k s r ey 
 yankee 1.0	y ae ng k iy 
+zero 1.0	z iy r ow 
 zulu 1.0	z uw l uw 

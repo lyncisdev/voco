@@ -18,6 +18,7 @@ double 1.0 d_B ah_I b_I ah_I l_E
 down 1.0 d_B aw_I n_E
 echo 1.0 eh_B k_I ow_E
 eight 1.0 ey_B t_E
+enter 1.0 eh_B n_I t_I er_E
 equal 1.0 iy_B k_I w_I ah_I l_E
 escape 1.0 ih_B s_I k_I ey_I p_E
 firefox 1.0 f_B ay_I r_I f_I aa_I k_I s_E
@@ -50,10 +51,12 @@ rate 1.0 r_B ey_I t_E
 return 1.0 r_B ih_I t_I er_I n_E
 right 1.0 r_B ay_I t_E
 romeo 1.0 r_B ow_I m_I iy_I ow_E
+scratch 1.0 s_B k_I r_I ae_I ch_E
 seven 1.0 s_B eh_I v_I ah_I n_E
 sierra 1.0 s_B iy_I eh_I r_I ah_E
 single 1.0 s_B ih_I ng_I g_I ah_I l_E
 six 1.0 s_B ih_I k_I s_E
+sky 1.0 s_B k_I ay_E
 slap 1.0 s_B l_I ae_I p_E
 slash 1.0 s_B l_I ae_I sh_E
 space 1.0 s_B p_I ey_I s_E
@@ -74,4 +77,5 @@ whisky 1.0 w_B ih_I s_I k_I iy_E
 window 1.0 w_B ih_I n_I d_I ow_E
 x-ray 1.0 eh_B k_I s_I r_I ey_E
 yankee 1.0 y_B ae_I ng_I k_I iy_E
+zero 1.0 z_B iy_I r_I ow_E
 zulu 1.0 z_B uw_I l_I uw_E
