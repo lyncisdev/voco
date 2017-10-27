@@ -5,10 +5,10 @@ from spark import GenericASTBuilder
 from errors import GrammaticalError
 from ast import AST
 
+
 class CoreParser(GenericParser):
-    
-    
-#------------------------------------------------------------------------------------------------------
+
+    #------------------------------------------------------------------------------------------------------
 
     def __init__(self, start):
         GenericParser.__init__(self, start)
@@ -17,26 +17,24 @@ class CoreParser(GenericParser):
         return token.type
 
     def error(self, token):
-        raise GrammaticalError(
-            "Unexpected token `%s' (word number %d)" % (token, token.wordno))
+        raise GrammaticalError("Unexpected token `%s' (word number %d)" %
+                               (token, token.wordno))
 
 #------------------------------------------------------------------------------------------------------
-        
-        
+
     def p_chained_commands(self, args):
         '''
             chained_commands ::= single_command
             chained_commands ::= single_command chained_commands
         '''
-        if(len(args) == 1):
-            return AST('chain', None, [ args[0] ])
+        if (len(args) == 1):
+            return AST('chain', None, [args[0]])
         else:
             args[1].children.insert(0, args[0])
             return args[1]
 
 #--------------------------
-    
-    
+
     def p_single_command(self, args):
         '''
             single_command ::= letter
@@ -50,23 +48,21 @@ class CoreParser(GenericParser):
             single_command ::= window_command
             single_command ::= number
         '''
-#        print("p_single_command")
-#        print(args)
+        #        print("p_single_command")
+        #        print(args)
         return args[0]
 
 #--------------------------
 
-    
     def p_window_command(self, args):
         '''
             window_command ::= window   direction
         '''
         print("p_window_command")
-#        print(args[0])
-#        print(args[1])
-        return AST('repeat', [ args[1] ], [AST('movement', [ args[0] ])])
+        #        print(args[0])
+        #        print(args[1])
+        return AST('repeat', [args[1]], [AST('movement', [args[0]])])
 
-    
     def p_direction(self, args):
         '''
             direction ::=   up
@@ -77,7 +73,6 @@ class CoreParser(GenericParser):
         else:
             return None
 
-
     def p_editing(self, args):
         '''
             editing ::= slap repeat
@@ -86,21 +81,18 @@ class CoreParser(GenericParser):
             editing ::= enter repeat
         '''
         value = {
-            'slap'  : 'Return',
+            'slap': 'Return',
             'scratch': 'BackSpace',
             'backspace': 'BackSpace',
-            'enter' : 'Return'
+            'enter': 'Return'
         }
         if args[1] != None:
-            return AST('repeat', [ args[1] ], [
-                AST('raw_char', [ value[args[0].type] ])
-            ])
+            return AST('repeat', [args[1]],
+                       [AST('raw_char', [value[args[0].type]])])
         else:
-            return AST('raw_char', [ value[args[0].type] ])
-
+            return AST('raw_char', [value[args[0].type]])
 
 #--------------------------
-
 
     def p_movement(self, args):
         '''
@@ -110,11 +102,9 @@ class CoreParser(GenericParser):
             movement ::= right repeat
         '''
         if args[1] != None:
-            return AST('repeat', [ args[1] ], [
-                AST('movement', [ args[0] ])
-            ])
+            return AST('repeat', [args[1]], [AST('movement', [args[0]])])
         else:
-            return AST('movement', [ args[0] ])
+            return AST('movement', [args[0]])
 
 #--------------------------
 
@@ -142,24 +132,23 @@ class CoreParser(GenericParser):
             number ::= nine
         '''
         value = {
-            'zero'  : 0,
-            'one'   : 1,
-            'two'   : 2,
-            'three' : 3,
-            'four'  : 4,
-            'five'  : 5,
-            'six'   : 6,
-            'seven' : 7,
-            'eight' : 8,
-            'nine'  : 9
+            'zero': 0,
+            'one': 1,
+            'two': 2,
+            'three': 3,
+            'four': 4,
+            'five': 5,
+            'six': 6,
+            'seven': 7,
+            'eight': 8,
+            'nine': 9
         }
-#        AST('char', [ args[0].type[0] ])
-#        print("type:")
-#        print(args[0].type)
-#        print(value[args[0].type])
-    
-    
-        return AST('num', [ value[args[0].type] ])
+        #        AST('char', [ args[0].type[0] ])
+        #        print("type:")
+        #        print(args[0].type)
+        #        print(value[args[0].type])
+
+        return AST('num', [value[args[0].type]])
 
 #--------------------------
 
@@ -167,8 +156,8 @@ class CoreParser(GenericParser):
         '''
             sky_letter ::= sky letter
         '''
-#        print("p_sky_letter")
-#        print(args)
+        #        print("p_sky_letter")
+        #        print(args)
         ast = args[1]
         ast.meta[0] = ast.meta[0].upper()
         return ast
@@ -206,9 +195,9 @@ class CoreParser(GenericParser):
             letter ::= yankee
             letter ::= zulu
         '''
-        
-        if(args[0].type == 'expert'): args[0].type = 'x'
-        return AST('char', [ args[0].type[0] ])
+
+        if (args[0].type == 'expert'): args[0].type = 'x'
+        return AST('char', [args[0].type[0]])
 
 #--------------------------
 
@@ -242,15 +231,15 @@ class CoreParser(GenericParser):
         '''
         value = {
             'escape': 'Escape',
-            'act'   : 'Escape',
-            'colon' : 'colon',
+            'act': 'Escape',
+            'colon': 'colon',
             'single': 'apostrophe',
             'double': 'quotedbl',
-            'equal' : 'equal',
-            'space' : 'space',
-            'tab'   : 'Tab',
-            'bang'  : 'exclam',
-            'hash'  : 'numbersign',
+            'equal': 'equal',
+            'space': 'space',
+            'tab': 'Tab',
+            'bang': 'exclam',
+            'hash': 'numbersign',
             'dollar': 'dollar',
             'percent': 'percent',
             'carrot': 'caret',
@@ -267,7 +256,8 @@ class CoreParser(GenericParser):
             'question': 'question',
             'along': 'alt'
         }
-        return AST('raw_char', [ value[args[0].type] ])
+        return AST('raw_char', [value[args[0].type]])
+
 
 #--------------------------
 #--------------------------
@@ -305,6 +295,7 @@ class CoreParser(GenericParser):
 #            args[1].children.insert(0, AST('null', args[0].extra))
 #            return args[1]
 
+
 class SingleInputParser(CoreParser):
     def __init__(self):
         CoreParser.__init__(self, 'single_input')
@@ -318,6 +309,7 @@ class SingleInputParser(CoreParser):
             return args[0]
         else:
             return AST('')
+
 
 def parse(tokens):
     parser = SingleInputParser()

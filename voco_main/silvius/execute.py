@@ -46,7 +46,9 @@ class ExecuteCommands(GenericASTTraversal):
 
     def n_repeat(self, node):
         xdo = self.automator.xdo_list[-1]
-        for n in range(1, node.meta[0]):
+        #print("node")
+        #print(node.meta[0].meta[0])
+        for n in range(1, node.meta[0].meta[0]):
             self.automator.xdo(xdo)
 
     def default(self, node):

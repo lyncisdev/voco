@@ -11,7 +11,7 @@ import subprocess
 import pdb
 from datetime import datetime
 import time
-
+import traceback
 from silvius.process_line import process_line
 
 
@@ -294,9 +294,9 @@ while (True):
 
                 except Exception as e:
                     print(result)
-                    print e
-
-
+                    print(e)
+                    tb = traceback.format_exc()
+                    print(tb)
 
             recording_counter += 1
             rec = False

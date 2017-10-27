@@ -236,7 +236,7 @@ def process_line(line):
 
         ast = parse(tokens)
 
-        printAST(ast)
+        #printAST(ast)
 
         # make this return the XDO command
 
