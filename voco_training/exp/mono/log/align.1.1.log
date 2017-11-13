@@ -1,47 +1,45 @@
 # gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false "gmm-boost-silence --boost=1.0 1 exp/mono/1.mdl - |" "ark:gunzip -c exp/mono/fsts.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas ark:- ark:- |" "ark,t:|gzip -c >exp/mono/ali.1.gz" 
-# Started at Thu Oct 26 19:40:29 SAST 2017
+# Started at Mon Nov 13 07:27:12 SAST 2017
 #
 gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/mono/1.mdl - |' 'ark:gunzip -c exp/mono/fsts.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark,t:|gzip -c >exp/mono/ali.1.gz' 
 gmm-boost-silence --boost=1.0 1 exp/mono/1.mdl - 
 WARNING (gmm-boost-silence[5.1.46~1-0d031]:main():gmm-boost-silence.cc:82) The pdfs for the silence phones may be shared by other phones (note: this probably does not matter.)
 LOG (gmm-boost-silence[5.1.46~1-0d031]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
 LOG (gmm-boost-silence[5.1.46~1-0d031]:main():gmm-boost-silence.cc:103) Wrote model to -
-add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000053 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000057 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000063 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000068 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000083 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000091 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000116 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000158 with beam 24
+WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000092 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000162 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000174 with beam 24
+WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000183 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000195 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000232 with beam 24
+WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000245 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000247 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000248 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000281 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000302 with beam 24
+WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000319 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000399 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000412 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000416 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000423 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000427 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000433 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000438 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000439 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000440 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000446 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000456 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000458 with beam 24
-WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000471 with beam 24
+WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000462 with beam 24
+WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000478 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000485 with beam 24
-LOG (apply-cmvn[5.1.46~1-0d031]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 449 utterances, errors on 0
+WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000495 with beam 24
 WARNING (gmm-align-compiled[5.1.46~1-0d031]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance REC00000496 with beam 24
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:129) Overall log-likelihood per frame is -98.9905 over 78853 frames.
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:131) Retried 31 out of 449 utterances.
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:133) Done 449, errors on 0
+LOG (apply-cmvn[5.1.46~1-0d031]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 493 utterances, errors on 0
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:129) Overall log-likelihood per frame is -99.0677 over 87655 frames.
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:131) Retried 29 out of 493 utterances.
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:133) Done 493, errors on 0
 # Accounting: time=7 threads=1
-# Ended (code 0) at Thu Oct 26 19:40:36 SAST 2017, elapsed time 7 seconds
+# Ended (code 0) at Mon Nov 13 07:27:19 SAST 2017, elapsed time 7 seconds

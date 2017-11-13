@@ -1,5 +1,5 @@
 # gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.0 1 exp/mono/12.mdl - |" "ark:gunzip -c exp/mono/fsts.1.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas ark:- ark:- |" "ark,t:|gzip -c >exp/mono/ali.1.gz" 
-# Started at Thu Oct 26 19:41:16 SAST 2017
+# Started at Mon Nov 13 07:28:07 SAST 2017
 #
 gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.0 1 exp/mono/12.mdl - |' 'ark:gunzip -c exp/mono/fsts.1.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark,t:|gzip -c >exp/mono/ali.1.gz' 
 gmm-boost-silence --boost=1.0 1 exp/mono/12.mdl - 
@@ -8,9 +8,9 @@ LOG (gmm-boost-silence[5.1.46~1-0d031]:main():gmm-boost-silence.cc:93) Boosted w
 LOG (gmm-boost-silence[5.1.46~1-0d031]:main():gmm-boost-silence.cc:103) Wrote model to -
 add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
-LOG (apply-cmvn[5.1.46~1-0d031]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 449 utterances, errors on 0
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:129) Overall log-likelihood per frame is -86.6972 over 78853 frames.
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:131) Retried 0 out of 449 utterances.
-LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:133) Done 449, errors on 0
+LOG (apply-cmvn[5.1.46~1-0d031]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 493 utterances, errors on 0
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:129) Overall log-likelihood per frame is -86.6691 over 87655 frames.
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:131) Retried 0 out of 493 utterances.
+LOG (gmm-align-compiled[5.1.46~1-0d031]:main():gmm-align-compiled.cc:133) Done 493, errors on 0
 # Accounting: time=4 threads=1
-# Ended (code 0) at Thu Oct 26 19:41:20 SAST 2017, elapsed time 4 seconds
+# Ended (code 0) at Mon Nov 13 07:28:11 SAST 2017, elapsed time 4 seconds

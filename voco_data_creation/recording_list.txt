@@ -1,50 +1,50 @@
-000,zero india yankee sky 
-001,zero zero sky 
-002,six victor 
-003,hotel sky 
-004,scratch down zero zero 
-005,zero golf delta sky zero 
-006,enter scratch enter 
-007,scratch scratch enter zero romeo 
-008,enter sky scratch zero sky 
-009,alpha scratch enter delta 
-010,oscar papa sky sky tango 
-011,enter zero 
-012,enter enter 
-013,scratch enter oscar 
-014,sky scratch 
-015,sky enter enter 
-016,enter zero sky 
-017,scratch zero mike 
-018,four mike seven 
-019,zero hotel zero 
-020,india scratch enter 
-021,scratch scratch eight zero 
-022,uniform zero lima 
-023,one zero zero 
-024,three nine 
-025,zero golf juliet 
-026,enter tango 
-027,sky zero papa scratch enter 
-028,alpha sky echo 
-029,scratch zero zero zero sky 
-030,x-ray zero zulu sky four 
-031,kilo zero sky 
-032,enter echo enter 
-033,right sky enter kilo 
-034,zero down scratch scratch sky 
-035,enter lima scratch 
-036,delta scratch enter sky victor 
-037,sky scratch zero 
-038,enter sky 
-039,sky sky enter 
-040,scratch sky 
-041,sky zero 
-042,sky enter zero enter enter 
-043,zero scratch 
-044,zero zero 
-045,scratch delta 
-046,scratch sky scratch hotel 
-047,lima scratch sky enter zero 
-048,enter left five scratch sierra 
-049,sky zero left alpha 
+000,zero bravo underscore null zero 
+001,scratch term 
+002,null enter 
+003,null zero whisky 
+004,null term paste null term 
+005,underscore copy oscar null four 
+006,term zero kilo copy underscore 
+007,zero six underscore one four 
+008,paste bravo zero term null 
+009,null up 
+010,papa sky zero underscore 
+011,echo term paste 
+012,null underscore hotel juliet 
+013,charlie scratch copy 
+014,term six kilo copy zero 
+015,paste term term copy echo 
+016,sky null copy sky scratch 
+017,null zero term 
+018,underscore paste 
+019,null copy seven zero paste 
+020,romeo ten term paste 
+021,paste paste paste 
+022,copy term 
+023,eight foxtrot term paste 
+024,copy term paste 
+025,zulu copy 
+026,term null three null null 
+027,eight term five copy 
+028,null uniform eight kilo 
+029,alpha alpha delta null 
+030,paste oscar 
+031,scratch down 
+032,copy whisky one paste 
+033,paste null zero foxtrot 
+034,oscar term null whisky paste 
+035,delta copy term lima copy 
+036,one null seven zero 
+037,hotel enter eight term 
+038,term paste paste sky term 
+039,term null zero paste underscore 
+040,null paste 
+041,paste null scratch term 
+042,copy paste 
+043,right paste 
+044,paste underscore echo 
+045,zero paste scratch 
+046,term copy copy 
+047,down zero paste 
+048,copy zero 
+049,whisky zero copy 

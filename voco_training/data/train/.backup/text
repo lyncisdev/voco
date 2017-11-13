@@ -6,18 +6,21 @@ REC00000004 switch max
 REC00000005 escape
 REC00000006 switch max
 REC00000007 escape
-REC00000009 return
 REC00000010 return
+REC00000011 switch
+REC00000012 switch terminal
 REC00000013 switch max
 REC00000014 switch max
 REC00000015 escape
 REC00000016 window top
+REC00000017 switch
 REC00000018 escape
 REC00000019 window left
 REC00000020 switch back
 REC00000021 window top
 REC00000022 switch back
 REC00000023 switch max
+REC00000024 switch terminal
 REC00000025 escape
 REC00000026 switch firefox
 REC00000027 return
@@ -28,18 +31,19 @@ REC00000031 window center
 REC00000032 switch terminal
 REC00000033 return
 REC00000034 window minimise
+REC00000035 switch terminal
 REC00000036 return
 REC00000037 escape
+REC00000038 switch back
 REC00000039 return
 REC00000040 escape
 REC00000041 escape
 REC00000042 switch back
 REC00000043 switch max
-REC00000045 switch back
+REC00000044 return
 REC00000046 switch firefox
 REC00000047 switch max
 REC00000048 window top
-REC00000049 switch
 REC00000050 foxtrot right 
 REC00000051 charlie november victor oscar ten echo 
 REC00000052 zulu tango 
@@ -50,7 +54,6 @@ REC00000056 down delta down yankee echo
 REC00000057 hotel zulu 
 REC00000058 uniform sierra two 
 REC00000059 november india ten zulu delta foxtrot 
-REC00000060 seven right november sierra left 
 REC00000061 victor lima ten right alpha whisky 
 REC00000062 romeo up juliet up alpha 
 REC00000063 up delta charlie juliet tango sierra 
@@ -59,20 +62,23 @@ REC00000065 down delta echo whisky papa six
 REC00000066 golf ten 
 REC00000068 two x-ray quebec bravo up foxtrot 
 REC00000069 lima three 
+REC00000070 kilo oscar zulu 
 REC00000071 alpha quebec charlie zulu 
 REC00000072 mike oscar six lima 
 REC00000073 hotel five 
 REC00000074 papa eight eight papa oscar ten 
 REC00000075 one zulu quebec 
 REC00000076 up two five five 
-REC00000077 lima yankee three down mike 
 REC00000078 tango uniform 
+REC00000079 seven golf november six 
+REC00000080 golf seven four 
 REC00000081 one nine nine kilo 
 REC00000082 up delta six 
 REC00000083 charlie uniform india 
 REC00000084 zulu delta foxtrot down ten 
 REC00000085 eight up right six papa three 
 REC00000086 juliet left 
+REC00000087 down x-ray oscar three quebec tango 
 REC00000088 delta up 
 REC00000089 quebec eight alpha juliet right 
 REC00000090 papa charlie 
@@ -87,32 +93,31 @@ REC00000098 down quebec
 REC00000099 oscar oscar 
 REC00000100 window left
 REC00000101 switch max
-REC00000102 window left
-REC00000103 switch max
 REC00000104 window left
 REC00000105 switch back
 REC00000106 escape
 REC00000107 switch terminal
 REC00000108 switch max
-REC00000110 switch
+REC00000109 switch max
 REC00000111 switch back
-REC00000113 switch back
 REC00000114 switch terminal
 REC00000115 switch firefox
 REC00000116 window center
 REC00000117 switch back
+REC00000118 escape
 REC00000119 return
 REC00000120 switch max
 REC00000121 return
 REC00000122 return
 REC00000123 return
+REC00000124 switch max
 REC00000125 switch firefox
 REC00000126 switch terminal
 REC00000127 return
 REC00000128 switch firefox
-REC00000129 switch back
 REC00000130 down victor left 
 REC00000131 bravo hotel six one 
+REC00000132 x-ray bravo delta bravo 
 REC00000133 quebec down x-ray x-ray 
 REC00000134 papa papa delta papa 
 REC00000135 up alpha three charlie 
@@ -122,19 +127,18 @@ REC00000138 eight right
 REC00000140 x-ray four romeo 
 REC00000141 eight mike whisky two three 
 REC00000142 romeo one golf five down 
+REC00000143 four echo right 
 REC00000144 bravo right 
-REC00000145 charlie mike 
 REC00000146 up x-ray november four four 
 REC00000147 romeo echo 
 REC00000148 quebec oscar 
-REC00000150 whisky three foxtrot ten 
+REC00000149 nine ten sierra quebec 
 REC00000151 alpha right 
 REC00000152 left down papa papa 
 REC00000153 lima lima 
 REC00000154 left whisky up 
 REC00000155 two bravo nine up four 
 REC00000156 juliet one hotel two yankee 
-REC00000157 oscar one four 
 REC00000158 mike nine sierra juliet india 
 REC00000159 six six bravo up 
 REC00000160 charlie papa papa 
@@ -143,15 +147,16 @@ REC00000162 juliet echo uniform zulu
 REC00000163 up charlie six three uniform 
 REC00000164 romeo victor right golf 
 REC00000165 yankee papa foxtrot sierra x-ray 
+REC00000166 quebec four foxtrot 
 REC00000167 sierra golf charlie 
 REC00000168 right eight whisky delta november 
 REC00000169 zulu sierra 
 REC00000170 hotel hotel left zulu 
 REC00000171 nine down down delta 
-REC00000172 up three x-ray 
 REC00000173 five quebec down 
 REC00000174 uniform seven hotel 
 REC00000175 nine romeo nine four november 
+REC00000176 golf hotel foxtrot juliet whisky 
 REC00000177 november two sierra mike right 
 REC00000178 romeo one golf 
 REC00000179 five left 
@@ -160,50 +165,50 @@ REC00000181 zulu alpha
 REC00000182 five romeo down left 
 REC00000183 left uniform x-ray 
 REC00000184 echo november foxtrot 
-REC00000186 bravo lima three 
 REC00000187 victor zulu 
 REC00000188 mike uniform four 
 REC00000189 oscar whisky 
-REC00000190 sierra victor uniform zulu 
 REC00000191 up six 
 REC00000192 bravo delta bravo 
 REC00000193 golf victor four ten ten 
+REC00000194 up five oscar zulu ten 
 REC00000195 quebec tango alpha one 
+REC00000196 right india four 
 REC00000197 ten mike foxtrot hotel 
-REC00000198 yankee seven zulu oscar 
 REC00000199 victor lima one sierra 
 REC00000200 switch back
-REC00000201 window left
 REC00000202 return
 REC00000203 escape
+REC00000204 escape
 REC00000205 switch firefox
 REC00000206 switch terminal
 REC00000207 return
 REC00000208 return
+REC00000209 window bottom
 REC00000210 switch back
-REC00000211 window minimise
 REC00000212 return
 REC00000213 window right
 REC00000214 escape
 REC00000215 return
 REC00000216 switch back
+REC00000217 switch back
+REC00000218 switch firefox
 REC00000219 switch terminal
 REC00000220 window maximise
-REC00000221 switch max
-REC00000222 switch back
 REC00000223 window right
 REC00000224 switch back
 REC00000225 return
 REC00000226 return
 REC00000227 switch firefox
 REC00000228 switch
-REC00000229 window maximise
+REC00000230 hotel india 
 REC00000231 zulu four lima november right 
 REC00000232 victor eight golf 
 REC00000233 foxtrot hotel 
 REC00000234 foxtrot three mike 
 REC00000235 up left oscar hotel 
 REC00000236 five nine alpha november 
+REC00000237 romeo quebec bravo whisky 
 REC00000238 kilo sierra yankee 
 REC00000239 romeo oscar nine four 
 REC00000240 oscar oscar tango 
@@ -216,16 +221,13 @@ REC00000246 one hotel two delta lima
 REC00000247 uniform lima x-ray lima 
 REC00000248 juliet x-ray india quebec tango 
 REC00000249 x-ray up golf victor victor 
-REC00000250 tango two down eight 
 REC00000251 mike four tango zulu yankee 
 REC00000252 hotel ten down 
 REC00000253 november whisky six yankee 
-REC00000254 seven x-ray left 
 REC00000255 alpha papa 
 REC00000256 uniform kilo uniform 
 REC00000257 lima victor 
 REC00000258 charlie papa two 
-REC00000259 left charlie up 
 REC00000260 charlie kilo left delta 
 REC00000261 right nine right left six 
 REC00000262 right bravo 
@@ -248,15 +250,16 @@ REC00000278 tango echo down bravo
 REC00000280 golf bravo papa lima quebec 
 REC00000281 foxtrot india tango 
 REC00000282 zulu foxtrot four 
-REC00000283 five quebec right kilo nine 
 REC00000284 right ten echo four six 
 REC00000285 quebec up whisky 
 REC00000286 bravo bravo 
 REC00000287 one charlie 
 REC00000288 mike right 
+REC00000289 six sierra 
 REC00000290 up india right 
 REC00000291 left up sierra 
 REC00000292 mike hotel 
+REC00000293 india one 
 REC00000294 november right 
 REC00000295 victor mike kilo 
 REC00000296 yankee sierra 
@@ -264,7 +267,6 @@ REC00000297 alpha three
 REC00000298 five down up hotel 
 REC00000299 hotel up two 
 REC00000300 return
-REC00000301 oscar uniform space lima victor 
 REC00000302 juliet lima lima 
 REC00000303 six x-ray 
 REC00000304 alpha oscar 
@@ -273,54 +275,54 @@ REC00000306 juliet sierra
 REC00000307 india space quebec two 
 REC00000308 escape
 REC00000309 nine up uniform space victor 
+REC00000310 bravo delta alpha victor 
 REC00000311 papa bravo victor 
 REC00000312 india kilo tango one 
 REC00000313 two four one space left 
 REC00000314 india right bravo oscar 
+REC00000315 yankee bravo 
 REC00000316 bravo right 
 REC00000317 bravo x-ray right space 
+REC00000318 left victor 
 REC00000319 space yankee yankee delta november 
 REC00000320 foxtrot juliet seven space 
 REC00000321 november kilo two space 
 REC00000322 foxtrot november yankee 
 REC00000323 space up tango three 
 REC00000324 three four space 
+REC00000325 sierra hotel 
 REC00000326 down mike 
 REC00000327 bravo three left november november 
 REC00000328 two x-ray three up 
 REC00000329 space right space juliet 
 REC00000330 romeo four sierra 
 REC00000331 x-ray x-ray right 
-REC00000332 mike left 
 REC00000333 oscar echo left 
 REC00000334 lima india 
 REC00000335 up juliet up 
 REC00000336 right hotel delta right oscar 
-REC00000337 right quebec quebec foxtrot charlie 
 REC00000338 space kilo 
-REC00000339 bravo right 
 REC00000340 space november 
 REC00000341 space six romeo 
 REC00000342 eight five golf space 
 REC00000343 zulu x-ray 
-REC00000344 down three space space juliet 
 REC00000345 echo quebec 
 REC00000346 five space 
+REC00000347 space space foxtrot oscar 
+REC00000348 november seven quebec up mike 
+REC00000349 kilo four oscar 
 REC00000350 romeo space five 
 REC00000351 quebec space two three 
 REC00000352 papa eight 
 REC00000353 left alpha lima mike yankee 
-REC00000354 delta three space 
 REC00000355 right hotel whisky ten 
 REC00000356 kilo space x-ray space 
 REC00000357 space victor one lima 
 REC00000358 right victor whisky seven 
-REC00000359 one uniform 
 REC00000360 space charlie quebec golf 
 REC00000361 space six yankee kilo space 
 REC00000362 down space 
 REC00000363 space whisky space papa delta 
-REC00000364 quebec delta ten 
 REC00000365 lima mike x-ray lima four 
 REC00000366 space space space space space 
 REC00000367 romeo romeo right oscar 
@@ -330,6 +332,7 @@ REC00000370 left lima nine space left
 REC00000371 echo nine four space golf 
 REC00000372 romeo whisky left 
 REC00000373 nine two 
+REC00000374 hotel bravo space 
 REC00000375 papa romeo left space bravo 
 REC00000376 november foxtrot charlie kilo golf 
 REC00000377 x-ray kilo seven 
@@ -343,7 +346,6 @@ REC00000384 six space
 REC00000385 ten golf slap 
 REC00000386 sierra escape escape 
 REC00000387 escape 
-REC00000388 yankee escape mike 
 REC00000389 slap yankee 
 REC00000390 space space 
 REC00000391 space slap 
@@ -351,6 +353,7 @@ REC00000392 space whisky
 REC00000393 space tango escape 
 REC00000394 victor space slap 
 REC00000395 slap space 
+REC00000396 eight escape 
 REC00000397 yankee slap yankee 
 REC00000398 space slap quebec 
 REC00000399 one double ampersand 
@@ -365,15 +368,12 @@ REC00000407 slap escape
 REC00000408 slap star slap yankee 
 REC00000409 slash slap dot ampersand 
 REC00000410 star november hotel question star 
-REC00000411 space slap 
 REC00000412 question slap slap 
 REC00000413 underscore bang slap 
 REC00000414 tab up slap backslash 
 REC00000415 escape hash 
-REC00000416 seven backslash double 
 REC00000417 india escape 
 REC00000418 tab escape double 
-REC00000419 double slap 
 REC00000420 slap victor 
 REC00000421 escape escape ampersand hash 
 REC00000422 escape percent slap papa ampersand 
@@ -396,8 +396,7 @@ REC00000438 juliet four late two
 REC00000439 papa hash oscar 
 REC00000440 slap question ampersand 
 REC00000441 space colon 
-REC00000442 down single dot 
-REC00000444 slap slap 
+REC00000443 ampersand ten escape 
 REC00000445 percent backslash 
 REC00000446 plus backslash slap slap percent 
 REC00000447 slap space 
@@ -415,8 +414,8 @@ REC00000458 alpha scratch enter delta
 REC00000459 oscar papa sky sky tango 
 REC00000460 enter zero 
 REC00000461 enter enter 
+REC00000462 scratch enter oscar 
 REC00000463 sky scratch 
-REC00000464 sky enter enter 
 REC00000465 enter zero sky 
 REC00000466 scratch zero mike 
 REC00000467 four mike seven 
@@ -424,26 +423,71 @@ REC00000468 zero hotel zero
 REC00000469 india scratch enter 
 REC00000470 scratch scratch eight zero 
 REC00000471 uniform zero lima 
-REC00000472 one zero zero 
 REC00000473 three nine 
 REC00000474 zero golf juliet 
 REC00000475 enter tango 
 REC00000476 sky zero papa scratch enter 
+REC00000477 alpha sky echo 
 REC00000478 scratch zero zero zero sky 
 REC00000479 x-ray zero zulu sky four 
-REC00000480 kilo zero sky 
+REC00000481 enter echo enter 
 REC00000482 right sky enter kilo 
 REC00000483 zero down scratch scratch sky 
 REC00000484 enter lima scratch 
 REC00000485 delta scratch enter sky victor 
 REC00000486 sky scratch zero 
+REC00000487 enter sky 
 REC00000488 sky sky enter 
 REC00000489 scratch sky 
-REC00000490 sky zero 
 REC00000491 sky enter zero enter enter 
+REC00000492 zero scratch 
 REC00000493 zero zero 
 REC00000494 scratch delta 
 REC00000495 scratch sky scratch hotel 
 REC00000496 lima scratch sky enter zero 
 REC00000497 enter left five scratch sierra 
 REC00000498 sky zero left alpha 
+REC00000499 zero bravo underscore null zero 
+REC00000500 scratch term 
+REC00000501 null enter 
+REC00000502 null zero whisky 
+REC00000503 null term paste null term 
+REC00000504 underscore copy oscar null four 
+REC00000505 term zero kilo copy underscore 
+REC00000506 zero six underscore one four 
+REC00000507 paste bravo zero term null 
+REC00000509 papa sky zero underscore 
+REC00000511 null underscore hotel juliet 
+REC00000512 charlie scratch copy 
+REC00000513 term six kilo copy zero 
+REC00000514 paste term term copy echo 
+REC00000515 sky null copy sky scratch 
+REC00000516 null zero term 
+REC00000517 underscore paste 
+REC00000518 null copy seven zero paste 
+REC00000519 romeo ten term paste 
+REC00000520 paste paste paste 
+REC00000521 copy term 
+REC00000522 eight foxtrot term paste 
+REC00000523 copy term paste 
+REC00000524 zulu copy 
+REC00000525 term null three null null 
+REC00000528 alpha alpha delta null 
+REC00000529 paste oscar 
+REC00000530 scratch down 
+REC00000532 paste null zero foxtrot 
+REC00000533 oscar term null whisky paste 
+REC00000534 delta copy term lima copy 
+REC00000535 one null seven zero 
+REC00000536 hotel enter eight term 
+REC00000537 term paste paste sky term 
+REC00000538 term null zero paste underscore 
+REC00000539 null paste 
+REC00000540 paste null scratch term 
+REC00000541 copy paste 
+REC00000542 right paste 
+REC00000543 paste underscore echo 
+REC00000544 zero paste scratch 
+REC00000545 term copy copy 
+REC00000547 copy zero 
+REC00000548 whisky zero copy 

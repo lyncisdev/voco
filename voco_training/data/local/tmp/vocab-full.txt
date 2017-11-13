@@ -13,6 +13,7 @@ carrot
 center
 charlie
 colon
+copy
 delta
 dollar
 dot
@@ -42,9 +43,11 @@ mike
 minimise
 nine
 november
+null
 one
 oscar
 papa
+paste
 percent
 plus
 quebec
@@ -67,6 +70,7 @@ switch
 tab
 tango
 ten
+term
 terminal
 three
 top

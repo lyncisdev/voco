@@ -11,6 +11,7 @@ carrot 1.0	k ae r ah t
 center 1.0	s eh n t er 
 charlie 1.0	ch aa r l iy 
 colon 1.0	k ow l ah n 
+copy 1.0	k aa p iy 
 delta 1.0	d eh l t ah 
 dollar 1.0	d aa l er 
 dot 1.0	d aa t 
@@ -40,9 +41,11 @@ mike 1.0	m ay k
 minimise 1.0	m ih n ah m ay z 
 nine 1.0	n ay n 
 november 1.0	n ow v eh m b er 
+null 1.0	n ah l 
 one 1.0	w ah n 
 oscar 1.0	ao s k er 
 papa 1.0	p aa p ah 
+paste 1.0	p ey s t 
 percent 1.0	p er s eh n t 
 plus 1.0	p l ah s 
 quebec 1.0	k w ah b eh k 
@@ -65,6 +68,7 @@ switch 1.0	s w ih ch
 tab 1.0	t ae b 
 tango 1.0	t ae ng g ow 
 ten 1.0	t eh n 
+term 1.0	t er m 
 terminal 1.0	t er m ah n ah l 
 three 1.0	th r iy 
 top 1.0	t aa p 

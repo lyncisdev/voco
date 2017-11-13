@@ -11,6 +11,7 @@ carrot	1.0	k_B ae_I r_I ah_I t_E
 center	1.0	s_B eh_I n_I t_I er_E
 charlie	1.0	ch_B aa_I r_I l_I iy_E
 colon	1.0	k_B ow_I l_I ah_I n_E
+copy	1.0	k_B aa_I p_I iy_E
 delta	1.0	d_B eh_I l_I t_I ah_E
 dollar	1.0	d_B aa_I l_I er_E
 dot	1.0	d_B aa_I t_E
@@ -40,9 +41,11 @@ mike	1.0	m_B ay_I k_E
 minimise	1.0	m_B ih_I n_I ah_I m_I ay_I z_E
 nine	1.0	n_B ay_I n_E
 november	1.0	n_B ow_I v_I eh_I m_I b_I er_E
+null	1.0	n_B ah_I l_E
 one	1.0	w_B ah_I n_E
 oscar	1.0	ao_B s_I k_I er_E
 papa	1.0	p_B aa_I p_I ah_E
+paste	1.0	p_B ey_I s_I t_E
 percent	1.0	p_B er_I s_I eh_I n_I t_E
 plus	1.0	p_B l_I ah_I s_E
 quebec	1.0	k_B w_I ah_I b_I eh_I k_E
@@ -65,6 +68,7 @@ switch	1.0	s_B w_I ih_I ch_E
 tab	1.0	t_B ae_I b_E
 tango	1.0	t_B ae_I ng_I g_I ow_E
 ten	1.0	t_B eh_I n_E
+term	1.0	t_B er_I m_E
 terminal	1.0	t_B er_I m_I ah_I n_I ah_I l_E
 three	1.0	th_B r_I iy_E
 top	1.0	t_B aa_I p_E

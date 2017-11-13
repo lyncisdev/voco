@@ -11,6 +11,7 @@ carrot k ae r ah t
 center s eh n t er 
 charlie ch aa r l iy 
 colon k ow l ah n 
+copy k aa p iy 
 delta d eh l t ah 
 dollar d aa l er 
 dot d aa t 
@@ -40,9 +41,11 @@ mike m ay k
 minimise m ih n ah m ay z 
 nine n ay n 
 november n ow v eh m b er 
+null n ah l 
 one w ah n 
 oscar ao s k er 
 papa p aa p ah 
+paste p ey s t 
 percent p er s eh n t 
 plus p l ah s 
 quebec k w ah b eh k 
@@ -65,6 +68,7 @@ switch s w ih ch
 tab t ae b 
 tango t ae ng g ow 
 ten t eh n 
+term t er m 
 terminal t er m ah n ah l 
 three th r iy 
 top t aa p 

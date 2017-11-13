@@ -14,8 +14,6 @@ import time
 import traceback
 from silvius.process_line import process_line
 
-
-
 mic = -1
 chunk = 0
 byterate = 16000
@@ -27,18 +25,16 @@ debug = False
 noexec_mode = False
 playback_mode = False
 
-
 voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
 # ln -sv ~/Projects/ASR/voco_data/staging/ ~/Projects/ASR/voco/voco_main/decode/data
 
 basedir = voco_data_base + "staging/"
 
-
-
 #----------------------------------------------------------------------------
 # write_audio_file function
 #----------------------------------------------------------------------------
+
 
 def write_audio_data(audio_sample, audio_sample_file_path, byterate):
 
@@ -70,9 +66,11 @@ def write_audio_data(audio_sample, audio_sample_file_path, byterate):
 
     w.close()
 
+
 #----------------------------------------------------------------------------
 # write_audio_file function
 #----------------------------------------------------------------------------
+
 
 def write_audio_records(basedir, session_counter, audio_sample_file_path, UID):
 
@@ -90,14 +88,15 @@ def write_audio_records(basedir, session_counter, audio_sample_file_path, UID):
     outputfile = open(basedir + 'wav.scp', 'a')
     outputfile.write(UID + " " + audio_sample_file_path + "\n")
 
-    outputfile=open(basedir + 'utt2spk','a')
+    outputfile = open(basedir + 'utt2spk', 'a')
     outputfile.write(UID + " bartek" + "\n")
 
-    outputfile=open(basedir + 'spk2utt','a')
+    outputfile = open(basedir + 'spk2utt', 'a')
     outputfile.write("bartek " + UID + "\n")
 
     with open("session_counter.txt", "w") as f:
         f.write(str(session_counter))
+
 
 #----------------------------------------------------------------------------
 # write_audio_file function
@@ -202,7 +201,6 @@ audio_sample = []
 rec = False
 above_gate = False
 
-
 while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
@@ -221,13 +219,10 @@ while (True):
 
             # stop recording, write file
 
-
-
             UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
                 recording_counter).zfill(5)
 
             audio_sample_file_path = basedir + UID + ".wav"
-
 
             duration_dict = {}
             time_start = time.time()
@@ -241,18 +236,13 @@ while (True):
             duration_dict['write_files'] = time_duration
             time_start = time_end
 
-
-
             result = subprocess.check_output("./kaldi_decode.sh", shell=True)
             result = result.split(" ", 1)[1].strip()
-
-
 
             time_end = time.time()
             time_duration = time_end - time_start
             duration_dict['decode'] = time_duration
             time_start = time_end
-
 
             if len(result) >= 2:
 
@@ -265,29 +255,30 @@ while (True):
                     duration_dict['process'] = time_duration
                     time_start = time_end
 
+                    print(cmd)
 
                     if not noexec_mode:
-                        os.system(cmd)
+                        subprocess.Popen([cmd], shell=True)
 
                     time_end = time.time()
                     time_duration = time_end - time_start
                     duration_dict['execute'] = time_duration
 
-
-                    duration_dict['total'] = duration_dict['write_files'] + duration_dict['decode'] + duration_dict['process'] + duration_dict['execute']
+                    duration_dict['total'] = duration_dict[
+                        'write_files'] + duration_dict[
+                            'decode'] + duration_dict[
+                                'process'] + duration_dict['execute']
 
                     if debug:
                         print("-----------------")
                         print(result + "\n")
                         print(duration_dict['total'])
 
-
-                    print(cmd + "\n")
-
                     if playback_mode:
                         os.system("aplay " + audio_sample_file_path)
 
-                    write_log(basedir, UID, result, cmd, str(duration_dict['total']),
+                    write_log(basedir, UID, result, cmd,
+                              str(duration_dict['total']),
                               audio_sample_file_path)
                     if debug:
                         print("Wrote log to:" + basedir + "log")

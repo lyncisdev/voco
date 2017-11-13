@@ -1,3 +1,4 @@
+alpha alpha delta null 
 alpha oscar 
 alpha papa 
 alpha quebec charlie zulu 
@@ -23,9 +24,16 @@ charlie november victor oscar ten echo
 charlie one down 
 charlie papa papa 
 charlie papa two 
+charlie scratch copy 
 charlie uniform india 
 colon foxtrot 
 colon star star backslash 
+copy paste 
+copy term 
+copy term paste 
+copy whisky one paste 
+copy zero 
+delta copy term lima copy 
 delta escape 
 delta hotel tango 
 delta scratch enter sky victor 
@@ -44,16 +52,20 @@ down space
 down three space space juliet 
 down victor left 
 down x-ray oscar three quebec tango 
+down zero paste 
 echo nine four space golf 
 echo nine zulu victor november 
 echo november foxtrot 
 echo quebec 
 echo question percent equal 
+echo term paste 
 eight escape 
 eight five golf space 
 eight five three 
+eight foxtrot term paste 
 eight mike whisky two three 
 eight right 
+eight term five copy 
 eight up right six papa three 
 enter echo enter 
 enter enter 
@@ -101,6 +113,7 @@ golf seven four
 golf ten 
 golf victor four ten ten 
 hotel bravo space 
+hotel enter eight term 
 hotel five 
 hotel hotel left zulu 
 hotel india 
@@ -173,10 +186,20 @@ november seven quebec up mike
 november two sierra mike right 
 november up papa two yankee 
 november whisky six yankee 
+null copy seven zero paste 
+null enter 
+null paste 
+null term paste null term 
+null underscore hotel juliet 
+null uniform eight kilo 
+null up 
+null zero term 
+null zero whisky 
 one charlie 
 one double ampersand 
 one hotel two delta lima 
 one nine nine kilo 
+one null seven zero 
 one uniform 
 one zero zero 
 one zulu quebec 
@@ -186,6 +209,7 @@ oscar one four
 oscar oscar 
 oscar oscar tango 
 oscar papa sky sky tango 
+oscar term null whisky paste 
 oscar uniform space lima victor 
 oscar whisky 
 papa bravo victor 
@@ -196,6 +220,14 @@ papa eight eight papa oscar ten
 papa hash oscar 
 papa papa delta papa 
 papa romeo left space bravo 
+papa sky zero underscore 
+paste bravo zero term null 
+paste null scratch term 
+paste null zero foxtrot 
+paste oscar 
+paste paste paste 
+paste term term copy echo 
+paste underscore echo 
 percent backslash 
 plus backslash slap slap percent 
 plus tab slap two 
@@ -218,6 +250,7 @@ right hotel delta right oscar
 right hotel whisky ten 
 right india four 
 right nine right left six 
+right paste 
 right quebec quebec foxtrot charlie 
 right sky enter kilo 
 right ten echo four six 
@@ -232,16 +265,19 @@ romeo oscar nine four
 romeo quebec bravo whisky 
 romeo romeo right oscar 
 romeo space five 
+romeo ten term paste 
 romeo up juliet up alpha 
 romeo victor right golf 
 romeo whisky left 
 scratch delta 
+scratch down 
 scratch down zero zero 
 scratch enter oscar 
 scratch scratch eight zero 
 scratch scratch enter zero romeo 
 scratch sky 
 scratch sky scratch hotel 
+scratch term 
 scratch zero mike 
 scratch zero zero zero sky 
 seven 
@@ -264,6 +300,7 @@ six victor
 six x-ray 
 sky enter enter 
 sky enter zero enter enter 
+sky null copy sky scratch 
 sky scratch 
 sky scratch zero 
 sky sky enter 
@@ -323,6 +360,12 @@ ten hotel mike nine
 ten mike foxtrot hotel 
 ten papa bravo 
 ten quebec victor whisky mike mike 
+term copy copy 
+term null three null null 
+term null zero paste underscore 
+term paste paste sky term 
+term six kilo copy zero 
+term zero kilo copy underscore 
 three four space 
 three kilo down left nine 
 three nine 
@@ -332,6 +375,8 @@ two four one space left
 two x-ray quebec bravo up foxtrot 
 two x-ray three up 
 underscore bang slap 
+underscore copy oscar null four 
+underscore paste 
 uniform kilo uniform 
 uniform lima x-ray lima 
 uniform seven hotel 
@@ -358,6 +403,7 @@ victor space slap
 victor victor six sierra bravo 
 victor zulu 
 whisky three foxtrot ten 
+whisky zero copy 
 window bottom 
 window center 
 window left 
@@ -378,15 +424,19 @@ yankee papa foxtrot sierra x-ray
 yankee seven zulu oscar 
 yankee sierra 
 yankee slap yankee 
+zero bravo underscore null zero 
 zero down scratch scratch sky 
 zero golf delta sky zero 
 zero golf juliet 
 zero hotel zero 
 zero india yankee sky 
+zero paste scratch 
 zero scratch 
+zero six underscore one four 
 zero zero 
 zero zero sky 
 zulu alpha 
+zulu copy 
 zulu delta foxtrot down ten 
 zulu four lima november right 
 zulu foxtrot four 

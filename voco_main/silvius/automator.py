@@ -1,7 +1,8 @@
 import os
 
+
 class Automator:
-    def __init__(self, real = True):
+    def __init__(self, real=True):
         self.xdo_list = []
         self.real = real
 
@@ -13,25 +14,25 @@ class Automator:
 
         command = '/usr/bin/xdotool' + ' '
         command += ' '.join(self.xdo_list)
-#        self.execute(command)
+        #        self.execute(command)
         self.xdo_list = []
         return command
 
     def execute(self, command):
         if command == '': return
 
-#        print "`%s`" % command
+        #        print "`%s`" % command
         if self.real:
             print(command)
+
 #            os.system(command)
 
     def raw_key(self, k):
-        if(k == "'"): k = 'apostrophe'
-        elif(k == '.'): k = 'period'
-        elif(k == '-'): k = 'minus'
+        if (k == "'"): k = 'apostrophe'
+        elif (k == '.'): k = 'period'
+        elif (k == '-'): k = 'minus'
         self.xdo('key ' + k)
-        
-        
+
     def key(self, k):
-        if(len(k) > 1): k = k.capitalize()
+        if (len(k) > 1): k = k.capitalize()
         self.xdo('key ' + k)
