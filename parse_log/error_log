@@ -1,7 +1,0 @@
-2017-10-25 22:02:47.259551,LIVE00000062_00000,hotel,/usr/bin/xdotool key h,0.190190076828,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000062_00000.wav
-2017-10-25 22:02:51.762291,LIVE00000062_00001,alpha bravo,/usr/bin/xdotool key a key b,0.205014944077,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000062_00001.wav
-2017-10-25 22:02:59.342535,LIVE00000062_00002,foxtrot foxtrot quebec romeo sierra,,0.306184053421,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000062_00002.wav
-2017-10-25 22:03:06.069087,LIVE00000062_00003,foxtrot foxtrot quebec romeo sierra,,0.304867982864,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000062_00003.wav
-2017-10-25 22:03:22.643779,LIVE00000063_00000,foxtrot foxtrot quebec romeo sierra,,0.307466030121,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000063_00000.wav
-2017-10-25 22:04:01.337459,LIVE00000064_00000,foxtrot foxtrot,,0.178387880325,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000064_00000.wav
-2017-10-25 22:04:09.597220,LIVE00000064_00001,dot two,/usr/bin/xdotool key period key 2,0.211287975311,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000064_00001.wav

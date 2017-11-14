@@ -1,70 +1,124 @@
 # compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- | copy-feats --compress=true ark:- ark,scp:/home/bartek/Projects/ASR/voco/voco_training/mfcc/raw_mfcc_test.1.ark,/home/bartek/Projects/ASR/voco/voco_training/mfcc/raw_mfcc_test.1.scp 
-# Started at Mon Nov 13 07:27:07 SAST 2017
+# Started at Tue Nov 14 18:35:11 SAST 2017
 #
 copy-feats --compress=true ark:- ark,scp:/home/bartek/Projects/ASR/voco/voco_training/mfcc/raw_mfcc_test.1.ark,/home/bartek/Projects/ASR/voco/voco_training/mfcc/raw_mfcc_test.1.scp 
 compute-mfcc-feats --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- 
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000008
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000009
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000045
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000049
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000060
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000067
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000077
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000102
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000103
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000066_00000
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000066_00003
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000066_00012
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000066_00019
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000067_00013
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000068_00002
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000068_00010
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000074_00005
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000074_00040
 LOG (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:177) Processed 10 utterances
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000110
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000112
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000113
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000129
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000139
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000145
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000150
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000157
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000172
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000185
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000074_00047
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000074_00063
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000075_00008
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000075_00010
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00006
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00016
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00020
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00025
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00031
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00038
 LOG (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:177) Processed 20 utterances
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000186
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000190
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000198
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000201
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000211
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000221
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000222
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000229
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000250
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000254
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00061
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00063
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key LIVE00000090_00092
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00010.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00030.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00032.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00057.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00003.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00009.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00014.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00000.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00019.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000104_00003.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00001.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000120_00008.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000122_00000.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00000.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00002.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00023.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00041.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00058.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00072.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00077.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00006.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00031.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00001.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00006.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00027.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00037.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00038.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00040.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00048.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00049.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00075.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00091.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00092.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00093.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00103.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00104.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00117.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00121.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00158.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00166.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00180.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00186.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00206.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00220.wav
+WARNING (compute-mfcc-feats[5.1.46~1-0d031]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file /home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00227.wav
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000000
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000004
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000006
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000011
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000028
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000048
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000067
 LOG (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:177) Processed 30 utterances
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000259
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000279
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000283
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000301
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000332
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000337
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000339
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000344
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000354
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000359
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000098
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000109
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000116
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000163
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000168
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000188
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000189
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000202
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000211
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000237
 LOG (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:177) Processed 40 utterances
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000364
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000388
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000411
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000416
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000419
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000442
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000444
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000464
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000472
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000480
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000244
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000264
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000267
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000278
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000287
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000293
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000314
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000357
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000359
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000378
 LOG (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:177) Processed 50 utterances
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000490
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000508
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000510
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000526
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000527
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000531
-VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000546
-LOG (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:181)  Done 56 out of 56 utterances.
-LOG (copy-feats[5.1.46~1-0d031]:main():copy-feats.cc:120) Copied 56 feature matrices.
-# Accounting: time=0 threads=1
-# Ended (code 0) at Mon Nov 13 07:27:07 SAST 2017, elapsed time 0 seconds
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000387
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000444
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000446
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000450
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000452
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000464
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000470
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000482
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000486
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000502
+LOG (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:177) Processed 60 utterances
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000506
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000507
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000530
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000535
+VLOG[2] (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:178) Processed features for key REC00000540
+LOG (compute-mfcc-feats[5.1.46~1-0d031]:main():compute-mfcc-feats.cc:181)  Done 64 out of 64 utterances.
+LOG (copy-feats[5.1.46~1-0d031]:main():copy-feats.cc:120) Copied 64 feature matrices.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Tue Nov 14 18:35:12 SAST 2017, elapsed time 1 seconds

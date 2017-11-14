@@ -200,6 +200,7 @@ audio_sample = []
 
 rec = False
 above_gate = False
+prev_sample = ""
 
 while (True):
     data = stream.read(chunk)
@@ -298,5 +299,8 @@ while (True):
         else:
             # start recording
             audio_sample = []
+            audio_sample.append(prev_sample)
             audio_sample.append(data)
             rec = True
+
+    prev_sample = data

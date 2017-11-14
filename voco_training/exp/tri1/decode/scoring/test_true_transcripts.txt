@@ -1,56 +1,109 @@
-REC00000008 switch terminal
-REC00000009 return
-REC00000045 switch back
-REC00000049 switch
-REC00000060 seven right november sierra left 
+LIVE00000066_00000 x-ray
+LIVE00000066_00003 space bravo
+LIVE00000066_00012 quebec romeo sierra tango
+LIVE00000066_00019 space bravo delta
+LIVE00000067_00013 papa
+LIVE00000068_00002 space bravo bravo
+LIVE00000068_00010 golf golf
+LIVE00000074_00005 escape
+LIVE00000074_00040 escape
+LIVE00000074_00047 india
+LIVE00000074_00063 victor
+LIVE00000075_00008 slap
+LIVE00000075_00010 space foxtrot sierra
+LIVE00000090_00006 up four
+LIVE00000090_00016 space one
+LIVE00000090_00020 up
+LIVE00000090_00025 delta delta
+LIVE00000090_00031 tab
+LIVE00000090_00038 scratch three
+LIVE00000090_00061 enter
+LIVE00000090_00063 victor down five
+LIVE00000090_00092 space tab
+LIVE00000092_00010 foxtrot sierra
+LIVE00000092_00030 up five
+LIVE00000092_00032 up
+LIVE00000092_00057 victor
+LIVE00000093_00003 lima
+LIVE00000093_00009 down
+LIVE00000093_00014 yankee
+LIVE00000094_00000 yankee
+LIVE00000094_00019 india
+LIVE00000104_00003 switch
+LIVE00000111_00001 down
+LIVE00000120_00008 copy
+LIVE00000122_00000 window
+LIVE00000125_00000 papa yankee
+LIVE00000125_00002 oscar november
+LIVE00000125_00023 copy
+LIVE00000125_00041 enter
+LIVE00000125_00058 enter
+LIVE00000125_00072 space juliet lima
+LIVE00000125_00077 delta
+LIVE00000126_00006 switch
+LIVE00000127_00031 scratch
+LIVE00000128_00001 space juliet lima
+LIVE00000128_00006 india
+LIVE00000128_00027 left left
+LIVE00000128_00037 up three
+LIVE00000128_00038 yankee
+LIVE00000128_00040 back
+LIVE00000128_00048 up four
+LIVE00000128_00049 delta delta
+LIVE00000128_00075 space juliet lima
+LIVE00000128_00091 space sky golf
+LIVE00000128_00092 escape sky golf
+LIVE00000128_00093 up nine
+LIVE00000128_00103 space bang
+LIVE00000128_00104 up
+LIVE00000128_00117 tab
+LIVE00000128_00121 up three
+LIVE00000128_00158 up two
+LIVE00000128_00166 escape foxtrot sierra
+LIVE00000128_00180 up enter
+LIVE00000128_00186 space tab
+LIVE00000128_00206 switch
+LIVE00000128_00220 scratch
+LIVE00000128_00227 space bang
+REC00000000 window maximise
+REC00000004 switch max
+REC00000006 switch max
+REC00000011 switch
+REC00000028 escape
+REC00000048 window top
 REC00000067 nine up yankee hotel six 
-REC00000077 lima yankee three down mike 
-REC00000102 window left
-REC00000103 switch max
-REC00000110 switch
-REC00000112 window center
-REC00000113 switch back
-REC00000129 switch back
-REC00000139 hotel india 
-REC00000145 charlie mike 
-REC00000150 whisky three foxtrot ten 
-REC00000157 oscar one four 
-REC00000172 up three x-ray 
-REC00000185 six golf 
-REC00000186 bravo lima three 
-REC00000190 sierra victor uniform zulu 
-REC00000198 yankee seven zulu oscar 
-REC00000201 window left
+REC00000098 down quebec 
+REC00000109 switch max
+REC00000116 window center
+REC00000163 up charlie six three uniform 
+REC00000168 right eight whisky delta november 
+REC00000188 mike uniform four 
+REC00000189 oscar whisky 
+REC00000202 return
 REC00000211 window minimise
-REC00000221 switch max
-REC00000222 switch back
-REC00000229 window maximise
-REC00000250 tango two down eight 
-REC00000254 seven x-ray left 
-REC00000259 left charlie up 
-REC00000279 seven one papa yankee 
-REC00000283 five quebec right kilo nine 
-REC00000301 oscar uniform space lima victor 
-REC00000332 mike left 
-REC00000337 right quebec quebec foxtrot charlie 
-REC00000339 bravo right 
-REC00000344 down three space space juliet 
-REC00000354 delta three space 
+REC00000237 romeo quebec bravo whisky 
+REC00000244 golf quebec one 
+REC00000264 x-ray echo right three victor 
+REC00000267 bravo alpha quebec 
+REC00000278 tango echo down bravo 
+REC00000287 one charlie 
+REC00000293 india one 
+REC00000314 india right bravo oscar 
+REC00000357 space victor one lima 
 REC00000359 one uniform 
-REC00000364 quebec delta ten 
-REC00000388 yankee escape mike 
-REC00000411 space slap 
-REC00000416 seven backslash double 
-REC00000419 double slap 
-REC00000442 down single dot 
+REC00000378 space space six left 
+REC00000387 escape 
 REC00000444 slap slap 
+REC00000446 plus backslash slap slap percent 
+REC00000450 zero zero sky 
+REC00000452 hotel sky 
 REC00000464 sky enter enter 
-REC00000472 one zero zero 
-REC00000480 kilo zero sky 
-REC00000490 sky zero 
-REC00000508 null up 
-REC00000510 echo term paste 
-REC00000526 eight term five copy 
-REC00000527 null uniform eight kilo 
-REC00000531 copy whisky one paste 
-REC00000546 down zero paste 
+REC00000470 scratch scratch eight zero 
+REC00000482 right sky enter kilo 
+REC00000486 sky scratch zero 
+REC00000502 null zero whisky 
+REC00000506 zero six underscore one four 
+REC00000507 paste bravo zero term null 
+REC00000530 scratch down 
+REC00000535 one null seven zero 
+REC00000540 paste null scratch term 
