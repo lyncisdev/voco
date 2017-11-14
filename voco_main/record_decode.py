@@ -99,7 +99,7 @@ def write_audio_records(basedir, session_counter, audio_sample_file_path, UID):
 
 
 #----------------------------------------------------------------------------
-# write_audio_file function
+# write_log function
 #----------------------------------------------------------------------------
 
 

@@ -1,0 +1,894 @@
+2017-10-25 22:02:47.259551,LIVE00000062_00000,hotel,/usr/bin/xdotool key h,0.190190076828,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000062_00000.wav
+2017-10-25 22:02:51.762291,LIVE00000062_00001,alpha bravo,/usr/bin/xdotool key a key b,0.205014944077,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000062_00001.wav
+2017-10-25 22:02:59.342535,LIVE00000062_00002,foxtrot foxtrot quebec romeo sierra,,0.306184053421,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000062_00002.wav
+2017-10-25 22:03:06.069087,LIVE00000062_00003,foxtrot foxtrot quebec romeo sierra,,0.304867982864,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000062_00003.wav
+2017-10-25 22:03:22.643779,LIVE00000063_00000,foxtrot foxtrot quebec romeo sierra,,0.307466030121,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000063_00000.wav
+2017-10-25 22:04:01.337459,LIVE00000064_00000,foxtrot foxtrot,,0.178387880325,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000064_00000.wav
+2017-10-25 22:04:09.597220,LIVE00000064_00001,dot two,/usr/bin/xdotool key period key 2,0.211287975311,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000064_00001.wav
+2017-10-25 22:04:13.294889,LIVE00000064_00002,foxtrot,,0.171470880508,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000064_00002.wav
+2017-10-25 22:04:17.061841,LIVE00000064_00003,papa,/usr/bin/xdotool key p,0.201574087143,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000064_00003.wav
+2017-10-25 22:04:23.013077,LIVE00000064_00004,quebec,,0.171681880951,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000064_00004.wav
+2017-10-25 22:05:58.382630,LIVE00000065_00000,foxtrot foxtrot romeo sierra tango,/usr/bin/xdotool key f key f key r key s key t,0.369197130203,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000065_00000.wav
+2017-10-25 22:06:08.786359,LIVE00000065_00001,kilo juliet india,/usr/bin/xdotool key k key j key i,0.30485200882,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000065_00001.wav
+2017-10-25 22:06:57.909650,LIVE00000066_00000,x-ray,/usr/bin/xdotool key x,0.209090948105,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00000.wav
+2017-10-25 22:07:08.390389,LIVE00000066_00001,space bravo,/usr/bin/xdotool key space key b,0.217607975006,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00001.wav
+2017-10-25 22:07:14.357588,LIVE00000066_00002,november,/usr/bin/xdotool key n,0.202347993851,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00002.wav
+2017-10-25 22:07:21.902731,LIVE00000066_00003,space bravo,/usr/bin/xdotool key space key b,0.267316102982,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00003.wav
+2017-10-25 22:07:30.253871,LIVE00000066_00004,alpha bravo charlie delta echo,/usr/bin/xdotool key a key b key c key d key e,0.39359498024,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00004.wav
+2017-10-25 22:07:38.468058,LIVE00000066_00005,alpha bravo charlie delta echo,/usr/bin/xdotool key a key b key c key d key e,0.379463911057,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00005.wav
+2017-10-25 22:07:41.277621,LIVE00000066_00006,slap,/usr/bin/xdotool key Return,0.197880029678,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00006.wav
+2017-10-25 22:07:47.467261,LIVE00000066_00007,foxtrot golf hotel india juliet kilo,/usr/bin/xdotool key f key g key h key i key j key k,0.405469894409,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00007.wav
+2017-10-25 22:07:54.732039,LIVE00000066_00008,slap,/usr/bin/xdotool key Return,0.190211057663,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00008.wav
+2017-10-25 22:08:00.127522,LIVE00000066_00009,down mike november oscar papa,/usr/bin/xdotool key Down key m key n key o key p,0.352176904678,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00009.wav
+2017-10-25 22:08:05.958197,LIVE00000066_00010,lima,/usr/bin/xdotool key l,0.199299097061,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00010.wav
+2017-10-25 22:08:08.958466,LIVE00000066_00011,slap,/usr/bin/xdotool key Return,0.206078052521,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00011.wav
+2017-10-25 22:08:13.615565,LIVE00000066_00012,quebec romeo sierra tango,/usr/bin/xdotool key q key r key s key t,0.374883890152,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00012.wav
+2017-10-25 22:08:18.769432,LIVE00000066_00013,uniform victor whisky,/usr/bin/xdotool key u key v key w,0.294960975647,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00013.wav
+2017-10-25 22:08:24.027561,LIVE00000066_00014,x-ray yankee zulu,/usr/bin/xdotool key x key y key z,0.319674968719,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00014.wav
+2017-10-25 22:08:30.653032,LIVE00000066_00015,escape,/usr/bin/xdotool key Escape,0.209408998489,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00015.wav
+2017-10-25 22:08:36.781669,LIVE00000066_00016,eight bravo delta,/usr/bin/xdotool key 8 key b key d,0.358469963074,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00016.wav
+2017-10-25 22:08:41.129189,LIVE00000066_00017,eight,/usr/bin/xdotool key 8,0.218837022781,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00017.wav
+2017-10-25 22:08:44.871756,LIVE00000066_00018,escape,/usr/bin/xdotool key Escape,0.220153808594,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00018.wav
+2017-10-25 22:08:50.595775,LIVE00000066_00019,space bravo delta,/usr/bin/xdotool key space key b key d,0.335038900375,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000066_00019.wav
+2017-10-25 22:10:30.486349,LIVE00000067_00000,up,/usr/bin/xdotool key Up,0.238046884537,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00000.wav
+2017-10-25 22:10:41.015446,LIVE00000067_00001,space bravo november,/usr/bin/xdotool key space key b key n,0.297804117203,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00001.wav
+2017-10-25 22:11:04.162808,LIVE00000067_00002,india,/usr/bin/xdotool key i,0.257695913315,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00002.wav
+2017-10-25 22:11:20.560577,LIVE00000067_00003,escape,/usr/bin/xdotool key Escape,0.202106952667,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00003.wav
+2017-10-25 22:11:24.305426,LIVE00000067_00004,space foxtrot,/usr/bin/xdotool key space key f,0.206336021423,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00004.wav
+2017-10-25 22:11:30.280681,LIVE00000067_00005,sierra,/usr/bin/xdotool key s,0.197803020477,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00005.wav
+2017-10-25 22:11:51.216551,LIVE00000067_00006,up,/usr/bin/xdotool key Up,0.191614866257,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00006.wav
+2017-10-25 22:11:56.448056,LIVE00000067_00007,slash,/usr/bin/xdotool key slash,0.18880200386,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00007.wav
+2017-10-25 22:12:02.437020,LIVE00000067_00008,slap,/usr/bin/xdotool key Return,0.196843147278,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00008.wav
+2017-10-25 22:12:38.820667,LIVE00000067_00009,space whisky slash,/usr/bin/xdotool key space key w key slash,0.302855014801,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00009.wav
+2017-10-25 22:13:25.108840,LIVE00000067_00010,bang,/usr/bin/xdotool key exclam,0.216351032257,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00010.wav
+2017-10-25 22:13:28.826133,LIVE00000067_00011,papa,/usr/bin/xdotool key p,0.195554971695,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00011.wav
+2017-10-25 22:13:40.094985,LIVE00000067_00012,yankee yankee,/usr/bin/xdotool key y key y,0.245741128922,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00012.wav
+2017-10-25 22:13:43.046847,LIVE00000067_00013,papa,/usr/bin/xdotool key p,0.205902099609,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00013.wav
+2017-10-25 22:14:13.449239,LIVE00000067_00014,yankee yankee,/usr/bin/xdotool key y key y,0.311335086823,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00014.wav
+2017-10-25 22:14:18.571101,LIVE00000067_00015,papa,/usr/bin/xdotool key p,0.197210073471,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00015.wav
+2017-10-25 22:14:24.658231,LIVE00000067_00016,delta delta,/usr/bin/xdotool key d key d,0.303713083267,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00016.wav
+2017-10-25 22:14:35.855745,LIVE00000067_00017,yankee yankee,/usr/bin/xdotool key y key y,0.282235860825,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00017.wav
+2017-10-25 22:14:41.763676,LIVE00000067_00018,papa,/usr/bin/xdotool key p,0.206505060196,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00018.wav
+2017-10-25 22:14:59.713007,LIVE00000067_00019,bang,/usr/bin/xdotool key exclam,0.208245038986,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00019.wav
+2017-10-25 22:15:15.423759,LIVE00000067_00020,alpha,/usr/bin/xdotool key a,0.208302021027,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00020.wav
+2017-10-25 22:15:20.713791,LIVE00000067_00021,papa,/usr/bin/xdotool key p,0.260201931,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000067_00021.wav
+2017-10-25 22:18:43.490727,LIVE00000068_00000,escape,/usr/bin/xdotool key Escape,0.206019878387,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00000.wav
+2017-10-25 22:18:48.113515,LIVE00000068_00001,escape,/usr/bin/xdotool key Escape,0.341347932816,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00001.wav
+2017-10-25 22:18:53.361497,LIVE00000068_00002,space bravo bravo,/usr/bin/xdotool key space key b key b,0.355664968491,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00002.wav
+2017-10-25 22:19:00.083518,LIVE00000068_00003,charlie oscar romeo,/usr/bin/xdotool key c key o key r,0.344145059586,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00003.wav
+2017-10-25 22:19:02.997678,LIVE00000068_00004,slap,/usr/bin/xdotool key Return,0.265398025513,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00004.wav
+2017-10-25 22:19:11.419127,LIVE00000068_00005,four carrot india,/usr/bin/xdotool key 4 key caret key i,0.459401845932,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00005.wav
+2017-10-25 22:19:15.169529,LIVE00000068_00006,eight echo,/usr/bin/xdotool key 8 key e,0.46800994873,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00006.wav
+2017-10-25 22:19:16.450260,LIVE00000068_00007,echo,/usr/bin/xdotool key e,0.25581908226,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00007.wav
+2017-10-25 22:19:20.894452,LIVE00000068_00008,escape,/usr/bin/xdotool key Escape,0.209447145462,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00008.wav
+2017-10-25 22:19:24.982873,LIVE00000068_00009,eight late plus,/usr/bin/xdotool key 8 key parenleft key plus,0.558111906052,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00009.wav
+2017-10-25 22:19:30.618530,LIVE00000068_00010,golf golf,/usr/bin/xdotool key g key g,0.208846092224,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00010.wav
+2017-10-25 22:19:36.671218,LIVE00000068_00011,space slap,/usr/bin/xdotool key space key Return,0.281133890152,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00011.wav
+2017-10-25 22:19:39.723971,LIVE00000068_00012,whisky one,/usr/bin/xdotool key w key 1,0.340754032135,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00012.wav
+2017-10-25 22:19:44.818200,LIVE00000068_00013,escape,/usr/bin/xdotool key Escape,0.197849035263,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00013.wav
+2017-10-25 22:19:48.654613,LIVE00000068_00014,space whisky one,/usr/bin/xdotool key space key w key 1,0.294836044312,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00014.wav
+2017-10-25 22:19:58.587521,LIVE00000068_00015,eight up,/usr/bin/xdotool key 8 key Up,0.504641056061,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00015.wav
+2017-10-25 22:20:13.506542,LIVE00000068_00017,eight up,/usr/bin/xdotool key 8 key Up,0.464138031006,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000068_00017.wav
+2017-10-25 22:21:11.601785,LIVE00000069_00001,space whisky slash,/usr/bin/xdotool key space key w key slash,0.328174829483,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000069_00001.wav
+2017-10-25 22:21:19.032409,LIVE00000069_00002,space whisky slash,/usr/bin/xdotool key space key w key slash,0.282392978668,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000069_00002.wav
+2017-10-26 20:22:42.790427,LIVE00000070_00000,up,/usr/bin/xdotool key Up,0.305406093597,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000070_00000.wav
+2017-10-26 20:22:44.981253,LIVE00000070_00001,tab,/usr/bin/xdotool key Tab,0.631627082825,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000070_00001.wav
+2017-10-26 20:22:49.857560,LIVE00000070_00002,oscar two,/usr/bin/xdotool key o key 2,0.206092119217,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000070_00002.wav
+2017-10-26 20:23:03.462143,LIVE00000071_00000,up,/usr/bin/xdotool key Up,0.2880859375,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000071_00000.wav
+2017-10-26 20:23:13.102264,LIVE00000071_00001,star,/usr/bin/xdotool key asterisk,0.284154891968,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000071_00001.wav
+2017-10-26 20:23:16.017186,LIVE00000071_00002,oscar,/usr/bin/xdotool key o,0.580267906189,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000071_00002.wav
+2017-10-26 20:24:38.692564,LIVE00000072_00000,scratch,/usr/bin/xdotool key BackSpace,0.232161998749,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000072_00000.wav
+2017-10-26 20:24:41.346249,LIVE00000072_00001,zero,/usr/bin/xdotool key 0,0.22487616539,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000072_00001.wav
+2017-10-26 20:25:06.910951,LIVE00000073_00000,sky alpha,/usr/bin/xdotool key A,0.275840044022,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00000.wav
+2017-10-26 20:25:11.832350,LIVE00000073_00001,sky november,/usr/bin/xdotool key N,0.258585929871,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00001.wav
+2017-10-26 20:25:16.966342,LIVE00000073_00002,zero,/usr/bin/xdotool key 0,0.470365047455,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00002.wav
+2017-10-26 20:25:25.543482,LIVE00000073_00004,hash,/usr/bin/xdotool key numbersign,0.222615003586,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00004.wav
+2017-10-26 20:25:30.453354,LIVE00000073_00005,scratch,/usr/bin/xdotool key BackSpace,0.229666948318,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00005.wav
+2017-10-26 20:25:33.759962,LIVE00000073_00006,scratch scratch,/usr/bin/xdotool key BackSpace key BackSpace,0.191738843918,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00006.wav
+2017-10-26 20:25:37.064525,LIVE00000073_00007,scratch,/usr/bin/xdotool key BackSpace,0.200564861298,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00007.wav
+2017-10-26 20:25:51.642096,LIVE00000073_00009,zero five three nine,/usr/bin/xdotool key 0 key 5 key 3 key 9,0.24665594101,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00009.wav
+2017-10-26 20:26:04.481720,LIVE00000073_00011,sky alpha,/usr/bin/xdotool key A,0.183065891266,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00011.wav
+2017-10-26 20:26:08.561004,LIVE00000073_00012,scratch,/usr/bin/xdotool key BackSpace,0.180617809296,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000073_00012.wav
+2017-10-26 20:39:54.317914,LIVE00000074_00000,space bravo bravo,/usr/bin/xdotool key space key b key b,0.591159105301,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00000.wav
+2017-10-26 20:40:03.117571,LIVE00000074_00001,escape,/usr/bin/xdotool key Escape,0.228003025055,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00001.wav
+2017-10-26 20:40:07.286208,LIVE00000074_00002,space bravo bravo,/usr/bin/xdotool key space key b key b,0.276959896088,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00002.wav
+2017-10-26 20:40:16.372883,LIVE00000074_00003,eight,/usr/bin/xdotool key 8,0.520414829254,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00003.wav
+2017-10-26 20:40:18.800448,LIVE00000074_00004,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.884523868561,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00004.wav
+2017-10-26 20:40:22.140873,LIVE00000074_00005,escape,/usr/bin/xdotool key Escape,0.226631164551,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00005.wav
+2017-10-26 20:40:24.751671,LIVE00000074_00006,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.277541875839,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00006.wav
+2017-10-26 20:40:42.351706,LIVE00000074_00007,mike alpha india,/usr/bin/xdotool key m key a key i,0.446428060532,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00007.wav
+2017-10-26 20:40:46.460515,LIVE00000074_00008,tab,/usr/bin/xdotool key Tab,0.218750953674,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00008.wav
+2017-10-26 20:40:53.021343,LIVE00000074_00009,romeo echo charlie,/usr/bin/xdotool key r key e key c,0.335719108582,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00009.wav
+2017-10-26 20:40:56.327095,LIVE00000074_00010,enter,,0.199434995651,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00010.wav
+2017-10-26 20:41:04.383667,LIVE00000074_00011,enter,,0.273941993713,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00011.wav
+2017-10-26 20:41:07.081548,LIVE00000074_00012,slap,/usr/bin/xdotool key Return,0.372297048569,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00012.wav
+2017-10-26 20:41:15.128712,LIVE00000074_00013,space sierra,/usr/bin/xdotool key space key s,0.25537610054,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00013.wav
+2017-10-26 20:41:20.112772,LIVE00000074_00014,escape,/usr/bin/xdotool key Escape,0.316814899445,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00014.wav
+2017-10-26 20:41:24.195160,LIVE00000074_00015,space,/usr/bin/xdotool key space,0.978212118149,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00015.wav
+2017-10-26 20:41:26.717889,LIVE00000074_00016,zero,/usr/bin/xdotool key 0,0.19993686676,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00016.wav
+2017-10-26 20:42:05.415112,LIVE00000074_00017,space sierra sierra,/usr/bin/xdotool key space key s key s,0.498664140701,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00017.wav
+2017-10-26 20:42:15.634933,LIVE00000074_00018,echo november tango,/usr/bin/xdotool key e key n key t,0.854961156845,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00018.wav
+2017-10-26 20:43:04.368042,LIVE00000074_00019,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.37083697319,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00019.wav
+2017-10-26 20:43:07.717864,LIVE00000074_00020,space tab,/usr/bin/xdotool key space key Tab,0.237477064133,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00020.wav
+2017-10-26 20:43:11.070146,LIVE00000074_00021,eight foxtrot,/usr/bin/xdotool key 8 key f,0.248868942261,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00021.wav
+2017-10-26 20:43:17.790910,LIVE00000074_00022,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.487596988678,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00022.wav
+2017-10-26 20:43:24.250603,LIVE00000074_00023,space zero,/usr/bin/xdotool key space key 0,0.225983858109,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00023.wav
+2017-10-26 20:43:33.907458,LIVE00000074_00024,space sierra sierra,/usr/bin/xdotool key space key s key s,0.298566102982,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00024.wav
+2017-10-26 20:43:38.196904,LIVE00000074_00025,romeo echo tango,/usr/bin/xdotool key r key e key t,0.406586885452,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00025.wav
+2017-10-26 20:43:56.475094,LIVE00000074_00026,echo november tango,/usr/bin/xdotool key e key n key t,0.317633867264,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00026.wav
+2017-10-26 20:44:02.172383,LIVE00000074_00027,back space back space back sky,,0.251971006393,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00027.wav
+2017-10-26 20:44:08.632637,LIVE00000074_00028,scratch,/usr/bin/xdotool key BackSpace,0.230636835098,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00028.wav
+2017-10-26 20:44:12.049638,LIVE00000074_00029,scratch,/usr/bin/xdotool key BackSpace,0.301872968674,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00029.wav
+2017-10-26 20:44:14.613729,LIVE00000074_00030,scratch,/usr/bin/xdotool key BackSpace,0.229535102844,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00030.wav
+2017-10-26 20:45:25.844564,LIVE00000074_00031,yankee,/usr/bin/xdotool key y,0.225935935974,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00031.wav
+2017-10-26 20:45:29.174222,LIVE00000074_00032,down,/usr/bin/xdotool key Down,0.211920976639,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00032.wav
+2017-10-26 20:45:32.483493,LIVE00000074_00033,india,/usr/bin/xdotool key i,0.204033136368,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00033.wav
+2017-10-26 20:45:45.193062,LIVE00000074_00034,papa,/usr/bin/xdotool key p,0.226350069046,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00034.wav
+2017-10-26 20:45:50.075144,LIVE00000074_00035,india,/usr/bin/xdotool key i,0.203941106796,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00035.wav
+2017-10-26 20:45:53.402765,LIVE00000074_00036,right,/usr/bin/xdotool key Right,0.211973905563,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00036.wav
+2017-10-26 20:45:55.917871,LIVE00000074_00037,tango,/usr/bin/xdotool key t,0.186667919159,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00037.wav
+2017-10-26 20:46:00.787958,LIVE00000074_00038,enter,,0.196573972702,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00038.wav
+2017-10-26 20:46:04.267315,LIVE00000074_00039,slap,/usr/bin/xdotool key Return,0.37442111969,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00039.wav
+2017-10-26 20:46:13.073846,LIVE00000074_00040,escape,/usr/bin/xdotool key Escape,0.238700866699,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00040.wav
+2017-10-26 20:46:16.410336,LIVE00000074_00041,right juliet,/usr/bin/xdotool key Right key j,0.232751131058,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00041.wav
+2017-10-26 20:46:20.618053,LIVE00000074_00042,up,/usr/bin/xdotool key Up,0.318355083466,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00042.wav
+2017-10-26 20:46:28.692582,LIVE00000074_00043,five juliet,/usr/bin/xdotool key 5 key j,0.288289070129,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00043.wav
+2017-10-26 20:46:35.217659,LIVE00000074_00044,five kilo,/usr/bin/xdotool key 5 key k,0.291415929794,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00044.wav
+2017-10-26 20:46:40.928483,LIVE00000074_00045,five hotel,/usr/bin/xdotool key 5 key h,0.257864952087,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00045.wav
+2017-10-26 20:46:43.552059,LIVE00000074_00046,five hotel,/usr/bin/xdotool key 5 key h,0.30278301239,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00046.wav
+2017-10-26 20:46:50.990932,LIVE00000074_00047,india,/usr/bin/xdotool key i,0.418553113937,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00047.wav
+2017-10-26 20:47:23.446639,LIVE00000074_00049,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.282303094864,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00049.wav
+2017-10-26 20:47:30.123774,LIVE00000074_00050,eight sierra sierra,/usr/bin/xdotool key 8 key s key s,0.436055898666,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00050.wav
+2017-10-26 20:47:46.932895,LIVE00000074_00051,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.438575983047,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00051.wav
+2017-10-26 20:47:51.159497,LIVE00000074_00052,space sierra sierra,/usr/bin/xdotool key space key s key s,0.342849969864,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00052.wav
+2017-10-26 20:48:00.818643,LIVE00000074_00053,romeo echo papa,/usr/bin/xdotool key r key e key p,0.296212911606,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00053.wav
+2017-10-26 20:48:08.942666,LIVE00000074_00054,echo alpha tango,/usr/bin/xdotool key e key a key t,0.340623140335,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00054.wav
+2017-10-26 20:48:31.869215,LIVE00000074_00055,victor two,/usr/bin/xdotool key v key 2,0.297762155533,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00055.wav
+2017-10-26 20:48:39.123579,LIVE00000074_00056,yankee,/usr/bin/xdotool key y,0.249824047089,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00056.wav
+2017-10-26 20:48:57.269879,LIVE00000074_00057,papa,/usr/bin/xdotool key p,0.206045150757,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00057.wav
+2017-10-26 20:49:15.115987,LIVE00000074_00058,space sierra,/usr/bin/xdotool key space key s,0.685482978821,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00058.wav
+2017-10-26 20:49:19.620100,LIVE00000074_00059,sierra,/usr/bin/xdotool key s,0.606425046921,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00059.wav
+2017-10-26 20:49:23.830106,LIVE00000074_00060,papa underscore,/usr/bin/xdotool key p key underscore,0.31431388855,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00060.wav
+2017-10-26 20:49:35.095480,LIVE00000074_00061,echo delta india,/usr/bin/xdotool key e key d key i,0.35135102272,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00061.wav
+2017-10-26 20:49:42.316545,LIVE00000074_00062,victor,/usr/bin/xdotool key v,0.212924003601,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00062.wav
+2017-10-26 20:49:46.504698,LIVE00000074_00063,victor,/usr/bin/xdotool key v,0.298650026321,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00063.wav
+2017-10-26 20:49:52.923783,LIVE00000074_00064,delta,/usr/bin/xdotool key d,0.194593191147,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00064.wav
+2017-10-26 20:49:56.231028,LIVE00000074_00065,escape,/usr/bin/xdotool key Escape,0.199007034302,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00065.wav
+2017-10-26 20:50:02.919237,LIVE00000074_00066,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.447916030884,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000074_00066.wav
+2017-10-26 20:50:25.906714,LIVE00000075_00001,up,/usr/bin/xdotool key Up,0.227452993393,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000075_00001.wav
+2017-10-26 20:50:31.992976,LIVE00000075_00002,space sierra sierra,/usr/bin/xdotool key space key s key s,0.630998849869,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000075_00002.wav
+2017-10-26 20:50:36.334349,LIVE00000075_00003,mike oscar victor,/usr/bin/xdotool key m key o key v,0.449552059174,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000075_00003.wav
+2017-10-26 20:50:42.842264,LIVE00000075_00004,down,/usr/bin/xdotool key Down,0.279604911804,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000075_00004.wav
+2017-10-26 20:50:46.157649,LIVE00000075_00005,down,/usr/bin/xdotool key Down,0.215121030807,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000075_00005.wav
+2017-10-26 20:50:49.628765,LIVE00000075_00006,down down,/usr/bin/xdotool key Down key Down,0.36293888092,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000075_00006.wav
+2017-10-26 20:50:57.308834,LIVE00000075_00008,slap,/usr/bin/xdotool key Return,0.479815006256,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000075_00008.wav
+2017-10-26 20:52:19.233395,LIVE00000075_00010,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.432615041733,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000075_00010.wav
+2017-10-26 20:57:37.880535,LIVE00000079_00000,enter,/usr/bin/xdotool key Return,0.297489881516,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000079_00000.wav
+2017-10-26 21:05:38.589811,LIVE00000081_00000,plus,/usr/bin/xdotool key plus,0.310688018799,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000081_00000.wav
+2017-10-26 21:09:08.947970,LIVE00000084_00000,nine five,/usr/bin/xdotool key 9 key 5,0.216484069824,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000084_00000.wav
+2017-10-26 21:20:29.579529,LIVE00000089_00000,up five,/usr/bin/xdotool key Up key Up key Up key Up key Up,0.308561086655,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000089_00000.wav
+2017-10-26 21:20:40.891571,LIVE00000089_00001,up five,/usr/bin/xdotool key Up key Up key Up key Up key Up,0.391232967377,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000089_00001.wav
+2017-10-26 21:20:43.633202,LIVE00000089_00002,down five,/usr/bin/xdotool key Down key Down key Down key Down key Down,0.411943912506,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000089_00002.wav
+2017-10-26 21:20:47.830502,LIVE00000089_00003,left five,/usr/bin/xdotool key Left key Left key Left key Left key Left,0.309138059616,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000089_00003.wav
+2017-10-26 21:22:11.488473,LIVE00000090_00000,space zero,/usr/bin/xdotool key space key 0,0.214527845383,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00000.wav
+2017-10-26 21:22:25.337259,LIVE00000090_00002,up nine,/usr/bin/xdotool key Up key Up key Up key Up key Up key Up key Up key Up key Up,0.335927963257,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00002.wav
+2017-10-26 21:22:35.749439,LIVE00000090_00003,up five,/usr/bin/xdotool key Up key Up key Up key Up key Up,0.288699865341,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00003.wav
+2017-10-26 21:22:38.304201,LIVE00000090_00004,left,/usr/bin/xdotool key Left,0.220909118652,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00004.wav
+2017-10-26 21:22:40.929853,LIVE00000090_00005,enter,/usr/bin/xdotool key Return,0.285889148712,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00005.wav
+2017-10-26 21:22:51.446872,LIVE00000090_00006,up four,/usr/bin/xdotool key Up key Up key Up key Up,0.377431154251,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00006.wav
+2017-10-26 21:22:54.096111,LIVE00000090_00007,down,/usr/bin/xdotool key Down,0.324333906174,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00007.wav
+2017-10-26 21:23:00.537671,LIVE00000090_00008,enter,/usr/bin/xdotool key Return,0.205074071884,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00008.wav
+2017-10-26 21:23:06.408283,LIVE00000090_00009,down nine,/usr/bin/xdotool key Down key Down key Down key Down key Down key Down key Down key Down key Down,0.409784793854,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00009.wav
+2017-10-26 21:23:08.972712,LIVE00000090_00010,down,/usr/bin/xdotool key Down,0.234290838242,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00010.wav
+2017-10-26 21:23:11.614975,LIVE00000090_00011,seven,/usr/bin/xdotool key 7,0.315817117691,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00011.wav
+2017-10-26 21:23:21.260302,LIVE00000090_00012,enter,/usr/bin/xdotool key Return,0.299402952194,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00012.wav
+2017-10-26 21:23:24.621418,LIVE00000090_00013,tab,/usr/bin/xdotool key Tab,0.241753101349,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00013.wav
+2017-10-26 21:23:44.837499,LIVE00000090_00014,space papa tango,/usr/bin/xdotool key space key p key t,0.705452203751,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00014.wav
+2017-10-26 21:23:49.962254,LIVE00000090_00015,space papa tango,/usr/bin/xdotool key space key p key t,0.451303958893,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00015.wav
+2017-10-26 21:24:00.425679,LIVE00000090_00016,space one,/usr/bin/xdotool key space key 1,0.329195022583,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00016.wav
+2017-10-26 21:24:08.566313,LIVE00000090_00017,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.348685979843,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00017.wav
+2017-10-26 21:24:17.013450,LIVE00000090_00018,papa alpha romeo,/usr/bin/xdotool key p key a key r,0.651340961456,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00018.wav
+2017-10-26 21:24:18.866512,LIVE00000090_00019,sierra echo,/usr/bin/xdotool key s key e,0.304546833038,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00019.wav
+2017-10-26 21:24:37.213657,LIVE00000090_00020,up,/usr/bin/xdotool key Up,0.402688980103,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00020.wav
+2017-10-26 21:24:41.181065,LIVE00000090_00021,enter,/usr/bin/xdotool key Return,0.863601922989,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00021.wav
+2017-10-26 21:24:45.263003,LIVE00000090_00022,papa,/usr/bin/xdotool key p,0.193012952805,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00022.wav
+2017-10-26 21:24:48.597116,LIVE00000090_00023,alpha romeo,/usr/bin/xdotool key a key r,0.221928834915,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00023.wav
+2017-10-26 21:24:51.130840,LIVE00000090_00024,enter,/usr/bin/xdotool key Return,0.195107936859,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00024.wav
+2017-10-26 21:25:32.077950,LIVE00000090_00025,delta delta,/usr/bin/xdotool key d key d,0.387300014496,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00025.wav
+2017-10-26 21:25:37.096122,LIVE00000090_00026,space juliet,/usr/bin/xdotool key space key j,0.344547986984,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00026.wav
+2017-10-26 21:25:44.332430,LIVE00000090_00027,lima,/usr/bin/xdotool key l,0.214466094971,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00027.wav
+2017-10-26 21:25:53.204131,LIVE00000090_00028,eight,/usr/bin/xdotool key 8,0.304757118225,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00028.wav
+2017-10-26 21:25:57.339256,LIVE00000090_00029,escape,/usr/bin/xdotool key Escape,0.237697124481,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00029.wav
+2017-10-26 21:26:38.317965,LIVE00000090_00030,victor india mike,/usr/bin/xdotool key v key i key m,0.418169021606,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00030.wav
+2017-10-26 21:26:40.862685,LIVE00000090_00031,tab,/usr/bin/xdotool key Tab,0.221534013748,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00031.wav
+2017-10-26 21:26:52.412119,LIVE00000090_00032,victor left victor india mike,/usr/bin/xdotool key v key Left key v key i key m,0.63364315033,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00032.wav
+2017-10-26 21:26:56.137238,LIVE00000090_00033,eight,/usr/bin/xdotool key 8,0.60496711731,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00033.wav
+2017-10-26 21:27:03.701827,LIVE00000090_00035,right,/usr/bin/xdotool key Right,0.211774110794,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00035.wav
+2017-10-26 21:27:07.025426,LIVE00000090_00036,eight space two,/usr/bin/xdotool key 8 key space key 2,0.215323925018,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00036.wav
+2017-10-26 21:27:12.689441,LIVE00000090_00037,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.215389966965,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00037.wav
+2017-10-26 21:27:16.094891,LIVE00000090_00038,scratch three,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace,0.301352024078,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00038.wav
+2017-10-26 21:27:18.618473,LIVE00000090_00039,space,/usr/bin/xdotool key space,0.183746814728,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00039.wav
+2017-10-26 21:27:23.536558,LIVE00000090_00040,tango eight,/usr/bin/xdotool key t key 8,0.237077951431,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00040.wav
+2017-10-26 21:27:26.131185,LIVE00000090_00041,alpha india,/usr/bin/xdotool key a key i,0.274021148682,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00041.wav
+2017-10-26 21:27:29.495861,LIVE00000090_00042,back space three,,0.256621837616,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00042.wav
+2017-10-26 21:27:36.808219,LIVE00000090_00043,scratch three,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace,0.304306030273,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00043.wav
+2017-10-26 21:27:41.872676,LIVE00000090_00044,romeo alpha india,/usr/bin/xdotool key r key a key i,0.388343095779,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00044.wav
+2017-10-26 21:27:53.211223,LIVE00000090_00045,november,/usr/bin/xdotool key n,0.423356056213,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00045.wav
+2017-10-26 21:27:55.661706,LIVE00000090_00046,echo romeo,/usr/bin/xdotool key e key r,0.892073154449,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00046.wav
+2017-10-26 21:27:59.793874,LIVE00000090_00047,down,/usr/bin/xdotool key Down,0.278165817261,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00047.wav
+2017-10-26 21:28:03.075964,LIVE00000090_00048,enter,/usr/bin/xdotool key Return,0.204296827316,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00048.wav
+2017-10-26 21:30:00.701291,LIVE00000090_00051,right nine,/usr/bin/xdotool key Right key Right key Right key Right key Right key Right key Right key Right key Right,0.43950009346,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00051.wav
+2017-10-26 21:30:09.171327,LIVE00000090_00053,right five,/usr/bin/xdotool key Right key Right key Right key Right key Right,0.484436988831,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00053.wav
+2017-10-26 21:31:06.569481,LIVE00000090_00054,india,/usr/bin/xdotool key i,0.206254005432,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00054.wav
+2017-10-26 21:31:10.735846,LIVE00000090_00055,space,/usr/bin/xdotool key space,0.311607122421,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00055.wav
+2017-10-26 21:31:18.330863,LIVE00000090_00056,charlie oscar mike mike alpha,/usr/bin/xdotool key c key o key m key m key a,0.639914035797,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00056.wav
+2017-10-26 21:31:23.948043,LIVE00000090_00057,colon,/usr/bin/xdotool key colon,0.197597980499,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00057.wav
+2017-10-26 21:31:33.651723,LIVE00000090_00058,charlie oscar mike mike,/usr/bin/xdotool key c key o key m key m,0.446271896362,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00058.wav
+2017-10-26 21:31:36.254773,LIVE00000090_00059,enter,/usr/bin/xdotool key Return,0.294631004333,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00059.wav
+2017-10-26 21:31:38.911670,LIVE00000090_00060,colon,/usr/bin/xdotool key colon,0.330225944519,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00060.wav
+2017-10-26 21:31:42.409773,LIVE00000090_00061,enter,/usr/bin/xdotool key Return,0.40923500061,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00061.wav
+2017-10-26 21:31:49.679859,LIVE00000090_00062,escape,/usr/bin/xdotool key Escape,0.326374053955,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00062.wav
+2017-10-26 21:31:53.180589,LIVE00000090_00063,victor down five,/usr/bin/xdotool key v key Down key Down key Down key Down key Down,0.419292926788,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00063.wav
+2017-10-26 21:31:57.344546,LIVE00000090_00064,down,/usr/bin/xdotool key Down,0.31592798233,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00064.wav
+2017-10-26 21:32:48.727069,LIVE00000090_00065,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.381047010422,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00065.wav
+2017-10-26 21:32:54.286058,LIVE00000090_00066,back space two,,0.926138162613,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00066.wav
+2017-10-26 21:32:55.666840,LIVE00000090_00067,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.610582113266,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00067.wav
+2017-10-26 21:32:58.623690,LIVE00000090_00068,escape,/usr/bin/xdotool key Escape,0.651475191116,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00068.wav
+2017-10-26 21:33:02.091098,LIVE00000090_00069,space foxtrot foxtrot,/usr/bin/xdotool key space key f key f,0.379112958908,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00069.wav
+2017-10-26 21:33:12.609501,LIVE00000090_00070,down,/usr/bin/xdotool key Down,0.491791009903,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00070.wav
+2017-10-26 21:33:15.865788,LIVE00000090_00071,enter tab,/usr/bin/xdotool key Return key Tab,0.932391166687,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00071.wav
+2017-10-26 21:33:23.118177,LIVE00000090_00072,sierra tango alpha,/usr/bin/xdotool key s key t key a,0.30575799942,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00072.wav
+2017-10-26 21:33:26.492360,LIVE00000090_00073,enter,/usr/bin/xdotool key Return,0.290428161621,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00073.wav
+2017-10-26 21:33:32.336479,LIVE00000090_00074,lima oscar,/usr/bin/xdotool key l key o,0.444524049759,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00074.wav
+2017-10-26 21:33:34.970673,LIVE00000090_00075,golf,/usr/bin/xdotool key g,0.310049057007,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00075.wav
+2017-10-26 21:33:36.716435,LIVE00000090_00076,enter,/usr/bin/xdotool key Return,0.202723026276,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00076.wav
+2017-10-26 21:33:52.714449,LIVE00000090_00077,space tab,/usr/bin/xdotool key space key Tab,0.541759967804,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00077.wav
+2017-10-26 21:33:56.810985,LIVE00000090_00078,eight bravo bravo,/usr/bin/xdotool key 8 key b key b,0.237201929092,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00078.wav
+2017-10-26 21:34:01.790274,LIVE00000090_00079,six bravo bravo,/usr/bin/xdotool key 6 key b key b,0.337904930115,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00079.wav
+2017-10-26 21:34:06.775286,LIVE00000090_00080,space bravo bravo,/usr/bin/xdotool key space key b key b,0.349539995193,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00080.wav
+2017-10-26 21:34:13.460998,LIVE00000090_00081,romeo echo charlie oscar,/usr/bin/xdotool key r key e key c key o,0.511192083359,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00081.wav
+2017-10-26 21:34:17.176145,LIVE00000090_00082,enter,/usr/bin/xdotool key Return,0.620660066605,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00082.wav
+2017-10-26 21:34:20.552334,LIVE00000090_00083,space sierra sierra,/usr/bin/xdotool key space key s key s,0.28119301796,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00083.wav
+2017-10-26 21:34:24.758045,LIVE00000090_00084,lima oscar golf,/usr/bin/xdotool key l key o key g,0.346296072006,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00084.wav
+2017-10-26 21:34:28.889065,LIVE00000090_00085,down enter,/usr/bin/xdotool key Down key Return,0.274858951569,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00085.wav
+2017-10-26 21:34:33.713397,LIVE00000090_00086,up,/usr/bin/xdotool key Up,0.197157144547,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00086.wav
+2017-10-26 21:34:38.029691,LIVE00000090_00087,victor down two,/usr/bin/xdotool key v key Down key Down,0.452521085739,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00087.wav
+2017-10-26 21:34:41.457623,LIVE00000090_00088,down three,/usr/bin/xdotool key Down key Down key Down,0.348922014236,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00088.wav
+2017-10-26 21:34:48.816541,LIVE00000090_00090,up two,/usr/bin/xdotool key Up key Up,0.225266933441,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00090.wav
+2017-10-26 21:34:52.137186,LIVE00000090_00091,yankee,/usr/bin/xdotool key y,0.226608037949,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00091.wav
+2017-10-26 21:34:55.623647,LIVE00000090_00092,space tab,/usr/bin/xdotool key space key Tab,0.408071041107,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00092.wav
+2017-10-26 21:35:03.021466,LIVE00000090_00093,up nine,/usr/bin/xdotool key Up key Up key Up key Up key Up key Up key Up key Up key Up,0.440786123276,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00093.wav
+2017-10-26 21:35:07.497691,LIVE00000090_00094,india,/usr/bin/xdotool key i,0.594419002533,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00094.wav
+2017-10-26 21:35:10.039050,LIVE00000090_00095,hash,/usr/bin/xdotool key numbersign,0.229072093964,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00095.wav
+2017-10-26 21:35:12.558781,LIVE00000090_00096,escape,/usr/bin/xdotool key Escape,0.210999965668,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00096.wav
+2017-10-26 21:35:15.105330,LIVE00000090_00097,alpha,/usr/bin/xdotool key a,0.223082065582,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00097.wav
+2017-10-26 21:35:19.953016,LIVE00000090_00098,escape,/usr/bin/xdotool key Escape,0.209676027298,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00098.wav
+2017-10-26 21:35:23.345482,LIVE00000090_00099,papa,/usr/bin/xdotool key p,0.299524068832,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00099.wav
+2017-10-26 21:35:29.092997,LIVE00000090_00100,escape up two,/usr/bin/xdotool key Escape key Up key Up,0.350660085678,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00100.wav
+2017-10-26 21:35:33.166355,LIVE00000090_00101,up,/usr/bin/xdotool key Up,0.211734056473,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00101.wav
+2017-10-26 21:35:37.228187,LIVE00000090_00102,window hash,,0.193768978119,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00102.wav
+2017-10-26 21:35:47.912246,LIVE00000090_00103,india hash,/usr/bin/xdotool key i key numbersign,0.634853839874,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00103.wav
+2017-10-26 21:35:55.164267,LIVE00000090_00104,down,/usr/bin/xdotool key Down,0.292009115219,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00104.wav
+2017-10-26 21:35:57.697391,LIVE00000090_00105,hash,/usr/bin/xdotool key numbersign,0.215440034866,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00105.wav
+2017-10-26 21:36:01.822156,LIVE00000090_00106,escape,/usr/bin/xdotool key Escape,0.265085935593,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00106.wav
+2017-10-26 21:36:05.971298,LIVE00000090_00107,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.290623903275,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00107.wav
+2017-10-26 21:36:19.602082,LIVE00000090_00108,up right five,/usr/bin/xdotool key Up key Right key Right key Right key Right key Right,0.483899831772,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00108.wav
+2017-10-26 21:36:22.296278,LIVE00000090_00109,right nine,/usr/bin/xdotool key Right key Right key Right key Right key Right key Right key Right key Right key Right,0.374582052231,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00109.wav
+2017-10-26 21:36:24.806381,LIVE00000090_00110,echo,/usr/bin/xdotool key e,0.194057941437,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00110.wav
+2017-10-26 21:36:33.579662,LIVE00000090_00111,bravo,/usr/bin/xdotool key b,0.280325889587,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00111.wav
+2017-10-26 21:36:37.707240,LIVE00000090_00112,victor,/usr/bin/xdotool key v,0.26701593399,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00112.wav
+2017-10-26 21:36:41.004730,LIVE00000090_00113,down,/usr/bin/xdotool key Down,0.215987920761,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00113.wav
+2017-10-26 21:36:43.695918,LIVE00000090_00114,right nine,/usr/bin/xdotool key Right key Right key Right key Right key Right key Right key Right key Right key Right,0.373529911041,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00114.wav
+2017-10-26 21:36:46.471788,LIVE00000090_00115,right nine,/usr/bin/xdotool key Right key Right key Right key Right key Right key Right key Right key Right key Right,0.45778799057,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00115.wav
+2017-10-26 21:36:51.554181,LIVE00000090_00116,right three,/usr/bin/xdotool key Right key Right key Right,0.441435098648,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00116.wav
+2017-10-26 21:36:54.095781,LIVE00000090_00117,yankee,/usr/bin/xdotool key y,0.219624996185,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00117.wav
+2017-10-26 21:36:59.245111,LIVE00000090_00118,down nine down nine,/usr/bin/xdotool key Down key 9 key Down key Down key Down key Down key Down key Down key Down key Down key Down,0.52426981926,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00118.wav
+2017-10-26 21:37:05.624964,LIVE00000090_00119,up,/usr/bin/xdotool key Up,0.204927921295,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00119.wav
+2017-10-26 21:37:11.325979,LIVE00000090_00120,eight mike,/usr/bin/xdotool key 8 key m,0.247822999954,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00120.wav
+2017-10-26 21:37:13.828362,LIVE00000090_00121,equal,/usr/bin/xdotool key equal,0.190532922745,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00121.wav
+2017-10-26 21:37:18.047000,LIVE00000090_00122,eight,/usr/bin/xdotool key 8,0.360105037689,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00122.wav
+2017-10-26 21:37:21.369932,LIVE00000090_00123,escape,/usr/bin/xdotool key Escape,0.230976819992,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00123.wav
+2017-10-26 21:37:26.208149,LIVE00000090_00124,escape,/usr/bin/xdotool key Escape,0.199900865555,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00124.wav
+2017-10-26 21:37:30.319708,LIVE00000090_00125,space mike equal,/usr/bin/xdotool key space key m key equal,0.258358001709,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00125.wav
+2017-10-26 21:37:39.005649,LIVE00000090_00126,yankee,/usr/bin/xdotool key y,0.206948041916,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00126.wav
+2017-10-26 21:37:43.182819,LIVE00000090_00127,escape,/usr/bin/xdotool key Escape,0.315398931503,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00127.wav
+2017-10-26 21:37:47.420112,LIVE00000090_00128,eight,/usr/bin/xdotool key 8,0.371349096298,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00128.wav
+2017-10-26 21:37:52.244518,LIVE00000090_00129,escape,/usr/bin/xdotool key Escape,0.188196182251,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00129.wav
+2017-10-26 21:38:01.708880,LIVE00000090_00130,eight,/usr/bin/xdotool key 8,0.196630001068,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00130.wav
+2017-10-26 21:38:05.093623,LIVE00000090_00131,space,/usr/bin/xdotool key space,0.303727149963,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00131.wav
+2017-10-26 21:38:14.688843,LIVE00000090_00132,romeo,/usr/bin/xdotool key r,0.32008600235,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00132.wav
+2017-10-26 21:38:19.542923,LIVE00000090_00133,yankee,/usr/bin/xdotool key y,0.226623058319,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00133.wav
+2017-10-26 21:38:24.744227,LIVE00000090_00134,down,/usr/bin/xdotool key Down,0.565104961395,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00134.wav
+2017-10-26 21:38:27.242894,LIVE00000090_00135,papa,/usr/bin/xdotool key p,0.189665079117,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00135.wav
+2017-10-26 21:38:32.171975,LIVE00000090_00136,back space,,0.301270008087,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00136.wav
+2017-10-26 21:38:34.916156,LIVE00000090_00137,scratch,/usr/bin/xdotool key BackSpace,0.425272941589,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00137.wav
+2017-10-26 21:38:38.223940,LIVE00000090_00138,down,/usr/bin/xdotool key Down,0.220118045807,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00138.wav
+2017-10-26 21:38:40.788368,LIVE00000090_00139,up alpha,/usr/bin/xdotool key Up key a,0.24699306488,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00139.wav
+2017-10-26 21:38:44.092675,LIVE00000090_00140,scratch,/usr/bin/xdotool key BackSpace,0.218189001083,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00140.wav
+2017-10-26 21:38:47.390978,LIVE00000090_00141,enter,/usr/bin/xdotool key Return,0.212713003159,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000090_00141.wav
+2017-11-07 23:25:35.148998,LIVE00000091_00000,up,/usr/bin/xdotool key Up,0.407460927963,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000091_00000.wav
+2017-11-07 23:25:40.231176,LIVE00000091_00001,down,/usr/bin/xdotool key Down,0.255465984344,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000091_00001.wav
+2017-11-07 23:25:55.895237,LIVE00000091_00003,up,/usr/bin/xdotool key Up,0.210292100906,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000091_00003.wav
+2017-11-07 23:26:10.139997,LIVE00000091_00004,up,/usr/bin/xdotool key Up,0.248768091202,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000091_00004.wav
+2017-11-07 23:26:26.551576,LIVE00000091_00005,yankee nine,/usr/bin/xdotool key y key 9,0.208427906036,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000091_00005.wav
+2017-11-07 23:26:41.380807,LIVE00000091_00006,yankee yankee,/usr/bin/xdotool key y key y,0.211066007614,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000091_00006.wav
+2017-11-07 23:27:01.302230,LIVE00000091_00007,yankee yankee,/usr/bin/xdotool key y key y,0.312143087387,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000091_00007.wav
+2017-11-07 23:29:15.959740,LIVE00000092_00000,charlie delta space,/usr/bin/xdotool key c key d key space,0.647491931915,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00000.wav
+2017-11-07 23:29:22.983416,LIVE00000092_00001,back space,,0.189350128174,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00001.wav
+2017-11-07 23:29:30.508643,LIVE00000092_00002,back space three,,0.238204956055,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00002.wav
+2017-11-07 23:29:34.210002,LIVE00000092_00003,victor,/usr/bin/xdotool key v,0.197868108749,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00003.wav
+2017-11-07 23:30:18.321647,LIVE00000092_00004,yankee yankee,/usr/bin/xdotool key y key y,0.295311927795,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00004.wav
+2017-11-07 23:30:22.052248,LIVE00000092_00005,delta up,/usr/bin/xdotool key d key Up,0.286720991135,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00005.wav
+2017-11-07 23:31:08.789805,LIVE00000092_00007,yankee yankee,/usr/bin/xdotool key y key y,0.278354883194,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00007.wav
+2017-11-07 23:31:32.939990,LIVE00000092_00008,eight foxtrot sierra,/usr/bin/xdotool key 8 key f key s,0.319926023483,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00008.wav
+2017-11-07 23:31:38.027725,LIVE00000092_00009,space,/usr/bin/xdotool key space,0.173349142075,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00009.wav
+2017-11-07 23:31:41.853846,LIVE00000092_00010,foxtrot sierra,/usr/bin/xdotool key f key s,0.260834932327,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00010.wav
+2017-11-07 23:32:06.488715,LIVE00000092_00011,oscar,/usr/bin/xdotool key o,0.216406106949,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00011.wav
+2017-11-07 23:32:17.018374,LIVE00000092_00012,up alpha,/usr/bin/xdotool key Up key a,0.276957035065,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00012.wav
+2017-11-07 23:32:23.697980,LIVE00000092_00013,up,/usr/bin/xdotool key Up,0.224506855011,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00013.wav
+2017-11-07 23:32:30.406845,LIVE00000092_00014,alpha,/usr/bin/xdotool key a,0.200193166733,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00014.wav
+2017-11-07 23:32:38.704865,LIVE00000092_00015,sky alpha,/usr/bin/xdotool key A,0.270333051682,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00015.wav
+2017-11-07 23:32:44.608822,LIVE00000092_00016,sky lima,/usr/bin/xdotool key L,0.191768169403,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00016.wav
+2017-11-07 23:32:52.101270,LIVE00000092_00018,sky india,/usr/bin/xdotool key I,0.205492019653,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00018.wav
+2017-11-07 23:32:58.130448,LIVE00000092_00019,sky lima,/usr/bin/xdotool key L,0.251955986023,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00019.wav
+2017-11-07 23:33:26.970239,LIVE00000092_00020,yankee yankee,/usr/bin/xdotool key y key y,0.286087989807,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00020.wav
+2017-11-07 23:33:53.055843,LIVE00000092_00021,delta,/usr/bin/xdotool key d,0.196537017822,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00021.wav
+2017-11-07 23:33:56.862853,LIVE00000092_00022,escape,/usr/bin/xdotool key Escape,0.26304602623,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00022.wav
+2017-11-07 23:34:02.108333,LIVE00000092_00023,delta,/usr/bin/xdotool key d,0.274351835251,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00023.wav
+2017-11-07 23:34:17.026704,LIVE00000092_00024,delta,/usr/bin/xdotool key d,0.236997842789,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00024.wav
+2017-11-07 23:34:40.159964,LIVE00000092_00025,delta down,/usr/bin/xdotool key d key Down,0.184294939041,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00025.wav
+2017-11-07 23:34:53.647798,LIVE00000092_00026,delta delta,/usr/bin/xdotool key d key d,0.21075797081,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00026.wav
+2017-11-07 23:35:01.879132,LIVE00000092_00027,center,,0.213006973267,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00027.wav
+2017-11-07 23:35:05.615203,LIVE00000092_00028,sierra echo,/usr/bin/xdotool key s key e,0.210581064224,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00028.wav
+2017-11-07 23:35:15.704423,LIVE00000092_00029,victor up,/usr/bin/xdotool key v key Up,0.203216791153,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00029.wav
+2017-11-07 23:35:21.007631,LIVE00000092_00030,up five,/usr/bin/xdotool key Up key Up key Up key Up key Up,0.272133111954,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00030.wav
+2017-11-07 23:35:29.974024,LIVE00000092_00031,up up,/usr/bin/xdotool key Up key Up,0.26069188118,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00031.wav
+2017-11-07 23:35:33.650887,LIVE00000092_00032,up,/usr/bin/xdotool key Up,0.197964191437,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00032.wav
+2017-11-07 23:35:37.401836,LIVE00000092_00033,yankee,/usr/bin/xdotool key y,0.207741975784,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00033.wav
+2017-11-07 23:36:08.218317,LIVE00000092_00035,victor down five,/usr/bin/xdotool key v key Down key Down key Down key Down key Down,0.358655929565,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00035.wav
+2017-11-07 23:36:11.802871,LIVE00000092_00036,yankee,/usr/bin/xdotool key y,0.202872991562,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00036.wav
+2017-11-07 23:36:53.040997,LIVE00000092_00037,victor up six,/usr/bin/xdotool key v key Up key Up key Up key Up key Up key Up,0.305222034454,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00037.wav
+2017-11-07 23:36:57.435869,LIVE00000092_00038,yankee,/usr/bin/xdotool key y,0.210604190826,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00038.wav
+2017-11-07 23:37:35.947040,LIVE00000092_00039,papa,/usr/bin/xdotool key p,0.202147006989,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00039.wav
+2017-11-07 23:37:45.687201,LIVE00000092_00040,eight,/usr/bin/xdotool key 8,0.217284917831,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00040.wav
+2017-11-07 23:37:50.927266,LIVE00000092_00041,up,/usr/bin/xdotool key Up,0.222773075104,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00041.wav
+2017-11-07 23:38:32.824952,LIVE00000092_00042,three victor up,/usr/bin/xdotool key 3 key v key Up,0.231038093567,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00042.wav
+2017-11-07 23:38:39.528712,LIVE00000092_00043,escape,/usr/bin/xdotool key Escape,0.203133106232,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00043.wav
+2017-11-07 23:38:43.533006,LIVE00000092_00044,victor up nine,/usr/bin/xdotool key v key Up key Up key Up key Up key Up key Up key Up key Up key Up,0.467041015625,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00044.wav
+2017-11-07 23:38:47.000226,LIVE00000092_00045,yankee,/usr/bin/xdotool key y,0.196071147919,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00045.wav
+2017-11-07 23:39:26.774346,LIVE00000092_00046,plus,/usr/bin/xdotool key plus,0.200016021729,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00046.wav
+2017-11-07 23:39:41.071713,LIVE00000092_00047,victor sky golf,/usr/bin/xdotool key v key G,0.285049915314,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00047.wav
+2017-11-07 23:39:45.845489,LIVE00000092_00048,alpha,/usr/bin/xdotool key a,0.195819139481,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00048.wav
+2017-11-07 23:39:49.593401,LIVE00000092_00049,escape,/usr/bin/xdotool key Escape,0.20317196846,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00049.wav
+2017-11-07 23:39:52.582440,LIVE00000092_00050,delta,/usr/bin/xdotool key d,0.203038930893,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00050.wav
+2017-11-07 23:40:00.055116,LIVE00000092_00051,papa,/usr/bin/xdotool key p,0.19370007515,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00051.wav
+2017-11-07 23:40:37.448013,LIVE00000092_00052,escape,/usr/bin/xdotool key Escape,0.194113969803,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00052.wav
+2017-11-07 23:40:41.205862,LIVE00000092_00053,nine,/usr/bin/xdotool key 9,0.212754011154,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00053.wav
+2017-11-07 23:40:45.924459,LIVE00000092_00054,up nine,/usr/bin/xdotool key Up key Up key Up key Up key Up key Up key Up key Up key Up,0.443259954453,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00054.wav
+2017-11-07 23:40:49.556757,LIVE00000092_00055,down nine,/usr/bin/xdotool key Down key Down key Down key Down key Down key Down key Down key Down key Down,0.333353996277,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00055.wav
+2017-11-07 23:40:53.327476,LIVE00000092_00056,down nine,/usr/bin/xdotool key Down key Down key Down key Down key Down key Down key Down key Down key Down,0.367084026337,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00056.wav
+2017-11-07 23:40:56.890113,LIVE00000092_00057,victor,/usr/bin/xdotool key v,0.189481973648,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00057.wav
+2017-11-07 23:40:59.889251,LIVE00000092_00058,up,/usr/bin/xdotool key Up,0.196968793869,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00058.wav
+2017-11-07 23:41:03.779497,LIVE00000092_00059,up nine,/usr/bin/xdotool key Up key Up key Up key Up key Up key Up key Up key Up key Up,0.345319032669,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00059.wav
+2017-11-07 23:41:07.436200,LIVE00000092_00060,yankee,/usr/bin/xdotool key y,0.264240980148,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00060.wav
+2017-11-07 23:41:24.584519,LIVE00000092_00061,dot,/usr/bin/xdotool key period,0.211591005325,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00061.wav
+2017-11-07 23:43:41.480278,LIVE00000092_00062,nine,/usr/bin/xdotool key 9,0.237416982651,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000092_00062.wav
+2017-11-10 07:33:43.240759,LIVE00000093_00000,mike yankee,/usr/bin/xdotool key m key y,0.38214802742,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00000.wav
+2017-11-10 07:33:49.787768,LIVE00000093_00001,sierra,/usr/bin/xdotool key s,0.199737071991,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00001.wav
+2017-11-10 07:33:53.528311,LIVE00000093_00002,quebec,/usr/bin/xdotool key q,0.197755098343,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00002.wav
+2017-11-10 07:33:55.762173,LIVE00000093_00003,lima,/usr/bin/xdotool key l,0.19000005722,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00003.wav
+2017-11-10 07:33:59.520042,LIVE00000093_00004,space,/usr/bin/xdotool key space,0.205431938171,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00004.wav
+2017-11-10 07:34:02.495778,LIVE00000093_00005,slash,/usr/bin/xdotool key slash,0.192193984985,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00005.wav
+2017-11-10 07:34:15.474912,LIVE00000093_00006,romeo oscar oscar tango,/usr/bin/xdotool key r key o key o key t,0.456559896469,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00006.wav
+2017-11-10 07:34:52.473530,LIVE00000093_00007,switch window,rofi -show window,14.2694971561,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00007.wav
+2017-11-10 07:34:52.711035,LIVE00000093_00008,down,/usr/bin/xdotool key Down,0.23433303833,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00008.wav
+2017-11-10 07:34:52.909705,LIVE00000093_00009,down,/usr/bin/xdotool key Down,0.196558952332,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00009.wav
+2017-11-10 07:35:06.601123,LIVE00000093_00010,switch window,rofi -show window,4.45817303658,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00010.wav
+2017-11-10 07:35:19.556432,LIVE00000093_00011,yankee,/usr/bin/xdotool key y,0.211736917496,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00011.wav
+2017-11-10 07:35:32.132077,LIVE00000093_00012,victor left down nine,/usr/bin/xdotool key v key Left key Down key Down key Down key Down key Down key Down key Down key Down key Down,0.443819046021,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00012.wav
+2017-11-10 07:35:34.929990,LIVE00000093_00013,down three,/usr/bin/xdotool key Down key Down key Down,0.250370979309,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00013.wav
+2017-11-10 07:35:37.886695,LIVE00000093_00014,yankee,/usr/bin/xdotool key y,0.215617895126,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000093_00014.wav
+2017-11-10 07:40:00.180502,LIVE00000094_00000,yankee,/usr/bin/xdotool key y,0.238605976105,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00000.wav
+2017-11-10 07:43:16.249995,LIVE00000094_00003,delta,/usr/bin/xdotool key d,0.206480026245,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00003.wav
+2017-11-10 07:43:22.241180,LIVE00000094_00004,victor,/usr/bin/xdotool key v,0.2131690979,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00004.wav
+2017-11-10 07:43:26.001156,LIVE00000094_00005,bang,/usr/bin/xdotool key exclam,0.232741117477,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00005.wav
+2017-11-10 07:43:31.201284,LIVE00000094_00006,yankee,/usr/bin/xdotool key y,0.199437141418,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00006.wav
+2017-11-10 07:43:34.196147,LIVE00000094_00007,yankee,/usr/bin/xdotool key y,0.201226949692,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00007.wav
+2017-11-10 07:43:37.936390,LIVE00000094_00008,papa,/usr/bin/xdotool key p,0.199145078659,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00008.wav
+2017-11-10 07:43:51.434390,LIVE00000094_00009,eight victor,/usr/bin/xdotool key 8 key v,0.238701105118,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00009.wav
+2017-11-10 07:43:55.131636,LIVE00000094_00010,eight,/usr/bin/xdotool key 8,0.194536209106,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00010.wav
+2017-11-10 07:43:58.885867,LIVE00000094_00011,escape,/usr/bin/xdotool key Escape,0.208810091019,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00011.wav
+2017-11-10 07:44:15.403711,LIVE00000094_00012,delta delta,/usr/bin/xdotool key d key d,0.273647069931,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00012.wav
+2017-11-10 07:44:21.430565,LIVE00000094_00013,victor down yankee,/usr/bin/xdotool key v key Down key y,0.317799806595,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00013.wav
+2017-11-10 07:44:34.803247,LIVE00000094_00015,right golf,/usr/bin/xdotool key Right key g,0.226092100143,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00015.wav
+2017-11-10 07:44:39.270275,LIVE00000094_00016,escape,/usr/bin/xdotool key Escape,0.203818798065,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00016.wav
+2017-11-10 07:44:41.891852,LIVE00000094_00017,sky golf,/usr/bin/xdotool key G,0.205672979355,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00017.wav
+2017-11-10 07:44:44.901392,LIVE00000094_00018,papa,/usr/bin/xdotool key p,0.224729061127,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00018.wav
+2017-11-10 07:44:56.108506,LIVE00000094_00019,india,/usr/bin/xdotool key i,0.215563058853,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00019.wav
+2017-11-10 07:44:59.872768,LIVE00000094_00020,back space three,,0.237747907639,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00020.wav
+2017-11-10 07:45:05.156536,LIVE00000094_00021,back space back space back space,,0.288982868195,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00021.wav
+2017-11-10 07:45:08.793403,LIVE00000094_00022,back space,,0.184298992157,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00022.wav
+2017-11-10 07:45:13.349632,LIVE00000094_00023,scratch three,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace,0.251979827881,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00023.wav
+2017-11-10 07:45:26.956155,LIVE00000094_00024,sky alpha charlie tango echo,/usr/bin/xdotool key A key c key t key e,0.395998954773,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00024.wav
+2017-11-10 07:47:22.253428,LIVE00000094_00025,eight,/usr/bin/xdotool key 8,0.206159114838,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00025.wav
+2017-11-10 07:48:28.487169,LIVE00000094_00026,dot,/usr/bin/xdotool key period,0.242909908295,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00026.wav
+2017-11-10 07:52:27.726880,LIVE00000094_00028,alpha,/usr/bin/xdotool key a,0.20712018013,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00028.wav
+2017-11-10 07:52:41.297772,LIVE00000094_00029,bravo up,/usr/bin/xdotool key b key Up,0.315994977951,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00029.wav
+2017-11-10 07:52:43.532702,LIVE00000094_00030,plus eight,/usr/bin/xdotool key plus key 8,0.305641889572,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00030.wav
+2017-11-10 07:55:56.247676,LIVE00000094_00031,colon,/usr/bin/xdotool key colon,0.285723924637,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000094_00031.wav
+2017-11-12 20:34:08.088851,LIVE00000095_00001,switch,rofi -show window,6.91825389862,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00001.wav
+2017-11-12 20:34:08.372577,LIVE00000095_00002,down,/usr/bin/xdotool key Down,0.279109954834,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00002.wav
+2017-11-12 20:34:08.558198,LIVE00000095_00003,down,/usr/bin/xdotool key Down,0.184970140457,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00003.wav
+2017-11-12 20:35:04.948240,LIVE00000095_00004,india,/usr/bin/xdotool key i,0.205528974533,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00004.wav
+2017-11-12 20:35:09.824567,LIVE00000095_00005,late,/usr/bin/xdotool key parenleft,0.20015501976,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00005.wav
+2017-11-12 20:35:11.604002,LIVE00000095_00006,rate five,/usr/bin/xdotool key parenright key 5,0.22406411171,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00006.wav
+2017-11-12 20:35:15.741147,LIVE00000095_00007,rate five,/usr/bin/xdotool key parenright key 5,0.236446857452,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00007.wav
+2017-11-12 20:35:19.064673,LIVE00000095_00008,scratch,/usr/bin/xdotool key BackSpace,0.201271057129,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00008.wav
+2017-11-12 20:35:22.413175,LIVE00000095_00009,scratch,/usr/bin/xdotool key BackSpace,0.228937149048,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00009.wav
+2017-11-12 20:35:25.859923,LIVE00000095_00010,scratch five,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace key BackSpace key BackSpace,0.3322660923,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00010.wav
+2017-11-12 20:35:30.006986,LIVE00000095_00011,scratch five,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace key BackSpace key BackSpace,0.255921840668,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00011.wav
+2017-11-12 20:35:33.337554,LIVE00000095_00012,rate two,/usr/bin/xdotool key parenright key 2,0.224709033966,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000095_00012.wav
+2017-11-12 20:47:29.102492,LIVE00000104_00000,switch,rofi -show window,0.597383022308,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000104_00000.wav
+2017-11-12 20:47:52.793241,LIVE00000104_00002,plus,/usr/bin/xdotool key plus,0.290412902832,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000104_00002.wav
+2017-11-12 20:47:56.854941,LIVE00000104_00003,switch,rofi -show window,0.193443059921,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000104_00003.wav
+2017-11-12 20:49:45.505896,LIVE00000108_00000,left,TMP,0.211500167847,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000108_00000.wav
+2017-11-12 20:49:50.320685,LIVE00000108_00001,switch,TMP,0.182798147202,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000108_00001.wav
+2017-11-12 20:51:47.141839,LIVE00000110_00000,question,TMP,0.241612911224,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000110_00000.wav
+2017-11-12 20:51:52.042067,LIVE00000110_00001,eight,TMP,0.262141942978,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000110_00001.wav
+2017-11-12 20:52:04.794349,LIVE00000110_00002,switch,TMP,9.65563821793,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000110_00002.wav
+2017-11-12 20:52:05.009058,LIVE00000110_00003,down,TMP,0.21072602272,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000110_00003.wav
+2017-11-12 20:53:34.355609,LIVE00000111_00000,switch,TMP,0.177209854126,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00000.wav
+2017-11-12 20:53:39.190947,LIVE00000111_00001,down,TMP,0.196477174759,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00001.wav
+2017-11-12 20:53:41.688588,LIVE00000111_00002,enter,TMP,0.184088945389,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00002.wav
+2017-11-12 20:53:46.505318,LIVE00000111_00003,down,TMP,0.179576158524,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00003.wav
+2017-11-12 20:53:49.006462,LIVE00000111_00004,down,TMP,0.184419155121,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00004.wav
+2017-11-12 20:54:06.184499,LIVE00000111_00005,switch one,TMP,0.182662010193,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00005.wav
+2017-11-12 20:54:16.416397,LIVE00000111_00006,switch window,TMP,0.169187068939,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00006.wav
+2017-11-12 20:54:21.241208,LIVE00000111_00007,escape,TMP,0.181111812592,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00007.wav
+2017-11-12 20:54:25.308880,LIVE00000111_00008,sierra,TMP,0.19846701622,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00008.wav
+2017-11-12 20:54:28.586272,LIVE00000111_00009,sierra,TMP,0.19392490387,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00009.wav
+2017-11-12 20:54:31.887695,LIVE00000111_00010,nine,TMP,0.209319829941,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000111_00010.wav
+2017-11-12 20:57:45.551028,LIVE00000112_00000,sierra,TMP,0.191817045212,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00000.wav
+2017-11-12 20:57:48.897846,LIVE00000112_00001,zero,TMP,0.250116109848,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00001.wav
+2017-11-12 20:57:56.147706,LIVE00000112_00002,zero up,TMP,0.288182020187,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00002.wav
+2017-11-12 20:57:59.606399,LIVE00000112_00004,sierra,TMP,0.180764198303,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00004.wav
+2017-11-12 20:58:03.719618,LIVE00000112_00005,sierra,TMP,0.24329996109,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00005.wav
+2017-11-12 20:58:32.516077,LIVE00000112_00006,space two,TMP,0.193001031876,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00006.wav
+2017-11-12 20:58:37.344827,LIVE00000112_00007,eight sierra,TMP,0.194085121155,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00007.wav
+2017-11-12 20:58:44.480677,LIVE00000112_00008,escape,TMP,0.187489032745,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00008.wav
+2017-11-12 20:58:48.531835,LIVE00000112_00009,space sierra,TMP,0.195264101028,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00009.wav
+2017-11-12 20:58:54.907597,LIVE00000112_00010,space sierra,TMP,0.190550088882,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00010.wav
+2017-11-12 20:58:59.730962,LIVE00000112_00011,eight,TMP,0.191540956497,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00011.wav
+2017-11-12 20:59:26.225712,LIVE00000112_00012,scratch,TMP,0.184156894684,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00012.wav
+2017-11-12 20:59:49.710943,LIVE00000112_00013,plus,TMP,0.305589199066,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000112_00013.wav
+2017-11-12 21:01:15.368340,LIVE00000113_00000,switch,rofi -show window,0.178760051727,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00000.wav
+2017-11-12 21:01:20.178036,LIVE00000113_00001,down,/usr/bin/xdotool key Down,0.175595998764,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00001.wav
+2017-11-12 21:01:22.684478,LIVE00000113_00002,enter,/usr/bin/xdotool key Return,0.188736915588,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00002.wav
+2017-11-12 21:01:27.500540,LIVE00000113_00003,down,/usr/bin/xdotool key Down,0.179425001144,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00003.wav
+2017-11-12 21:01:38.531091,LIVE00000113_00004,switch window,rofi -show window,0.177757978439,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00004.wav
+2017-11-12 21:01:45.723237,LIVE00000113_00005,switch window,rofi -show window,0.234658956528,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00005.wav
+2017-11-12 21:01:49.769741,LIVE00000113_00006,down four,/usr/bin/xdotool key Down key Down key Down key Down,0.179063081741,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00006.wav
+2017-11-12 21:01:52.277149,LIVE00000113_00007,up,/usr/bin/xdotool key Up,0.185235977173,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00007.wav
+2017-11-12 21:01:54.784458,LIVE00000113_00008,enter,/usr/bin/xdotool key Return,0.186225175858,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000113_00008.wav
+2017-11-13 07:36:36.431725,LIVE00000114_00000,copy,/usr/bin/xdotool key ctrl+c,0.181442022324,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000114_00000.wav
+2017-11-13 07:36:48.494690,LIVE00000115_00000,copy,/usr/bin/xdotool key ctrl+c,0.187438964844,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000115_00000.wav
+2017-11-13 07:36:55.256128,LIVE00000115_00001,copy,/usr/bin/xdotool key ctrl+c,0.215023994446,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000115_00001.wav
+2017-11-13 07:42:58.153222,LIVE00000116_00000,copy,/usr/bin/xdotool keyup ctrl+c,0.179094076157,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000116_00000.wav
+2017-11-13 07:43:45.822301,LIVE00000116_00001,copy,/usr/bin/xdotool keyup ctrl+c,0.191326856613,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000116_00001.wav
+2017-11-13 07:43:55.184177,LIVE00000116_00002,plus,/usr/bin/xdotool key plus,0.20604300499,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000116_00002.wav
+2017-11-13 07:43:58.912014,LIVE00000116_00003,paste,/usr/bin/xdotool keyup ctrl+v,0.192455053329,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000116_00003.wav
+2017-11-13 07:44:21.146298,LIVE00000116_00004,paste,/usr/bin/xdotool keyup ctrl+v,0.197695016861,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000116_00004.wav
+2017-11-13 07:45:27.931254,LIVE00000117_00000,copy,/usr/bin/xdotool key ctrl+c,0.191759824753,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000117_00000.wav
+2017-11-13 07:45:33.913483,LIVE00000117_00001,paste,/usr/bin/xdotool key ctrl+v,0.190967082977,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000117_00001.wav
+2017-11-13 07:45:39.900238,LIVE00000117_00002,paste,/usr/bin/xdotool key ctrl+v,0.194123029709,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000117_00002.wav
+2017-11-13 07:45:43.647797,LIVE00000117_00003,term ten,,0.199059963226,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000117_00003.wav
+2017-11-13 07:45:51.862892,LIVE00000117_00004,paste term,/usr/bin/xdotool key ctrl+shift+v,0.186108827591,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000117_00004.wav
+2017-11-13 07:46:00.079926,LIVE00000117_00005,paste term,/usr/bin/xdotool key ctrl+shift+v,0.176851987839,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000117_00005.wav
+2017-11-13 07:46:26.345554,LIVE00000118_00000,copy term,/usr/bin/xdotool key ctrl+shift+c,0.190962076187,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000118_00000.wav
+2017-11-13 07:46:33.061304,LIVE00000118_00001,paste term,/usr/bin/xdotool key ctrl+shift+v,0.176340103149,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000118_00001.wav
+2017-11-13 07:48:17.409379,LIVE00000119_00001,switch window,rofi -show window,0.180134057999,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000119_00001.wav
+2017-11-13 07:48:43.889893,LIVE00000120_00001,switch window,rofi -show window,0.181194067001,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000120_00001.wav
+2017-11-13 07:48:50.632982,LIVE00000120_00002,whisky,/usr/bin/xdotool key w,0.192768096924,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000120_00002.wav
+2017-11-13 07:48:54.366780,LIVE00000120_00003,escape,/usr/bin/xdotool key Escape,0.186314105988,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000120_00003.wav
+2017-11-13 07:49:07.834488,LIVE00000120_00005,switch,rofi -show window,0.191138982773,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000120_00005.wav
+2017-11-13 07:49:12.324610,LIVE00000120_00006,down two,/usr/bin/xdotool key Down key Down,0.191568851471,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000120_00006.wav
+2017-11-13 07:49:15.310576,LIVE00000120_00007,enter,/usr/bin/xdotool key Return,0.187036037445,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000120_00007.wav
+2017-11-13 07:49:51.212455,LIVE00000120_00008,copy,/usr/bin/xdotool key ctrl+c,0.187875986099,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000120_00008.wav
+2017-11-13 07:50:25.256592,LIVE00000121_00002,switch window,rofi -show window,0.24801492691,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000121_00002.wav
+2017-11-13 07:51:16.606923,LIVE00000122_00000,window,,0.182612895966,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000122_00000.wav
+2017-11-13 07:51:20.367673,LIVE00000122_00001,switch four,rofi -show window,0.200434923172,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000122_00001.wav
+2017-11-13 07:51:27.148746,LIVE00000122_00002,switch window,rofi -show window,0.253866910934,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000122_00002.wav
+2017-11-13 07:52:07.055960,LIVE00000123_00000,switch one,rofi -show window,0.194857120514,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000123_00000.wav
+2017-11-13 07:52:13.102281,LIVE00000123_00001,switch window,/usr/bin/xdotool key ctrl+alt+tab,0.25749707222,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000123_00001.wav
+2017-11-13 07:54:59.613135,LIVE00000124_00000,switch window,/usr/bin/xdotool key ctrl+alt+Tab,0.759636878967,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000124_00000.wav
+2017-11-13 07:55:03.906566,LIVE00000124_00001,switch,rofi -show window,0.562948942184,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000124_00001.wav
+2017-11-13 07:55:12.583083,LIVE00000124_00002,tango echo romeo,/usr/bin/xdotool key t key e key r,0.26282286644,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000124_00002.wav
+2017-11-13 07:55:15.502037,LIVE00000124_00003,enter,/usr/bin/xdotool key Return,0.192481994629,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000124_00003.wav
+2017-11-13 21:20:47.110407,LIVE00000125_00000,papa yankee,/usr/bin/xdotool key p key y,0.440291881561,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00000.wav
+2017-11-13 21:20:55.177951,LIVE00000125_00001,tango hotel,/usr/bin/xdotool key t key h,0.265997886658,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00001.wav
+2017-11-13 21:20:58.527623,LIVE00000125_00002,oscar november,/usr/bin/xdotool key o key n,0.23503780365,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00002.wav
+2017-11-13 21:21:01.829485,LIVE00000125_00003,paste,/usr/bin/xdotool key ctrl+v,0.192900896072,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00003.wav
+2017-11-13 21:21:05.121383,LIVE00000125_00004,back space,,0.182660102844,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00004.wav
+2017-11-13 21:21:09.217093,LIVE00000125_00005,hash,/usr/bin/xdotool key numbersign,0.193053007126,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00005.wav
+2017-11-13 21:21:14.999234,LIVE00000125_00006,alpha eight plus scratch,/usr/bin/xdotool key a key 8 key plus key BackSpace,0.317153930664,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00006.wav
+2017-11-13 21:21:17.513876,LIVE00000125_00007,scratch,/usr/bin/xdotool key BackSpace,0.190100193024,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00007.wav
+2017-11-13 21:21:20.033806,LIVE00000125_00008,scratch,/usr/bin/xdotool key BackSpace,0.189882993698,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00008.wav
+2017-11-13 21:21:22.560667,LIVE00000125_00009,hash two,/usr/bin/xdotool key numbersign key 2,0.198103904724,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00009.wav
+2017-11-13 21:21:25.846858,LIVE00000125_00010,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.182299852371,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00010.wav
+2017-11-13 21:21:29.156380,LIVE00000125_00011,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.186012983322,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00011.wav
+2017-11-13 21:21:32.462609,LIVE00000125_00012,space,/usr/bin/xdotool key space,0.191724061966,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00012.wav
+2017-11-13 21:22:15.607460,LIVE00000125_00013,mike yankee,/usr/bin/xdotool key m key y,0.243407964706,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00013.wav
+2017-11-13 21:22:22.813478,LIVE00000125_00014,down two,/usr/bin/xdotool key Down key Down,0.188342809677,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00014.wav
+2017-11-13 21:22:26.096244,LIVE00000125_00015,enter,/usr/bin/xdotool key Return,0.184242963791,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00015.wav
+2017-11-13 21:23:19.644593,LIVE00000125_00016,copy,/usr/bin/xdotool key ctrl+c,0.182754039764,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00016.wav
+2017-11-13 21:23:32.984450,LIVE00000125_00017,term ten,,0.191493988037,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00017.wav
+2017-11-13 21:23:43.266113,LIVE00000125_00018,paste term,/usr/bin/xdotool key ctrl+shift+v,0.217826843262,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00018.wav
+2017-11-13 21:23:47.364531,LIVE00000125_00019,enter,/usr/bin/xdotool key Return,0.236512184143,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00019.wav
+2017-11-13 21:24:01.535702,LIVE00000125_00020,switch firefox,/usr/bin/xdotool search "Mozilla Firefox" windowactivate,0.24675488472,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00020.wav
+2017-11-13 21:24:06.381667,LIVE00000125_00021,down,/usr/bin/xdotool key Down,0.198663949966,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00021.wav
+2017-11-13 21:24:10.490353,LIVE00000125_00022,down five,/usr/bin/xdotool key Down key Down key Down key Down key Down,0.249845027924,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00022.wav
+2017-11-13 21:24:32.350867,LIVE00000125_00023,copy,/usr/bin/xdotool key ctrl+c,0.187348127365,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00023.wav
+2017-11-13 21:24:44.920135,LIVE00000125_00024,space,/usr/bin/xdotool key space,0.189989805222,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00024.wav
+2017-11-13 21:24:54.472767,LIVE00000125_00025,bravo sky november,/usr/bin/xdotool key b key N,0.269651889801,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00025.wav
+2017-11-13 21:24:59.322189,LIVE00000125_00026,papa,/usr/bin/xdotool key p,0.201131105423,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00026.wav
+2017-11-13 21:25:04.177005,LIVE00000125_00027,eight,/usr/bin/xdotool key 8,0.213979005814,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00027.wav
+2017-11-13 21:25:08.225860,LIVE00000125_00028,escape,/usr/bin/xdotool key Escape,0.186446905136,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00028.wav
+2017-11-13 21:25:27.056344,LIVE00000125_00029,paste foxtrot sierra,/usr/bin/xdotool key ctrl+v,0.24445605278,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00029.wav
+2017-11-13 21:25:33.489112,LIVE00000125_00030,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.239943027496,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00030.wav
+2017-11-13 21:25:46.968278,LIVE00000125_00031,romeo uniform november,/usr/bin/xdotool key r key u key n,0.309205055237,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00031.wav
+2017-11-13 21:25:51.837298,LIVE00000125_00032,underscore,/usr/bin/xdotool key underscore,0.244421958923,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00032.wav
+2017-11-13 21:26:00.643619,LIVE00000125_00033,mike yankee sierra,/usr/bin/xdotool key m key y key s,0.295794010162,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00033.wav
+2017-11-13 21:26:03.927567,LIVE00000125_00034,quebec lima,/usr/bin/xdotool key q key l,0.189150810242,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00034.wav
+2017-11-13 21:26:08.044943,LIVE00000125_00035,dot papa,/usr/bin/xdotool key period key p,0.259490966797,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00035.wav
+2017-11-13 21:26:15.969528,LIVE00000125_00036,yankee,/usr/bin/xdotool key y,0.18280506134,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00036.wav
+2017-11-13 21:26:18.477624,LIVE00000125_00037,enter,/usr/bin/xdotool key Return,0.188289165497,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00037.wav
+2017-11-13 21:26:23.320271,LIVE00000125_00038,eight bravo bravo,/usr/bin/xdotool key 8 key b key b,0.199835062027,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00038.wav
+2017-11-13 21:26:28.980429,LIVE00000125_00039,space bravo bravo,/usr/bin/xdotool key space key b key b,0.251326084137,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00039.wav
+2017-11-13 21:26:44.647868,LIVE00000125_00040,mike echo,/usr/bin/xdotool key m key e,0.180125951767,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00040.wav
+2017-11-13 21:26:47.944582,LIVE00000125_00041,enter,/usr/bin/xdotool key Return,0.200803041458,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00041.wav
+2017-11-13 21:26:52.785327,LIVE00000125_00042,space tab,/usr/bin/xdotool key space key Tab,0.196035861969,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00042.wav
+2017-11-13 21:26:57.675623,LIVE00000125_00043,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.253195047379,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00043.wav
+2017-11-13 21:27:04.942495,LIVE00000125_00044,romeo uniform november underscore,/usr/bin/xdotool key r key u key n key underscore,0.308470010757,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00044.wav
+2017-11-13 21:27:11.433837,LIVE00000125_00045,mike yankee sierra,/usr/bin/xdotool key m key y key s,0.298486948013,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00045.wav
+2017-11-13 21:27:13.950648,LIVE00000125_00046,four lima,/usr/bin/xdotool key 4 key l,0.202651023865,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00046.wav
+2017-11-13 21:27:18.061145,LIVE00000125_00047,back space back space,,0.242316961288,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00047.wav
+2017-11-13 21:27:22.175451,LIVE00000125_00048,back space two,,0.244047164917,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00048.wav
+2017-11-13 21:27:27.009507,LIVE00000125_00049,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.183786869049,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00049.wav
+2017-11-13 21:27:31.130043,LIVE00000125_00050,uniform lima,/usr/bin/xdotool key u key l,0.250731945038,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00050.wav
+2017-11-13 21:27:33.642920,LIVE00000125_00051,hash two,/usr/bin/xdotool key numbersign key 2,0.196241855621,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00051.wav
+2017-11-13 21:27:36.149464,LIVE00000125_00052,scratch,/usr/bin/xdotool key BackSpace,0.190427064896,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00052.wav
+2017-11-13 21:27:39.428082,LIVE00000125_00053,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.18798494339,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00053.wav
+2017-11-13 21:27:43.478538,LIVE00000125_00054,scratch,/usr/bin/xdotool key BackSpace,0.183209896088,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00054.wav
+2017-11-13 21:27:48.362829,LIVE00000125_00055,quebec lima,/usr/bin/xdotool key q key l,0.238074064255,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00055.wav
+2017-11-13 21:27:56.369582,LIVE00000125_00056,dot papa,/usr/bin/xdotool key period key p,0.259644031525,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00056.wav
+2017-11-13 21:27:57.325184,LIVE00000125_00057,yankee,/usr/bin/xdotool key y,0.187525033951,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00057.wav
+2017-11-13 21:27:59.813153,LIVE00000125_00058,enter,/usr/bin/xdotool key Return,0.17728805542,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00058.wav
+2017-11-13 21:28:54.176798,LIVE00000125_00059,alpha,/usr/bin/xdotool key a,0.204612970352,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00059.wav
+2017-11-13 21:29:04.432041,LIVE00000125_00060,space,/usr/bin/xdotool key space,0.190728902817,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00060.wav
+2017-11-13 21:29:10.854974,LIVE00000125_00061,scratch,/usr/bin/xdotool key BackSpace,0.249366044998,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00061.wav
+2017-11-13 21:29:13.424219,LIVE00000125_00062,escape space,/usr/bin/xdotool key Escape key space,0.245240926743,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00062.wav
+2017-11-13 21:29:39.921197,LIVE00000125_00063,right zulu,/usr/bin/xdotool key Right key z,0.195307016373,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00063.wav
+2017-11-13 21:29:51.709067,LIVE00000125_00064,escape,/usr/bin/xdotool key Escape,0.190846920013,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00064.wav
+2017-11-13 21:29:54.234977,LIVE00000125_00065,paste,/usr/bin/xdotool key ctrl+v,0.199755191803,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00065.wav
+2017-11-13 21:29:59.077311,LIVE00000125_00066,eight,/usr/bin/xdotool key 8,0.19433093071,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00066.wav
+2017-11-13 21:30:02.352590,LIVE00000125_00067,escape,/usr/bin/xdotool key Escape,0.18820810318,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00067.wav
+2017-11-13 21:30:14.148621,LIVE00000125_00068,space,/usr/bin/xdotool key space,0.201430797577,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00068.wav
+2017-11-13 21:30:30.579162,LIVE00000125_00069,juliet,/usr/bin/xdotool key j,0.19702911377,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00069.wav
+2017-11-13 21:30:39.282850,LIVE00000125_00070,eight,/usr/bin/xdotool key 8,0.202517986298,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00070.wav
+2017-11-13 21:30:40.248599,LIVE00000125_00071,lima,/usr/bin/xdotool key l,0.192878961563,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00071.wav
+2017-11-13 21:30:43.592877,LIVE00000125_00072,space juliet lima,/usr/bin/xdotool key space key j key l,0.248008012772,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00072.wav
+2017-11-13 21:31:10.920566,LIVE00000125_00073,delta bravo,/usr/bin/xdotool key d key b,0.252274990082,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00073.wav
+2017-11-13 21:31:18.131672,LIVE00000125_00074,space juliet lima,/usr/bin/xdotool key space key j key l,0.244011878967,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00074.wav
+2017-11-13 21:31:23.742362,LIVE00000125_00075,delta bravo,/usr/bin/xdotool key d key b,0.19641494751,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00075.wav
+2017-11-13 21:31:30.233464,LIVE00000125_00076,space juliet lima,/usr/bin/xdotool key space key j key l,0.3045129776,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00076.wav
+2017-11-13 21:31:33.512695,LIVE00000125_00077,delta,/usr/bin/xdotool key d,0.187604188919,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00077.wav
+2017-11-13 21:31:49.942641,LIVE00000125_00078,whisky,/usr/bin/xdotool key w,0.189779043198,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00078.wav
+2017-11-13 21:31:52.440275,LIVE00000125_00079,plus,/usr/bin/xdotool key plus,0.185003042221,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00079.wav
+2017-11-13 21:32:06.580140,LIVE00000125_00080,whisky,/usr/bin/xdotool key w,0.206784009933,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00080.wav
+2017-11-13 21:32:16.110872,LIVE00000125_00081,india,/usr/bin/xdotool key i,0.252177000046,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00081.wav
+2017-11-13 21:32:43.420363,LIVE00000125_00082,space juliet lima,/usr/bin/xdotool key space key j key l,0.256535053253,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00082.wav
+2017-11-13 21:32:48.234673,LIVE00000125_00083,hotel,/usr/bin/xdotool key h,0.187408924103,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00083.wav
+2017-11-13 21:32:50.754871,LIVE00000125_00084,kilo,/usr/bin/xdotool key k,0.199554920197,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00084.wav
+2017-11-13 21:32:55.139143,LIVE00000125_00085,whisky,/usr/bin/xdotool key w,0.51193189621,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00085.wav
+2017-11-13 21:32:59.250700,LIVE00000125_00086,whisky four,/usr/bin/xdotool key w key 4,0.243926048279,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00086.wav
+2017-11-13 21:33:04.136454,LIVE00000125_00087,four whisky,/usr/bin/xdotool key 4 key w,0.248471021652,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00087.wav
+2017-11-13 21:33:17.432607,LIVE00000125_00088,four whisky,/usr/bin/xdotool key 4 key w,0.175760984421,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00088.wav
+2017-11-13 21:33:25.332718,LIVE00000125_00089,whisky,/usr/bin/xdotool key w,0.187659025192,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00089.wav
+2017-11-13 21:33:33.328555,LIVE00000125_00090,whisky india,/usr/bin/xdotool key w key i,0.246178865433,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00090.wav
+2017-11-13 21:34:02.988505,LIVE00000125_00091,eight romeo star,/usr/bin/xdotool key 8 key r key asterisk,0.269172906876,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00091.wav
+2017-11-13 21:34:27.380276,LIVE00000125_00093,bang,/usr/bin/xdotool key exclam,0.207869052887,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00093.wav
+2017-11-13 21:34:43.044972,LIVE00000125_00094,space nine,/usr/bin/xdotool key space key 9,0.185246229172,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00094.wav
+2017-11-13 21:34:47.102715,LIVE00000125_00095,eight bang,/usr/bin/xdotool key 8 key exclam,0.195075035095,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00095.wav
+2017-11-13 21:34:51.940010,LIVE00000125_00096,escape,/usr/bin/xdotool key Escape,0.196173906326,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00096.wav
+2017-11-13 21:34:56.062104,LIVE00000125_00097,space tango,/usr/bin/xdotool key space key t,0.255438089371,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00097.wav
+2017-11-13 21:34:59.343558,LIVE00000125_00098,escape,/usr/bin/xdotool key Escape,0.188009023666,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00098.wav
+2017-11-13 21:35:02.696133,LIVE00000125_00099,space tango,/usr/bin/xdotool key space key t,0.267332077026,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00099.wav
+2017-11-13 21:35:08.363439,LIVE00000125_00100,escape,/usr/bin/xdotool key Escape,0.260608911514,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00100.wav
+2017-11-13 21:35:11.642006,LIVE00000125_00101,space,/usr/bin/xdotool key space,0.185971021652,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00101.wav
+2017-11-13 21:35:14.924349,LIVE00000125_00102,bang,/usr/bin/xdotool key exclam,0.192926883698,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00102.wav
+2017-11-13 21:35:21.307501,LIVE00000125_00103,up yankee,/usr/bin/xdotool key Up key y,0.192481994629,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00103.wav
+2017-11-13 21:35:33.859405,LIVE00000125_00104,papa yankee,/usr/bin/xdotool key p key y,0.18473815918,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00104.wav
+2017-11-13 21:35:41.060561,LIVE00000125_00105,tango hotel,/usr/bin/xdotool key t key h,0.246514081955,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00105.wav
+2017-11-13 21:35:43.558290,LIVE00000125_00106,tab,/usr/bin/xdotool key Tab,0.187952041626,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00106.wav
+2017-11-13 21:35:46.068470,LIVE00000125_00107,enter,/usr/bin/xdotool key Return,0.188010931015,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00107.wav
+2017-11-13 21:35:49.353117,LIVE00000125_00108,space,/usr/bin/xdotool key space,0.190794944763,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00108.wav
+2017-11-13 21:35:57.436144,LIVE00000125_00109,romeo lima colon november,/usr/bin/xdotool key r key l key colon key n,0.343086004257,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00109.wav
+2017-11-13 21:36:02.263891,LIVE00000125_00110,scratch four,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace key BackSpace,0.187021017075,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00110.wav
+2017-11-13 21:36:06.437265,LIVE00000125_00111,romeo equal november,/usr/bin/xdotool key r key equal key n,0.301991939545,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00111.wav
+2017-11-13 21:36:09.778531,LIVE00000125_00112,scratch three,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace,0.24956202507,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00112.wav
+2017-11-13 21:36:13.942668,LIVE00000125_00113,romeo equal november,/usr/bin/xdotool key r key equal key n,0.313788175583,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00113.wav
+2017-11-13 21:36:21.865484,LIVE00000125_00114,scratch three,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace,0.181597948074,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00114.wav
+2017-11-13 21:36:26.056945,LIVE00000125_00115,romeo uniform november,/usr/bin/xdotool key r key u key n,0.314658164978,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00115.wav
+2017-11-13 21:36:30.937652,LIVE00000125_00116,tab,/usr/bin/xdotool key Tab,0.241730928421,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00116.wav
+2017-11-13 21:36:33.448700,LIVE00000125_00117,enter,/usr/bin/xdotool key Return,0.192034959793,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000125_00117.wav
+2017-11-13 21:37:54.144922,LIVE00000126_00000,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.236353874207,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00000.wav
+2017-11-13 21:38:01.362068,LIVE00000126_00001,space,/usr/bin/xdotool key space,0.253839015961,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00001.wav
+2017-11-13 21:38:03.877910,LIVE00000126_00002,bang,/usr/bin/xdotool key exclam,0.193078041077,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00002.wav
+2017-11-13 21:38:06.398182,LIVE00000126_00003,up,/usr/bin/xdotool key Up,0.197839021683,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00003.wav
+2017-11-13 21:38:08.893545,LIVE00000126_00004,enter,/usr/bin/xdotool key Return,0.175448894501,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00004.wav
+2017-11-13 21:38:42.359086,LIVE00000126_00005,hash,/usr/bin/xdotool key numbersign,0.193542003632,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00005.wav
+2017-11-13 21:38:48.733385,LIVE00000126_00006,switch,rofi -show window,0.186346054077,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00006.wav
+2017-11-13 21:38:58.273684,LIVE00000126_00007,down enter,/usr/bin/xdotool key Down key Return,0.252475976944,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000126_00007.wav
+2017-11-13 21:39:57.945270,LIVE00000127_00001,victor,/usr/bin/xdotool key v,0.195582151413,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00001.wav
+2017-11-13 21:40:04.305656,LIVE00000127_00002,paste tab,,0.193602085114,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00002.wav
+2017-11-13 21:40:09.954020,LIVE00000127_00003,space tab,/usr/bin/xdotool key space key Tab,0.251284122467,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00003.wav
+2017-11-13 21:40:14.795685,LIVE00000127_00004,plus,/usr/bin/xdotool key plus,0.205682039261,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00004.wav
+2017-11-13 21:40:19.734793,LIVE00000127_00005,colon eight,/usr/bin/xdotool key colon key 8,0.295079946518,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00005.wav
+2017-11-13 21:40:28.492485,LIVE00000127_00006,two,/usr/bin/xdotool key 2,0.237960100174,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00006.wav
+2017-11-13 21:40:33.344810,LIVE00000127_00007,plus,/usr/bin/xdotool key plus,0.208493947983,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00007.wav
+2017-11-13 21:40:35.094772,LIVE00000127_00008,back,,0.213310003281,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00008.wav
+2017-11-13 21:40:43.851151,LIVE00000127_00009,space alpha bravo,/usr/bin/xdotool key space key a key b,0.23740696907,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00009.wav
+2017-11-13 21:40:48.734456,LIVE00000127_00010,escape,/usr/bin/xdotool key Escape,0.245662927628,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00010.wav
+2017-11-13 21:40:52.839632,LIVE00000127_00011,paste bravo bravo,/usr/bin/xdotool key ctrl+v,0.240309000015,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00011.wav
+2017-11-13 21:40:56.901972,LIVE00000127_00012,escape,/usr/bin/xdotool key Escape,0.187716960907,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00012.wav
+2017-11-13 21:41:02.627428,LIVE00000127_00013,space bravo alpha,/usr/bin/xdotool key space key b key a,0.312670946121,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00013.wav
+2017-11-13 21:41:11.419674,LIVE00000127_00014,escape,/usr/bin/xdotool key Escape,0.272853136063,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00014.wav
+2017-11-13 21:41:21.864220,LIVE00000127_00015,up,/usr/bin/xdotool key Up,0.361197948456,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00015.wav
+2017-11-13 21:41:28.712619,LIVE00000127_00016,plus up,/usr/bin/xdotool key plus key Up,0.600556135178,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00016.wav
+2017-11-13 21:41:45.992213,LIVE00000127_00017,space juliet lima,/usr/bin/xdotool key space key j key l,0.252017974854,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00017.wav
+2017-11-13 21:41:53.998028,LIVE00000127_00018,hotel kilo,/usr/bin/xdotool key h key k,0.264867067337,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00018.wav
+2017-11-13 21:41:59.659115,LIVE00000127_00019,four whisky,/usr/bin/xdotool key 4 key w,0.250105857849,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00019.wav
+2017-11-13 21:42:03.721561,LIVE00000127_00020,four whisky,/usr/bin/xdotool key 4 key w,0.185790061951,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00020.wav
+2017-11-13 21:42:11.695631,LIVE00000127_00021,space juliet lima,/usr/bin/xdotool key space key j key l,0.239678859711,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00021.wav
+2017-11-13 21:42:21.247586,LIVE00000127_00022,juliet,/usr/bin/xdotool key j,0.256644010544,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00022.wav
+2017-11-13 21:42:23.760338,LIVE00000127_00023,delta,/usr/bin/xdotool key d,0.191367149353,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00023.wav
+2017-11-13 21:42:30.913986,LIVE00000127_00024,whisky two,/usr/bin/xdotool key w key 2,0.183557033539,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00024.wav
+2017-11-13 21:42:35.737791,LIVE00000127_00025,whisky,/usr/bin/xdotool key w,0.192231893539,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00025.wav
+2017-11-13 21:42:38.235915,LIVE00000127_00026,whisky,/usr/bin/xdotool key w,0.175930023193,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00026.wav
+2017-11-13 21:42:43.848004,LIVE00000127_00027,echo,/usr/bin/xdotool key e,0.193022012711,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00027.wav
+2017-11-13 21:42:47.136140,LIVE00000127_00028,india,/usr/bin/xdotool key i,0.192023038864,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00028.wav
+2017-11-13 21:42:50.470587,LIVE00000127_00029,scratch,/usr/bin/xdotool key BackSpace,0.252995967865,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00029.wav
+2017-11-13 21:42:52.213595,LIVE00000127_00030,right,/usr/bin/xdotool key Right,0.192636013031,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00030.wav
+2017-11-13 21:42:55.567243,LIVE00000127_00031,scratch,/usr/bin/xdotool key BackSpace,0.262140989304,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00031.wav
+2017-11-13 21:42:58.064134,LIVE00000127_00032,scratch,/usr/bin/xdotool key BackSpace,0.183645009995,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00032.wav
+2017-11-13 21:43:02.206335,LIVE00000127_00033,escape foxtrot sierra,/usr/bin/xdotool key Escape key f key s,0.266825914383,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00033.wav
+2017-11-13 21:43:09.453889,LIVE00000127_00034,escape,/usr/bin/xdotool key Escape,0.288915872574,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00034.wav
+2017-11-13 21:43:15.186761,LIVE00000127_00035,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.321673870087,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00035.wav
+2017-11-13 21:43:20.085258,LIVE00000127_00036,space tango,/usr/bin/xdotool key space key t,0.259307861328,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00036.wav
+2017-11-13 21:43:24.134196,LIVE00000127_00037,escape,/usr/bin/xdotool key Escape,0.189090013504,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00037.wav
+2017-11-13 21:43:27.473122,LIVE00000127_00038,space,/usr/bin/xdotool key space,0.255749940872,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00038.wav
+2017-11-13 21:43:29.995972,LIVE00000127_00039,bang,/usr/bin/xdotool key exclam,0.20306801796,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00039.wav
+2017-11-13 21:43:32.514902,LIVE00000127_00040,up,/usr/bin/xdotool key Up,0.202115058899,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00040.wav
+2017-11-13 21:43:35.015275,LIVE00000127_00041,enter,/usr/bin/xdotool key Return,0.182272911072,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00041.wav
+2017-11-13 21:43:59.184974,LIVE00000127_00042,plus,/usr/bin/xdotool key plus,0.182587146759,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00042.wav
+2017-11-13 21:44:00.927538,LIVE00000127_00043,carrot,/usr/bin/xdotool key caret,0.19450211525,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000127_00043.wav
+2017-11-13 21:45:26.908811,LIVE00000128_00000,paste juliet,,3.78859019279,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00000.wav
+2017-11-13 21:45:27.938203,LIVE00000128_00001,space juliet lima,/usr/bin/xdotool key space key j key l,0.255753993988,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00001.wav
+2017-11-13 21:45:35.186615,LIVE00000128_00002,delta lima,/usr/bin/xdotool key d key l,0.241894960403,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00002.wav
+2017-11-13 21:45:40.837897,LIVE00000128_00003,india,/usr/bin/xdotool key i,0.188750982285,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00003.wav
+2017-11-13 21:45:44.971449,LIVE00000128_00004,delta echo foxtrot,/usr/bin/xdotool key d key e key f,0.242920160294,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00004.wav
+2017-11-13 21:45:47.501347,LIVE00000128_00005,space,/usr/bin/xdotool key space,0.191215991974,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00005.wav
+2017-11-13 21:46:25.157506,LIVE00000128_00006,india,/usr/bin/xdotool key i,0.188863992691,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00006.wav
+2017-11-13 21:46:30.144733,LIVE00000128_00007,delta echo foxtrot space,/usr/bin/xdotool key d key e key f key space,0.311319112778,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00007.wav
+2017-11-13 21:46:38.136556,LIVE00000128_00008,bravo lima,/usr/bin/xdotool key b key l,0.203542232513,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00008.wav
+2017-11-13 21:46:41.454287,LIVE00000128_00009,hash,/usr/bin/xdotool key numbersign,0.196981191635,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00009.wav
+2017-11-13 21:46:43.966380,LIVE00000128_00010,scratch,/usr/bin/xdotool key BackSpace,0.189134120941,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00010.wav
+2017-11-13 21:46:46.494517,LIVE00000128_00011,scratch,/usr/bin/xdotool key BackSpace,0.194136142731,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00011.wav
+2017-11-13 21:46:52.198164,LIVE00000128_00012,uniform echo,/usr/bin/xdotool key u key e,0.255244970322,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00012.wav
+2017-11-13 21:46:55.492063,LIVE00000128_00013,hash,/usr/bin/xdotool key numbersign,0.189342975616,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00013.wav
+2017-11-13 21:46:59.102348,LIVE00000128_00014,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.497611045837,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00014.wav
+2017-11-13 21:47:02.417427,LIVE00000128_00015,india,/usr/bin/xdotool key i,0.191215991974,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00015.wav
+2017-11-13 21:47:06.493620,LIVE00000128_00016,lima delta,/usr/bin/xdotool key l key d,0.181360006332,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00016.wav
+2017-11-13 21:47:16.908749,LIVE00000128_00017,tango,/usr/bin/xdotool key t,0.251492977142,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00017.wav
+2017-11-13 21:47:20.221455,LIVE00000128_00018,romeo echo,/usr/bin/xdotool key r key e,0.18902182579,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00018.wav
+2017-11-13 21:47:23.520741,LIVE00000128_00019,echo,/usr/bin/xdotool key e,0.186184883118,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00019.wav
+2017-11-13 21:47:31.763984,LIVE00000128_00021,rate late,/usr/bin/xdotool key parenright key parenleft,0.244455099106,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00021.wav
+2017-11-13 21:47:35.862734,LIVE00000128_00022,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.198997020721,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00022.wav
+2017-11-13 21:47:39.148294,LIVE00000128_00023,rate,/usr/bin/xdotool key parenright,0.181645870209,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00023.wav
+2017-11-13 21:47:41.687120,LIVE00000128_00024,scratch,/usr/bin/xdotool key BackSpace,0.200313091278,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00024.wav
+2017-11-13 21:47:44.991838,LIVE00000128_00025,eight rate,/usr/bin/xdotool key 8 key parenright,0.188318014145,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00025.wav
+2017-11-13 21:47:48.298520,LIVE00000128_00026,right two,/usr/bin/xdotool key Right key Right,0.188825130463,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00026.wav
+2017-11-13 21:47:53.162818,LIVE00000128_00027,left left,/usr/bin/xdotool key Left key Left,0.194062948227,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00027.wav
+2017-11-13 21:47:56.466810,LIVE00000128_00028,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.195492982864,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00028.wav
+2017-11-13 21:48:00.123644,LIVE00000128_00029,late,/usr/bin/xdotool key parenleft,0.552670001984,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00029.wav
+2017-11-13 21:48:03.436157,LIVE00000128_00030,right,/usr/bin/xdotool key Right,0.195909976959,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00030.wav
+2017-11-13 21:48:05.961107,LIVE00000128_00031,colon,/usr/bin/xdotool key colon,0.187029838562,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00031.wav
+2017-11-13 21:48:18.685890,LIVE00000128_00032,up escape,/usr/bin/xdotool key Up key Escape,0.246075153351,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00032.wav
+2017-11-13 21:48:21.271935,LIVE00000128_00033,delta delta,/usr/bin/xdotool key d key d,0.246960163116,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00033.wav
+2017-11-13 21:48:27.745567,LIVE00000128_00034,victor,/usr/bin/xdotool key v,0.243312835693,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00034.wav
+2017-11-13 21:48:30.279501,LIVE00000128_00035,dot,/usr/bin/xdotool key period,0.192554950714,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00035.wav
+2017-11-13 21:48:35.147888,LIVE00000128_00036,up,/usr/bin/xdotool key Up,0.202615976334,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00036.wav
+2017-11-13 21:48:40.801185,LIVE00000128_00037,up three,/usr/bin/xdotool key Up key Up key Up,0.191560983658,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00037.wav
+2017-11-13 21:48:44.885008,LIVE00000128_00038,yankee,/usr/bin/xdotool key y,0.1928358078,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00038.wav
+2017-11-13 21:48:49.854315,LIVE00000128_00039,victor down four,/usr/bin/xdotool key v key Down key Down key Down key Down,0.29833316803,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00039.wav
+2017-11-13 21:48:54.722947,LIVE00000128_00040,back,,0.196329832077,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00040.wav
+2017-11-13 21:48:59.607495,LIVE00000128_00041,back,,0.1984770298,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00041.wav
+2017-11-13 21:49:02.121024,LIVE00000128_00042,left,/usr/bin/xdotool key Left,0.184465885162,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00042.wav
+2017-11-13 21:49:07.780448,LIVE00000128_00043,left,/usr/bin/xdotool key Left,0.198632001877,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00043.wav
+2017-11-13 21:49:18.094101,LIVE00000128_00044,delta,/usr/bin/xdotool key d,0.190282821655,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00044.wav
+2017-11-13 21:49:25.349004,LIVE00000128_00045,space juliet lima,/usr/bin/xdotool key space key j key l,0.24246096611,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00045.wav
+2017-11-13 21:49:41.155445,LIVE00000128_00046,golf juliet,/usr/bin/xdotool key g key j,0.203434944153,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00046.wav
+2017-11-13 21:49:44.482366,LIVE00000128_00047,papa,/usr/bin/xdotool key p,0.206784009933,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00047.wav
+2017-11-13 21:49:49.350745,LIVE00000128_00048,up four,/usr/bin/xdotool key Up key Up key Up key Up,0.190186977386,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00048.wav
+2017-11-13 21:49:51.864797,LIVE00000128_00049,delta delta,/usr/bin/xdotool key d key d,0.188699007034,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00049.wav
+2017-11-13 21:49:54.407433,LIVE00000128_00050,down,/usr/bin/xdotool key Down,0.206448078156,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00050.wav
+2017-11-13 21:49:56.920525,LIVE00000128_00051,delta delta,/usr/bin/xdotool key d key d,0.179492950439,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00051.wav
+2017-11-13 21:50:00.234898,LIVE00000128_00052,india,/usr/bin/xdotool key i,0.190989971161,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00052.wav
+2017-11-13 21:50:03.543393,LIVE00000128_00053,right three,/usr/bin/xdotool key Right key Right key Right,0.197589874268,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00053.wav
+2017-11-13 21:50:08.418099,LIVE00000128_00054,left three,/usr/bin/xdotool key Left key Left key Left,0.178462028503,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00054.wav
+2017-11-13 21:50:10.930553,LIVE00000128_00055,scratch three,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace,0.183084964752,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00055.wav
+2017-11-13 21:50:42.390193,LIVE00000128_00056,victor,/usr/bin/xdotool key v,0.250986099243,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00056.wav
+2017-11-13 21:50:44.904325,LIVE00000128_00057,escape,/usr/bin/xdotool key Escape,0.186635017395,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00057.wav
+2017-11-13 21:50:49.040633,LIVE00000128_00058,victor down nine,/usr/bin/xdotool key v key Down key Down key Down key Down key Down key Down key Down key Down key Down,0.240417957306,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00058.wav
+2017-11-13 21:50:53.483161,LIVE00000128_00059,down,/usr/bin/xdotool key Down,0.542237997055,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00059.wav
+2017-11-13 21:50:56.842666,LIVE00000128_00060,delta,/usr/bin/xdotool key d,0.238728046417,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00060.wav
+2017-11-13 21:51:21.624904,LIVE00000128_00063,space tab,/usr/bin/xdotool key space key Tab,0.187947034836,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00063.wav
+2017-11-13 21:51:31.173806,LIVE00000128_00064,golf equal,/usr/bin/xdotool key g key equal,0.196304798126,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00064.wav
+2017-11-13 21:51:36.862186,LIVE00000128_00065,golf golf,/usr/bin/xdotool key g key g,0.243561983109,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00065.wav
+2017-11-13 21:51:42.527404,LIVE00000128_00066,whisky golf,/usr/bin/xdotool key w key g,0.200565099716,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00066.wav
+2017-11-13 21:51:46.620287,LIVE00000128_00067,escape,/usr/bin/xdotool key Escape,0.193299055099,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00067.wav
+2017-11-13 21:51:49.974630,LIVE00000128_00068,golf golf,/usr/bin/xdotool key g key g,0.245057106018,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00068.wav
+2017-11-13 21:52:07.839491,LIVE00000128_00071,victor sky golf,/usr/bin/xdotool key v key G,0.243245840073,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00071.wav
+2017-11-13 21:52:14.254401,LIVE00000128_00072,yankee,/usr/bin/xdotool key y,0.178467035294,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00072.wav
+2017-11-13 21:52:18.329201,LIVE00000128_00073,space tab,/usr/bin/xdotool key space key Tab,0.184074878693,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00073.wav
+2017-11-13 21:52:23.190793,LIVE00000128_00074,papa,/usr/bin/xdotool key p,0.19084405899,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00074.wav
+2017-11-13 21:52:28.887714,LIVE00000128_00075,space juliet lima,/usr/bin/xdotool key space key j key l,0.236983060837,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00075.wav
+2017-11-13 21:52:34.591863,LIVE00000128_00076,golf foxtrot,/usr/bin/xdotool key g key f,0.244673013687,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00076.wav
+2017-11-13 21:52:37.455970,LIVE00000128_00077,up two,/usr/bin/xdotool key Up key Up,0.52765917778,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00077.wav
+2017-11-13 21:52:39.979949,LIVE00000128_00078,delta delta,/usr/bin/xdotool key d key d,0.190916061401,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00078.wav
+2017-11-13 21:52:45.685110,LIVE00000128_00079,golf golf,/usr/bin/xdotool key g key g,0.25071310997,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00079.wav
+2017-11-13 21:52:48.985700,LIVE00000128_00080,down two,/usr/bin/xdotool key Down key Down,0.192441940308,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00080.wav
+2017-11-13 21:52:50.727977,LIVE00000128_00081,papa,/usr/bin/xdotool key p,0.195057153702,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00081.wav
+2017-11-13 21:52:55.589241,LIVE00000128_00082,india,/usr/bin/xdotool key i,0.191982030869,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00082.wav
+2017-11-13 21:52:58.946546,LIVE00000128_00083,down enter,/usr/bin/xdotool key Down key Return,0.248229980469,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00083.wav
+2017-11-13 21:53:02.262929,LIVE00000128_00084,escape,/usr/bin/xdotool key Escape,0.204885005951,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00084.wav
+2017-11-13 21:53:07.133262,LIVE00000128_00085,space,/usr/bin/xdotool key space,0.189091920853,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00085.wav
+2017-11-13 21:53:09.653574,LIVE00000128_00086,mike,/usr/bin/xdotool key m,0.190196990967,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00086.wav
+2017-11-13 21:53:12.177196,LIVE00000128_00087,plus,/usr/bin/xdotool key plus,0.192567110062,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00087.wav
+2017-11-13 21:53:16.321994,LIVE00000128_00088,space mike equal,/usr/bin/xdotool key space key m key equal,0.258399009705,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00088.wav
+2017-11-13 21:53:36.832274,LIVE00000128_00089,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.239119052887,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00089.wav
+2017-11-13 21:53:45.884988,LIVE00000128_00091,space sky golf,/usr/bin/xdotool key space key G,0.247901916504,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00091.wav
+2017-11-13 21:53:53.150148,LIVE00000128_00092,escape sky golf,/usr/bin/xdotool key Escape key G,0.247254133224,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00092.wav
+2017-11-13 21:54:04.258244,LIVE00000128_00093,up nine,/usr/bin/xdotool key Up key Up key Up key Up key Up key Up key Up key Up key Up,0.187761068344,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00093.wav
+2017-11-13 21:54:06.788671,LIVE00000128_00094,down three,/usr/bin/xdotool key Down key Down key Down,0.20090508461,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00094.wav
+2017-11-13 21:54:23.363935,LIVE00000128_00095,up,/usr/bin/xdotool key Up,0.187849998474,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00095.wav
+2017-11-13 21:54:26.718009,LIVE00000128_00096,up four,/usr/bin/xdotool key Up key Up key Up key Up,0.240067005157,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00096.wav
+2017-11-13 21:55:48.058216,LIVE00000128_00097,space,/usr/bin/xdotool key space,0.184234142303,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00097.wav
+2017-11-13 21:55:50.666759,LIVE00000128_00098,bang,/usr/bin/xdotool key exclam,0.272777080536,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00098.wav
+2017-11-13 21:55:53.976565,LIVE00000128_00099,up,/usr/bin/xdotool key Up,0.200482130051,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00099.wav
+2017-11-13 21:55:57.341872,LIVE00000128_00100,enter,/usr/bin/xdotool key Return,0.242479801178,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00100.wav
+2017-11-13 21:56:08.449792,LIVE00000128_00101,escape,/usr/bin/xdotool key Escape,0.188673019409,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00101.wav
+2017-11-13 21:56:14.928594,LIVE00000128_00102,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.24480509758,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00102.wav
+2017-11-13 21:56:22.974103,LIVE00000128_00103,space bang,/usr/bin/xdotool key space key exclam,0.246618032455,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00103.wav
+2017-11-13 21:56:30.175610,LIVE00000128_00104,up,/usr/bin/xdotool key Up,0.18287396431,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00104.wav
+2017-11-13 21:56:35.040424,LIVE00000128_00105,enter,/usr/bin/xdotool key Return,0.186507940292,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00105.wav
+2017-11-13 21:56:42.425186,LIVE00000128_00107,escape,/usr/bin/xdotool key Escape,0.187659978867,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00107.wav
+2017-11-13 21:56:46.563300,LIVE00000128_00108,space bang,/usr/bin/xdotool key space key exclam,0.245021820068,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00108.wav
+2017-11-13 21:56:52.987314,LIVE00000128_00109,papa,/usr/bin/xdotool key p,0.182972192764,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00109.wav
+2017-11-13 21:56:57.073392,LIVE00000128_00110,yankee,/usr/bin/xdotool key y,0.191790103912,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00110.wav
+2017-11-13 21:57:06.966699,LIVE00000128_00112,tango hotel,/usr/bin/xdotool key t key h,0.379269838333,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00112.wav
+2017-11-13 21:57:08.709270,LIVE00000128_00113,tab,/usr/bin/xdotool key Tab,0.182468891144,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00113.wav
+2017-11-13 21:57:11.231054,LIVE00000128_00114,enter,/usr/bin/xdotool key Return,0.178377866745,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00114.wav
+2017-11-13 21:57:13.754391,LIVE00000128_00115,space,/usr/bin/xdotool key space,0.181311130524,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00115.wav
+2017-11-13 21:57:19.465066,LIVE00000128_00116,november golf romeo,/usr/bin/xdotool key n key g key r,0.251691102982,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00116.wav
+2017-11-13 21:57:22.760477,LIVE00000128_00117,tab,/usr/bin/xdotool key Tab,0.185975074768,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00117.wav
+2017-11-13 21:57:25.279614,LIVE00000128_00118,enter,/usr/bin/xdotool key Return,0.182061910629,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00118.wav
+2017-11-13 21:57:34.045276,LIVE00000128_00119,escape,/usr/bin/xdotool key Escape,0.184998035431,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00119.wav
+2017-11-13 21:57:41.315584,LIVE00000128_00120,down four,/usr/bin/xdotool key Down key Down key Down key Down,0.251642942429,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00120.wav
+2017-11-13 21:58:03.347958,LIVE00000128_00121,up three,/usr/bin/xdotool key Up key Up key Up,0.196217060089,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00121.wav
+2017-11-13 21:58:06.707841,LIVE00000128_00122,india,/usr/bin/xdotool key i,0.255055904388,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00122.wav
+2017-11-13 21:58:10.835839,LIVE00000128_00123,enter enter enter,/usr/bin/xdotool key Return key Return key Return,0.243436098099,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00123.wav
+2017-11-13 21:58:13.359149,LIVE00000128_00124,up two,/usr/bin/xdotool key Up key Up,0.185101985931,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00124.wav
+2017-11-13 21:58:23.753002,LIVE00000128_00125,sierra echo,/usr/bin/xdotool key s key e,0.255639791489,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00125.wav
+2017-11-13 21:58:26.258106,LIVE00000128_00126,alpha charlie,/usr/bin/xdotool key a key c,0.174656867981,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00126.wav
+2017-11-13 21:58:29.636328,LIVE00000128_00127,scratch,/usr/bin/xdotool key BackSpace,0.254218101501,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00127.wav
+2017-11-13 21:58:32.994516,LIVE00000128_00128,romeo charlie victor,/usr/bin/xdotool key r key c key v,0.253077983856,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00128.wav
+2017-11-13 21:58:35.510146,LIVE00000128_00129,scratch,/usr/bin/xdotool key BackSpace,0.186544895172,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00129.wav
+2017-11-13 21:58:38.086173,LIVE00000128_00130,hotel,/usr/bin/xdotool key h,0.241039037704,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00130.wav
+2017-11-13 21:58:40.630079,LIVE00000128_00131,enter,/usr/bin/xdotool key Return,0.20356798172,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00131.wav
+2017-11-13 21:58:43.940236,LIVE00000128_00132,victor,/usr/bin/xdotool key v,0.191258907318,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00132.wav
+2017-11-13 21:58:47.298968,LIVE00000128_00133,scratch scratch,/usr/bin/xdotool key BackSpace key BackSpace,0.248411893845,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00133.wav
+2017-11-13 21:58:50.594559,LIVE00000128_00134,underscore,/usr/bin/xdotool key underscore,0.183853149414,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00134.wav
+2017-11-13 21:58:56.304188,LIVE00000128_00135,sierra papa,/usr/bin/xdotool key s key p,0.247526884079,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00135.wav
+2017-11-13 21:58:58.827394,LIVE00000128_00136,alpha charlie,/usr/bin/xdotool key a key c,0.188799142838,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00136.wav
+2017-11-13 21:59:02.121067,LIVE00000128_00137,echo,/usr/bin/xdotool key e,0.183034181595,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00137.wav
+2017-11-13 21:59:06.276790,LIVE00000128_00138,space equal scratch,/usr/bin/xdotool key space key equal key BackSpace,0.255055904388,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00138.wav
+2017-11-13 21:59:10.346659,LIVE00000128_00139,space,/usr/bin/xdotool key space,0.18714594841,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00139.wav
+2017-11-13 21:59:12.890462,LIVE00000128_00140,scratch,/usr/bin/xdotool key BackSpace,0.210970878601,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00140.wav
+2017-11-13 21:59:15.428839,LIVE00000128_00141,equal,/usr/bin/xdotool key equal,0.204319000244,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00141.wav
+2017-11-13 21:59:17.956798,LIVE00000128_00142,space,/usr/bin/xdotool key space,0.191427946091,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00142.wav
+2017-11-13 21:59:38.609794,LIVE00000128_00144,sierra echo,/usr/bin/xdotool key s key e,0.197679042816,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00144.wav
+2017-11-13 21:59:42.680391,LIVE00000128_00145,enter,/usr/bin/xdotool key Return,0.185262918472,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00145.wav
+2017-11-13 21:59:45.984337,LIVE00000128_00146,dot,/usr/bin/xdotool key period,0.190298080444,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00146.wav
+2017-11-13 21:59:49.283682,LIVE00000128_00147,enter,/usr/bin/xdotool key Return,0.188365936279,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00147.wav
+2017-11-13 21:59:53.372953,LIVE00000128_00148,eight,/usr/bin/xdotool key 8,0.191791057587,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00148.wav
+2017-11-13 21:59:56.669051,LIVE00000128_00149,back space,,0.188458204269,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00149.wav
+2017-11-13 22:00:00.027375,LIVE00000128_00150,scratch,/usr/bin/xdotool key BackSpace,0.244885206223,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00150.wav
+2017-11-13 22:00:02.548352,LIVE00000128_00151,late,/usr/bin/xdotool key parenleft,0.188199996948,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00151.wav
+2017-11-13 22:00:08.253831,LIVE00000128_00152,romeo oscar,/usr/bin/xdotool key r key o,0.247278928757,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00152.wav
+2017-11-13 22:00:10.766608,LIVE00000128_00153,enter,/usr/bin/xdotool key Return,0.182060956955,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00153.wav
+2017-11-13 22:00:20.325145,LIVE00000128_00154,one six,/usr/bin/xdotool key 1 key 6,0.193686962128,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00154.wav
+2017-11-13 22:00:25.966590,LIVE00000128_00155,hash two,/usr/bin/xdotool key numbersign key 2,0.196659088135,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00155.wav
+2017-11-13 22:00:28.483227,LIVE00000128_00156,scratch four,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace key BackSpace,0.187800884247,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00156.wav
+2017-11-13 22:00:31.781923,LIVE00000128_00157,down six,/usr/bin/xdotool key Down key Down key Down key Down key Down key Down,0.186491966248,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00157.wav
+2017-11-13 22:00:35.884870,LIVE00000128_00158,up two,/usr/bin/xdotool key Up key Up,0.209469079971,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00158.wav
+2017-11-13 22:00:43.876450,LIVE00000128_00159,back,,0.194941997528,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00159.wav
+2017-11-13 22:00:47.174807,LIVE00000128_00160,left,/usr/bin/xdotool key Left,0.191117048264,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00160.wav
+2017-11-13 22:00:49.693981,LIVE00000128_00161,scratch four,/usr/bin/xdotool key BackSpace key BackSpace key BackSpace key BackSpace,0.190654993057,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00161.wav
+2017-11-13 22:00:52.229472,LIVE00000128_00162,romeo,/usr/bin/xdotool key r,0.206218004227,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00162.wav
+2017-11-13 22:00:54.757859,LIVE00000128_00163,scratch,/usr/bin/xdotool key BackSpace,0.192134141922,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00163.wav
+2017-11-13 22:01:02.007127,LIVE00000128_00164,sierra echo alpha,/usr/bin/xdotool key s key e key a,0.236951112747,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00164.wav
+2017-11-13 22:01:04.518746,LIVE00000128_00165,enter,/usr/bin/xdotool key Return,0.18972992897,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00165.wav
+2017-11-13 22:01:10.280182,LIVE00000128_00166,escape foxtrot sierra,/usr/bin/xdotool key Escape key f key s,0.309466123581,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00166.wav
+2017-11-13 22:01:14.411416,LIVE00000128_00167,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.235889911652,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00167.wav
+2017-11-13 22:01:23.407175,LIVE00000128_00169,space bang,/usr/bin/xdotool key space key exclam,0.248559951782,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00169.wav
+2017-11-13 22:01:27.492710,LIVE00000128_00170,up enter,/usr/bin/xdotool key Up key Return,0.192245960236,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00170.wav
+2017-11-13 22:01:43.443785,LIVE00000128_00172,escape,/usr/bin/xdotool key Escape,0.197414159775,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00172.wav
+2017-11-13 22:01:46.788869,LIVE00000128_00173,space juliet lima,/usr/bin/xdotool key space key j key l,0.237915992737,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00173.wav
+2017-11-13 22:01:51.704154,LIVE00000128_00174,hotel delta,/usr/bin/xdotool key h key d,0.253239870071,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00174.wav
+2017-11-13 22:01:55.047285,LIVE00000128_00175,whisky three,/usr/bin/xdotool key w key 3,0.237431049347,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00175.wav
+2017-11-13 22:01:59.118091,LIVE00000128_00176,three whisky,/usr/bin/xdotool key 3 key w,0.185877084732,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00176.wav
+2017-11-13 22:02:09.444138,LIVE00000128_00177,late whisky,/usr/bin/xdotool key parenleft key w,0.185759067535,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00177.wav
+2017-11-13 22:02:27.047947,LIVE00000128_00179,space bang,/usr/bin/xdotool key space key exclam,0.263273000717,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00179.wav
+2017-11-13 22:02:30.365966,LIVE00000128_00180,up enter,/usr/bin/xdotool key Up key Return,0.199167013168,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00180.wav
+2017-11-13 22:02:50.379731,LIVE00000128_00182,plus,/usr/bin/xdotool key plus,0.201323032379,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00182.wav
+2017-11-13 22:02:56.795400,LIVE00000128_00183,space whisky,/usr/bin/xdotool key space key w,0.177381038666,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00183.wav
+2017-11-13 22:03:06.330826,LIVE00000128_00184,two,/usr/bin/xdotool key 2,0.189692020416,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00184.wav
+2017-11-13 22:03:12.754416,LIVE00000128_00185,eight tab,/usr/bin/xdotool key 8 key Tab,0.189941883087,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00185.wav
+2017-11-13 22:03:18.465892,LIVE00000128_00186,space tab,/usr/bin/xdotool key space key Tab,0.259670972824,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00186.wav
+2017-11-13 22:03:44.797614,LIVE00000128_00188,up,/usr/bin/xdotool key Up,0.341783046722,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00188.wav
+2017-11-13 22:04:37.534125,LIVE00000128_00190,space mike,/usr/bin/xdotool key space key m,0.191441059113,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00190.wav
+2017-11-13 22:04:44.790082,LIVE00000128_00191,golf,/usr/bin/xdotool key g,0.24530005455,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00191.wav
+2017-11-13 22:04:59.798927,LIVE00000128_00192,escape,/usr/bin/xdotool key Escape,0.186720132828,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00192.wav
+2017-11-13 22:05:06.222141,LIVE00000128_00193,down six,/usr/bin/xdotool key Down key Down key Down key Down key Down key Down,0.186371088028,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00193.wav
+2017-11-13 22:05:11.864170,LIVE00000128_00194,space mike,/usr/bin/xdotool key space key m,0.186621904373,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00194.wav
+2017-11-13 22:05:15.236851,LIVE00000128_00195,golf,/usr/bin/xdotool key g,0.258146047592,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00195.wav
+2017-11-13 22:05:28.897262,LIVE00000128_00197,sky golf,/usr/bin/xdotool key G,0.191241025925,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00197.wav
+2017-11-13 22:05:47.017211,LIVE00000128_00198,switch five up,rofi -show window,0.183802127838,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00198.wav
+2017-11-13 22:05:50.320261,LIVE00000128_00199,escape,/usr/bin/xdotool key Escape,0.186100959778,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00199.wav
+2017-11-13 22:05:53.693016,LIVE00000128_00200,switch firefox,/usr/bin/xdotool search "Mozilla Firefox" windowactivate,0.259281158447,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00200.wav
+2017-11-13 22:06:10.668190,LIVE00000128_00201,plus,/usr/bin/xdotool key plus,0.607179164886,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00201.wav
+2017-11-13 22:07:50.812855,LIVE00000128_00202,space mike,/usr/bin/xdotool key space key m,0.266922950745,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00202.wav
+2017-11-13 22:09:22.089122,LIVE00000128_00206,switch,rofi -show window,0.183857917786,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00206.wav
+2017-11-13 22:09:26.177521,LIVE00000128_00207,switch window,/usr/bin/xdotool key ctrl+alt+Tab,0.192143917084,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00207.wav
+2017-11-13 22:09:31.112959,LIVE00000128_00208,space golf,/usr/bin/xdotool key space key g,0.263456106186,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00208.wav
+2017-11-13 22:09:39.098407,LIVE00000128_00209,switch window,/usr/bin/xdotool key ctrl+alt+Tab,0.188632011414,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00209.wav
+2017-11-13 22:10:37.857984,LIVE00000128_00210,switch window,/usr/bin/xdotool key ctrl+alt+Tab,0.239959955215,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00210.wav
+2017-11-13 22:10:47.477091,LIVE00000128_00211,space space,/usr/bin/xdotool key space key space,0.251401185989,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00211.wav
+2017-11-13 22:11:57.105089,LIVE00000128_00212,india,/usr/bin/xdotool key i,0.192401885986,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00212.wav
+2017-11-13 22:11:59.624728,LIVE00000128_00213,seven colon,/usr/bin/xdotool key 7 key colon,0.189806938171,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00213.wav
+2017-11-13 22:12:03.716519,LIVE00000128_00214,center equal,,0.198100090027,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00214.wav
+2017-11-13 22:12:08.643202,LIVE00000128_00215,scratch two,/usr/bin/xdotool key BackSpace key BackSpace,0.262573957443,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00215.wav
+2017-11-13 22:12:11.164467,LIVE00000128_00216,eight,/usr/bin/xdotool key 8,0.186321973801,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00216.wav
+2017-11-13 22:12:13.698838,LIVE00000128_00217,escape,/usr/bin/xdotool key Escape,0.200677156448,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00217.wav
+2017-11-13 22:12:18.581571,LIVE00000128_00218,india,/usr/bin/xdotool key i,0.199655056,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00218.wav
+2017-11-13 22:12:21.116983,LIVE00000128_00219,right,/usr/bin/xdotool key Right,0.195543050766,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00219.wav
+2017-11-13 22:12:23.627058,LIVE00000128_00220,scratch,/usr/bin/xdotool key BackSpace,0.182904958725,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00220.wav
+2017-11-13 22:12:26.164031,LIVE00000128_00221,escape,/usr/bin/xdotool key Escape,0.199270963669,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00221.wav
+2017-11-13 22:13:13.219143,LIVE00000128_00222,eight,/usr/bin/xdotool key 8,0.235946893692,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00222.wav
+2017-11-13 22:14:08.797444,LIVE00000128_00223,juliet lima,/usr/bin/xdotool key j key l,0.188275098801,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00223.wav
+2017-11-13 22:14:12.949995,LIVE00000128_00224,space juliet lima,/usr/bin/xdotool key space key j key l,0.258368015289,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00224.wav
+2017-11-13 22:14:18.644100,LIVE00000128_00225,delta golf,/usr/bin/xdotool key d key g,0.250282049179,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00225.wav
+2017-11-13 22:14:53.984255,LIVE00000128_00226,space foxtrot sierra,/usr/bin/xdotool key space key f key s,0.238940954208,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00226.wav
+2017-11-13 22:14:58.847696,LIVE00000128_00227,space bang,/usr/bin/xdotool key space key exclam,0.196043968201,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00227.wav
+2017-11-13 22:15:02.207296,LIVE00000128_00228,up enter,/usr/bin/xdotool key Up key Return,0.254709005356,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00228.wav
+2017-11-13 22:15:09.461934,LIVE00000128_00229,space whisky two,/usr/bin/xdotool key space key w key 2,0.249317884445,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00229.wav
+2017-11-13 22:15:13.554567,LIVE00000128_00230,space tab,/usr/bin/xdotool key space key Tab,0.200377225876,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00230.wav
+2017-11-13 22:15:17.641942,LIVE00000128_00231,space,/usr/bin/xdotool key space,0.182956933975,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00231.wav
+2017-11-13 22:15:24.120061,LIVE00000128_00232,bravo,/usr/bin/xdotool key b,0.239241838455,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00232.wav
+2017-11-13 22:15:27.415551,LIVE00000128_00233,bravo,/usr/bin/xdotool key b,0.193064212799,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00233.wav
+2017-11-13 22:15:31.500014,LIVE00000128_00234,down,/usr/bin/xdotool key Down,0.196359872818,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00234.wav
+2017-11-13 22:15:34.021112,LIVE00000128_00235,up,/usr/bin/xdotool key Up,0.190258979797,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00235.wav
+2017-11-13 22:15:35.748319,LIVE00000128_00236,two,/usr/bin/xdotool key 2,0.182638883591,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00236.wav
+2017-11-13 22:15:42.957092,LIVE00000128_00237,scratch,/usr/bin/xdotool key BackSpace,0.188284873962,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00237.wav
+2017-11-13 22:15:45.472663,LIVE00000128_00238,enter,/usr/bin/xdotool key Return,0.183964014053,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000128_00238.wav

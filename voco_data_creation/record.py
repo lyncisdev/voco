@@ -13,7 +13,7 @@ chunk = 0
 byterate = 16000
 pa = pyaudio.PyAudio()
 sample_rate = byterate
-stream = None 
+stream = None
 word_accepted = False
 breaking = False
 
@@ -22,26 +22,20 @@ window_length = 12
 
 debug = False
 
-
-
 #TBU
-
 
 voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
 audio_data_directory = voco_data_base + "audio_data/"
 audio_records_directory = voco_data_base + "audio_records/"
 
-
 dirs = [audio_data_directory, audio_records_directory]
 
-
 for x in dirs:
-	if not os.path.exists(x):
-	    os.makedirs(x)
+    if not os.path.exists(x):
+        os.makedirs(x)
 
-
-recording_list_file = open('recording_list.txt','r')
+recording_list_file = open('recording_list.txt', 'r')
 
 #
 # initalize recording recording_list_counter
@@ -52,7 +46,7 @@ try:
         recording_list_counter = int(f.read())
 except IOError:
     recording_list_counter = 0
-#   
+#
 #initalize naming_list_counter
 #
 
@@ -65,24 +59,21 @@ except IOError:
 if debug:
     print("recording_list_counter: " + str(recording_list_counter))
     print("naming_list_counter: " + str(naming_list_counter))
-    
+
 #
 # create spk2gender
 #
-outputfile=open(audio_records_directory + 'spk2gender','w')
+outputfile = open(audio_records_directory + 'spk2gender', 'w')
 outputfile.write("bartek m \n")
-
 
 recording_list = recording_list_file.readlines()[recording_list_counter:]
 
-
 for line in recording_list:
 
-    
     parts = re.split(r',', line)
     counter = parts[0]
     phrase = parts[1]
-    
+
     UID = "REC" + str(naming_list_counter).zfill(8)
 
     if debug:
@@ -91,25 +82,20 @@ for line in recording_list:
         print(phrase)
         raw_input("wait")
 
-	
-
-
-
     while word_accepted == False:
 
-
-        print("--------------------------------" + str(recording_list_counter) + "--------------------------------")
+        print("--------------------------------" + str(recording_list_counter)
+              + "--------------------------------")
         print("")
         print("Phrase:            " + phrase)
         raw_input("Press enter to start...")
-        
+
         # wait to avoid keyboard sound
         time.sleep(0.2)
-        print("recording")	
+        print("recording")
 
-        
         # open stream
-#        should this match the default recoding code in voco_main?
+        #        should this match the default recoding code in voco_main?
         try:
             # try adjusting this if you want fewer network packets
             chunk = 512 * 2 * sample_rate / byterate
@@ -119,17 +105,18 @@ for line in recording_list:
             if debug:
                 print("Using mic #", mic)
             stream = pa.open(
-                rate = sample_rate,
-                format = pyaudio.paInt16,
-                channels = 1,
-                input = True,
-                input_device_index = mic,
-                frames_per_buffer = chunk)
+                rate=sample_rate,
+                format=pyaudio.paInt16,
+                channels=1,
+                input=True,
+                input_device_index=mic,
+                frames_per_buffer=chunk)
 
         except IOError, e:
-            if(e.errno == -9997 or e.errno == 'Invalid sample rate'):
-                new_sample_rate = int(pa.get_device_info_by_index(mic)['defaultSampleRate'])
-                if(sample_rate != new_sample_rate):
+            if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
+                new_sample_rate = int(
+                    pa.get_device_info_by_index(mic)['defaultSampleRate'])
+                if (sample_rate != new_sample_rate):
                     sample_rate = new_sample_rate
                 continue
             print >> sys.stderr, "\n", e
@@ -141,22 +128,19 @@ for line in recording_list:
             print >> sys.stderr, "\nLISTENING TO MICROPHONE"
             last_state = None
 
-
-
-
         # record while talking
-        rms = [gate]*window_length		
+        rms = [gate] * window_length
         audio_sample = []
         audio_sample_recording_list_counter = 0
 
         #for x in range(0, 100):
         while max(rms) >= gate:
-            for i in range(0,window_length-1):
-                rms[i] = rms[i+1]
+            for i in range(0, window_length - 1):
+                rms[i] = rms[i + 1]
 
             data = stream.read(chunk)
-            rms[window_length-1] = audioop.rms(data, 2)
-                        
+            rms[window_length - 1] = audioop.rms(data, 2)
+
             audio_sample.append(data)
             audio_sample_recording_list_counter += 1
 
@@ -183,25 +167,23 @@ for line in recording_list:
             rms.append(audioop.rms(x, 2))
 
         sample_mean = np.mean(rms)
-        scaling_factor = 4000/sample_mean
+        scaling_factor = 4000 / sample_mean
 
         if debug:
             print(scaling_factor)
 
         for x in audio_sample:
-            new_audio_sample.append(audioop.mul(x, 2,scaling_factor))
-
+            new_audio_sample.append(audioop.mul(x, 2, scaling_factor))
 
         audio_sample = new_audio_sample
-
 
         # Write audio audio_data_directory
 
         audio_sample_file_path = audio_data_directory + UID + ".wav"
-        
+
         audio_sample_file = open(audio_sample_file_path, 'w+')
 
-        w = wave.open(audio_sample_file_path,"w")
+        w = wave.open(audio_sample_file_path, "w")
         w.setnchannels(1)
         w.setsampwidth(2)
         w.setframerate(byterate)
@@ -211,7 +193,7 @@ for line in recording_list:
 
         w.close()
 
-#        time.sleep(0.5)
+        #        time.sleep(0.5)
         os.system("aplay " + audio_sample_file_path)
 
         accept = raw_input("accept?")
@@ -219,23 +201,21 @@ for line in recording_list:
             word_accepted = False
         elif accept == "end":
             breaking = True
-            break	
+            break
         else:
             word_accepted = True
-
-
 
     if breaking:
         break
     word_accepted = False
 
-    outputfile=open(audio_records_directory + 'wav.scp','a')
-    outputfile.write(UID + " " + audio_sample_file_path  + "\n")
+    outputfile = open(audio_records_directory + 'wav.scp', 'a')
+    outputfile.write(UID + " " + audio_sample_file_path + "\n")
 
-    outputfile=open(audio_records_directory + "text",'a')
+    outputfile = open(audio_records_directory + "text", 'a')
     outputfile.write(UID + " " + phrase)
 
-    outputfile=open(audio_records_directory + 'utt2spk','a')
+    outputfile = open(audio_records_directory + 'utt2spk', 'a')
     outputfile.write(UID + " bartek" + "\n")
 
     recording_list_counter += 1
@@ -246,28 +226,5 @@ for line in recording_list:
     with open(audio_records_directory + "naming_list_counter.txt", "w") as f:
         f.write(str(naming_list_counter))
 
-
-
-
 print("")
 print("recording list completed!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
