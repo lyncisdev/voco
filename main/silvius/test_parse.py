@@ -22,3 +22,4 @@ ast = parse(tokens)
 cmd = execute(ast, True)
 
 print(cmd) 
+r
