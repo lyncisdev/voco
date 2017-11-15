@@ -1,0 +1,9 @@
+aa_B ae_B ah_B ao_B aw_B ay_B b_B ch_B d_B eh_B er_B ey_B f_B g_B hh_B ih_B iy_B jh_B k_B l_B m_B n_B ng_B ow_B p_B r_B s_B sh_B t_B th_B uw_B v_B w_B y_B z_B 
+aa_E ae_E ah_E ao_E aw_E ay_E b_E ch_E d_E eh_E er_E ey_E f_E g_E hh_E ih_E iy_E jh_E k_E l_E m_E n_E ng_E ow_E p_E r_E s_E sh_E t_E th_E uw_E v_E w_E y_E z_E 
+aa_I ae_I ah_I ao_I aw_I ay_I b_I ch_I d_I eh_I er_I ey_I f_I g_I hh_I ih_I iy_I jh_I k_I l_I m_I n_I ng_I ow_I p_I r_I s_I sh_I t_I th_I uw_I v_I w_I y_I z_I 
+aa_S ae_S ah_S ao_S aw_S ay_S b_S ch_S d_S eh_S er_S ey_S f_S g_S hh_S ih_S iy_S jh_S k_S l_S m_S n_S ng_S ow_S p_S r_S s_S sh_S t_S th_S uw_S v_S w_S y_S z_S 
+sil spn 
+sil_B spn_B 
+sil_E spn_E 
+sil_I spn_I 
+sil_S spn_S 

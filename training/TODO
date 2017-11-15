@@ -1,0 +1,15 @@
+try:
+    remove results folder (might be left over from decode trial)
+    remove score_GMM
+    Decode directory
+    can we symlink data dir to global data dir?
+    remove || exit 1 from run script
+    remove cmvn from training script
+    
+    
+    
+what is mono alignment for?
+
+
+
+creating sym links

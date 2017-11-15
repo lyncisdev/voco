@@ -1,0 +1,50 @@
+000,zero bravo underscore null zero 
+001,scratch term 
+002,null enter 
+003,null zero whisky 
+004,null term paste null term 
+005,underscore copy oscar null four 
+006,term zero kilo copy underscore 
+007,zero six underscore one four 
+008,paste bravo zero term null 
+009,null up 
+010,papa sky zero underscore 
+011,echo term paste 
+012,null underscore hotel juliet 
+013,charlie scratch copy 
+014,term six kilo copy zero 
+015,paste term term copy echo 
+016,sky null copy sky scratch 
+017,null zero term 
+018,underscore paste 
+019,null copy seven zero paste 
+020,romeo ten term paste 
+021,paste paste paste 
+022,copy term 
+023,eight foxtrot term paste 
+024,copy term paste 
+025,zulu copy 
+026,term null three null null 
+027,eight term five copy 
+028,null uniform eight kilo 
+029,alpha alpha delta null 
+030,paste oscar 
+031,scratch down 
+032,copy whisky one paste 
+033,paste null zero foxtrot 
+034,oscar term null whisky paste 
+035,delta copy term lima copy 
+036,one null seven zero 
+037,hotel enter eight term 
+038,term paste paste sky term 
+039,term null zero paste underscore 
+040,null paste 
+041,paste null scratch term 
+042,copy paste 
+043,right paste 
+044,paste underscore echo 
+045,zero paste scratch 
+046,term copy copy 
+047,down zero paste 
+048,copy zero 
+049,whisky zero copy 

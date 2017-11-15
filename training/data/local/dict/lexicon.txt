@@ -1,0 +1,85 @@
+!SIL sil
+<UNK> spn
+alpha ae l f ah 
+ampersand ae m p er s ae n d 
+back b ae k 
+backslash b ae k s l ae sh 
+bang b ae ng 
+bottom b aa t ah m 
+bravo b r aa v ow 
+carrot k ae r ah t 
+center s eh n t er 
+charlie ch aa r l iy 
+colon k ow l ah n 
+copy k aa p iy 
+delta d eh l t ah 
+dollar d aa l er 
+dot d aa t 
+double d ah b ah l 
+down d aw n 
+echo eh k ow 
+eight ey t 
+enter eh n t er 
+equal iy k w ah l 
+escape ih s k ey p 
+firefox f ay r f aa k s 
+five f ay v 
+four f ao r 
+foxtrot f aa k s t r aa t 
+golf g aa l f 
+hash hh ae sh 
+hotel hh ow t eh l 
+india ih n d iy ah 
+juliet jh uw l iy eh t 
+kilo k ih l ow 
+late l ey t 
+left l eh f t 
+lima l ay m ah 
+max m ae k s 
+maximise m ae k s ah m ay z 
+mike m ay k 
+minimise m ih n ah m ay z 
+nine n ay n 
+november n ow v eh m b er 
+null n ah l 
+one w ah n 
+oscar ao s k er 
+papa p aa p ah 
+paste p ey s t 
+percent p er s eh n t 
+plus p l ah s 
+quebec k w ah b eh k 
+question k w eh s ch ah n 
+rate r ey t 
+return r ih t er n 
+right r ay t 
+romeo r ow m iy ow 
+scratch s k r ae ch 
+seven s eh v ah n 
+sierra s iy eh r ah 
+single s ih ng g ah l 
+six s ih k s 
+sky s k ay 
+slap s l ae p 
+slash s l ae sh 
+space s p ey s 
+star s t aa r 
+switch s w ih ch 
+tab t ae b 
+tango t ae ng g ow 
+ten t eh n 
+term t er m 
+terminal t er m ah n ah l 
+three th r iy 
+top t aa p 
+two t uw 
+underscore ah n d er s k ao r 
+uniform y uw n ah f ao r m 
+up ah p 
+victor v ih k t er 
+whisky w ih s k iy 
+window w ih n d ow 
+x-ray eh k s r ey 
+yankee y ae ng k iy 
+zero z iy r ow 
+zulu z uw l uw 
