@@ -18,6 +18,12 @@ class ExecuteCommands(GenericASTTraversal):
         self.automator.key(str(node.meta[0]))
 
 ##############
+    def n_modifier(self, node):
+        self.automator.modifier(node.meta[0])
+
+    def n_modified(self, node):
+        self.automator.modified(node.meta[0])
+
 
     def n_char(self, node):
         self.automator.key(node.meta[0])
@@ -45,9 +51,8 @@ class ExecuteCommands(GenericASTTraversal):
         pass
 
     def n_repeat(self, node):
+        print(node.children)
         xdo = self.automator.xdo_list[-1]
-        #print("node")
-        #print(node.meta[0].meta[0])
         for n in range(1, node.meta[0].meta[0]):
             self.automator.xdo(xdo)
 

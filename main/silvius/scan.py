@@ -6,6 +6,11 @@ import re
 # these are the generic silvius grammar keywords 
 
 keywords = [
+
+    'control',
+    'alt',
+    'super',
+    'shift',
     'act',
     'ampersand',
     'alpha',

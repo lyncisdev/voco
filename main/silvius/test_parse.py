@@ -8,18 +8,17 @@ import pdb
 import os
 
 
-line = "space alpha bravo"
+#line = "alpha bravo sky November five"
+line = "control five sky mike"
 tokens = scan(line)
 
-print(tokens)
+#print(tokens)
 
 ast = parse(tokens)
+#printAST(ast)
 
-        # printAST(ast)
-
-        # make this return the XDO command
+# make this return the XDO command
 
 cmd = execute(ast, True)
 
-print(cmd)
- 
+print(cmd) 

@@ -47,6 +47,7 @@ class CoreParser(GenericParser):
             single_command ::= word_phrase
             single_command ::= window_command
             single_command ::= number
+            single_command ::= modifier
         '''
         #        print("p_single_command")
         #        print(args)
@@ -54,11 +55,27 @@ class CoreParser(GenericParser):
 
 #--------------------------
 
+    def p_modifier(self, args):
+        '''
+            modifier ::= control single_command
+            modifier ::= alt single_command
+            modifier ::= shift single_command
+            modifier ::= super single_command
+        '''
+        value = {
+            'control': 'ctrl',
+            'alt': 'alt',
+            'shift': 'shift',
+            'super': 'super'
+        }
+
+        val = value[args[0].type]
+        return AST('modifier', [val], [AST('modified', [args[1].meta[0]])])
+
     def p_window_command(self, args):
         '''
             window_command ::= window   direction
         '''
-        print("p_window_command")
         #        print(args[0])
         #        print(args[1])
         return AST('repeat', [args[1]], [AST('movement', [args[0]])])
@@ -196,7 +213,7 @@ class CoreParser(GenericParser):
             letter ::= zulu
         '''
 
-        if (args[0].type == 'expert'): args[0].type = 'x'
+        #if (args[0].type == 'expert'): args[0].type = 'x'
         return AST('char', [args[0].type[0]])
 
 #--------------------------
