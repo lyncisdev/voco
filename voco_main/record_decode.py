@@ -115,7 +115,7 @@ def write_log(basedir, UID, transc, cmd, decode_duration,
 
 
 #----------------------------------------------------------------------------
-# open stream
+# record audio
 #----------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------
@@ -141,7 +141,7 @@ except:
     print("input argument error")
 
 try:
-    chunk = 12 * 512 * 2 * sample_rate / byterate
+    chunk = 3 * 512 * 2 * sample_rate / byterate
 
     if mic == -1:
         mic = pa.get_default_input_device_info()['index']
@@ -195,13 +195,14 @@ except IOError:
 
 recording_counter = 0
 
-gate = 600
+gate = 400
+end_gate = 300
 audio_sample = []
 
 rec = False
 above_gate = False
 prev_sample = ""
-
+timeout = 0
 while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
@@ -215,9 +216,21 @@ while (True):
     else:
         above_gate = False
 
-    if above_gate == False:
-        if rec == True:
+    if rec == False:
+        if rms >= gate:
+            audio_sample = []
+            audio_sample.append(prev_sample)
+            audio_sample.append(data)
+            rec = True
+            timeout = 0
 
+    else:
+        if rms >= end_gate:
+            audio_sample.append(data)
+        elif (rms < end_gate) and (timeout < 2):
+            audio_sample.append(data)
+            timeout += 1
+        else:
             # stop recording, write file
 
             UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
@@ -292,15 +305,5 @@ while (True):
 
             recording_counter += 1
             rec = False
-    else:
-        if rec == True:
-            #contine recording
-            audio_sample.append(data)
-        else:
-            # start recording
-            audio_sample = []
-            audio_sample.append(prev_sample)
-            audio_sample.append(data)
-            rec = True
 
     prev_sample = data
