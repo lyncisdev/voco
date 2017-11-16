@@ -19,8 +19,49 @@ multiple modifier keys
 ** pull microphone from pyaudio
 
 ** shortcut on desktop 
+You can create a .desktop file in your /home/user/Desktop/ directory that looks like this:
+
+[Desktop Entry]
+Version=1.0
+Name=Voco
+Comment=Run Voco
+Exec=python /home/bartek/Projects/ASR/voco/main/record_decode.py
+Icon=/home/bartek/Projects/ASR/voco/main/icon.png
+Path=/home/bartek/Projects/ASR/voco/main/
+Terminal=true
+Type=Application
+Categories=Utility;Application;
+
+This the user must be owner of this file and the executable permission must be set, see my example:
+
+example .desktop file
+
+AndO here the file:
+
+user@host:~# ls -la /home/user/Desktop/firefox.desktop
+-rwx------ 1 user user 9177 Dec 27 08:27 /home/user/Desktop/firefox.desktop
+https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles
+
+
 
 ** auto read microphone level at start
 
 
 ** mousegrid
+Also known as Keynav
+
+** Audio feedback
+
+play chirp when microphone has been andjusted
+play chirp when there was a decoding error
+
+** Review how sample is created in record_decode
+
+
+    scaling_factor = 4000 / sample_mean
+
+** test 
+
+To help you help yourself: C-h k is describe key. Just press it and then your key combination and then it gives you the name and the doc for the bound elisp function.
+
+

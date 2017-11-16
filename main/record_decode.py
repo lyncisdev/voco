@@ -14,23 +14,6 @@ import time
 import traceback
 from silvius.process_line import process_line
 
-mic = -1
-chunk = 0
-byterate = 16000
-pa = pyaudio.PyAudio()
-sample_rate = byterate
-stream = None
-
-debug = False
-noexec_mode = False
-playback_mode = False
-
-voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
-
-# ln -sv ~/Projects/ASR/voco_data/staging/ ~/Projects/ASR/voco/voco_main/decode/data
-
-basedir = voco_data_base + "staging/"
-
 #----------------------------------------------------------------------------
 # write_audio_file function
 #----------------------------------------------------------------------------
@@ -115,11 +98,29 @@ def write_log(basedir, UID, transc, cmd, decode_duration,
 
 
 #----------------------------------------------------------------------------
-# record audio
+# Main Loop
 #----------------------------------------------------------------------------
 
+mic = -1
+chunk = 0
+byterate = 16000
+pa = pyaudio.PyAudio()
+sample_rate = byterate
+stream = None
+
+debug = False
+noexec_mode = False
+playback_mode = False
+
+voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
+
+# ln -sv ~/Projects/ASR/voco_data/staging/ ~/Projects/ASR/voco/voco_main/decode/data
+
+basedir = voco_data_base + "staging/"
+
+
 #----------------------------------------------------------------------------
-# allow listen and debug mode
+# Parse input options - noexec, debug, playback
 #----------------------------------------------------------------------------
 
 try:
@@ -138,7 +139,11 @@ try:
         if x == "help":
             print("noexec, debug, playback")
 except:
-    print("input argument error")
+    print("Input argument error")
+
+#----------------------------------------------------------------------------
+# set_up mic
+#------------------------------------------------------------------------
 
 try:
     chunk = 3 * 512 * 2 * sample_rate / byterate
@@ -146,10 +151,9 @@ try:
     if mic == -1:
         mic = pa.get_default_input_device_info()['index']
         if debug:
-            print >> sys.stderr, "Selecting default mic"
+            print("Selecting default mic")
+            print("Using mic " + str(mic))
 
-        if debug:
-            print >> sys.stderr, "Using mic #", mic
     stream = pa.open(
         rate=sample_rate,
         format=pyaudio.paInt16,
@@ -158,12 +162,15 @@ try:
         input_device_index=mic,
         frames_per_buffer=chunk)
 
+    print(pa.get_default_input_device_info())
+
 except IOError, e:
     if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
         new_sample_rate = int(
             pa.get_device_info_by_index(mic)['defaultSampleRate'])
         if (sample_rate != new_sample_rate):
             sample_rate = new_sample_rate
+
     print >> sys.stderr, "\n", e
     print >> sys.stderr, "\nCould not open microphone. Please try a different device."
     global fatal_error
@@ -174,17 +181,13 @@ except IOError, e:
     last_state = None
 
 #----------------------------------------------------------------------------
-# set_up mic
-#------------------------------------------------------------------------
-
-#----------------------------------------------------------------------------
 # create skp2gender - only needs to be created once
 #----------------------------------------------------------------------------
 outputfile = open(basedir + 'spk2gender', 'w')
 outputfile.write("bartek m \n")
 
 #----------------------------------------------------------------------------
-# read session counter
+# Setup session and recording counter
 #----------------------------------------------------------------------------
 
 try:
@@ -194,27 +197,46 @@ except IOError:
     session_counter = 1
 
 recording_counter = 0
-
-gate = 800
-end_gate = 600
 audio_sample = []
-
 rec = False
-above_gate = False
 prev_sample = ""
 timeout = 0
+
+#----------------------------------------------------------------------------
+# Benchmark noise floor
+#----------------------------------------------------------------------------
+
+rms = 0
+for i in range(0, 10):
+    data = stream.read(chunk)
+    rms += audioop.rms(data, 2)
+
+    if debug:
+        print(rms)
+
+avg_rms = rms / 10.0
+gate = 1.2 * avg_rms
+end_gate = 1.1 * avg_rms
+
+print("Noise floor: " + avg_rms)
+print("Start recording gate: " + str(gate))
+print("Stop recording gate" + str(end_gate))
+
+# gate = 800
+# end_gate = 600
+
+os.system("aplay media/shovel.mp3")
+
+#----------------------------------------------------------------------------
+# start recording
+#----------------------------------------------------------------------------
+
 while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
 
     if debug:
         print(rms)
-
-    #set above gate
-    if rms >= gate:
-        above_gate = True
-    else:
-        above_gate = False
 
     if rec == False:
         if rms >= gate:
@@ -258,18 +280,21 @@ while (True):
             duration_dict['decode'] = time_duration
             time_start = time_end
 
-            if len(result) >= 2:
-
+            if len(result) == 0:
+                os.system("aplay media/micro.mp3")
+            else:
                 try:
-
+    
                     cmd = process_line(result)
-
                     time_end = time.time()
                     time_duration = time_end - time_start
                     duration_dict['process'] = time_duration
                     time_start = time_end
 
-                    print(cmd)
+                    if len(cmd) == 0:
+                        os.system("aplay media/micro.mp3")
+                    else:
+                        print(cmd)
 
                     if not noexec_mode:
                         subprocess.Popen([cmd], shell=True)
@@ -277,11 +302,8 @@ while (True):
                     time_end = time.time()
                     time_duration = time_end - time_start
                     duration_dict['execute'] = time_duration
-
-                    duration_dict['total'] = duration_dict[
-                        'write_files'] + duration_dict[
-                            'decode'] + duration_dict[
-                                'process'] + duration_dict['execute']
+                    duration_dict[
+                        'total'] = duration_dict['write_files'] + duration_dict['decode'] + duration_dict['process'] + duration_dict['execute']
 
                     if debug:
                         print("-----------------")
@@ -292,12 +314,13 @@ while (True):
                         os.system("aplay " + audio_sample_file_path)
 
                     write_log(basedir, UID, result, cmd,
-                              str(duration_dict['total']),
-                              audio_sample_file_path)
+                              str(duration_dict['total']), audio_sample_file_path)
                     if debug:
                         print("Wrote log to:" + basedir + "log")
 
                 except Exception as e:
+                    if len(cmd) == 0:
+                        os.system("aplay media/micro.mp3"
                     print(result)
                     print(e)
                     tb = traceback.format_exc()
