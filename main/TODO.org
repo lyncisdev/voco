@@ -1,4 +1,3 @@
-
 * VOCO_MAIN todo list
 
 ** Update .spacemacs for half page scroll    
@@ -19,8 +18,9 @@ multiple modifier keys
 
 ** pull microphone from pyaudio
 
+** shortcut on desktop 
+
+** auto read microphone level at start
 
 
-ao l t
-  
-
+** mousegrid

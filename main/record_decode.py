@@ -195,8 +195,8 @@ except IOError:
 
 recording_counter = 0
 
-gate = 400
-end_gate = 300
+gate = 800
+end_gate = 600
 audio_sample = []
 
 rec = False

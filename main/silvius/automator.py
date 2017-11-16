@@ -24,7 +24,6 @@ class Automator:
     def execute(self, command):
         if command == '': return
         if self.real:
-            print(command)
             # os.system(command)
 
     def raw_key(self, k):

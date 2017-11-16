@@ -38,8 +38,6 @@ silvius_keywords = [
 
 def c_rofi_switch(word_array):
     # open rofi in window switcher mode
-    print(word_array)
-    print(len(word_array))
     if len(word_array) > 1:
         if word_array[1] == "window":
             cmd = XDO_TOOL + 'key ctrl+alt+Tab'
