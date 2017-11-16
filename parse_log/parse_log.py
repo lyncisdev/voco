@@ -28,9 +28,9 @@ try:
 except IOError:
     naming_list_counter = 0
 
-# shutil.copy2("log","log.backup")
+shutil.copy2("log","log.backup")
 
-log_file = open('error_log', 'r')
+log_file = open('log', 'r')
 log = log_file.readlines()
 log = log[parse_counter:]
 

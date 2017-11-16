@@ -1,6 +1,7 @@
 !SIL sil
 <UNK> spn
 alpha ae l f ah 
+alt aa l t 
 ampersand ae m p er s ae n d 
 back b ae k 
 backslash b ae k s l ae sh 
@@ -11,6 +12,8 @@ carrot k ae r ah t
 center s eh n t er 
 charlie ch aa r l iy 
 colon k ow l ah n 
+comma k aa m ah 
+control k ah n t r ow l 
 copy k aa p iy 
 delta d eh l t ah 
 dollar d aa l er 
@@ -56,6 +59,7 @@ right r ay t
 romeo r ow m iy ow 
 scratch s k r ae ch 
 seven s eh v ah n 
+shift sh ih f t 
 sierra s iy eh r ah 
 single s ih ng g ah l 
 six s ih k s 
@@ -64,6 +68,7 @@ slap s l ae p
 slash s l ae sh 
 space s p ey s 
 star s t aa r 
+super s uw p er 
 switch s w ih ch 
 tab t ae b 
 tango t ae ng g ow 

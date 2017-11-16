@@ -23,16 +23,16 @@ escape_keywords = [
 ]
 
 silvius_keywords = [
-    'act', 'ampersand', 'alpha', 'backslash', 'bang', 'bravo', 'carrot',
-    'charlie', 'colon', 'delta', 'dollar', 'dot', 'down', 'escape', 'echo',
-    'enter', 'eco', 'eight', 'equal', 'expert', 'five', 'four', 'foxtrot',
-    'golf', 'hash', 'hotel', 'india', 'juliet', 'kilo', 'late', 'left', 'lima',
-    'mike', 'minus', 'nine', 'november', 'one', 'oscar', 'papa', 'percent',
-    'plus', 'phrase', 'quebec', 'question', 'rate', 'right', 'romeo',
-    'scratch', 'sentence', 'seven', 'sierra', 'six', 'sky', 'slap', 'slash',
-    'space', 'star', 'backspace', 'tab', 'tango', 'three', 'two', 'underscore',
-    'uniform', 'up', 'victor', 'whiskey', 'whisky', 'word', 'x-ray', 'yankee',
-    'zero', 'zulu'
+    'control', 'alt', 'super', 'shift', 'comma', 'act', 'ampersand', 'alpha',
+    'backslash', 'bang', 'bravo', 'carrot', 'charlie', 'colon', 'delta',
+    'dollar', 'dot', 'down', 'escape', 'echo', 'enter', 'eco', 'eight',
+    'equal', 'expert', 'five', 'four', 'foxtrot', 'golf', 'hash', 'hotel',
+    'india', 'juliet', 'kilo', 'late', 'left', 'lima', 'mike', 'minus', 'nine',
+    'november', 'one', 'oscar', 'papa', 'percent', 'plus', 'phrase', 'quebec',
+    'question', 'rate', 'right', 'romeo', 'scratch', 'sentence', 'seven',
+    'sierra', 'six', 'sky', 'slap', 'slash', 'space', 'star', 'backspace',
+    'tab', 'tango', 'three', 'two', 'underscore', 'uniform', 'up', 'victor',
+    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu'
 ]
 
 

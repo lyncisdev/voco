@@ -1,3 +1,4 @@
+alpha 
 alpha alpha delta null 
 alpha bravo 
 alpha bravo charlie delta echo 
@@ -11,6 +12,13 @@ alpha romeo
 alpha scratch enter delta 
 alpha sky echo 
 alpha three 
+alt comma control shift control 
+alt null control 
+alt null control null shift 
+alt shift 
+alt shift comma shift super 
+alt shift shift alt golf 
+alt underscore super zero shift 
 ampersand november escape rate bang 
 ampersand ten escape 
 back 
@@ -31,22 +39,36 @@ bravo right
 bravo sky november 
 bravo three left november november 
 bravo x-ray right space 
+charlie 
 charlie delta space 
 charlie five alpha down mike 
 charlie kilo left delta 
 charlie mike 
 charlie november victor oscar ten echo 
 charlie one down 
+charlie oscar 
 charlie oscar mike mike 
 charlie oscar mike mike alpha 
+charlie oscar november 
 charlie oscar romeo 
 charlie papa papa 
 charlie papa two 
+charlie romeo 
 charlie scratch copy 
 charlie uniform india 
 colon 
 colon foxtrot 
 colon star star backslash 
+comma control alt null 
+comma golf null sky scratch 
+comma shift 
+comma shift three oscar alt 
+comma up super 
+control alt 
+control alt null shift 
+control shift comma victor romeo 
+control shift shift 
+control shift super 
 copy 
 copy paste 
 copy term 
@@ -55,6 +77,7 @@ copy whisky one paste
 copy zero 
 delta 
 delta bravo 
+delta comma scratch foxtrot 
 delta copy term lima copy 
 delta delta 
 delta echo foxtrot 
@@ -86,6 +109,7 @@ down quebec
 down single dot 
 down six 
 down space 
+down tab 
 down three 
 down three space space juliet 
 down two 
@@ -135,6 +159,8 @@ escape percent slap papa ampersand
 escape sky golf 
 escape slap 
 escape space 
+escape space papa foxtrot 
+escape space tab 
 escape up two 
 five down up hotel 
 five hotel 
@@ -146,9 +172,11 @@ five one
 five quebec down 
 five quebec right kilo nine 
 five romeo down left 
+five sky golf 
 five slap 
 five space 
 five tab 
+five whisky 
 four echo right 
 four mike seven 
 four space up golf nine 
@@ -166,6 +194,7 @@ foxtrot juliet seven space
 foxtrot november yankee 
 foxtrot right 
 foxtrot sierra 
+foxtrot tango 
 foxtrot three mike 
 golf 
 golf bravo papa lima quebec 
@@ -192,6 +221,7 @@ hotel ten down
 hotel up two 
 hotel zulu 
 india 
+india alt underscore null 
 india escape 
 india hash 
 india kilo tango one 
@@ -212,9 +242,12 @@ juliet quebec x-ray bravo one
 juliet sierra 
 juliet x-ray india quebec tango 
 kilo 
+kilo alpha romeo 
+kilo alpha romeo echo november 
 kilo alpha single slap space 
 kilo four 
 kilo four oscar 
+kilo hotel 
 kilo juliet india 
 kilo kilo oscar seven 
 kilo oscar zulu 
@@ -231,6 +264,7 @@ left golf
 left left 
 left lima nine space left 
 left three 
+left two 
 left uniform x-ray 
 left up delta sierra six 
 left up sierra 
@@ -253,6 +287,7 @@ mike echo
 mike four tango zulu yankee 
 mike hotel 
 mike left 
+mike mike 
 mike nine sierra juliet india 
 mike oscar six lima 
 mike oscar victor 
@@ -276,16 +311,20 @@ november kilo two space
 november november ten 
 november right 
 november seven quebec up mike 
+november tango 
 november two sierra mike right 
 november up papa two yankee 
 november whisky six yankee 
+null alt shift 
 null copy seven zero paste 
+null delta shift ten super 
 null enter 
 null paste 
 null term paste null term 
 null underscore hotel juliet 
 null uniform eight kilo 
 null up 
+null x-ray control delta control 
 null zero term 
 null zero whisky 
 one charlie 
@@ -293,9 +332,11 @@ one double ampersand
 one hotel two delta lima 
 one nine nine kilo 
 one null seven zero 
+one shift null 
 one uniform 
 one zero zero 
 one zulu quebec 
+oscar 
 oscar echo left 
 oscar foxtrot x-ray romeo tango 
 oscar november 
@@ -303,11 +344,13 @@ oscar one four
 oscar oscar 
 oscar oscar tango 
 oscar papa sky sky tango 
+oscar romeo golf 
 oscar term null whisky paste 
 oscar uniform space lima victor 
 oscar whisky 
 papa 
 papa alpha romeo 
+papa alpha romeo sierra echo 
 papa bravo victor 
 papa charlie 
 papa delta two 
@@ -319,6 +362,7 @@ papa romeo left space bravo
 papa sky zero underscore 
 papa underscore 
 papa yankee 
+papa yankee hotel 
 paste 
 paste bravo zero term null 
 paste null scratch term 
@@ -338,9 +382,11 @@ quebec eight alpha juliet right
 quebec four foxtrot 
 quebec lima 
 quebec lima slap 
+quebec mike 
 quebec oscar 
 quebec romeo sierra tango 
 quebec space two three 
+quebec super alt control 
 quebec tango alpha one 
 quebec up whisky 
 question question 
@@ -363,6 +409,7 @@ right quebec quebec foxtrot charlie
 right sky enter kilo 
 right ten echo four six 
 right three 
+right two 
 right victor whisky seven 
 romeo 
 romeo echo 
@@ -399,6 +446,7 @@ scratch scratch eight zero
 scratch scratch enter zero romeo 
 scratch sky 
 scratch sky scratch hotel 
+scratch super 
 scratch term 
 scratch three 
 scratch two 
@@ -410,17 +458,29 @@ seven golf november six
 seven one papa yankee 
 seven right november sierra left 
 seven x-ray left 
+shift mike alt shift super 
+shift null super 
+shift romeo 
+shift shift 
+shift shift comma uniform whisky 
+shift shift left 
+shift shift shift 
+shift six 
+shift super null india 
 sierra 
+sierra control null super golf 
 sierra echo 
 sierra echo alpha 
 sierra escape escape 
 sierra four hotel whisky 
 sierra golf charlie 
 sierra hotel 
+sierra hotel india 
 sierra papa 
 sierra tango alpha 
 sierra victor uniform zulu 
 six golf 
+six golf super 
 six mike 
 six sierra 
 six six bravo up 
@@ -428,14 +488,20 @@ six space
 six victor 
 six x-ray 
 sky alpha 
+sky charlie 
+sky delta 
 sky enter enter 
 sky enter zero enter enter 
+sky foxtrot 
 sky golf 
 sky lima 
+sky mike 
 sky november 
 sky null copy sky scratch 
+sky romeo 
 sky scratch 
 sky scratch zero 
+sky shift alt 
 sky sky enter 
 sky zero 
 sky zero left alpha 
@@ -452,6 +518,7 @@ slap space
 slap star slap yankee 
 slap victor 
 slap yankee 
+slash 
 slash slap dot ampersand 
 space 
 space bang 
@@ -462,6 +529,8 @@ space bravo november
 space charlie quebec golf 
 space colon 
 space escape 
+space foxtrot 
+space foxtrot echo 
 space foxtrot foxtrot 
 space foxtrot sierra 
 space golf 
@@ -473,6 +542,8 @@ space mike equal
 space november 
 space one 
 space one single underscore 
+space papa 
+space papa foxtrot 
 space papa tango 
 space right space juliet 
 space romeo x-ray hotel right 
@@ -500,6 +571,13 @@ space yankee yankee delta november
 space zero 
 star colon 
 star november hotel question star 
+super bravo underscore 
+super comma comma control 
+super shift papa comma 
+super shift quebec scratch 
+super shift super super four 
+super super alt 
+super super super comma mike 
 switch 
 switch back 
 switch firefox 
@@ -514,6 +592,10 @@ tango echo down bravo
 tango echo romeo 
 tango five ten 
 tango hotel 
+tango hotel tab 
+tango oscar 
+tango oscar delta 
+tango papa 
 tango two down eight 
 tango uniform 
 tango whisky oscar echo 
@@ -541,7 +623,11 @@ two x-ray three up
 underscore 
 underscore bang slap 
 underscore copy oscar null four 
+underscore null shift super 
 underscore paste 
+underscore super 
+underscore three alt 
+uniform 
 uniform kilo uniform 
 uniform lima 
 uniform lima x-ray lima 
@@ -573,6 +659,7 @@ up two five five
 up up 
 up x-ray november four four 
 victor 
+victor down 
 victor down five 
 victor down four 
 victor down nine 

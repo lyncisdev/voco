@@ -1,4 +1,4 @@
 compute-wer --text --mode=present ark:exp/mono/decode/scoring/test_true_transcripts.txt ark,p:- 
-%WER 0.60 [ 1 / 166, 0 ins, 0 del, 1 sub ] [PARTIAL]
-%SER 1.56 [ 1 / 64 ]
-Scored 64 sentences, 45 not present in hyp.
+%WER 2.33 [ 6 / 258, 1 ins, 1 del, 4 sub ] [PARTIAL]
+%SER 5.81 [ 5 / 86 ]
+Scored 86 sentences, 62 not present in hyp.

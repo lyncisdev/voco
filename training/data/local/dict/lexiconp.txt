@@ -1,6 +1,7 @@
 !SIL 1.0	sil
 <UNK> 1.0	spn
 alpha 1.0	ae l f ah 
+alt 1.0	aa l t 
 ampersand 1.0	ae m p er s ae n d 
 back 1.0	b ae k 
 backslash 1.0	b ae k s l ae sh 
@@ -11,6 +12,8 @@ carrot 1.0	k ae r ah t
 center 1.0	s eh n t er 
 charlie 1.0	ch aa r l iy 
 colon 1.0	k ow l ah n 
+comma 1.0	k aa m ah 
+control 1.0	k ah n t r ow l 
 copy 1.0	k aa p iy 
 delta 1.0	d eh l t ah 
 dollar 1.0	d aa l er 
@@ -56,6 +59,7 @@ right 1.0	r ay t
 romeo 1.0	r ow m iy ow 
 scratch 1.0	s k r ae ch 
 seven 1.0	s eh v ah n 
+shift 1.0	sh ih f t 
 sierra 1.0	s iy eh r ah 
 single 1.0	s ih ng g ah l 
 six 1.0	s ih k s 
@@ -64,6 +68,7 @@ slap 1.0	s l ae p
 slash 1.0	s l ae sh 
 space 1.0	s p ey s 
 star 1.0	s t aa r 
+super 1.0	s uw p er 
 switch 1.0	s w ih ch 
 tab 1.0	t ae b 
 tango 1.0	t ae ng g ow 

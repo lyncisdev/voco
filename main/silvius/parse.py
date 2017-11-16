@@ -245,6 +245,7 @@ class CoreParser(GenericParser):
             character ::= slash
             character ::= question
             character ::= along
+            character ::= comma
         '''
         value = {
             'escape': 'Escape',
@@ -271,7 +272,8 @@ class CoreParser(GenericParser):
             'dot': 'period',
             'slash': 'slash',
             'question': 'question',
-            'along': 'alt'
+            'along': 'alt',
+            'comma': 'comma'
         }
         return AST('raw_char', [value[args[0].type]])
 

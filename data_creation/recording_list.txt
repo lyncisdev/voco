@@ -1,50 +1,50 @@
-000,zero bravo underscore null zero 
-001,scratch term 
-002,null enter 
-003,null zero whisky 
-004,null term paste null term 
-005,underscore copy oscar null four 
-006,term zero kilo copy underscore 
-007,zero six underscore one four 
-008,paste bravo zero term null 
-009,null up 
-010,papa sky zero underscore 
-011,echo term paste 
-012,null underscore hotel juliet 
-013,charlie scratch copy 
-014,term six kilo copy zero 
-015,paste term term copy echo 
-016,sky null copy sky scratch 
-017,null zero term 
-018,underscore paste 
-019,null copy seven zero paste 
-020,romeo ten term paste 
-021,paste paste paste 
-022,copy term 
-023,eight foxtrot term paste 
-024,copy term paste 
-025,zulu copy 
-026,term null three null null 
-027,eight term five copy 
-028,null uniform eight kilo 
-029,alpha alpha delta null 
-030,paste oscar 
-031,scratch down 
-032,copy whisky one paste 
-033,paste null zero foxtrot 
-034,oscar term null whisky paste 
-035,delta copy term lima copy 
-036,one null seven zero 
-037,hotel enter eight term 
-038,term paste paste sky term 
-039,term null zero paste underscore 
-040,null paste 
-041,paste null scratch term 
-042,copy paste 
-043,right paste 
-044,paste underscore echo 
-045,zero paste scratch 
-046,term copy copy 
-047,down zero paste 
-048,copy zero 
-049,whisky zero copy 
+000,quebec super alt control 
+001,null alt shift 
+002,sierra control null super golf 
+003,shift null super 
+004,comma shift three oscar alt 
+005,alt comma control shift control 
+006,alt null control 
+007,alt underscore super zero shift 
+008,shift shift 
+009,underscore super 
+010,super shift papa comma 
+011,six golf super 
+012,shift six 
+013,shift shift 
+014,shift super null india 
+015,super bravo underscore 
+016,control alt 
+017,control shift shift 
+018,scratch super 
+019,super shift super super four 
+020,null x-ray control delta control 
+021,underscore null shift super 
+022,shift shift shift 
+023,super super super comma mike 
+024,alt shift 
+025,shift mike alt shift super 
+026,comma up super 
+027,alt shift comma shift super 
+028,shift shift left 
+029,delta comma scratch foxtrot 
+030,shift shift 
+031,null delta shift ten super 
+032,super shift quebec scratch 
+033,comma control alt null 
+034,control alt null shift 
+035,quebec mike 
+036,super comma comma control 
+037,shift romeo 
+038,shift shift comma uniform whisky 
+039,india alt underscore null 
+040,super super alt 
+041,control shift super 
+042,underscore three alt 
+043,alt shift shift alt golf 
+044,one shift null 
+045,alt null control null shift 
+046,comma golf null sky scratch 
+047,comma shift 
+048,sky shift alt 
+049,control shift comma victor romeo 

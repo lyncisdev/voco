@@ -1,6 +1,7 @@
 !SIL	1.0	sil_S
 <UNK>	1.0	spn_S
 alpha	1.0	ae_B l_I f_I ah_E
+alt	1.0	aa_B l_I t_E
 ampersand	1.0	ae_B m_I p_I er_I s_I ae_I n_I d_E
 back	1.0	b_B ae_I k_E
 backslash	1.0	b_B ae_I k_I s_I l_I ae_I sh_E
@@ -11,6 +12,8 @@ carrot	1.0	k_B ae_I r_I ah_I t_E
 center	1.0	s_B eh_I n_I t_I er_E
 charlie	1.0	ch_B aa_I r_I l_I iy_E
 colon	1.0	k_B ow_I l_I ah_I n_E
+comma	1.0	k_B aa_I m_I ah_E
+control	1.0	k_B ah_I n_I t_I r_I ow_I l_E
 copy	1.0	k_B aa_I p_I iy_E
 delta	1.0	d_B eh_I l_I t_I ah_E
 dollar	1.0	d_B aa_I l_I er_E
@@ -56,6 +59,7 @@ right	1.0	r_B ay_I t_E
 romeo	1.0	r_B ow_I m_I iy_I ow_E
 scratch	1.0	s_B k_I r_I ae_I ch_E
 seven	1.0	s_B eh_I v_I ah_I n_E
+shift	1.0	sh_B ih_I f_I t_E
 sierra	1.0	s_B iy_I eh_I r_I ah_E
 single	1.0	s_B ih_I ng_I g_I ah_I l_E
 six	1.0	s_B ih_I k_I s_E
@@ -64,6 +68,7 @@ slap	1.0	s_B l_I ae_I p_E
 slash	1.0	s_B l_I ae_I sh_E
 space	1.0	s_B p_I ey_I s_E
 star	1.0	s_B t_I aa_I r_E
+super	1.0	s_B uw_I p_I er_E
 switch	1.0	s_B w_I ih_I ch_E
 tab	1.0	t_B ae_I b_E
 tango	1.0	t_B ae_I ng_I g_I ow_E
