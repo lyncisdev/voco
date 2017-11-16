@@ -19,7 +19,8 @@ escape_keywords = [
     'copy',  # copy
     'paste',  # paste
     'select',  # for selecting lines or words
-    'emacs'  # Emacs command to follow
+    'emacs',  # Emacs command to follow
+    'keynav'
 ]
 
 silvius_keywords = [
@@ -60,6 +61,29 @@ def c_rofi_run(word_array):
     cmd = 'rofi -show run'
     return cmd
 
+def c_keynav(word_array):
+    '''
+    h : select the left half of the region
+    j : select the bottom half of the region
+    k : select the top half of the region
+    l : select the right half of the region
+    shift+h : move the region left
+    shift+j : move the region down
+    shift+k : move the region top
+    shift+l : move the region right
+    semicolon : Move the mouse to the center of the selected region
+    spacebar : Move the mouse and left-click
+    escape : Cancel the move
+    '''
+    if len(word_array) > 1:
+        if word_array[1] == "golf":
+            cmd = 'keynav grid-nav'
+        else:
+            cmd = 'keynav'
+    else:
+        cmd = 'keynav'
+
+    return cmd
 
 def c_window_commands(word_array):
 
@@ -148,7 +172,8 @@ function_dict = {
     'select': c_select_commands,
     'max': c_emacs_commands,
     'copy': c_copypaste_commands,
-    'paste': c_copypaste_commands
+    'paste': c_copypaste_commands,
+    'keynav': c_keynav
 }
 
 
@@ -172,15 +197,9 @@ def process_line(line):
             cmd = ""
 
     elif word_array[0] in silvius_keywords:
-
         tokens = scan(line)
-
         ast = parse(tokens)
-
         #printAST(ast)
-
-        # make this return the XDO command
-
         cmd = execute(ast, True)
     else:
         cmd = ""

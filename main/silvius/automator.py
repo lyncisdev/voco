@@ -23,7 +23,7 @@ class Automator:
 
     def execute(self, command):
         if command == '': return
-        if self.real:
+        # if self.real:
             # os.system(command)
 
     def raw_key(self, k):
