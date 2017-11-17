@@ -12,6 +12,7 @@ import pdb
 from datetime import datetime
 import time
 import traceback
+import pprint
 from silvius.process_line import process_line
 
 #----------------------------------------------------------------------------
@@ -162,7 +163,9 @@ try:
         input_device_index=mic,
         frames_per_buffer=chunk)
 
-    print(pa.get_default_input_device_info())
+    pp = pprint.PrettyPrinter(depth=3, width=5)
+    pp.pprint(pa.get_default_input_device_info())
+
 
 except IOError, e:
     if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
@@ -209,23 +212,26 @@ timeout = 0
 rms = 0
 for i in range(0, 10):
     data = stream.read(chunk)
-    rms += audioop.rms(data, 2)
+
+    tmp_rms = audioop.rms(data, 2)
+
+    rms += tmp_rms
 
     if debug:
-        print(rms)
+        print(tmp_rms)
 
 avg_rms = rms / 10.0
-gate = 1.2 * avg_rms
-end_gate = 1.1 * avg_rms
+gate = 1.4 * avg_rms
+end_gate = 1.2 * avg_rms
 
-print("Noise floor: " + avg_rms)
+print("Noise floor: " + str(avg_rms))
 print("Start recording gate: " + str(gate))
-print("Stop recording gate" + str(end_gate))
+print("Stop recording gate: " + str(end_gate))
 
 # gate = 800
 # end_gate = 600
 
-os.system("aplay media/shovel.mp3")
+os.system("aplay media/shovel.wav")
 
 #----------------------------------------------------------------------------
 # start recording
@@ -281,7 +287,8 @@ while (True):
             time_start = time_end
 
             if len(result) == 0:
-                os.system("aplay media/micro.mp3")
+                # os.system("aplay media/micro.wav")
+                print("Error")
             else:
                 try:
     
@@ -292,7 +299,9 @@ while (True):
                     time_start = time_end
 
                     if len(cmd) == 0:
-                        os.system("aplay media/micro.mp3")
+                        # os.system("aplay media/micro.wav")
+
+                        print("Error")
                     else:
                         print(cmd)
 
@@ -319,9 +328,7 @@ while (True):
                         print("Wrote log to:" + basedir + "log")
 
                 except Exception as e:
-                    if len(cmd) == 0:
-                        os.system("aplay media/micro.mp3"
-                    print(result)
+                    # os.system("aplay media/micro.wav")
                     print(e)
                     tb = traceback.format_exc()
                     print(tb)
