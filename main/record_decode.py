@@ -119,7 +119,6 @@ voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
 basedir = voco_data_base + "staging/"
 
-
 #----------------------------------------------------------------------------
 # Parse input options - noexec, debug, playback
 #----------------------------------------------------------------------------
@@ -165,7 +164,6 @@ try:
 
     pp = pprint.PrettyPrinter(depth=3, width=5)
     pp.pprint(pa.get_default_input_device_info())
-
 
 except IOError, e:
     if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
@@ -241,8 +239,8 @@ while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
 
-    if debug:
-        print(rms)
+    # if debug:
+    #     print(rms)
 
     if rec == False:
         if rms >= gate:
@@ -281,6 +279,9 @@ while (True):
             result = subprocess.check_output("./kaldi_decode.sh", shell=True)
             result = result.split(" ", 1)[1].strip()
 
+            if debug:
+                print(result)
+
             time_end = time.time()
             time_duration = time_end - time_start
             duration_dict['decode'] = time_duration
@@ -288,10 +289,10 @@ while (True):
 
             if len(result) == 0:
                 # os.system("aplay media/micro.wav")
-                print("Error")
+                print("Error: result")
             else:
                 try:
-    
+
                     cmd = process_line(result)
                     time_end = time.time()
                     time_duration = time_end - time_start
@@ -311,8 +312,10 @@ while (True):
                     time_end = time.time()
                     time_duration = time_end - time_start
                     duration_dict['execute'] = time_duration
-                    duration_dict[
-                        'total'] = duration_dict['write_files'] + duration_dict['decode'] + duration_dict['process'] + duration_dict['execute']
+                    duration_dict['total'] = duration_dict[
+                        'write_files'] + duration_dict[
+                            'decode'] + duration_dict[
+                                'process'] + duration_dict['execute']
 
                     if debug:
                         print("-----------------")
@@ -323,7 +326,8 @@ while (True):
                         os.system("aplay " + audio_sample_file_path)
 
                     write_log(basedir, UID, result, cmd,
-                              str(duration_dict['total']), audio_sample_file_path)
+                              str(duration_dict['total']),
+                              audio_sample_file_path)
                     if debug:
                         print("Wrote log to:" + basedir + "log")
 

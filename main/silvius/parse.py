@@ -103,6 +103,7 @@ class CoreParser(GenericParser):
             'backspace': 'BackSpace',
             'enter': 'Return'
         }
+
         if args[1] != None:
             return AST('repeat', [args[1]],
                        [AST('raw_char', [value[args[0].type]])])
@@ -117,11 +118,29 @@ class CoreParser(GenericParser):
             movement ::= down repeat
             movement ::= left repeat
             movement ::= right repeat
+            movement ::= pageup
+            movement ::= pagedown
+            movement ::= home
+            movement ::= end
         '''
-        if args[1] != None:
-            return AST('repeat', [args[1]], [AST('movement', [args[0]])])
-        else:
-            return AST('movement', [args[0]])
+        value = {
+            'up': 'up',
+            'down': 'down',
+            'left': 'left',
+            'right': 'right',
+            'pageup': 'Prior',
+            'pagedown': 'Next',
+            'home': 'home',
+            'end': 'end'
+        }
+
+        # if len(args) > 1:
+        #     return AST('repeat', [args[1]], [AST('movement', [args[0].type])])
+        # else:
+        # print(args[0].type)
+        # print(value[args[0].type])
+
+        return AST('movement', [value[args[0].type]])
 
 #--------------------------
 
@@ -223,8 +242,8 @@ class CoreParser(GenericParser):
             character ::= escape
             character ::= act
             character ::= colon
-            character ::= single quote
-            character ::= double quote
+            character ::= singlequote
+            character ::= doublequote
             character ::= equal
             character ::= space
             character ::= tab
@@ -251,8 +270,8 @@ class CoreParser(GenericParser):
             'escape': 'Escape',
             'act': 'Escape',
             'colon': 'colon',
-            'single': 'apostrophe',
-            'double': 'quotedbl',
+            'singlequote': 'apostrophe',
+            'doublequote': 'quotedbl',
             'equal': 'equal',
             'space': 'space',
             'tab': 'Tab',

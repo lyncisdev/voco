@@ -48,7 +48,7 @@ recording_list = []
 # i = random.randint(0,len(unmixed_command_list)-1)
 # recording_list.append(unmixed_command_list[i])
 
-for x in range(0, 50):
+for x in range(0, 20):
     tmp = ""
     for y in range(0, random.randint(2, 5)):
         i = random.randint(0, len(mixed_command_list) - 1)

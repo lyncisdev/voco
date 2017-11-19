@@ -1,11 +1,14 @@
 !SIL sil
 <UNK> spn
+ace ey s 
+act ae k t 
 alpha ae l f ah 
 alt aa l t 
 ampersand ae m p er s ae n d 
 back b ae k 
 backslash b ae k s l ae sh 
 bang b ae ng 
+bas b ah s 
 bottom b aa t ah m 
 bravo b r aa v ow 
 carrot k ae r ah t 
@@ -15,13 +18,17 @@ colon k ow l ah n
 comma k aa m ah 
 control k ah n t r ow l 
 copy k aa p iy 
+dash d ae sh 
+delete d ih l iy t 
 delta d eh l t ah 
 dollar d aa l er 
 dot d aa t 
 double d ah b ah l 
+doublequote d ah b ah l k w ow t 
 down d aw n 
 echo eh k ow 
 eight ey t 
+end eh n d 
 enter eh n t er 
 equal iy k w ah l 
 escape ih s k ey p 
@@ -31,10 +38,12 @@ four f ao r
 foxtrot f aa k s t r aa t 
 golf g aa l f 
 hash hh ae sh 
+home hh ow m 
 hotel hh ow t eh l 
 india ih n d iy ah 
 juliet jh uw l iy eh t 
 kilo k ih l ow 
+las l aa s 
 late l ey t 
 left l eh f t 
 lima l ay m ah 
@@ -42,13 +51,17 @@ max m ae k s
 maximise m ae k s ah m ay z 
 mike m ay k 
 minimise m ih n ah m ay z 
+mousegrid m aw s g r ih d 
 nine n ay n 
 november n ow v eh m b er 
 null n ah l 
 one w ah n 
 oscar ao s k er 
+pagedown p ey jh d aw n 
+pageup p ey jh ah p 
 papa p aa p ah 
 paste p ey s t 
+pause p ao z 
 percent p er s eh n t 
 plus p l ah s 
 quebec k w ah b eh k 
@@ -62,6 +75,7 @@ seven s eh v ah n
 shift sh ih f t 
 sierra s iy eh r ah 
 single s ih ng g ah l 
+singlequote s ih ng g ah l k w ow t 
 six s ih k s 
 sky s k ay 
 slap s l ae p 
