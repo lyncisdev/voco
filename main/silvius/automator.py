@@ -33,6 +33,7 @@ class Automator:
         self.xdo(' key ' + k)
 
     def key(self, k):
+        # print(type(k))
         if (len(k) > 1): k = k.capitalize()
         self.xdo(' key ' + k)
 

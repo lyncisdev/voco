@@ -1,11 +1,14 @@
 !SIL 1.0	sil
 <UNK> 1.0	spn
+ace 1.0	ey s 
+act 1.0	ae k t 
 alpha 1.0	ae l f ah 
 alt 1.0	aa l t 
 ampersand 1.0	ae m p er s ae n d 
 back 1.0	b ae k 
 backslash 1.0	b ae k s l ae sh 
 bang 1.0	b ae ng 
+bas 1.0	b ah s 
 bottom 1.0	b aa t ah m 
 bravo 1.0	b r aa v ow 
 carrot 1.0	k ae r ah t 
@@ -15,13 +18,17 @@ colon 1.0	k ow l ah n
 comma 1.0	k aa m ah 
 control 1.0	k ah n t r ow l 
 copy 1.0	k aa p iy 
+dash 1.0	d ae sh 
+delete 1.0	d ih l iy t 
 delta 1.0	d eh l t ah 
 dollar 1.0	d aa l er 
 dot 1.0	d aa t 
 double 1.0	d ah b ah l 
+doublequote 1.0	d ah b ah l k w ow t 
 down 1.0	d aw n 
 echo 1.0	eh k ow 
 eight 1.0	ey t 
+end 1.0	eh n d 
 enter 1.0	eh n t er 
 equal 1.0	iy k w ah l 
 escape 1.0	ih s k ey p 
@@ -31,10 +38,12 @@ four 1.0	f ao r
 foxtrot 1.0	f aa k s t r aa t 
 golf 1.0	g aa l f 
 hash 1.0	hh ae sh 
+home 1.0	hh ow m 
 hotel 1.0	hh ow t eh l 
 india 1.0	ih n d iy ah 
 juliet 1.0	jh uw l iy eh t 
 kilo 1.0	k ih l ow 
+las 1.0	l aa s 
 late 1.0	l ey t 
 left 1.0	l eh f t 
 lima 1.0	l ay m ah 
@@ -42,13 +51,17 @@ max 1.0	m ae k s
 maximise 1.0	m ae k s ah m ay z 
 mike 1.0	m ay k 
 minimise 1.0	m ih n ah m ay z 
+mousegrid 1.0	m aw s g r ih d 
 nine 1.0	n ay n 
 november 1.0	n ow v eh m b er 
 null 1.0	n ah l 
 one 1.0	w ah n 
 oscar 1.0	ao s k er 
+pagedown 1.0	p ey jh d aw n 
+pageup 1.0	p ey jh ah p 
 papa 1.0	p aa p ah 
 paste 1.0	p ey s t 
+pause 1.0	p ao z 
 percent 1.0	p er s eh n t 
 plus 1.0	p l ah s 
 quebec 1.0	k w ah b eh k 
@@ -62,6 +75,7 @@ seven 1.0	s eh v ah n
 shift 1.0	sh ih f t 
 sierra 1.0	s iy eh r ah 
 single 1.0	s ih ng g ah l 
+singlequote 1.0	s ih ng g ah l k w ow t 
 six 1.0	s ih k s 
 sky 1.0	s k ay 
 slap 1.0	s l ae p 

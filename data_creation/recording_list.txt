@@ -1,50 +1,20 @@
-000,quebec super alt control 
-001,null alt shift 
-002,sierra control null super golf 
-003,shift null super 
-004,comma shift three oscar alt 
-005,alt comma control shift control 
-006,alt null control 
-007,alt underscore super zero shift 
-008,shift shift 
-009,underscore super 
-010,super shift papa comma 
-011,six golf super 
-012,shift six 
-013,shift shift 
-014,shift super null india 
-015,super bravo underscore 
-016,control alt 
-017,control shift shift 
-018,scratch super 
-019,super shift super super four 
-020,null x-ray control delta control 
-021,underscore null shift super 
-022,shift shift shift 
-023,super super super comma mike 
-024,alt shift 
-025,shift mike alt shift super 
-026,comma up super 
-027,alt shift comma shift super 
-028,shift shift left 
-029,delta comma scratch foxtrot 
-030,shift shift 
-031,null delta shift ten super 
-032,super shift quebec scratch 
-033,comma control alt null 
-034,control alt null shift 
-035,quebec mike 
-036,super comma comma control 
-037,shift romeo 
-038,shift shift comma uniform whisky 
-039,india alt underscore null 
-040,super super alt 
-041,control shift super 
-042,underscore three alt 
-043,alt shift shift alt golf 
-044,one shift null 
-045,alt null control null shift 
-046,comma golf null sky scratch 
-047,comma shift 
-048,sky shift alt 
-049,control shift comma victor romeo 
+000,home pageup kilo las dollar 
+001,dash pause pagedown ace 
+002,enter scratch singlequote papa five 
+003,end home dollar delete 
+004,end singlequote end 
+005,pageup pageup 
+006,zulu yankee 
+007,pagedown pageup pageup las end 
+008,foxtrot dash bas 
+009,home scratch mousegrid 
+010,zulu bas left mousegrid enter 
+011,right las ace 
+012,ace bas two mousegrid 
+013,pagedown whisky 
+014,charlie alt end delete doublequote 
+015,singlequote underscore ace 
+016,end act 
+017,pageup shift pagedown 
+018,pagedown underscore 
+019,pageup dash bas 

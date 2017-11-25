@@ -1,184 +1,160 @@
 # gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.1.gz" 
-# Started at Wed Nov 15 22:21:32 SAST 2017
+# Started at Sun Nov 19 12:46:08 SAST 2017
 #
 gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.1.gz' 
 add-deltas ark:- ark:- 
 apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
-LIVE00000066_00013 uniform victor whisky 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000066_00013 is -7.68874 over 152 frames.
-LIVE00000067_00009 space whisky slash 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000067_00009 is -7.44236 over 152 frames.
-LIVE00000069_00002 space whisky scratch 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000069_00002 is -8.02144 over 152 frames.
-LIVE00000074_00011 enter 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00011 is -6.54231 over 152 frames.
-LIVE00000074_00017 space sierra sierra 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00017 is -7.05149 over 305 frames.
-LIVE00000074_00037 tango 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00037 is -6.73064 over 75 frames.
-LIVE00000074_00043 five juliet 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00043 is -7.14397 over 152 frames.
+LIVE00000062_00001 alpha bravo 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000062_00001 is -7.64031 over 75 frames.
+LIVE00000066_00018 escape 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000066_00018 is -6.91818 over 75 frames.
+LIVE00000067_00011 papa 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000067_00011 is -6.85316 over 75 frames.
+LIVE00000068_00004 slap 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000068_00004 is -6.52192 over 152 frames.
+LIVE00000068_00012 whisky one 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000068_00012 is -6.6766 over 228 frames.
+LIVE00000074_00002 space bravo bravo 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00002 is -7.28091 over 152 frames.
+LIVE00000074_00006 space foxtrot foxtrot 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00006 is -7.59271 over 152 frames.
+LIVE00000074_00007 mike alpha india 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00007 is -7.23543 over 152 frames.
+LIVE00000074_00020 space tab 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00020 is -7.57533 over 75 frames.
+LIVE00000074_00022 space foxtrot sierra 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00022 is -7.46502 over 152 frames.
+LIVE00000074_00024 space sierra sierra 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00024 is -7.21191 over 152 frames.
+LIVE00000074_00038 enter 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00038 is -6.69353 over 75 frames.
 LIVE00000074_00044 five kilo 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00044 is -6.91517 over 152 frames.
-LIVE00000074_00056 yankee 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00056 is -7.14419 over 75 frames.
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000074_00044 is -6.90615 over 152 frames.
 LIVE00000075_00003 mike oscar victor 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000075_00003 is -7.41572 over 152 frames.
-LIVE00000090_00002 up nine 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00002 is -7.77443 over 75 frames.
-LIVE00000090_00021 enter 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00021 is -6.27982 over 152 frames.
-LIVE00000090_00053 right five 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00053 is -6.90218 over 152 frames.
-LIVE00000090_00055 space 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00055 is -6.83161 over 152 frames.
-LIVE00000090_00061 enter 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00061 is -6.55548 over 75 frames.
-LIVE00000090_00066 back space two 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00066 is -7.04579 over 228 frames.
-LIVE00000090_00076 enter 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00076 is -7.38297 over 75 frames.
-LIVE00000090_00086 up 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00086 is -7.22392 over 75 frames.
-LIVE00000090_00117 yankee 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00117 is -6.56903 over 75 frames.
-LIVE00000090_00118 down nine down nine 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00118 is -6.8681 over 228 frames.
-LIVE00000090_00125 space mike equal 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00125 is -7.23014 over 152 frames.
-LIVE00000090_00126 yankee 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00126 is -7.05029 over 75 frames.
-LIVE00000090_00138 down 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00138 is -6.64269 over 75 frames.
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000075_00003 is -7.48151 over 152 frames.
+LIVE00000079_00000 enter 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000079_00000 is -6.91827 over 75 frames.
+LIVE00000089_00003 left five 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000089_00003 is -7.58042 over 75 frames.
+LIVE00000090_00000 space sierra 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00000 is -7.51812 over 75 frames.
+LIVE00000090_00025 delta delta 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00025 is -7.65198 over 228 frames.
+LIVE00000090_00069 space foxtrot foxtrot 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00069 is -7.38984 over 152 frames.
+LIVE00000090_00095 hash 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00095 is -7.68157 over 75 frames.
+LIVE00000090_00114 right nine 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00114 is -7.47005 over 75 frames.
+LIVE00000090_00123 escape 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00123 is -7.32458 over 75 frames.
+LIVE00000090_00129 escape 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00129 is -7.14504 over 75 frames.
+LIVE00000090_00131 space 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00131 is -7.82481 over 75 frames.
+LIVE00000090_00140 scratch 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance LIVE00000090_00140 is -7.04167 over 75 frames.
 REC00000001 switch back 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000001 is -7.67945 over 62 frames.
-REC00000019 window left 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000019 is -7.11996 over 107 frames.
-REC00000020 switch back 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000020 is -7.28818 over 107 frames.
-REC00000023 switch max 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000023 is -7.19066 over 100 frames.
-REC00000036 return 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000036 is -7.33589 over 107 frames.
-REC00000054 romeo four hotel five yankee down 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000054 is -7.58498 over 286 frames.
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000001 is -7.78952 over 62 frames.
+REC00000037 escape 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000037 is -6.522 over 88 frames.
+REC00000055 left up delta sierra six 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000055 is -7.13017 over 228 frames.
+REC00000062 romeo up juliet up alpha 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000062 is -7.26674 over 235 frames.
 REC00000069 lima three 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000069 is -7.10252 over 107 frames.
-REC00000078 tango uniform 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000078 is -7.20096 over 126 frames.
-REC00000081 one nine nine kilo 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000081 is -7.14002 over 152 frames.
-REC00000091 up quebec november left tango romeo 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000091 is -7.36287 over 248 frames.
-REC00000098 down quebec 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000098 is -6.8237 over 113 frames.
-REC00000117 switch back 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000117 is -6.78778 over 158 frames.
-REC00000134 papa papa delta papa 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000134 is -7.31113 over 196 frames.
-REC00000144 bravo right 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000144 is -6.80708 over 145 frames.
-REC00000156 juliet one hotel two yankee 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000156 is -7.30591 over 241 frames.
-REC00000162 juliet echo uniform zulu 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000162 is -7.34387 over 235 frames.
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000069 is -7.08072 over 107 frames.
+REC00000072 mike oscar six lima 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000072 is -7.2406 over 190 frames.
+REC00000093 left golf 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000093 is -6.97437 over 113 frames.
+REC00000110 switch 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000110 is -6.86229 over 113 frames.
+REC00000122 return 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000122 is -6.61672 over 145 frames.
+REC00000130 down victor left 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000130 is -6.8004 over 164 frames.
+REC00000143 four echo right 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000143 is -7.23986 over 184 frames.
+REC00000145 charlie mike 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000145 is -6.82506 over 152 frames.
+REC00000160 charlie papa papa 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000160 is -6.75324 over 171 frames.
 REC00000172 up three x-ray 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000172 is -7.23611 over 184 frames.
-REC00000174 uniform seven hotel 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000174 is -6.97402 over 209 frames.
-REC00000187 victor zulu 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000187 is -7.17444 over 145 frames.
-REC00000192 bravo delta bravo 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000192 is -6.97426 over 171 frames.
-REC00000204 escape 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000204 is -6.69628 over 145 frames.
-REC00000244 golf quebec one 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000244 is -7.23943 over 164 frames.
-REC00000252 hotel ten down 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000252 is -6.94938 over 171 frames.
-REC00000253 november whisky six yankee 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000253 is -7.11102 over 196 frames.
-REC00000261 right nine right left six 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000261 is -7.51423 over 177 frames.
-REC00000263 kilo kilo oscar seven 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000263 is -7.10263 over 228 frames.
-REC00000281 foxtrot india tango 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000281 is -7.49207 over 171 frames.
-REC00000285 quebec up whisky 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000285 is -7.25326 over 177 frames.
-REC00000300 return 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000300 is -7.22026 over 75 frames.
-REC00000301 oscar uniform space lima victor 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000301 is -8.02548 over 196 frames.
-REC00000305 space romeo x-ray hotel right 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000305 is -7.55167 over 260 frames.
-REC00000307 india space quebec two 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000307 is -7.25183 over 196 frames.
-REC00000319 space yankee yankee delta november 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000319 is -7.70398 over 216 frames.
-REC00000326 down mike 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000326 is -6.75606 over 139 frames.
-REC00000330 romeo four sierra 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000330 is -6.95441 over 184 frames.
-REC00000331 x-ray x-ray right 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000331 is -7.80653 over 171 frames.
-REC00000337 right quebec quebec foxtrot charlie 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000337 is -7.413 over 273 frames.
-REC00000356 kilo space x-ray space 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000356 is -7.31545 over 222 frames.
-REC00000370 left lima nine space left 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000370 is -7.3226 over 209 frames.
-REC00000378 space space six left 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000378 is -7.13461 over 241 frames.
-REC00000386 sierra escape escape 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000386 is -7.2062 over 177 frames.
-REC00000397 yankee slap yankee 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000397 is -7.39323 over 190 frames.
-REC00000405 slap double colon slap 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000405 is -7.32863 over 216 frames.
-REC00000438 juliet four late two 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000438 is -7.24769 over 228 frames.
-REC00000453 scratch down zero zero 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000453 is -7.13274 over 209 frames.
-REC00000460 enter zero 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000460 is -6.80355 over 152 frames.
-REC00000463 sky scratch 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000463 is -7.11376 over 152 frames.
-REC00000465 enter zero sky 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000465 is -6.73476 over 177 frames.
-REC00000487 enter sky 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000487 is -7.06225 over 152 frames.
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000172 is -7.16572 over 184 frames.
+REC00000175 nine romeo nine four november 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000175 is -7.13281 over 248 frames.
+REC00000205 switch firefox 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000205 is -6.79145 over 184 frames.
+REC00000218 switch firefox 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000218 is -6.95131 over 152 frames.
+REC00000239 romeo oscar nine four 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000239 is -6.90791 over 190 frames.
+REC00000241 papa delta two 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000241 is -7.09892 over 158 frames.
+REC00000264 x-ray echo right three victor 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000264 is -7.53195 over 216 frames.
+REC00000288 mike right 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000288 is -6.8297 over 126 frames.
+REC00000292 mike hotel 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000292 is -6.87265 over 164 frames.
+REC00000324 three four space 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000324 is -7.86459 over 139 frames.
+REC00000332 mike left 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000332 is -7.0297 over 132 frames.
+REC00000339 bravo right 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000339 is -6.86696 over 145 frames.
+REC00000348 november seven quebec up mike 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000348 is -7.32587 over 248 frames.
+REC00000350 romeo space five 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000350 is -6.98455 over 196 frames.
+REC00000372 romeo whisky left 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000372 is -7.25988 over 164 frames.
+REC00000392 space whisky 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000392 is -6.8041 over 158 frames.
+REC00000394 victor space slap 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000394 is -7.15268 over 171 frames.
+REC00000413 underscore bang slap 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000413 is -7.23735 over 184 frames.
+REC00000456 scratch scratch enter zero romeo 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000456 is -7.37144 over 254 frames.
+REC00000458 alpha scratch enter delta 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000458 is -7.08097 over 241 frames.
+REC00000469 india scratch enter 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000469 is -6.98663 over 184 frames.
+REC00000471 uniform zero lima 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000471 is -7.12013 over 196 frames.
+REC00000484 enter lima scratch 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000484 is -7.37812 over 177 frames.
 REC00000488 sky sky enter 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000488 is -6.94731 over 190 frames.
-REC00000495 scratch sky scratch hotel 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000495 is -7.15254 over 248 frames.
-REC00000511 null underscore hotel juliet 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000511 is -7.22489 over 222 frames.
-REC00000514 paste term term copy echo 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000514 is -7.21279 over 228 frames.
-REC00000531 copy whisky one paste 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000531 is -7.27223 over 209 frames.
-REC00000533 oscar term null whisky paste 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000533 is -7.2944 over 260 frames.
-LOG (apply-cmvn[5.1.46~1-0d031]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 86 utterances, errors on 0
-REC00000540 paste null scratch term 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000540 is -7.2483 over 216 frames.
-REC00000543 paste underscore echo 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000543 is -7.17996 over 216 frames.
-REC00001236 alt comma control shift control 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001236 is -7.48313 over 260 frames.
-REC00001245 shift super null india 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001245 is -7.01652 over 222 frames.
-REC00001266 quebec mike 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001266 is -6.96428 over 158 frames.
-REC00001269 shift shift comma uniform whisky 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001269 is -7.04792 over 305 frames.
-REC00001272 control shift super 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001272 is -7.0624 over 196 frames.
-REC00001280 control shift comma victor romeo 
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001280 is -7.32823 over 273 frames.
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:main():gmm-latgen-faster.cc:176) Time taken 11.2769s: real-time factor assuming 100 frames/sec is 0.0753098
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:main():gmm-latgen-faster.cc:179) Done 86 utterances, failed for 0
-LOG (gmm-latgen-faster[5.1.46~1-0d031]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -7.19141 over 14974 frames.
-# Accounting: time=11 threads=1
-# Ended (code 0) at Wed Nov 15 22:21:43 SAST 2017, elapsed time 11 seconds
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000488 is -6.94605 over 190 frames.
+REC00000491 sky enter zero enter enter 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000491 is -7.17136 over 267 frames.
+REC00000499 zero bravo underscore null zero 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000499 is -6.99819 over 286 frames.
+LOG (apply-cmvn[5.1.46~1-0d031]:main():apply-cmvn.cc:146) Applied cepstral mean normalization to 74 utterances, errors on 0
+REC00000507 paste bravo zero term null 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000507 is -7.2028 over 241 frames.
+REC00000516 null zero term 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000516 is -6.69865 over 184 frames.
+REC00000526 eight term five copy 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00000526 is -7.36648 over 203 frames.
+REC00001234 shift null super 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001234 is -7.02703 over 196 frames.
+REC00001242 six golf super 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001242 is -7.00765 over 177 frames.
+REC00001251 null x-ray control delta control 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001251 is -7.80275 over 235 frames.
+REC00001265 control alt null shift 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001265 is -7.15807 over 241 frames.
+REC00001267 super comma comma control 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001267 is -7.06615 over 254 frames.
+REC00001276 alt null control null shift 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001276 is -7.29017 over 305 frames.
+REC00001466 pageup pageup 
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:285) Log-like per frame for utterance REC00001466 is -7.06218 over 152 frames.
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:main():gmm-latgen-faster.cc:176) Time taken 12.0471s: real-time factor assuming 100 frames/sec is 0.100661
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:main():gmm-latgen-faster.cc:179) Done 74 utterances, failed for 0
+LOG (gmm-latgen-faster[5.1.46~1-0d031]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -7.14482 over 11968 frames.
+# Accounting: time=12 threads=1
+# Ended (code 0) at Sun Nov 19 12:46:20 SAST 2017, elapsed time 12 seconds

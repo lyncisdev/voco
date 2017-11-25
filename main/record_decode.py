@@ -12,6 +12,7 @@ import pdb
 from datetime import datetime
 import time
 import traceback
+import pprint
 from silvius.process_line import process_line
 
 #----------------------------------------------------------------------------
@@ -118,7 +119,6 @@ voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
 basedir = voco_data_base + "staging/"
 
-
 #----------------------------------------------------------------------------
 # Parse input options - noexec, debug, playback
 #----------------------------------------------------------------------------
@@ -162,7 +162,8 @@ try:
         input_device_index=mic,
         frames_per_buffer=chunk)
 
-    print(pa.get_default_input_device_info())
+    pp = pprint.PrettyPrinter(depth=3, width=5)
+    pp.pprint(pa.get_default_input_device_info())
 
 except IOError, e:
     if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
@@ -209,23 +210,26 @@ timeout = 0
 rms = 0
 for i in range(0, 10):
     data = stream.read(chunk)
-    rms += audioop.rms(data, 2)
+
+    tmp_rms = audioop.rms(data, 2)
+
+    rms += tmp_rms
 
     if debug:
-        print(rms)
+        print(tmp_rms)
 
 avg_rms = rms / 10.0
-gate = 1.2 * avg_rms
-end_gate = 1.1 * avg_rms
+gate = 1.4 * avg_rms
+end_gate = 1.2 * avg_rms
 
-print("Noise floor: " + avg_rms)
+print("Noise floor: " + str(avg_rms))
 print("Start recording gate: " + str(gate))
-print("Stop recording gate" + str(end_gate))
+print("Stop recording gate: " + str(end_gate))
 
 # gate = 800
 # end_gate = 600
 
-os.system("aplay media/shovel.mp3")
+os.system("aplay media/shovel.wav")
 
 #----------------------------------------------------------------------------
 # start recording
@@ -235,8 +239,8 @@ while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
 
-    if debug:
-        print(rms)
+    # if debug:
+    #     print(rms)
 
     if rec == False:
         if rms >= gate:
@@ -275,16 +279,20 @@ while (True):
             result = subprocess.check_output("./kaldi_decode.sh", shell=True)
             result = result.split(" ", 1)[1].strip()
 
+            if debug:
+                print(result)
+
             time_end = time.time()
             time_duration = time_end - time_start
             duration_dict['decode'] = time_duration
             time_start = time_end
 
             if len(result) == 0:
-                os.system("aplay media/micro.mp3")
+                # os.system("aplay media/micro.wav")
+                print("Error: result")
             else:
                 try:
-    
+
                     cmd = process_line(result)
                     time_end = time.time()
                     time_duration = time_end - time_start
@@ -292,7 +300,9 @@ while (True):
                     time_start = time_end
 
                     if len(cmd) == 0:
-                        os.system("aplay media/micro.mp3")
+                        # os.system("aplay media/micro.wav")
+
+                        print("Error")
                     else:
                         print(cmd)
 
@@ -302,8 +312,10 @@ while (True):
                     time_end = time.time()
                     time_duration = time_end - time_start
                     duration_dict['execute'] = time_duration
-                    duration_dict[
-                        'total'] = duration_dict['write_files'] + duration_dict['decode'] + duration_dict['process'] + duration_dict['execute']
+                    duration_dict['total'] = duration_dict[
+                        'write_files'] + duration_dict[
+                            'decode'] + duration_dict[
+                                'process'] + duration_dict['execute']
 
                     if debug:
                         print("-----------------")
@@ -314,14 +326,13 @@ while (True):
                         os.system("aplay " + audio_sample_file_path)
 
                     write_log(basedir, UID, result, cmd,
-                              str(duration_dict['total']), audio_sample_file_path)
+                              str(duration_dict['total']),
+                              audio_sample_file_path)
                     if debug:
                         print("Wrote log to:" + basedir + "log")
 
                 except Exception as e:
-                    if len(cmd) == 0:
-                        os.system("aplay media/micro.mp3"
-                    print(result)
+                    # os.system("aplay media/micro.wav")
                     print(e)
                     tb = traceback.format_exc()
                     print(tb)
