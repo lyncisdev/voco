@@ -1,6 +1,14 @@
 * VOCO_MAIN todo list
 
 
+** evaluate iVector speaker adaptation
+
+** move voco (record_decode and training) to nnet3 
+
+** write a custom nnet3 decoder class
+
+Use online2bin/online2-wav-nnet3-latgen-faster.cc as a template 
+
 
 ** Add ASPIRE chain model
 
@@ -13,6 +21,9 @@ http://kaldi-asr.org/doc/chain.html
 
 
 https://github.com/alumae/gst-kaldi-nnet2-online/issues/50
+
+
+It is up and working, just very slow!!! Also, not realtime.
 
 
 ** Words to add
