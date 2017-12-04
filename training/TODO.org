@@ -1,15 +1,10 @@
-try:
-    remove results folder (might be left over from decode trial)
-    remove score_GMM
-    Decode directory
-    can we symlink data dir to global data dir?
-    remove || exit 1 from run script
-    remove cmvn from training script
-    
-    
-    
-what is mono alignment for?
+
+* TODO for kaldi training
+   
+** what is mono alignment for?
 
 
+** how to move to NNET 3
 
-creating sym links
+There are significnat benefits of moving to NNET 3:
+We use a 3 times smaller frame rate at the output of the neural net, This significantly reduces the amount of computation required in test time, making real-time decoding much easier.

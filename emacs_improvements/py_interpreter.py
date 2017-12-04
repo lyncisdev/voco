@@ -1,4 +1,12 @@
-# Python interpreter
+
+'''
+Python interpreter
+
+This is a demonstration function to improve on EMACS' jump
+
+
+'''
+
 
 import pprint
 import re
