@@ -1,0 +1,21 @@
+
+--- Additional comments ----
+
+Slide 52 "1. Likelihood: how to calcuate?"
+  I forgot to explain how P(X,path_\ell | \lambda) is calculated at
+  the lecture. Please read carefully the first three lines of mathmatical
+  expressions just under the figure (HMM trellis) to understand the following.
+  (NB: I'm using Latex notation below)
+  Line 1:
+    P(X,path_\ell | \lambda) can be factorised into the product of
+    P(X|path_\ell,\lambda) and  P(path_\ell|\lambda).
+  Line 2:
+    The path_\ell, which is shown as the red lines in the figure,
+    denotes the sequence of states:
+         s_0, s_1, s_1, s_1, s_2, s_2, s_3, s_3, s_4
+  Line 3:
+     The first term on the right hand side of the equation at Line 2
+     is given as the product of emission probabilities (pdfs to be
+     strict): b_1(x_1) b_2(x_2)....b_3(x_7),
+     and the second term is given as the product of a_{01}... a_{34}.
+

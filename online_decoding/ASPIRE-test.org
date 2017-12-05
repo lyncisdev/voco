@@ -6,6 +6,18 @@ ffmpeg -i test.wav -acodec pcm_s16le -ac 1 -ar 8000 test8k.wav
 
 
 
+Usage:
+
+online2-wav-nnet3-latgen-faster
+    nnet3_rxfilename
+    fst_rxfilename
+    spk2utt_rspecifier
+    wav_rspecifier
+    clat_wspecifier
+
+
+
+
 online2-wav-nnet3-latgen-faster \
   --online=true \
   --do-endpointing=false \

@@ -1,0 +1,44 @@
+--- Check list for ASR coursework submission ---
+ Check the following items shown with [].
+
+- Report format
+  [] Both student’s UUNs (e.g. s1234567) are clearly shown at the top of
+     the report.
+  [] Your names are NOT shown in the report.
+  [] Your report should be either a PDF (.pdf) or MS Word (.doc[x])
+     document, with a double-column format. 
+
+- Report submission
+  [] The file name of your report should be either report.pdf or report.doc[x].
+  [] The report is submitted by only one student (not both) in your pair,
+     with the submit command. 
+         e.g.  submit asr 1 report.pdf
+
+- Information of partner
+  [] The file 'partner' in your WorkDir has been created, and it
+     contains the UUN of your partner, and it does not contain the
+     name of the partner.
+     This applies to both the students in your pair.
+     In case you work alone, you still need to create the file, and
+     indicate 'none' or leave it empty.
+
+- Submission of your ASR systems (i.e. script files)
+  [] All the scripts shown below are stored in 'my-local' in the
+     WorkDir of the student who submits the report.
+  [] Scripts contain sufficient code for the marker to replicate the
+     experiment you report in your report.
+  Task 1.1:
+     [] exp_mono_t1.sh
+     [] run_mono_t1_best.sh
+  Task 1.2:
+     [] exp_mono_t2.sh
+  Task 1.3:
+     [] exp_mono_t3.sh
+  Task 1.4:
+     [] exp_mono_t4.sh
+  Task 2.1:
+     [] exp_tri_t1.sh
+     [] run_tri_t1_best.sh
+  Task 3:
+     [] your scripts for Task 3
+     [] The file names of the scripts are clearly indicated in your report.
