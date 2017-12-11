@@ -33,7 +33,7 @@ silvius_keywords = [
     'question', 'rate', 'right', 'romeo', 'scratch', 'sentence', 'seven',
     'sierra', 'six', 'sky', 'slap', 'slash', 'space', 'star', 'backspace',
     'tab', 'tango', 'three', 'two', 'underscore', 'uniform', 'up', 'victor',
-    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home', 'end', 'pageup', 'pagedown', 'singlequote', 'doublequote'
+    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home', 'end', 'pageup', 'pagedown', 'singlequote', 'doublequote', 'delete'
 ]
 
 
@@ -199,7 +199,7 @@ def process_line(line):
     elif word_array[0] in silvius_keywords:
         tokens = scan(line)
         ast = parse(tokens)
-        #printAST(ast)
+        # printAST(ast)
         cmd = execute(ast, True)
     else:
         cmd = ""

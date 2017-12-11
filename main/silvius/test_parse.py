@@ -9,11 +9,23 @@ import pdb
 import os
 
 
-# line = "alpha bravo sky November five"
+line = "alpha bravo sky November five"
 
-line = "keynav"
+line = "charlie slap down two"
 
 print(process_line(line))
+
+
+line = "slap six"
+
+print(process_line(line))
+
+
+line = "delete six"
+
+print(process_line(line))
+
+
 
 
 #tokens = scan(line)

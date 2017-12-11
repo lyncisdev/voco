@@ -188,10 +188,15 @@ int main(int argc, char *argv[]) {
     OnlineTimingStats timing_stats;
 
     for (; !spk2utt_reader.Done(); spk2utt_reader.Next()) {
+
       std::string spk = spk2utt_reader.Key();
+
       const std::vector<std::string> &uttlist = spk2utt_reader.Value();
+
       OnlineIvectorExtractorAdaptationState adaptation_state(
           feature_info.ivector_extractor_info);
+
+
       for (size_t i = 0; i < uttlist.size(); i++) {
         std::string utt = uttlist[i];
         if (!wav_reader.HasKey(utt)) {
@@ -199,7 +204,10 @@ int main(int argc, char *argv[]) {
           num_err++;
           continue;
         }
+
+
         const WaveData &wave_data = wav_reader.Value(utt);
+
         // get the data for channel zero (if the signal is not mono, we only
         // take the first channel).
         SubVector<BaseFloat> data(wave_data.Data(), 0);
@@ -218,6 +226,7 @@ int main(int argc, char *argv[]) {
 
         BaseFloat samp_freq = wave_data.SampFreq();
         int32 chunk_length;
+
         if (chunk_length_secs > 0) {
           chunk_length = int32(samp_freq * chunk_length_secs);
           if (chunk_length == 0) chunk_length = 1;
@@ -228,6 +237,10 @@ int main(int argc, char *argv[]) {
         int32 samp_offset = 0;
         std::vector<std::pair<int32, BaseFloat> > delta_weights;
 
+
+        //
+        // This is where each chunk gets decoded
+        //
         while (samp_offset < data.Dim()) {
           int32 samp_remaining = data.Dim() - samp_offset;
           int32 num_samp = chunk_length < samp_remaining ? chunk_length

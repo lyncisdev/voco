@@ -8,7 +8,7 @@ from ast import AST
 
 class CoreParser(GenericParser):
 
-    #------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------
 
     def __init__(self, start):
         GenericParser.__init__(self, start)
@@ -96,12 +96,14 @@ class CoreParser(GenericParser):
             editing ::= scratch repeat
             editing ::= backspace repeat
             editing ::= enter repeat
+            editing ::= delete repeat
         '''
         value = {
             'slap': 'Return',
             'scratch': 'BackSpace',
             'backspace': 'BackSpace',
-            'enter': 'Return'
+            'enter': 'Return',
+            'delete' : 'Delete'
         }
 
         if args[1] != None:
@@ -134,13 +136,26 @@ class CoreParser(GenericParser):
             'end': 'end'
         }
 
-        # if len(args) > 1:
-        #     return AST('repeat', [args[1]], [AST('movement', [args[0].type])])
-        # else:
-        # print(args[0].type)
-        # print(value[args[0].type])
+        if args[1] != None:
+            return AST('repeat', [args[1]], [AST('movement', [args[0].type])])
+        else:
+            return AST('movement', [args[0].type])
 
-        return AST('movement', [value[args[0].type]])
+        # tmp = []
+
+        # if args[1] != None:
+        #     print("repeat")
+        #     print(args)
+        #     print(args[1].type)
+        #     print(args[1].meta[0])
+
+        #     for i in range(0,args[1].meta[0]):
+        #         tmp.append(AST('movement', [value[args[0].type]]))
+
+        #     return tmp
+        # else:
+        #    return append(AST('movement', [value[args[0].type]]))
+
 
 #--------------------------
 
