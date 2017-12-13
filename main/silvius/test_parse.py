@@ -9,20 +9,29 @@ import pdb
 import os
 
 
-line = "alpha bravo sky November five"
+# line = "alpha bravo sky November five"
 
-line = "charlie slap down two"
+# line = "charlie slap down two"
 
+# print(process_line(line))
+
+
+# line = "slap six"
+
+# print(process_line(line))
+
+
+line = "jump six zero seven"
 print(process_line(line))
 
 
-line = "slap six"
-
+line = "jump alpha bravo charlie"
 print(process_line(line))
 
+line = "jump alpha "
+print(process_line(line))
 
-line = "delete six"
-
+line = "jump"
 print(process_line(line))
 
 
