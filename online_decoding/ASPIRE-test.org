@@ -1,5 +1,5 @@
 
-
+https://chrisearch.wordpress.com/2017/03/11/speech-recognition-using-kaldi-extending-and-using-the-aspire-model/
 
 ffmpeg -i test.wav -acodec pcm_s16le -ac 1 -ar 8000 test8k.wav
 
@@ -15,7 +15,8 @@ online2-wav-nnet3-latgen-faster
     wav_rspecifier
     clat_wspecifier
 
-
+. cmd.sh
+. path.sh
 
 
 online2-wav-nnet3-latgen-faster \

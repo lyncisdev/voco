@@ -21,7 +21,8 @@ escape_keywords = [
     'select',  # for selecting lines or words
     'emacs',  # Emacs command to follow
     'keynav',
-    'jump' #jump within EMACS
+    'jump', #jump within EMACS
+    'dictate'
 ]
 
 silvius_keywords = [
@@ -34,7 +35,7 @@ silvius_keywords = [
     'question', 'rate', 'right', 'romeo', 'scratch', 'sentence', 'seven',
     'sierra', 'six', 'sky', 'slap', 'slash', 'space', 'star', 'backspace',
     'tab', 'tango', 'three', 'two', 'underscore', 'uniform', 'up', 'victor',
-    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home', 'end', 'pageup', 'pagedown', 'singlequote', 'doublequote', 'delete'
+    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home', 'end', 'pageup', 'pagedown', 'singlequote', 'doublequote', 'delete','jump','dictate'
 ]
 
 
@@ -175,10 +176,6 @@ def c_jump_commands(word_array):
 
     # if numbers then jump to line
     # if letters jump to character
-
-    # print("jumping")
-    # print(word_array)
-
     is_letters = True
     is_numbers = True
 
@@ -190,41 +187,36 @@ def c_jump_commands(word_array):
         if word not in numbers:
             is_numbers = False
 
-
-    # print(is_numbers)
-    # print(is_letters)
-
     if (not is_numbers) and (not is_letters):
         # error
         cmd = ''
-        # print("error")
+        return cmd
 
     else:
 
         if is_letters:
-            # process letters
-
             if len(word_array[1:]) <= 1:
                 line = ['space','juliet','juliet'] + word_array[1:]
 
             else:
                 line = ['space','juliet','sky','juliet'] + word_array[1:3]
 
-            # print(line)
-
         else:
-            # process numbers
             line = word_array[1:] + ['sky','golf']
-            # print(line)
 
         line = ' '.join(line)
 
         tokens = scan(line)
         ast = parse(tokens)
-        # printAST(ast)
         cmd = execute(ast, True)
-
         return cmd
+
+def c_dictate_commands(word_array):
+    # set a flag that the next audio clip should be processed by the ASPIRE CHAIN MODEL
+
+    return "DICTATE_FLAG"
+
+
 
 function_dict = {
     'switch': c_rofi_switch,
@@ -237,7 +229,8 @@ function_dict = {
     'copy': c_copypaste_commands,
     'paste': c_copypaste_commands,
     'keynav': c_keynav,
-    'jump' : c_jump_commands
+    'jump' : c_jump_commands,
+    'dictate' : c_dictate_commands
 }
 
 

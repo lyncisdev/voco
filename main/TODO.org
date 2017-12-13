@@ -85,3 +85,4 @@ https://help.ubuntu.com/community/UnityLaunchersAndDesktopFiles
 play chirp when microphone has been andjusted
 play chirp when there was a decoding error
 
+** symlink to data

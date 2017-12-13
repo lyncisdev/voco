@@ -35,6 +35,14 @@ line = "jump"
 print(process_line(line))
 
 
+line = "jump one oscar"
+print(process_line(line))
+
+
+line = "dictate"
+print(process_line(line))
+
+
 
 
 #tokens = scan(line)

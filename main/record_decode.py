@@ -235,6 +235,8 @@ os.system("aplay media/shovel.wav")
 # start recording
 #----------------------------------------------------------------------------
 
+DICTATE_FLAG = False
+
 while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
@@ -276,8 +278,15 @@ while (True):
             duration_dict['write_files'] = time_duration
             time_start = time_end
 
-            result = subprocess.check_output("./kaldi_decode.sh", shell=True)
-            result = result.split(" ", 1)[1].strip()
+            if not DICTATE_FLAG:
+                result = subprocess.check_output("./kaldi_decode.sh", shell=True)
+                result = result.split(" ", 1)[1].strip()
+            else:
+                # pass audio to ASPIRE and reset dictate_flag
+                result = subprocess.check_output("./aspire_decode.sh", shell=True)
+                print(result)
+                DICTATE_FLAG = False
+                print("DECODE_FLAG has been set")
 
             if debug:
                 print(result)
@@ -289,11 +298,16 @@ while (True):
 
             if len(result) == 0:
                 # os.system("aplay media/micro.wav")
-                print("Error: result")
+                print("Error: Result empty")
             else:
                 try:
 
                     cmd = process_line(result)
+
+                    if cmd == "DICTATE_FLAG":
+                        DICTATE_FLAG = True
+                        cmd = ""
+
                     time_end = time.time()
                     time_duration = time_end - time_start
                     duration_dict['process'] = time_duration
