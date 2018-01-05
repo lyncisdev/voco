@@ -44,19 +44,34 @@ Related links:
 
 
 ## Prerequisites:
+
+### Cloning Voco
+
+
+### Cloning Silvius
+
+
 ### Installing Kaldi:
 
 
-### Inslatlling openFSTR:
+### Installing openFSTR:
 
 
-### VoxForgeDict:
+### Downloading VoxForgeDict:
 You will need to get the VoxForge phone dictionary (which maps words to their phonetic representation) from the VoxForge github repository (https://github.com/VoxForge/develop/lexicon)
 
 ```bash
 curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeDict.txt > VOCO_BASE\data_creation\VoxForgeDict
 ```
 Where ```VOCO_BASE``` is the root of the voco directory
+
+
+### Keynav
+
+### Rofi
+
+
+### Python plugins
 
 ## How to use Voco
 ### Create the training dataset
