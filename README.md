@@ -1,21 +1,21 @@
-# Create your own Kaldi speech recognition system
+# Create your own speech recognition system for programming by voice
 
 Voco allows you to create a Kaldi speech recognition system based on your own voice that will allow you to program by predominantly using your voice. This is intended for programmers who have developed RSI or have other injuries or disabilities and need to continue their work but are unable to use a traditional keyboard and mouse setup for extended periods of time. This software was developed to be used prmarily with EMACS (Spacemacs with VIM emulation as the modal navigation menus are crucial to its use).
 
-Example:
-- alpha bravo charlie -> abc
-- switch window -> alt + tab
-- page down -> page down
-- up three -> up up up
-- jump 308 -> move cursor to line 308 in emacs
-- jump india foxtrot -> move cursor to "if" using evil-avy-goto-char 
+Some examples of supported commands:
+- "alpha bravo charlie" -> abc
+- "switch window" -> alt + tab
+- "page down" -> page down
+- "up three" -> up up up
+- "jump three zero eight" -> move cursor to line 308 in emacs
+- "jump india foxtrot" -> move cursor to "if" using evil-avy-goto-char in emacs 
 
 ## What is Voco
 
 Voco packages the following things together:
 1. A data creation module that helps you create a training set
-2. A Kaldi training script resuired to train a GMM model on the data you created
-3. A decode module that records your voice when you speak, decodes it using Kaldi, parses it using Silvius (and some custom code) and then executes the commands on your computer
+2. A Kaldi training script that trains a GMM model on the data you created
+3. A decoding module that records your voice when you speak, decodes it, parses it and executes the keystrokes on your computer
 
 ## Why use Voco
 
