@@ -54,9 +54,11 @@ VoxForgeDict:
 You will need to get the VoxForge phone dictionary (that maps words to their phonetic representation) from the VoxForge github repository (https://github.com/VoxForge/develop/lexicon)
 
 You can use the follwoing commands
-'''
+```bash
+
 curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeDict.txt > VoxForgeDict.txt
-'''
+
+```
 
 
 ## How to use Voco
