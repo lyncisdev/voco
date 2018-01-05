@@ -44,22 +44,19 @@ Related links:
 
 
 ## Prerequisites:
-Installing Kaldi:
+### Installing Kaldi:
 
 
-Inslatlling openFSTR:
+### Inslatlling openFSTR:
 
 
 ### VoxForgeDict:
-You will need to get the VoxForge phone dictionary (that maps words to their phonetic representation) from the VoxForge github repository (https://github.com/VoxForge/develop/lexicon)
+You will need to get the VoxForge phone dictionary (which maps words to their phonetic representation) from the VoxForge github repository (https://github.com/VoxForge/develop/lexicon)
 
 ```bash
-
 curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeDict.txt > VOCO_BASE\data_creation\VoxForgeDict
-
-
 ```
-Where VOCO_BASE is the root of the voco directory
+Where ```VOCO_BASE``` is the root of the voco directory
 
 ## How to use Voco
 ### Create the training dataset
