@@ -1,21 +1,12 @@
 * Data creation procedure
 
-Tweak frequencies in commands.xls
-Export to CSV
+Command phrases and their desired frequencies are stored in commands.csv
 
+create the input list for record.py by running python create_recording_list.py
 
-create the input list for record.py by running:
-python create_recording_list.py
+reset recording_list_counter by deleting the recording_list_counter file
 
-reset recording_list_counter
+record the test data by running: python record.py 
 
+prepare for training by executing ./create_dataset.sh
 
-record the test data by running:
-python record.py 
-
-prepare for training by:
-./create_dataset.sh
-
-
-
- 

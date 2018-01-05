@@ -22,9 +22,13 @@ window_length = 12
 
 debug = False
 
-#TBU
 
-voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
+try:
+    voco_data_base =  sys.argv[1]
+except:
+    print('Please pass data directory_name - usually audio_records')
+
+
 
 audio_data_directory = voco_data_base + "audio_data/"
 audio_records_directory = voco_data_base + "audio_records/"
@@ -46,6 +50,7 @@ try:
         recording_list_counter = int(f.read())
 except IOError:
     recording_list_counter = 0
+
 #
 #initalize naming_list_counter
 #

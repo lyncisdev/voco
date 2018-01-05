@@ -1,0 +1,38 @@
+Create your own Kaldi speech recognition system
+
+This collection of programs allows you to create a Kaldi speech recognition system based on your own voice that will allow you to program by only using your voice. This is intended for programmers who have developed RSI or have other injuries or disabilities and need to continue their work but are unable to use a traditional keyboard and mouse setup for extended periods of time.
+
+
+This work is based on Kaldi speech recognition system and the Silvius grammar parser.
+
+Examples:
+Youtube videos
+
+
+Project links:
+Kaldi:
+Silvius:
+
+Procedure
+* Create the training data
+VoxForgeDict
+
+* Train a GMM based Kaldi model
+
+
+*  Use the system
+
+
+* Improve results by adding previously decoded samples
+
+
+
+Limitations:
+
+
+
+
+Contact:
+
+
+Prerequisites:
