@@ -1,6 +1,6 @@
 # Create your own speech recognition system for programming by voice
 
-Voco allows you to create a Kaldi speech recognition system based on your own voice that will allow you to program by predominantly using your voice. This is intended for programmers who have developed RSI or have other injuries or disabilities and need to continue their work but are unable to use a traditional keyboard and mouse setup for extended periods of time. This software was developed to be used prmarily with EMACS (Spacemacs with VIM emulation as the modal navigation menus are crucial to its use).
+Voco allows you to create a Kaldi speech recognition system based on your own voice that will allow you to program by predominantly using your voice. This is intended for programmers who have developed RSI or have other injuries or disabilities and need to continue their work but are unable to use a traditional keyboard and mouse setup for extended periods of time. This software was developed to be used primarily with EMACS (Spacemacs with VIM emulation) as the modal navigation menus are crucial to its use).
 
 Some examples of supported commands:
 - "alpha bravo charlie" -> abc
@@ -32,14 +32,15 @@ The entire system is written in Python and
 
 
 ## Based on Kaldi and Silvius
-This work is based on Kaldi speech recognition system and the Silvius grammar parser. My thanks to Tavis Rudd and David Williams-King for discussing how they dealt with not being able to use a keyboard and sharing their solutions. I developed this system when I developed RSI and needed a low error, low resource, simple and easy to customize replacement for my keyboard.
+This work is based on the Kaldi speech recognition system and the Silvius grammar parser. My thanks to David Williams-King and Tavis Rudd for discussing how they dealt with not being able to use a keyboard and sharing their solutions. I developed this system when I developed RSI and needed a low error, low resource, simple and easy to customize replacement for my keyboard.
 
-Coding by Voice with Open Source Speech Recognition - https://www.youtube.com/watch?v=YRyYIIFKsdU
-Using Python to Code by Voice - https://www.youtube.com/watch?v=8SkdfdXWYaI
+
+Coding by Voice with Open Source Speech Recognition - https://www.youtube.com/watch?v=YRyYIIFKsdU  
+Using Python to Code by Voice - https://www.youtube.com/watch?v=8SkdfdXWYaI  
 
 Related links:
-Kaldi: http://kaldi-asr.org/
-Silvius: http://voxhub.io/silvius
+- Kaldi: http://kaldi-asr.org/
+- Silvius: http://voxhub.io/silvius
 
 
 ## Procedure
