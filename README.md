@@ -19,7 +19,7 @@ Voco packages the following things together:
 
 ## Why use Voco
 
-By training on data that is representive of the data the system will see during operation and by keeping the dictionary of possible words small this system is able to provide the following advantages:
+By using a training set that is representive of what Voco will see during operation and by keeping the dictionary of possible words small Voco is able to provide the following advantages:
 
 1. **Low error rates:**
 By keeping the dictionary small (I am using 86 possible commands) and by training on the microphone and noise profile that will be used during operation the system is able to achieve WER (word error rates) of ~0.5% and SER (sentence error rates) of ~1.35%. This is achieved with a low cost USB microphone (Platronics XXX) that has a unipressive XXX dB of signal sepperation. In my opinion these error rates are the mininum for a keyboard replacement system since anything higher results in frustration.
@@ -43,30 +43,31 @@ Related links:
 - Silvius: http://voxhub.io/silvius
 
 
+## Prerequisites:
+
+
 ## Procedure
-* Create the training data
+### Create the training data
 VoxForgeDict
 
-* Train a GMM based Kaldi model
+### Train a GMM based Kaldi model
 
 
 copy model
 
-* Use the system
+### Use the system
 
 setup KALDI_ROOT in path file
 
-
-* Improve results by adding previously decoded samples
-
-
-
-Limitations:
+### Improve results by adding previously decoded samples
 
 
 
+## Limitations:
 
-Contact:
+## Next steps:
 
 
-Prerequisites:
+## Contact:
+
+
