@@ -19,7 +19,7 @@ Voco packages the following things together:
 
 ## Why use Voco
 
-By using a training set that is representive of what Voco will see during operation and by keeping the dictionary of possible words small Voco is able to provide the following advantages:
+By using Da training set that is representive of what Voco will see during operation and by keeping the dictionary of possible words small Voco is able to provide the following advantages:
 
 1. **Low error rates:**
 By keeping the dictionary small (I am using 86 possible commands) and by training on the microphone and noise profile that will be used during operation the system is able to achieve WER (word error rates) of ~0.5% and SER (sentence error rates) of ~1.35%. This is achieved with a low cost USB microphone (Platronics XXX) that has a unipressive XXX dB of signal sepperation. In my opinion these error rates are the mininum for a keyboard replacement system since anything higher results in frustration.
@@ -47,12 +47,25 @@ Related links:
 
 ### Cloning Voco
 
+Clone the directory by issuing the following command:
+```bash
+git clone https://github.com/lyncisdev/voco.git
+```
 
 ### Cloning Silvius
-
+My version of Silvius is currently bundled in the git repository but the plan is to push the changes to the Silvius repository and use the latest version of Silvius.
 
 ### Installing Kaldi:
 
+To clone Kaldi execute the following command:
+
+```bash
+git clone https://github.com/kaldi-asr/kaldi.git kaldi --origin upstream
+```
+
+1. Go to kaldi/tools/ and follow INSTALL instructions there.
+
+2. Go to kaldi/src/ and follow INSTALL instructions there.
 
 ### Installing openFSTR:
 
@@ -65,13 +78,44 @@ curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeD
 ```
 Where ```VOCO_BASE``` is the root of the voco directory
 
+### Emacs with Spacemacs
+Emacs is a text editor / IDE (depending who you ask) that is well suited to voice operation since all commands are accessible via the keyboard. Spacemacs is an addon layey for emacs that makes it prettier and easier to use.  
+
+To install EMACS in ubuntu or debian execute:
+```bash
+sudo apt install emacs
+```
+
+Then to install Spacemacs:
+```bash
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
+
+When you start emacs the first time it will ask you to choose a kayboard style, choose "EVIL mode". 
+
+You can find more information on Spacemacs at http://spacemacs.org/
+
 
 ### Keynav
+Keynav is the Keyboard emulation program that actually executes the keystrokes on your computer.
+
+To install Keynav in Ubuntu or Debian execute:
+```bash
+sudo apt install keynav
+```
+
+
+You can find more information on Keynav at: http://www.semicomplete.com/projects/keynav
 
 ### Rofi
 
 
 ### Python plugins
+
+### symlink decode/data 
+
+should this just be taken from the data_base
+
 
 ## How to use Voco
 ### Create the training dataset
@@ -97,4 +141,14 @@ setup KALDI_ROOT in path file
 
 ## Contact:
 
+# TODO
 
+
+remove backup models  
+remove   
+scripts/int2sym  
+
+symlink from training decore to main model  to   
+
+
+symlink training steps an utils

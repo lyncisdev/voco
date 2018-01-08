@@ -21,30 +21,29 @@ escape_keywords = [
     'select',  # for selecting lines or words
     'emacs',  # Emacs command to follow
     'keynav',
-    'jump', #jump within EMACS
+    'jump',  #jump within EMACS
     'dictate'
 ]
 
-silvius_keywords = [
-    'control', 'alt', 'super', 'shift', 'comma', 'act', 'ampersand', 'alpha',
-    'backslash', 'bang', 'bravo', 'carrot', 'charlie', 'colon', 'delta',
-    'dollar', 'dot', 'down', 'escape', 'echo', 'enter', 'eco', 'eight',
-    'equal', 'expert', 'five', 'four', 'foxtrot', 'golf', 'hash', 'hotel',
-    'india', 'juliet', 'kilo', 'late', 'left', 'lima', 'mike', 'minus', 'nine',
-    'november', 'one', 'oscar', 'papa', 'percent', 'plus', 'phrase', 'quebec',
-    'question', 'rate', 'right', 'romeo', 'scratch', 'sentence', 'seven',
-    'sierra', 'six', 'sky', 'slap', 'slash', 'space', 'star', 'backspace',
-    'tab', 'tango', 'three', 'two', 'underscore', 'uniform', 'up', 'victor',
-    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home', 'end', 'pageup', 'pagedown', 'singlequote', 'doublequote', 'delete','jump','dictate'
+letters = [
+    'alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel',
+    'india', 'juliet', 'kilo', 'lima', 'mike', 'november', 'oscar', 'papa',
+    'quebec', 'romeo', 'sierra', 'tango', 'uniform', 'victor', 'whiskey',
+    'whisky', 'x-ray', 'yankee', 'zulu'
 ]
 
-
-letters = [
-    'alpha','bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel','india', 'juliet', 'kilo', 'lima', 'mike', 'november', 'oscar', 'papa', 'quebec',
-    'romeo', 'sierra', 'tango',  'uniform', 'victor', 'whiskey', 'whisky', 'x-ray', 'yankee', 'zulu']
-
-numbers = {'one':1, 'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9,'zero':0}
-
+numbers = {
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9,
+    'zero': 0
+}
 
 
 def c_rofi_switch(word_array):
@@ -71,6 +70,7 @@ def c_rofi_run(word_array):
     cmd = 'rofi -show run'
     return cmd
 
+# Keynav is not fully implemented yet
 def c_keynav(word_array):
     '''
     h : select the left half of the region
@@ -94,6 +94,7 @@ def c_keynav(word_array):
         cmd = 'keynav'
 
     return cmd
+
 
 def c_window_commands(word_array):
 
@@ -172,6 +173,7 @@ def c_copypaste_commands(word_array):
 
     return cmd
 
+
 def c_jump_commands(word_array):
 
     # if numbers then jump to line
@@ -196,13 +198,13 @@ def c_jump_commands(word_array):
 
         if is_letters:
             if len(word_array[1:]) <= 1:
-                line = ['space','juliet','juliet'] + word_array[1:]
+                line = ['space', 'juliet', 'juliet'] + word_array[1:]
 
             else:
-                line = ['space','juliet','sky','juliet'] + word_array[1:3]
+                line = ['space', 'juliet', 'sky', 'juliet'] + word_array[1:3]
 
         else:
-            line = word_array[1:] + ['sky','golf']
+            line = word_array[1:] + ['sky', 'golf']
 
         line = ' '.join(line)
 
@@ -211,11 +213,11 @@ def c_jump_commands(word_array):
         cmd = execute(ast, True)
         return cmd
 
+
 def c_dictate_commands(word_array):
     # set a flag that the next audio clip should be processed by the ASPIRE CHAIN MODEL
 
     return "DICTATE_FLAG"
-
 
 
 function_dict = {
@@ -229,8 +231,8 @@ function_dict = {
     'copy': c_copypaste_commands,
     'paste': c_copypaste_commands,
     'keynav': c_keynav,
-    'jump' : c_jump_commands,
-    'dictate' : c_dictate_commands
+    'jump': c_jump_commands,
+    'dictate': c_dictate_commands
 }
 
 
@@ -245,6 +247,7 @@ def check_escape_keywords(line):
 def process_line(line):
     word_array = line.lower().split()
 
+    # process locally of one of the escape keywords was used
     if word_array[0] in escape_keywords:
         try:
             level_0 = word_array[0]
@@ -253,12 +256,11 @@ def process_line(line):
         except:
             cmd = ""
 
-    elif word_array[0] in silvius_keywords:
+    # otherwise send to Silvius
+    else:
         tokens = scan(line)
         ast = parse(tokens)
         # printAST(ast)
         cmd = execute(ast, True)
-    else:
-        cmd = ""
 
     return cmd
