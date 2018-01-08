@@ -21,6 +21,7 @@ copy 1.0 k_B aa_I p_I iy_E
 dash 1.0 d_B ae_I sh_E
 delete 1.0 d_B ih_I l_I iy_I t_E
 delta 1.0 d_B eh_I l_I t_I ah_E
+dictate 1.0 d_B ih_I k_I t_I ey_I t_E
 dollar 1.0 d_B aa_I l_I er_E
 dot 1.0 d_B aa_I t_E
 double 1.0 d_B ah_I b_I ah_I l_E
@@ -42,6 +43,7 @@ home 1.0 hh_B ow_I m_E
 hotel 1.0 hh_B ow_I t_I eh_I l_E
 india 1.0 ih_B n_I d_I iy_I ah_E
 juliet 1.0 jh_B uw_I l_I iy_I eh_I t_E
+jump 1.0 jh_B ah_I m_I p_E
 kilo 1.0 k_B ih_I l_I ow_E
 las 1.0 l_B aa_I s_E
 late 1.0 l_B ey_I t_E

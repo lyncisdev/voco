@@ -57,7 +57,7 @@ def c_rofi_switch(word_array):
         elif word_array[1] == "terminal":
             cmd = XDO_TOOL + 'search "Terminal" windowactivate'
         elif word_array[1] == "max":
-            cmd = XDO_TOOL + 'search "Emacs" windowactivate'
+            cmd = XDO_TOOL + 'search "emacs25@bartek-ThinkPad-T420" windowactivate'
         else:
             cmd = 'rofi -show window'
     elif len(word_array) == 1:

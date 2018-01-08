@@ -23,6 +23,7 @@ copy
 dash
 delete
 delta
+dictate
 dollar
 dot
 double
@@ -44,6 +45,7 @@ home
 hotel
 india
 juliet
+jump
 kilo
 las
 late

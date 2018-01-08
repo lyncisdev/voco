@@ -136,10 +136,13 @@ class CoreParser(GenericParser):
             'end': 'end'
         }
 
-        if args[1] != None:
-            return AST('repeat', [args[1]], [AST('movement', [args[0].type])])
+        if len(args) < 2:
+            return AST('movement', value[args[0].type])
         else:
-            return AST('movement', [args[0].type])
+            if args[1] != None:
+                return AST('repeat', [args[1]], [AST('movement', value[args[0].type])])
+            else:
+                return AST('movement', value[args[0].type])
 
         # tmp = []
 

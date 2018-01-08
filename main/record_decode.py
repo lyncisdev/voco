@@ -207,18 +207,20 @@ timeout = 0
 # Benchmark noise floor
 #----------------------------------------------------------------------------
 
-rms = 0
-for i in range(0, 10):
-    data = stream.read(chunk)
+#rms = 0
+#for i in range(0, 10):
+#    data = stream.read(chunk)
 
-    tmp_rms = audioop.rms(data, 2)
+#    tmp_rms = audioop.rms(data, 2)
 
-    rms += tmp_rms
+#    rms += tmp_rms
 
-    if debug:
-        print(tmp_rms)
+#    if debug:
+#        print(tmp_rms)
 
-avg_rms = rms / 10.0
+avg_rms = 300
+
+#avg_rms = rms / 10.0
 gate = 1.4 * avg_rms
 end_gate = 1.2 * avg_rms
 
@@ -241,8 +243,8 @@ while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
 
-    # if debug:
-    #     print(rms)
+    if debug:
+        print(rms)
 
     if rec == False:
         if rms >= gate:
@@ -269,9 +271,13 @@ while (True):
             duration_dict = {}
             time_start = time.time()
 
-            write_audio_data(audio_sample, audio_sample_file_path, byterate)
-            write_audio_records(basedir, session_counter,
+            if not DICTATE_FLAG:
+                write_audio_data(audio_sample, audio_sample_file_path, byterate)
+                write_audio_records(basedir, session_counter,
                                 audio_sample_file_path, UID)
+            else:
+                write_audio_data(audio_sample,"dictate.wav",byterate)
+
 
             time_end = time.time()
             time_duration = time_end - time_start
@@ -286,7 +292,6 @@ while (True):
                 result = subprocess.check_output("./aspire_decode.sh", shell=True)
                 print(result)
                 DICTATE_FLAG = False
-                print("DECODE_FLAG has been set")
 
             if debug:
                 print(result)
@@ -307,6 +312,7 @@ while (True):
                     if cmd == "DICTATE_FLAG":
                         DICTATE_FLAG = True
                         cmd = ""
+                        print("DECODE_FLAG has been set")
 
                     time_end = time.time()
                     time_duration = time_end - time_start

@@ -21,6 +21,7 @@ copy k aa p iy
 dash d ae sh 
 delete d ih l iy t 
 delta d eh l t ah 
+dictate d ih k t ey t 
 dollar d aa l er 
 dot d aa t 
 double d ah b ah l 
@@ -42,6 +43,7 @@ home hh ow m
 hotel hh ow t eh l 
 india ih n d iy ah 
 juliet jh uw l iy eh t 
+jump jh ah m p 
 kilo k ih l ow 
 las l aa s 
 late l ey t 

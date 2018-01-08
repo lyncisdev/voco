@@ -21,6 +21,7 @@ copy 1.0	k aa p iy
 dash 1.0	d ae sh 
 delete 1.0	d ih l iy t 
 delta 1.0	d eh l t ah 
+dictate 1.0	d ih k t ey t 
 dollar 1.0	d aa l er 
 dot 1.0	d aa t 
 double 1.0	d ah b ah l 
@@ -42,6 +43,7 @@ home 1.0	hh ow m
 hotel 1.0	hh ow t eh l 
 india 1.0	ih n d iy ah 
 juliet 1.0	jh uw l iy eh t 
+jump 1.0	jh ah m p 
 kilo 1.0	k ih l ow 
 las 1.0	l aa s 
 late 1.0	l ey t 
