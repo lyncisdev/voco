@@ -47,13 +47,13 @@ Related links:
 
 ### Cloning Voco
 
-Clone the directory by issuing the following command:
+Clone the Voco by issuing the following command:
 ```bash
 git clone https://github.com/lyncisdev/voco.git
 ```
 
 ### Cloning Silvius
-My version of Silvius is currently bundled in the git repository but the plan is to push the changes to the Silvius repository and use the latest version of Silvius.
+My version of Silvius is currently bundled in the git repository. The plan is to push the changes to the Silvius repository and use the latest version of Silvius.
 
 ### Installing Kaldi:
 
@@ -67,6 +67,10 @@ git clone https://github.com/kaldi-asr/kaldi.git kaldi --origin upstream
 
 2. Go to kaldi/src/ and follow INSTALL instructions there.
 
+
+For a crash course check out: http://kaldi-asr.org/doc/kaldi_for_dummies.html
+But be warned, Kaldi is more of a research project than a finished user friendly program. Dont delve too deep unless you need to.
+
 ### Installing openFSTR:
 
 
@@ -79,7 +83,7 @@ curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeD
 Where ```VOCO_BASE``` is the root of the voco directory
 
 ### Emacs with Spacemacs
-Emacs is a text editor / IDE (depending who you ask) that is well suited to voice operation since all commands are accessible via the keyboard. Spacemacs is an addon layey for emacs that makes it prettier and easier to use.  
+Emacs is a text editor / IDE (depending who you ask) that is well suited to voice operation since all commands are accessible via the keyboard. Spacemacs is an addon layer for Emacs that makes it prettier and easier to use.  
 
 To install EMACS in ubuntu or debian execute:
 ```bash
@@ -93,7 +97,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 When you start emacs the first time it will ask you to choose a kayboard style, choose "EVIL mode". 
 
-You can find more information on Spacemacs at http://spacemacs.org/
+You can find more information about Spacemacs at http://spacemacs.org/
 
 
 ### Keynav
@@ -110,11 +114,36 @@ You can find more information on Keynav at: http://www.semicomplete.com/projects
 ### Rofi
 
 
-### Python plugins
+
+
+### Python libraries
 
 ### symlink decode/data 
 
 should this just be taken from the data_base
+
+
+
+### Final direcotry structure
+
+Base Directory
+- Kaldi [kaldi_root]
+-- tools
+-- src
+- Silvius
+-- grammar (where the grammar parser lives) 
+-- stream 
+- Voco [voco_root]
+-- data [where all data related to your model lives]
+-- data_creation [module that creates your training set]
+-- main [decoder module]
+-- parse_log 
+-- training [training module]
+
+
+
+
+
 
 
 ## How to use Voco
