@@ -126,7 +126,6 @@ should this just be taken from the data_base
 
 ### Final direcotry structure
 
-Base Directory
 
 - Kaldi [kaldi_root]
     - tools
@@ -136,10 +135,24 @@ Base Directory
     - stream 
 - Voco [voco_root]
     - data [where all data related to your model lives]
+        - audio_data [audio files that will be trained on]
+        - audio_records [supporting files describing the above audio files]
+        - data [training data conforming to structure required by Kaldi]
+        - staging [audio files and records still to be reviewed from live recording]
     - data_creation [module that creates your training set]
+        - commands.csv [list of the commands you want to use]
+        - create_recording_list.py [converts commands.csv to recording list]
+        - create_dataset.sh [creates the voco\data\data directory]
+    - training
+        - run.sh [runs the training]
+        - exp\tri1_ali [final trained model]
     - main [decoder module]
-    - parse_log 
-    - training [training module]
+        - record_decode.py [the script that runs the decoder]
+    - parse_log
+        - log [logfile you want to parse]
+        - parse_log.py
+        - parse_counter.txt [saves the linenumber of the last processed entry in log]
+    
 
 
 
