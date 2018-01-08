@@ -113,7 +113,15 @@ You can find more information on Keynav at: http://www.semicomplete.com/projects
 
 ### Rofi
 
+Task switcher that is started with the "switch" command. "Switch window" just presses "alt + tab"
 
+To install rofi in Ubuntu or Debian execute:
+```bash
+sudo apt install rofi
+```
+
+
+You can find more information on Rofi at: https://github.com/DaveDavenport/rofi
 
 
 ### Python libraries
@@ -124,7 +132,7 @@ should this just be taken from the data_base
 
 
 
-### Final direcotry structure
+## Directory structure
 
 
 - Kaldi [kaldi_root]
@@ -136,13 +144,14 @@ should this just be taken from the data_base
 - Voco [voco_root]
     - data [where all data related to your model lives]
         - audio_data [audio files that will be trained on]
-        - audio_records [supporting files describing the above audio files]
+        - audio_records [supporting files, in Kaldi format, describing the above audio files]
         - data [training data conforming to structure required by Kaldi]
         - staging [audio files and records still to be reviewed from live recording]
     - data_creation [module that creates your training set]
         - commands.csv [list of the commands you want to use]
         - create_recording_list.py [converts commands.csv to recording list]
-        - create_dataset.sh [creates the voco\data\data directory]
+        - record.py [does the actual recording]
+        - create_dataset.sh [creates the voco\training\data directory]
     - training
         - run.sh [runs the training]
         - exp\tri1_ali [final trained model]
@@ -153,10 +162,6 @@ should this just be taken from the data_base
         - parse_log.py
         - parse_counter.txt [saves the linenumber of the last processed entry in log]
     
-
-
-
-
 
 
 
