@@ -127,18 +127,19 @@ should this just be taken from the data_base
 ### Final direcotry structure
 
 Base Directory
+
 - Kaldi [kaldi_root]
--- tools
--- src
+    - tools
+    - src
 - Silvius
--- grammar (where the grammar parser lives) 
--- stream 
+    - grammar (where the grammar parser lives) 
+    - stream 
 - Voco [voco_root]
--- data [where all data related to your model lives]
--- data_creation [module that creates your training set]
--- main [decoder module]
--- parse_log 
--- training [training module]
+    - data [where all data related to your model lives]
+    - data_creation [module that creates your training set]
+    - main [decoder module]
+    - parse_log 
+    - training [training module]
 
 
 
