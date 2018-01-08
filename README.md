@@ -28,7 +28,7 @@ By keeping the dictionary small (I am using 86 possible commands) and by trainin
 Since the model is small the system does not require much processing power to decode samples and samples are decoded *almost* in real time (<500ms). This system runs in the background on a Thinkpad T420 with 8GB Ram and and i5-2540M (Geekbench Multicore score of ~5000) while programming with no appreciable performance issues. In addition, since the model is small a "first draft" can be trained on just 500 samples and re-trained on correctly decoded samples creaded during operation. 
 
 3. **Easy to modify:**
-The entire system is written in Python and can easily be modified to suit your particular needs. Voco comes with enough commands to get you started but can easily be modified.
+The entire system is written in Python and can easily be modified to suit your particular needs. Voco comes with enough commands to get you started but if you would like to add any custom commands, see [Customising][#customising]] below.
 
 
 ## Based on Kaldi and Silvius
@@ -188,18 +188,17 @@ Modify the commands.csv file to include the new word. If you already have a trai
 
 ### Linking a word to a command
 
-All commands that are not supported by Silvius are handled by the process_line.py file. All commands starting with a word contained in the Escape_keywords dictionary are handled by process_line.py and all others are passes to Silvius. Escape keywords are mapped to functions by function_dict.
+All commands that are not supported by Silvius are handled by the process_line.py file. Commands starting with a keyword contained in the Escape_keywords dictionary are handled by functions withing process_line.py and all others are passed to Silvius. Escape keywords are mapped to functions by function_dict.
 
 ## Next steps:
 
-The following are features i'd like to add in the future:
+Some features planned for the future:
 1. Dictation mode, where the model can decode natural speech. Most likely based on Kaldi's Aspire model.
-2. True real time decoding, based on Kaldi's real time routines. Currently the model is working in "Batch mode", with is sufficient but not optimal.
+2. True real time decoding, based on Kaldi's real time routines. Currently the model is working in "Batch mode", which is sufficient but not optimal.
 3. Better support for Emacs snippets 
 
 ## Contact:
-
-email [lyncisdev at gmail dot com]
+If you are using voco, would like to or have any questions, please email [lyncisdev at gmail dot com]
 
 
 # TODO
