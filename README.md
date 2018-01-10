@@ -28,7 +28,7 @@ By keeping the dictionary small (I am using 86 possible commands) and by trainin
 Since the model is small the system does not require much processing power to decode samples and samples are decoded *almost* in real time (<500ms). This system runs in the background on a Thinkpad T420 with 8GB Ram and and i5-2540M (Geekbench Multicore score of ~5000) while programming with no appreciable performance issues. In addition, since the model is small a "first draft" can be trained on just 500 samples and re-trained on correctly decoded samples creaded during operation. 
 
 3. **Easy to modify:**
-The entire system is written in Python and can easily be modified to suit your particular needs. Voco comes with enough commands to get you started but if you would like to add any custom commands, see [Customising](#customising) below.
+The entire system is written in Python and can easily be modified to suit your particular needs. Voco comes with enough commands to get you started but if you would like to add any custom commands, see [Customizing](#customizing) below.
 
 
 ## Based on Kaldi and Silvius
@@ -132,8 +132,9 @@ should this just be taken from the data_base
 
 
 
-## Directory structure
+## Directory structure - move to install file
 
+note: replace with tree command output
 
 - Kaldi [kaldi_root]
     - tools
@@ -180,11 +181,13 @@ setup KALDI_ROOT in path file
 
 ### Improve results by adding previously decoded samples
 
-## Customising
+## Customizing
 
-### Adding a new word to the dataset
+### Adding a new word to the dictionary
 
 Modify the commands.csv file to include the new word. If you already have a training dataset then increase the frequency of the new word so that it is sampled more frequently in the recording list. Then follow the same process as with training your first model.
+
+TODO: check if word is in VoxForgeDict
 
 ### Linking a word to a command
 
