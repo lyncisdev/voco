@@ -23,10 +23,12 @@ window_length = 12
 debug = False
 
 
+print(os.environ['VOCO_DATA'])
+
 try:
-    voco_data_base =  sys.argv[1]
+    voco_data_base = os.environ['VOCO_DATA']
 except:
-    print('Please pass data directory_name - usually audio_records')
+    print('VOCO_DATA not defined')
 
 
 

@@ -1,11 +1,15 @@
 import re
 import subprocess
 import sys
+import os
+
+
+print(os.environ['VOCO_DATA'])
 
 try:
-    file_directory = sys.argv[1]
+    file_directory = os.environ['VOCO_DATA'] + "\audio_records"
 except:
-    print('Please pass directory_name - usually audio_records')
+    print('VOCO_DATA not defined')
 
 ################################ Create Lexicon
 
@@ -14,6 +18,7 @@ lexicon_file = open(file_directory + 'lexicon.txt', 'w')
 corpus_file = open(file_directory + 'corpus.txt', 'w')
 
 text_lines = text_file.readlines()
+
 word_list = []
 phones_list = []
 corpus_list = []

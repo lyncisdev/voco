@@ -1,9 +1,21 @@
 # Starting point
-Start here to install and configure Voco on a fresh installation of Ubuntu 17.10. I 
-
+Start here to install and configure Voco on a fresh installation of Ubuntu 17.10. 
 
 ## i3wm
-I'm using i3wm [https://i3wm.org/screenshots/](Screenshots) which is a great option for a keyboard only window manager. if you decide to use it the tutorial is located [https://i3wm.org/docs/userguide.html](here).
+I'm using [i3wm](https://i3wm.org/screenshots/) which is a great option for a keyboard only window manager. if you decide to use it the tutorial is located [here](https://i3wm.org/docs/userguide.html).
+
+To install i3wm execute:
+```bash
+sudo apt install i3 i3status suckless-tools
+```
+
+The next time you log into Ubuntu i3 should be listed as a window manager.  
+
+Then to open a termainal press ```Mod+ENTER``` where mod is the modifier key you chose when logging into i3 for the first time.
+
+To run a program press ```Mod+D``` to access dmenu and then type the programs name (e.g. firefox or nautilus).
+
+A good tutorial on display management (e.g. a dual screen setup)is located [here](http://christopherdecoster.com/posts/i3-wm/).
 
 ### Emacs with Spacemacs
 Emacs is a text editor / IDE (depending who you ask) that is well suited to voice operation since all commands are accessible via the keyboard. Spacemacs is an addon layer for Emacs that makes it prettier and easier to use.  
@@ -21,8 +33,6 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 When you start emacs the first time it will ask you to choose a kayboard style, choose "EVIL mode". 
 
 You can find more information about Spacemacs at http://spacemacs.org/
-
-
 
 
 # Installing and configuring Voco
@@ -61,7 +71,15 @@ note: replace with tree command output
 
 ## Setting environment variables
 
-add $KALDI_ROOT, $VOCO_ROOT, $VOCO_DATA to ~/.bashrc
+Add variables defining the root directory for the various subcomponents. I'm assuming the project will located in a subdirectory called *ASR* in your home direcotry.
+
+```bashrc
+
+echo 'export KALDI_ROOT=~/ASR/kaldi' >> ~/.bashrc
+echo 'export VOCO_ROOT=~/ASR/voco' >> ~/.bashrc
+echo 'export VOCO_DATA=~/ASR/voco/data' >> ~/.bashrc
+```
+
 
 ## Compiling Kaldi
 
@@ -166,16 +184,14 @@ curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeD
 
 
 voco_data directory:
-should this just be taken from the data_base
+should this just be taken from the voco_data
 
 ## Silvius
 
 Currently Silvius is packaged with Voco, the plan is to push these changes back to Silvius and then just use silvius directly.
 
 
-## Other 
-
-### Keynav
+## Keynav
 Keynav is the Keyboard emulation program that actually executes the keystrokes on your computer.
 
 To install Keynav in Ubuntu or Debian execute:
@@ -183,10 +199,9 @@ To install Keynav in Ubuntu or Debian execute:
 sudo apt install keynav
 ```
 
-
 You can find more information on Keynav at: http://www.semicomplete.com/projects/keynav
 
-### Rofi
+## Rofi
 
 Task switcher that is started with the "switch" command. "Switch window" just presses "alt + tab"
 

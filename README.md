@@ -47,14 +47,6 @@ Related links:
 
 See INSTALL.md
 
-### SRILM:
-
-### Python libraries
-
-### symlink decode/data 
-
-
-
 ## How to use Voco
 ### Create the training dataset
 
