@@ -1,5 +1,5 @@
 # Defining Kaldi root directory
-export KALDI_ROOT=~/Projects/ASR/kaldi_mar_17
+# export KALDI_ROOT=~/Projects/ASR/kaldi_mar_17
 
 
 # Setting paths to useful tools

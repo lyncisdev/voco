@@ -66,17 +66,16 @@ add $KALDI_ROOT, $VOCO_ROOT, $VOCO_DATA to ~/.bashrc
 ## Compiling Kaldi
 
 For a crash course check out: http://kaldi-asr.org/doc/kaldi_for_dummies.html
-But be warned, Kaldi is more of a research project than a finished user friendly program. Dont delve too deep unless you need to.
+But be warned, Kaldi is more of a research project than a finished user friendly program. Dont delve too deep unless you need to. Below is the process I followed.
 
 
-
-### clone the Kaldi repository
+Clone the Kaldi repository:
 
 ```bashrc
 git clone https://github.com/kaldi-asr/kaldi.git kaldi --origin upstream
 ```
 
-### tools
+Set up the /tools directory:
 
 
 ```bash
@@ -86,7 +85,7 @@ sudo apt-get install zlib1g-dev automake autoconf libtool subversion
 make
 ```
 
-### src
+Set up the /src directory:
 
 ```bash
 cd $KALDI_ROOT/src
@@ -105,9 +104,9 @@ sudo apt install gfortran
 tools/extras/install_openblas.sh
 ```
 
-Openblas installed sucessfully.  
+Openblas installed sucessfully. Now compile Kaldi:
 
-Now compile Kaldi
+The ```-j 2``` command sets the number of CPU's to be used for the make command. 
 
 ```bash
 cd $KALDI_ROOT/src
@@ -124,12 +123,38 @@ Clone the Voco repository:
 git clone https://github.com/lyncisdev/voco.git
 ```
 
-Set up symlinks for the steps and utils directories in the WSJ recipe:
+[todo] need to remove all the actual directories from GIT and add files to .gitignore
+
+
+Create symlinks for the steps and utils directories in the WSJ recipe:
 
 ```bash
 ln -s $KALDI_ROOT/egs/wsj/s5/steps $VOCO_ROOT/training/steps
 ln -s $KALDI_ROOT/egs/wsj/s5/utils $VOCO_ROOT/training/utils
 ```
+
+Create symlinks between training/data and data/data
+
+```bash
+ln -s $VOCO_ROOT/data/data $VOCO_ROOT/training/data
+```
+
+Create symlink between training/exp/tri1_ali and main/decode/model
+
+```bash
+ln -s $VOCO_ROOT/training/exp/tri1_ali $VOCO_ROOT/main/decode/model
+```
+
+
+Create symlink between data/staging and main/decode/data
+
+```bash
+ln -s $VOCO_ROOT/data/staging $VOCO_ROOT/main/decode/data
+```
+
+[link parse_log/log to data/staging/log]?
+
+
 
 
 You will need to get the VoxForge phone dictionary (which maps words to their phonetic representation) from the VoxForge github repository (https://github.com/VoxForge/develop/lexicon)
@@ -142,6 +167,10 @@ curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeD
 
 voco_data directory:
 should this just be taken from the data_base
+
+## Silvius
+
+Currently Silvius is packaged with Voco, the plan is to push these changes back to Silvius and then just use silvius directly.
 
 
 ## Other 
