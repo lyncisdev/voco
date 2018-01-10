@@ -14,14 +14,14 @@ import sys
 print(os.environ['VOCO_DATA'])
 
 try:
-    base_directory = os.environ['VOCO_DATA']
+    voco_data_base = os.environ['VOCO_DATA']
 except:
     print('VOCO_DATA not defined')
 
-src_dir = base_directory + "/audio_records/"
-train_dir = base_directory + "/data/train/"
-test_dir = base_directory + "/data/test/"
-local_dir = base_directory + "/data/local/"
+src_dir = voco_data_base + "/audio_records/"
+train_dir = voco_data_base + "/data/train/"
+test_dir = voco_data_base + "/data/test/"
+local_dir = voco_data_base + "/data/local/"
 
 dirs = [train_dir, test_dir, local_dir, local_dir + "dict"]
 

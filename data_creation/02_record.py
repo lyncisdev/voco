@@ -32,8 +32,8 @@ except:
 
 
 
-audio_data_directory = voco_data_base + "audio_data/"
-audio_records_directory = voco_data_base + "audio_records/"
+audio_data_directory = voco_data_base + "/audio_data/"
+audio_records_directory = voco_data_base + "/audio_records/"
 
 dirs = [audio_data_directory, audio_records_directory]
 

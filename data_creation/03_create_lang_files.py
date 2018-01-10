@@ -7,15 +7,15 @@ import os
 print(os.environ['VOCO_DATA'])
 
 try:
-    file_directory = os.environ['VOCO_DATA'] + "\audio_records"
+    voco_data_base = os.environ['VOCO_DATA'] + "/audio_records/"
 except:
     print('VOCO_DATA not defined')
 
 ################################ Create Lexicon
 
-text_file = open(file_directory + 'text', 'r')
-lexicon_file = open(file_directory + 'lexicon.txt', 'w')
-corpus_file = open(file_directory + 'corpus.txt', 'w')
+text_file = open(voco_data_base + 'text', 'r')
+lexicon_file = open(voco_data_base + 'lexicon.txt', 'w')
+corpus_file = open(voco_data_base + 'corpus.txt', 'w')
 
 text_lines = text_file.readlines()
 
@@ -60,16 +60,16 @@ for word in corpus_list:
     corpus_file.write(word + "\n")
 
 ################################ Create Lexicon
-nonsilence_phones_file = open(file_directory + 'nonsilence_phones.txt', 'w')
+nonsilence_phones_file = open(voco_data_base + 'nonsilence_phones.txt', 'w')
 
 phones_list = sorted(list(set(phones_list)))
 
 for phone in phones_list:
     nonsilence_phones_file.write(phone + "\n")
 
-silence_phones_file = open(file_directory + 'silence_phones.txt', 'w')
+silence_phones_file = open(voco_data_base + 'silence_phones.txt', 'w')
 silence_phones_file.write("sil" + "\n")
 silence_phones_file.write("spn" + "\n")
 
-optional_silence_file = open(file_directory + 'optional_silence.txt', 'w')
+optional_silence_file = open(voco_data_base + 'optional_silence.txt', 'w')
 optional_silence_file.write("sil" + "\n")

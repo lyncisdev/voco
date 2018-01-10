@@ -92,8 +92,6 @@ utils/mkgraph.sh data/lang exp/tri1_ali exp/tri1_ali/graph
 steps/decode.sh --config conf/decode.config exp/tri1_ali/graph data/test exp/tri1_ali/decode
 
 
-
-
 echo
 echo "===== run.sh script is finished ====="
 echo

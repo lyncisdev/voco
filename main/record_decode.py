@@ -113,11 +113,21 @@ debug = False
 noexec_mode = False
 playback_mode = False
 
-voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
+
+print(os.environ['VOCO_DATA'])
+
+try:
+    voco_data_base = os.environ['VOCO_DATA']
+except:
+    print('VOCO_DATA not defined')
+
+
+
+# voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
 # ln -sv ~/Projects/ASR/voco_data/staging/ ~/Projects/ASR/voco/voco_main/decode/data
 
-basedir = voco_data_base + "staging/"
+basedir = voco_data_base + "/staging/"
 
 #----------------------------------------------------------------------------
 # Parse input options - noexec, debug, playback

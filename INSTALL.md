@@ -4,18 +4,16 @@ Start here to install and configure Voco on a fresh installation of Ubuntu 17.10
 ## i3wm
 I'm using [i3wm](https://i3wm.org/screenshots/) which is a great option for a keyboard only window manager. if you decide to use it the tutorial is located [here](https://i3wm.org/docs/userguide.html).
 
-To install i3wm execute:
+To install i3wm:
 ```bash
 sudo apt install i3 i3status suckless-tools
 ```
 
-The next time you log into Ubuntu i3 should be listed as a window manager.  
+After a restart there should be an i3 option at the login screen.  
+- To open a termainal press ```Mod+ENTER``` where mod is the modifier key you chose when logging into i3 for the first time.  
+- To run a program press ```Mod+D``` to access dmenu and then type the name of the program (e.g. firefox or nautilus).  
 
-Then to open a termainal press ```Mod+ENTER``` where mod is the modifier key you chose when logging into i3 for the first time.
-
-To run a program press ```Mod+D``` to access dmenu and then type the programs name (e.g. firefox or nautilus).
-
-A good tutorial on display management (e.g. a dual screen setup)is located [here](http://christopherdecoster.com/posts/i3-wm/).
+A good tutorial on display management (e.g. a dual screen setup) is located [here](http://christopherdecoster.com/posts/i3-wm/).
 
 ### Emacs with Spacemacs
 Emacs is a text editor / IDE (depending who you ask) that is well suited to voice operation since all commands are accessible via the keyboard. Spacemacs is an addon layer for Emacs that makes it prettier and easier to use.  
@@ -71,10 +69,9 @@ note: replace with tree command output
 
 ## Setting environment variables
 
-Add variables defining the root directory for the various subcomponents. I'm assuming the project will located in a subdirectory called *ASR* in your home direcotry.
+First we add variables defining the root directory for the various subcomponents. I'm assuming the project will located in a subdirectory called <ASR> in your home direcotry.
 
 ```bashrc
-
 echo 'export KALDI_ROOT=~/ASR/kaldi' >> ~/.bashrc
 echo 'export VOCO_ROOT=~/ASR/voco' >> ~/.bashrc
 echo 'export VOCO_DATA=~/ASR/voco/data' >> ~/.bashrc
@@ -83,8 +80,7 @@ echo 'export VOCO_DATA=~/ASR/voco/data' >> ~/.bashrc
 
 ## Compiling Kaldi
 
-For a crash course check out: http://kaldi-asr.org/doc/kaldi_for_dummies.html
-But be warned, Kaldi is more of a research project than a finished user friendly program. Dont delve too deep unless you need to. Below is the process I followed.
+For a crash course on Kaldi check out: [Kaldi for Dummies](http://kaldi-asr.org/doc/kaldi_for_dummies.html). But be warned, Kaldi is more of a research project than a finished user friendly program. Dont delve too deep unless you need to. Below is the process I followed.
 
 
 Clone the Kaldi repository:
@@ -110,11 +106,7 @@ cd $KALDI_ROOT/src
 ./configure --shared
 ```
 
-The config file complains about not finding ATLAS
-
-I tried ```sudo apt-get install libatlas-base-dev``` but it didnt help
-
-Therefore try to install openblas:
+The config file complained about not finding ATLAS. I tried ```sudo apt-get install libatlas-base-dev``` but it didnt help so I installed openblas:
 
 ```bash
 cd $KALDI_ROOT/tools
@@ -122,9 +114,8 @@ sudo apt install gfortran
 tools/extras/install_openblas.sh
 ```
 
-Openblas installed sucessfully. Now compile Kaldi:
-
-The ```-j 2``` command sets the number of CPU's to be used for the make command. 
+Now compile Kaldi:
+This step takes a long time. The ```-j 2``` command sets the number of CPU's to be used for the make command. 
 
 ```bash
 cd $KALDI_ROOT/src
@@ -151,20 +142,20 @@ ln -s $KALDI_ROOT/egs/wsj/s5/steps $VOCO_ROOT/training/steps
 ln -s $KALDI_ROOT/egs/wsj/s5/utils $VOCO_ROOT/training/utils
 ```
 
-Create symlinks between training/data and data/data
+Create symlink: training/data --> data/data
 
 ```bash
 ln -s $VOCO_ROOT/data/data $VOCO_ROOT/training/data
 ```
 
-Create symlink between training/exp/tri1_ali and main/decode/model
+Create symlink: main/decode/model --> training/exp/tri1_ali
 
 ```bash
 ln -s $VOCO_ROOT/training/exp/tri1_ali $VOCO_ROOT/main/decode/model
 ```
 
 
-Create symlink between data/staging and main/decode/data
+Create symlink: main/decode/data --> data/staging
 
 ```bash
 ln -s $VOCO_ROOT/data/staging $VOCO_ROOT/main/decode/data
