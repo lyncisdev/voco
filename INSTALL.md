@@ -75,6 +75,7 @@ First we add variables defining the root directory for the various subcomponents
 echo 'export KALDI_ROOT=~/ASR/kaldi' >> ~/.bashrc
 echo 'export VOCO_ROOT=~/ASR/voco' >> ~/.bashrc
 echo 'export VOCO_DATA=~/ASR/voco/data' >> ~/.bashrc
+. ~/.bashrc
 ```
 
 
@@ -171,7 +172,19 @@ You will need to get the VoxForge phone dictionary (which maps words to their ph
 ```bash
 curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeDict.txt > $VOCO_ROOT/data_creation/VoxForgeDict
 ```
+Install SRILM
 
+
+download srilm from:
+
+and copy to []
+
+rename file to srilm.tgz
+
+
+run $kaldi_root/tools/install_srilm.sh
+ 
+sudo apt-get install gawk
 
 
 voco_data directory:
@@ -188,6 +201,7 @@ Keynav is the Keyboard emulation program that actually executes the keystrokes o
 To install Keynav in Ubuntu or Debian execute:
 ```bash
 sudo apt install keynav
+sudo apt install xdotool
 ```
 
 You can find more information on Keynav at: http://www.semicomplete.com/projects/keynav

@@ -1,21 +1,20 @@
-000,jump one zero five 
-001,jump lima
-002,jump oscar charlie
-003,jump five nine eight
-004,jump november
-005,jump mike alpha
-006,dictate
-007,jump bravo bravo
-008,dictate
-009,jump echo romeo
-010,dictate
-011,jump victor charlie
-012,jump kilo
-013,jump papa
-014,dictate
-015,jump nine five
-016,dictate
-017,jump zero five
-018,jump eight three
-019,dictate
-020,jump four seven
+000,control comma 
+001,alt control shift super 
+002,alt control 
+003,comma comma shift 
+004,super alt shift shift alt 
+005,comma alt shift 
+006,control shift super comma super 
+007,super alt comma 
+008,super super shift super control 
+009,shift shift alt 
+010,shift shift alt super 
+011,comma comma shift comma shift 
+012,super super shift shift 
+013,shift super shift alt comma 
+014,control super 
+015,control super control comma alt 
+016,alt super shift comma 
+017,super comma shift shift 
+018,comma shift alt shift 
+019,comma comma super 

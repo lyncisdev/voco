@@ -40,7 +40,7 @@ class CoreParser(GenericParser):
             single_command ::= letter
             single_command ::= sky_letter
             single_command ::= movement
-            single_command ::= character
+            single_command ::= characte(add-hook 'prog-mode-hook 'linum-mode)r
             single_command ::= editing
             single_command ::= english
             single_command ::= word_sentence
@@ -128,18 +128,17 @@ class CoreParser(GenericParser):
         value = {
             'up': 'up',
             'down': 'down',
-            'left': 'left',
-            'right': 'right',
+            'left': 'Left',
+            'right': 'Right',
             'pageup': 'Prior',
             'pagedown': 'Next',
             'home': 'home',
             'end': 'end'
         }
-
-        if args[1] != None:
+        if len(args) > 1 and args[1] != None:
             return AST('repeat', [args[1]], [AST('movement', [args[0].type])])
         else:
-            return AST('movement', [args[0].type])
+            return AST('movement', [value[args[0].type]])
 
         # tmp = []
 

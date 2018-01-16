@@ -194,7 +194,7 @@ except IOError, e:
 #----------------------------------------------------------------------------
 # create skp2gender - only needs to be created once
 #----------------------------------------------------------------------------
-outputfile = open(basedir + 'spk2gender', 'w')
+outputfile = open(basedir + "audio_records/" + 'spk2gender', 'w')
 outputfile.write("bartek m \n")
 
 #----------------------------------------------------------------------------
@@ -274,13 +274,13 @@ while (True):
             UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
                 recording_counter).zfill(5)
 
-            audio_sample_file_path = basedir + UID + ".wav"
+            audio_sample_file_path = basedir + "audio_data/" + UID + ".wav"
 
             duration_dict = {}
             time_start = time.time()
 
             write_audio_data(audio_sample, audio_sample_file_path, byterate)
-            write_audio_records(basedir, session_counter,
+            write_audio_records(basedir + "audio_records/", session_counter,
                                 audio_sample_file_path, UID)
 
             time_end = time.time()
@@ -288,15 +288,17 @@ while (True):
             duration_dict['write_files'] = time_duration
             time_start = time_end
 
-            if not DICTATE_FLAG:
-                result = subprocess.check_output("./kaldi_decode.sh", shell=True)
-                result = result.split(" ", 1)[1].strip()
-            else:
-                # pass audio to ASPIRE and reset dictate_flag
-                result = subprocess.check_output("./aspire_decode.sh", shell=True)
-                print(result)
-                DICTATE_FLAG = False
-                print("DECODE_FLAG has been set")
+            # if not DICTATE_FLAG:
+
+            result = subprocess.check_output("./kaldi_decode.sh")
+            result = result.split(" ", 1)[1].strip()
+
+            # else:
+            #     # pass audio to ASPIRE and reset dictate_flag
+            #     result = subprocess.check_output("./aspire_decode.sh", shell=True)
+            #     print(result)
+            #     DICTATE_FLAG = False
+            #     print("DECODE_FLAG has been set")
 
             if debug:
                 print(result)

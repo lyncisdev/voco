@@ -1,9 +1,9 @@
-
-./path.sh
-./cmd.sh
+#!/usr/bin/env bash
+. ./path.sh
+. ./cmd.sh
 
 graphdir=decode/model/graph
-data=decode/data
+data=decode/data/audio_records
 dir=decode/output
 
 stage=0
@@ -26,6 +26,7 @@ write_utt2num_frames=false  # if true writes utt2num_frames <- most fucking usel
 rspec="scp,p:$data/wav_sample.scp"
 wspec="ark,scp:$data/feats.ark,$data/feats.scp"
 compute-mfcc-feats --verbose=0 --use-energy=false $rspec $wspec &>/dev/null
+# compute-mfcc-feats --verbose=0 --use-energy=false $rspec $wspec
 
 compute-cmvn-stats --verbose=0 --spk2utt=ark:$data/spk2utt_sample scp:$data/feats.scp ark,scp:$data/cmvn.ark,$data/cmvn.scp &>/dev/null
 
