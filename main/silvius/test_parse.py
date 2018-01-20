@@ -20,6 +20,14 @@ import os
 
 # print(process_line(line))
 
+line = "equal zero seven"
+print(process_line(line))
+
+
+line = "space"
+print(process_line(line))
+
+
 
 line = "jump six zero seven"
 print(process_line(line))

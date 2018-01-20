@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import sys
 import wave
 import pyaudio
@@ -182,13 +184,13 @@ except IOError, e:
         if (sample_rate != new_sample_rate):
             sample_rate = new_sample_rate
 
-    print >> sys.stderr, "\n", e
-    print >> sys.stderr, "\nCould not open microphone. Please try a different device."
+    # print(sys.stderr, "\n", e
+    # print(sys.stderr, "\nCould not open microphone. Please try a different device."
     global fatal_error
     fatal_error = True
     sys.exit(0)
 
-    print >> sys.stderr, "\nLISTENING TO MICROPHONE"
+    print("\nLISTENING TO MICROPHONE")
     last_state = None
 
 #----------------------------------------------------------------------------

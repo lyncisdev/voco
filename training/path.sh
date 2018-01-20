@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Defining Kaldi root directory
 # export KALDI_ROOT=~/Projects/ASR/kaldi_mar_17
 
@@ -8,7 +10,7 @@ export PATH=$PWD/utils/:$KALDI_ROOT/src/bin:$KALDI_ROOT/tools/openfst/bin:$KALDI
 
 
 # Defining audio data directory (modify it for your installation directory!)
-export DATA_ROOT="/home/bartek/Projects/ASR/voco_data/data/"
+export DATA_ROOT=$VOCO_DATA
 
 
 # Enable SRILM

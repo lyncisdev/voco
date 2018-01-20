@@ -1,3 +1,6 @@
+
+#!/usr/bin/python
+
 import sys
 import wave
 import pyaudio

@@ -1,4 +1,0 @@
-compute-wer --text --mode=present ark:exp/tri1_ali/decode/scoring/test_true_transcripts.txt ark,p:- 
-%WER 0.49 [ 1 / 204, 0 ins, 0 del, 1 sub ] [PARTIAL]
-%SER 1.35 [ 1 / 74 ]
-Scored 74 sentences, 56 not present in hyp.

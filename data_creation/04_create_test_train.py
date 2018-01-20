@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #
 # create_test_train.py
 #

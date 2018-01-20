@@ -1,9 +1,11 @@
+#!/bin/bash
+
 echo
 echo "===== RUNNING INITIAL SCRIPTS ====="
 echo
 
-. ./path.sh || exit 1
-. ./cmd.sh || exit 1
+. ./path.sh
+. ./cmd.sh
 
 utils/utt2spk_to_spk2utt.pl data/train/utt2spk > data/train/spk2utt
 utils/utt2spk_to_spk2utt.pl data/test/utt2spk > data/test/spk2utt
@@ -35,7 +37,7 @@ echo "===== LANGUAGE MODEL CREATION ====="
 echo "===== MAKING lm.arpa ====="
 echo
 
-PATH=$PATH:$KALDI_ROOT/tools/srilm/bin/i686-ubuntu
+PATH=$PATH:$KALDI_ROOT/tools/srilm/bin/i686-m64
 
 local=data/local
 
@@ -54,20 +56,20 @@ echo
 echo "===== MONO TRAINING ====="
 echo
 
-steps/train_mono.sh data/train data/lang exp/mono  || exit 1
+steps/train_mono.sh --nj 1 data/train data/lang exp/mono  || exit 1
 
 echo
 echo "===== MONO DECODING ====="
 echo
 
 utils/mkgraph.sh --mono data/lang exp/mono exp/mono/graph || exit 1
-steps/decode.sh --config conf/decode.config exp/mono/graph data/test exp/mono/decode
+steps/decode.sh --nj 1 --config conf/decode.config exp/mono/graph data/test exp/mono/decode
 
 echo
 echo "===== MONO ALIGNMENT ====="
 echo
 
-steps/align_si.sh data/train data/lang exp/mono exp/mono_ali || exit 1
+steps/align_si.sh --nj 1 data/train data/lang exp/mono exp/mono_ali || exit 1
 
 echo
 echo "===== TRI1 (first triphone pass) TRAINING ====="
@@ -80,17 +82,22 @@ echo "===== TRI1 (first triphone pass) DECODING ====="
 echo
 
 utils/mkgraph.sh data/lang exp/tri1 exp/tri1/graph || exit 1
-steps/decode.sh --config conf/decode.config exp/tri1/graph data/test exp/tri1/decode
+steps/decode.sh --nj 1 --config conf/decode.config exp/tri1/graph data/test exp/tri1/decode
 
 echo
 echo "===== MONO ALIGNMENT ====="
 echo
 
-steps/align_si.sh data/train data/lang exp/tri1 exp/tri1_ali
+steps/align_si.sh --nj 1 data/train data/lang exp/tri1 exp/tri1_ali
 utils/mkgraph.sh data/lang exp/tri1_ali exp/tri1_ali/graph
 
-steps/decode.sh --config conf/decode.config exp/tri1_ali/graph data/test exp/tri1_ali/decode
+graphdir=exp/tri1_ali/graph
+data=data/test
+dir=exp/tri1_ali/decode
 
+steps/decode.sh --nj 1 --config conf/decode.config $graphdir $data $dir
+
+local/score.sh $scoring_opts $data $graphdir $dir "UNK" "SIL"
 
 echo
 echo "===== run.sh script is finished ====="

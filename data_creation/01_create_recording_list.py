@@ -1,4 +1,7 @@
-#
+#!/usr/bin/python
+
+
+
 # inputs
 #	utt_list
 #	n - number of repeats
