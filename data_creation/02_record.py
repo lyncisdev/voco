@@ -1,4 +1,3 @@
-
 #!/usr/bin/python
 
 import sys
@@ -26,13 +25,13 @@ window_length = 12
 debug = False
 
 
-print(os.environ['VOCO_DATA'])
 
 try:
     voco_data_base = os.environ['VOCO_DATA']
 except:
     print('VOCO_DATA not defined')
 
+print(voco_data_base)
 
 
 audio_data_directory = voco_data_base + "/audio_data/"

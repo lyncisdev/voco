@@ -1,20 +1,20 @@
-000,mod alt alt 
-001,mod mod mod mod 
-002,control super control shift 
-003,mod comma 
-004,comma comma 
-005,mod control 
-006,mod alt 
-007,super comma alt mod 
-008,control control 
-009,quit alt mod mod mod 
-010,mod shift 
-011,control shift 
-012,mod shift alt quit alt 
-013,quit mod alt shift 
-014,alt control mod mod mod 
-015,super alt mod mod alt 
-016,mod control mod mod mod 
-017,mod quit alt 
-018,shift alt super 
-019,alt shift mod 
+000,control shift nine mod five 
+001,foxtrot ten india 
+002,romeo right 
+003,minus minus zulu mod 
+004,mod control four right 
+005,super alt mod alt comma 
+006,one papa alt 
+007,quit mod down 
+008,zulu quit minus 
+009,mike mod 
+010,delta oscar kilo left 
+011,control bravo delta whisky 
+012,four mod delta right mod 
+013,nine down five eight 
+014,tango zulu uniform shift 
+015,alt whisky comma uniform minus 
+016,two mod 
+017,minus foxtrot alt eight 
+018,mod india six 
+019,minus echo 

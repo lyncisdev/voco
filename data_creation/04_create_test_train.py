@@ -43,10 +43,15 @@ shutil.copy2(src_dir + "spk2gender", test_dir)
 split_assignments = []
 l = len(open(src_dir + 'text').readlines())
 
+num_test = 0
+num_train = 0
+
 for x in range(0, l):
     if random.uniform(0, 1) < 0.9:
+        num_train += 1
         split_assignments.append(True)
     else:
+        num_test += 1
         split_assignments.append(False)
 
 split_files = ["wav.scp", "text", "utt2spk"]
@@ -63,3 +68,7 @@ for f in split_files:
             train_file.write(val)
         else:
             test_file.write(val)
+
+
+
+print("Total:%i | Train: %i | Test: %i" %(l, num_train, num_test))

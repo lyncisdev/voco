@@ -54,7 +54,7 @@ ampersand,1,1
 star,1,1
 late,1,1
 rate,1,1
-minus,1,1
+minus,20,1
 underscore,1,1
 plus,1,1
 backslash,1,1
@@ -84,5 +84,5 @@ bas,1,1
 ace,1,1
 home,1,1
 end,1,1
-mod,20,1
+mod,25,1
 quit,5,1
