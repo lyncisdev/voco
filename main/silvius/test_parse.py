@@ -5,63 +5,31 @@ from execute import execute
 from errors import GrammaticalError
 from ast import printAST
 from process_line import process_line
-import pdb
 import os
 
 
-# line = "alpha bravo sky November five"
-
-# line = "charlie slap down two"
-
-# print(process_line(line))
-
-
-# line = "slap six"
-
-# print(process_line(line))
-
-line = "equal zero seven"
-print(process_line(line))
-
-
-line = "space"
-print(process_line(line))
-
+test_commands = [
+    "charlie slap down two",
+    "mod alpha",
+    "mod up",
+    "mod shift alpha",
+    "slap six",
+    "alpha bravo sky November five",
+    "equal zero seven",
+    "space",
+    "jump six zero seven",
+    "jump alpha bravo charlie",
+    "jump alpha ",
+    "jump",
+    "jump one oscar", #no functionality for mixed commands 
+    "dictate"
+]
 
 
-line = "jump six zero seven"
-print(process_line(line))
-
-
-line = "jump alpha bravo charlie"
-print(process_line(line))
-
-line = "jump alpha "
-print(process_line(line))
-
-line = "jump"
-print(process_line(line))
-
-
-line = "jump one oscar"
-print(process_line(line))
-
-
-line = "dictate"
-print(process_line(line))
-
-
+for line in test_commands:
+    print("\n%s\n%s" % (line, process_line(line)))
 
 
 #tokens = scan(line)
-
-#print(tokens)
-
 #ast = parse(tokens)
 #printAST(ast)
-
-# make this return the XDO command
-
-#cmd = execute(ast, True)
-
-# print(cmd) 

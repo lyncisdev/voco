@@ -3,7 +3,7 @@
 from spark import GenericParser
 from spark import GenericASTBuilder
 from errors import GrammaticalError
-from ast import AST
+from ast import AST, printAST
 
 
 class CoreParser(GenericParser):
@@ -25,8 +25,11 @@ class CoreParser(GenericParser):
     def p_chained_commands(self, args):
         '''
             chained_commands ::= single_command
+            chained_commands ::= chain_start
             chained_commands ::= single_command chained_commands
+
         '''
+
         if (len(args) == 1):
             return AST('chain', None, [args[0]])
         else:
@@ -47,30 +50,55 @@ class CoreParser(GenericParser):
             single_command ::= word_phrase
             single_command ::= window_command
             single_command ::= number
-            single_command ::= modifier
         '''
-        #        print("p_single_command")
-        #        print(args)
         return args[0]
 
 #--------------------------
-
-    def p_modifier(self, args):
+    def p_chain_start(self, args):
         '''
-            modifier ::= control single_command
-            modifier ::= alt single_command
-            modifier ::= shift single_command
-            modifier ::= super single_command
+            chain_start ::= modifier modifier chain_end
+            chain_start ::= modifier chain_end
+
+        '''
+
+        args[0].type = 'modifier'
+
+        return AST('presstogether', None, args)
+
+#--------------------------
+    def p_chain_end(self, args):
+        '''
+            chain_end ::= movement
+            chain_end ::= number
+            chain_end ::= letter
+
+        '''
+
+        args[0].type = 'modified'
+
+        return args[0]
+
+#--------------------------
+    def p_modifier(self, args):
+
+        '''
+            modifier ::= control
+            modifier ::= alt
+            modifier ::= shift
+            modifier ::= super
+            modifier ::= mod
         '''
         value = {
             'control': 'ctrl',
             'alt': 'alt',
             'shift': 'shift',
-            'super': 'super'
+            'super': 'super',
+            'mod': 'super'
         }
 
         val = value[args[0].type]
-        return AST('modifier', [val], [AST('modified', [args[1].meta[0]])])
+        return AST('modified', [val])
+
 
     def p_window_command(self, args):
         '''
