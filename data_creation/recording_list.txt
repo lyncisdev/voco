@@ -1,20 +1,20 @@
-000,control comma 
-001,alt control shift super 
-002,alt control 
-003,comma comma shift 
-004,super alt shift shift alt 
-005,comma alt shift 
-006,control shift super comma super 
-007,super alt comma 
-008,super super shift super control 
-009,shift shift alt 
-010,shift shift alt super 
-011,comma comma shift comma shift 
-012,super super shift shift 
-013,shift super shift alt comma 
-014,control super 
-015,control super control comma alt 
-016,alt super shift comma 
-017,super comma shift shift 
-018,comma shift alt shift 
-019,comma comma super 
+000,mod alt alt 
+001,mod mod mod mod 
+002,control super control shift 
+003,mod comma 
+004,comma comma 
+005,mod control 
+006,mod alt 
+007,super comma alt mod 
+008,control control 
+009,quit alt mod mod mod 
+010,mod shift 
+011,control shift 
+012,mod shift alt quit alt 
+013,quit mod alt shift 
+014,alt control mod mod mod 
+015,super alt mod mod alt 
+016,mod control mod mod mod 
+017,mod quit alt 
+018,shift alt super 
+019,alt shift mod 
