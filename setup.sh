@@ -30,7 +30,11 @@
 # curl https://raw.githubusercontent.com/VoxForge/develop/master/lexicon/VoxForgeDict.txt > $VOCO_ROOT/data_creation/VoxForgeDict
 
 
+chmod +x 01_create_recording_list.py 02_record.py 03_create_lang_files.py 04_create_test_train.py
+
+
 # sudo apt install keynav
+
 sudo apt install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0 ffmpeg libav-tools
 pip install pyaudio
 
