@@ -14,18 +14,3 @@ export train_cmd=queue.pl
 export decode_cmd=queue.pl
 export mkgraph_cmd=queue.pl
 export cuda_cmd="queue.pl --gpu 1"
-
-
-# The rest of this file is here for historical reasons.  For cluster-specific
-# configuration it's generally better to use conf/queue.conf, see
-# http://kaldi-asr.org/doc/queue.html.
-
-# BUT cluster:
-if [ "$(hostname -d)" == "fit.vutbr.cz" ]; then
-  queue="all.q@@blade,all.q@@speech"
-  gpu_queue="long.q@@gpu"
-  storage="matylda5"
-  export train_cmd="queue.pl -q $queue -l ram_free=1500M,mem_free=1500M,${storage}=1"
-  export decode_cmd="queue.pl -q $queue -l ram_free=2500M,mem_free=2500M,${storage}=0.5"
-  export cuda_cmd="queue.pl -q $gpu_queue -l gpu=1"
-fi

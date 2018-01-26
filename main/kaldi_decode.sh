@@ -42,6 +42,9 @@ compute-mfcc-feats \
     $wspec \
     &>/dev/null
 
+
+# move to rspec / wspec
+
 compute-cmvn-stats \
     --verbose=0 \
     --spk2utt=ark:$data/spk2utt_sample \
@@ -49,8 +52,8 @@ compute-cmvn-stats \
     ark,scp:$data/cmvn.ark,$data/cmvn.scp \
     &>/dev/null
 
-wspec_delta="ark,scp:$data/delta_mfcc.ark,$data/delta_mfcc.scp"
 
+# move to rspec / wspec
 apply-cmvn \
     --verbose=0 \
     --utt2spk=ark:$data/utt2spk_sample \
@@ -58,6 +61,9 @@ apply-cmvn \
     "scp:$data/feats.scp" \
     "ark,scp:$data/cmvn_mfcc.ark,$data/cmvn_mfcc.scp" \
     &>/dev/null
+
+# move to rspec / wspec
+wspec_delta="ark,scp:$data/delta_mfcc.ark,$data/delta_mfcc.scp"
 
 add-deltas "scp:$data/cmvn_mfcc.scp" \
     $wspec_delta \
@@ -96,6 +102,20 @@ skip_scoring=false
 
 feats="ark,s,cs:$data/delta_mfcc.ark"
 
+
+
+# what is thread_string?
+
+# Generate lattices using GMM-based model
+# Usage: gmm-latgen-faster \
+#     [options] \
+#     model-in \
+#     (fst-in|fsts-rspecifier) \
+#     features-rspecifier \
+#     lattice-wspecifier \
+#     [ words-wspecifier [alignments-wspecifier] ]
+
+# move to rspec / wspec
 gmm-latgen-faster$thread_string\
     --verbose=0 \
     --max-active=$max_active \
@@ -128,9 +148,14 @@ fi
 
 ##################################[scoring]##############################################
 
-
 LMWT=20
 
+# Generate 1-best path through lattices; output as transcriptions and alignments
+# Usage: lattice-best-path [options]  <lattice-rspecifier> [ <transcriptions-wspecifier> [ <alignments-wspecifier>] ]"
+# e.g.: lattice-best-path --acoustic-scale=0.1 ark:1.lats 'ark,t:|int2sym.pl -f 2- words.txt > text' ark:1.ali
+
+
+# move to rspec / wspec
 lattice-best-path \
     --lm-scale=$LMWT \
     --word-symbol-table=$graphdir/words.txt \
@@ -138,6 +163,8 @@ lattice-best-path \
     ark,t:$output/scoring/LMWT.tra \
     &>/dev/null
 
+# could combine lattice-best-path and following step as in the example above
+# why are the allignments not being used? 
 
 cat $output/scoring/LMWT.tra |
 	decode/scripts/int2sym.pl -f 2- $graphdir/words.txt > $output/decode_result.txt
@@ -145,6 +172,14 @@ cat $output/scoring/LMWT.tra |
 
 # add decoding result to the running text file... test this
 cat $output/decode_result.txt >> $data/text
+
+
+# try to estimate the lattice confidence with:
+# Usage: lattice-confidence <lattice-rspecifier> <confidence-wspecifier>
+# E.g.: lattice-confidence --acoustic-scale=0.08333 ark:- ark,t:-
+
+
+
 
 echo | cat $output/decode_result.txt
 
