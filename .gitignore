@@ -3,3 +3,7 @@ training/data
 training/exp
 training/mfcc
 main/decode/output
+*.pyc
+main/session_counter.txt
+*.DS_Store
+

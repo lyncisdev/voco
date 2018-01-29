@@ -48,8 +48,8 @@ compute-mfcc-feats \
 compute-cmvn-stats \
     --verbose=0 \
     --spk2utt=ark:$data/spk2utt_sample \
-    scp:$data/feats.scp \
-    ark,scp:$data/cmvn.ark,$data/cmvn.scp \
+    "scp:$data/feats.scp" \
+    "ark,scp:$data/cmvn.ark,$data/cmvn.scp" \
     &>/dev/null
 
 
@@ -116,7 +116,7 @@ feats="ark,s,cs:$data/delta_mfcc.ark"
 #     [ words-wspecifier [alignments-wspecifier] ]
 
 # move to rspec / wspec
-gmm-latgen-faster$thread_string\
+gmm-latgen-faster \
     --verbose=0 \
     --max-active=$max_active \
     --beam=$beam \
@@ -160,7 +160,7 @@ lattice-best-path \
     --lm-scale=$LMWT \
     --word-symbol-table=$graphdir/words.txt \
     "ark:gunzip -c $output/lat.1.gz|" \
-    ark,t:$output/scoring/LMWT.tra \
+    "ark,t:$output/scoring/LMWT.tra" \
     &>/dev/null
 
 # could combine lattice-best-path and following step as in the example above

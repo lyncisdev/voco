@@ -77,6 +77,12 @@ echo 'export VOCO_ROOT=~/ASR/voco' >> ~/.bashrc
 echo 'export VOCO_DATA=~/ASR/voco/data' >> ~/.bashrc
 . ~/.bashrc
 ```
+```bashrc
+echo 'export KALDI_ROOT=~/proj/kaldi' >> ~/.zshrc
+echo 'export VOCO_ROOT=~/proj/voco' >> ~/.zshrc
+echo 'export VOCO_DATA=~/proj/voco/data' >> ~/.zshrc
+. ~/.zshrc
+```
 
 
 ## Compiling Kaldi

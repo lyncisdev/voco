@@ -230,7 +230,8 @@ for i in range(0, 10):
     if debug:
         print(tmp_rms)
 
-avg_rms = rms / 10.0
+# avg_rms = rms / 10.0
+avg_rms = 200
 gate = 1.4 * avg_rms
 end_gate = 1.2 * avg_rms
 
