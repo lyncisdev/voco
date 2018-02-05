@@ -71,7 +71,7 @@ class CoreParser(GenericParser):
             chain_end ::= movement
             chain_end ::= number
             chain_end ::= letter
-
+            chain_end ::= character
         '''
 
         args[0].type = 'modified'
