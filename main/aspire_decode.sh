@@ -1,3 +1,11 @@
+#!/usr/bin/env bash
+
+
+
+. ./path.sh
+. ./cmd.sh
+
+
 
 
 # online2-wav-nnet3-latgen-faster
@@ -8,20 +16,18 @@
 # clat_wspecifier
 
 
-./path.sh
-./cmd.sh
 
 
-data=decode/data
-modeldir=$KALDI_ROOT/exp/tdnn_7b_chain_online
-
+data=aspire
+# modeldir=$KALDI_ROOT/exp/tdnn_7b_chain_online
+modeldir=$KALDI_ROOT/egs/wsj/s5/steps/nnet3/tdnn
 # copy all files locally
 
 online2-wav-nnet3-latgen-faster \
   --online=true \
   --do-endpointing=false \
   --frame-subsampling-factor=3 \
-  --config=exp/tdnn_7b_chain_online/conf/online.conf \
+  --config=$modeldir/conf/online.conf \
   --max-active=7000 \
   --beam=15.0 \
   --lattice-beam=6.0 \
@@ -29,8 +35,6 @@ online2-wav-nnet3-latgen-faster \
   --word-symbol-table=$modeldir/graph_pp/words.txt \
   $modeldir/final.mdl \
   $modeldir/graph_pp/HCLG.fst \
-  'ark:$data/spk2utt_sample' \
-  'scp,p:$data/wav_sample.scp' \
+  'ark:echo utterance-id1 utterance-id1|' \
+  'scp:echo utterance-id1 $data/test8k.wav|' \
   'ark:/dev/null'
-
-'
