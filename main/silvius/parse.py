@@ -72,6 +72,7 @@ class CoreParser(GenericParser):
             chain_end ::= number
             chain_end ::= letter
             chain_end ::= character
+            chain_end ::= editing
         '''
 
         args[0].type = 'modified'

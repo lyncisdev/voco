@@ -5,7 +5,7 @@
 . ./path.sh
 . ./cmd.sh
 
-
+# cd kaldi/egs/aspire/s5
 
 
 # online2-wav-nnet3-latgen-faster
@@ -16,11 +16,11 @@
 # clat_wspecifier
 
 
-
+# exp/tdnn_7b_chain_online/conf/online.conf
 
 data=aspire
 # modeldir=$KALDI_ROOT/exp/tdnn_7b_chain_online
-modeldir=$KALDI_ROOT/egs/wsj/s5/steps/nnet3/tdnn
+modeldir=$KALDI_ROOT/egs/aspire/s5/exp/tdnn_7b_chain_online
 # copy all files locally
 
 online2-wav-nnet3-latgen-faster \
@@ -36,5 +36,5 @@ online2-wav-nnet3-latgen-faster \
   $modeldir/final.mdl \
   $modeldir/graph_pp/HCLG.fst \
   'ark:echo utterance-id1 utterance-id1|' \
-  'scp:echo utterance-id1 $data/test8k.wav|' \
+  'scp:echo utterance-id1 aspire/test8k.wav|' \
   'ark:/dev/null'
