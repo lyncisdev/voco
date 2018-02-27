@@ -22,7 +22,7 @@ Voco packages the following things together:
 By using Da training set that is representive of what Voco will see during operation and by keeping the dictionary of possible words small Voco is able to provide the following advantages:
 
 1. **Low error rates:**
-By keeping the dictionary small (I am using 86 possible commands) and by training on the microphone and noise profile that will be used during operation the system is able to achieve WER (word error rates) of ~0.5% and SER (sentence error rates) of ~1.35%. This is achieved with a low cost USB microphone (Platronics XXX) that has a unipressive XXX dB of signal sepperation. In my opinion these error rates are the mininum for a keyboard replacement system since anything higher results in frustration.
+By keeping the dictionary small (I am using 86 possible commands) and by training on the microphone and noise profile that will be used during operation the system is able to achieve WER (word error rates) of ~0.5% and SER (sentence error rates) of ~1.35%. This is achieved with a low cost USB microphone (Platronics 628 USB) that has very poor signal sepperation. In my opinion these error rates are the mininum for a keyboard replacement system since anything higher results in frustration.
 
 2. **Low latency and low recourse utilization:**
 Since the model is small the system does not require much processing power to decode samples and samples are decoded *almost* in real time (<500ms). This system runs in the background on a Thinkpad T420 with 8GB Ram and and i5-2540M (Geekbench Multicore score of ~5000) while programming with no appreciable performance issues. In addition, since the model is small a "first draft" can be trained on just 500 samples and re-trained on correctly decoded samples creaded during operation. 
@@ -48,19 +48,9 @@ Related links:
 See INSTALL.md
 
 ## How to use Voco
-### Create the training dataset
 
+Training overview video [[]]
 
-### Train a GMM based Kaldi model
-
-
-copy model
-
-### Use the system
-
-setup KALDI_ROOT in path file
-
-### Improve results by adding previously decoded samples
 
 ## Customizing
 
@@ -83,16 +73,3 @@ Some features planned for the future:
 
 ## Contact:
 If you are using voco, would like to or have any questions, please email [lyncisdev at gmail dot com]
-
-
-# TODO
-
-
-remove backup models  
-remove   
-scripts/int2sym  
-
-symlink from training decore to main model  to   
-
-
-symlink training steps an utils

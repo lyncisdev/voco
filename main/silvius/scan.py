@@ -12,7 +12,7 @@ keywords = [
     'question', 'rate', 'right', 'romeo', 'scratch', 'sentence', 'seven',
     'sierra', 'six', 'sky', 'slap', 'slash', 'space', 'star', 'backspace',
     'tab', 'tango', 'three', 'two', 'underscore', 'uniform', 'up', 'victor',
-    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home', 'end', 'pageup', 'pagedown', 'singlequote', 'doublequote', 'delete', 'mod'
+    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home', 'end', 'pageup', 'pagedown', 'singlequote', 'doublequote', 'delete', 'mod', 'las','bas'
 ]
 
 
