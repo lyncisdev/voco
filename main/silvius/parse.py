@@ -17,6 +17,8 @@ class CoreParser(GenericParser):
         return token.type
 
     def error(self, token):
+        print("")
+
         raise GrammaticalError("Unexpected token `%s' (word number %d)" %
                                (token, token.wordno))
 

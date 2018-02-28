@@ -261,8 +261,13 @@ def process_line(line):
     # otherwise send to Silvius
     else:
         tokens = scan(line)
-        ast = parse(tokens)
-        # printAST(ast)
-        cmd = execute(ast, True)
+
+        try:
+            ast = parse(tokens)
+            # printAST(ast)
+            cmd = execute(ast, True)
+        except:
+            cmd = ""
+            print("")
 
     return cmd

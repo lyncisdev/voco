@@ -17,6 +17,8 @@ import traceback
 import pprint
 from silvius.process_line import process_line
 
+import select
+
 #----------------------------------------------------------------------------
 # write_audio_file function
 #----------------------------------------------------------------------------
@@ -115,15 +117,12 @@ debug = False
 noexec_mode = False
 playback_mode = False
 
-
 print(os.environ['VOCO_DATA'])
 
 try:
     voco_data_base = os.environ['VOCO_DATA']
 except:
     print('VOCO_DATA not defined')
-
-
 
 # voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
@@ -219,16 +218,16 @@ timeout = 0
 # Benchmark noise floor
 #----------------------------------------------------------------------------
 
-rms = 0
-for i in range(0, 10):
-    data = stream.read(chunk)
+# rms = 0
+# for i in range(0, 10):
+#     data = stream.read(chunk)
 
-    tmp_rms = audioop.rms(data, 2)
+#     tmp_rms = audioop.rms(data, 2)
 
-    rms += tmp_rms
+#     rms += tmp_rms
 
-    if debug:
-        print(tmp_rms)
+#     if debug:
+#         print(tmp_rms)
 
 # avg_rms = rms / 10.0
 avg_rms = 200
@@ -249,6 +248,7 @@ os.system("aplay media/shovel.wav")
 #----------------------------------------------------------------------------
 
 DICTATE_FLAG = False
+PAUSE_FLAG = False
 
 while (True):
     data = stream.read(chunk)
@@ -256,6 +256,13 @@ while (True):
 
     # if debug:
     #     print(rms)
+
+    if select.select([sys.stdin,],[],[],0.0)[0]:
+        line = sys.stdin.readline()
+        if line.strip() == "p":
+            PAUSE_FLAG = not PAUSE_FLAG
+            print("PAUSE FLAG: %s" % PAUSE_FLAG)
+
 
     if rec == False:
         if rms >= gate:
@@ -313,7 +320,7 @@ while (True):
 
             if len(result) == 0:
                 # os.system("aplay media/micro.wav")
-                print("Error: Result empty")
+                print("")
             else:
                 try:
 
@@ -331,11 +338,13 @@ while (True):
                     if len(cmd) == 0:
                         # os.system("aplay media/micro.wav")
 
-                        print("Error")
+                        print("")
                     else:
+                        print(result)
                         print(cmd)
+                        print("")
 
-                    if not noexec_mode:
+                    if not noexec_mode and not PAUSE_FLAG:
                         subprocess.Popen([cmd], shell=True)
 
                     time_end = time.time()
