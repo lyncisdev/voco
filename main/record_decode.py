@@ -346,6 +346,7 @@ while (True):
 
                     if not noexec_mode and not PAUSE_FLAG:
                         subprocess.Popen([cmd], shell=True)
+                        subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
 
                     time_end = time.time()
                     time_duration = time_end - time_start
