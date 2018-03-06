@@ -9,7 +9,8 @@ import os
 
 
 test_commands = [
-    "python sudo top for in",
+    "python alpha bravo charlie",
+    "python define class",
     "repeat",
     "charlie slap down two",
     "mod alpha",

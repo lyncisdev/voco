@@ -356,16 +356,28 @@ class CoreParser(GenericParser):
             type_word ::= sudo
             type_word ::= top
             type_word ::= grep
-            type_word ::= python
             type_word ::= define
+            type_word ::= class
             type_word ::= if
             type_word ::= for
             type_word ::= in
         '''
+        value = {
+            'python': 'python3 ',
+            'define': 'def ',
+
+
+        }
+
+        key = args[0].type
+        if key in value:
+            key = value[key]
+        else:
+            key += ' '
 
         # print("Word: %s" % args[0].type)
 
-        return AST('type_word', [args[0].type])
+        return AST('type_word', [key])
 
 #--------------------------
 

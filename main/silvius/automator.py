@@ -40,9 +40,11 @@ class Automator:
     def type_word(self, k):
 
         for l in k:
-            self.xdo(' key ' + l)
+            if l == ' ':
+                self.xdo(' key Space')
+            else:
+                self.xdo(' key ' + l)
 
-        self.xdo(' key Space')
 
     def modifier(self, k):
         self.xdo_pre(' key ' + str(k))
