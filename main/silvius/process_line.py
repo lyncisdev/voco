@@ -5,6 +5,7 @@ from errors import GrammaticalError
 from ast import printAST
 import pdb
 import os
+import subprocess
 
 # the escape keywords are intended for short commands, which start with the escape keyword, that have a vey specific objective and a 1-to-1 mapping between command and action
 
@@ -22,7 +23,8 @@ escape_keywords = [
     'emacs',  # Emacs command to follow
     'keynav',
     'jump',  #jump within EMACS
-    'dictate'
+    'dictate',
+    'repeat'
 ]
 
 letters = [
@@ -215,6 +217,15 @@ def c_jump_commands(word_array):
         cmd = execute(ast, True)
         return cmd
 
+def c_repeat(word_array):
+
+    # check if the terminal is the main focus
+
+
+
+    cmd = XDO_TOOL + "key Up key Return"
+    return cmd
+
 
 def c_dictate_commands(word_array):
     # set a flag that the next audio clip should be processed by the ASPIRE CHAIN MODEL
@@ -234,7 +245,8 @@ function_dict = {
     'paste': c_copypaste_commands,
     'keynav': c_keynav,
     'jump': c_jump_commands,
-    'dictate': c_dictate_commands
+    'dictate': c_dictate_commands,
+    'repeat': c_repeat
 }
 
 
@@ -247,6 +259,14 @@ def check_escape_keywords(line):
 
 
 def process_line(line, flags=""):
+
+
+    # getwindow = XDO_TOOL + 'getactivewindow getwindowname'
+
+    # active_window = subprocess.check_output([XDO_TOOL,'getactivewindow', 'getwindowname'])
+
+    # print(active_window)
+
 
     if flags == "LITERALMODE":
 

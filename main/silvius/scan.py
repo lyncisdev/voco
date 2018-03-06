@@ -2,7 +2,7 @@ import re
 
 # these are the generic silvius grammar keywords
 
-linux_words = ['sudo', 'top', 'for', 'in']
+linux_words = ['sudo', 'top', 'grep']
 python_words = ['python', 'define', 'if', 'for', 'in']
 
 base_keywords = [
