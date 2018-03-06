@@ -35,7 +35,7 @@ rspec="scp,p:$data/wav_sample.scp"
 wspec="ark,scp:$data/feats.ark,$data/feats.scp"
 
 
-compute-mfcc-feats \
+nice -n -10 compute-mfcc-feats \
     --verbose=0 \
     --use-energy=false \
     $rspec \
@@ -45,7 +45,7 @@ compute-mfcc-feats \
 
 # move to rspec / wspec
 
-compute-cmvn-stats \
+nice -n -10 compute-cmvn-stats \
     --verbose=0 \
     --spk2utt=ark:$data/spk2utt_sample \
     "scp:$data/feats.scp" \
@@ -54,7 +54,7 @@ compute-cmvn-stats \
 
 
 # move to rspec / wspec
-apply-cmvn \
+nice -n -10 apply-cmvn \
     --verbose=0 \
     --utt2spk=ark:$data/utt2spk_sample \
     "scp:$data/cmvn.scp" \
@@ -65,7 +65,7 @@ apply-cmvn \
 # move to rspec / wspec
 wspec_delta="ark,scp:$data/delta_mfcc.ark,$data/delta_mfcc.scp"
 
-add-deltas "scp:$data/cmvn_mfcc.scp" \
+nice -n -10 add-deltas "scp:$data/cmvn_mfcc.scp" \
     $wspec_delta \
     &>/dev/null
 
@@ -116,7 +116,7 @@ feats="ark,s,cs:$data/delta_mfcc.ark"
 #     [ words-wspecifier [alignments-wspecifier] ]
 
 # move to rspec / wspec
-gmm-latgen-faster \
+nice -n -10 gmm-latgen-faster \
     --verbose=0 \
     --max-active=$max_active \
     --beam=$beam \
@@ -156,7 +156,7 @@ LMWT=20
 
 
 # move to rspec / wspec
-lattice-best-path \
+nice -n -10 lattice-best-path \
     --lm-scale=$LMWT \
     --word-symbol-table=$graphdir/words.txt \
     "ark:gunzip -c $output/lat.1.gz|" \
@@ -166,12 +166,12 @@ lattice-best-path \
 # could combine lattice-best-path and following step as in the example above
 # why are the allignments not being used? 
 
-cat $output/scoring/LMWT.tra |
+nice -n -10 cat $output/scoring/LMWT.tra |
 	decode/scripts/int2sym.pl -f 2- $graphdir/words.txt > $output/decode_result.txt
 
 
 # add decoding result to the running text file... test this
-cat $output/decode_result.txt >> $data/text
+nice -n -10 cat $output/decode_result.txt >> $data/text
 
 
 # try to estimate the lattice confidence with:

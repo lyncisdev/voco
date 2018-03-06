@@ -2,7 +2,10 @@ import re
 
 # these are the generic silvius grammar keywords
 
-keywords = [
+linux_words = ['sudo', 'top', 'grep']
+python_words = ['python', 'define', 'if', 'for', 'in','class']
+
+base_keywords = [
     'control', 'alt', 'super', 'shift', 'comma', 'act', 'ampersand', 'alpha',
     'backslash', 'bang', 'bravo', 'carrot', 'charlie', 'colon', 'delta',
     'dollar', 'dot', 'down', 'escape', 'echo', 'enter', 'eco', 'eight',
@@ -12,7 +15,9 @@ keywords = [
     'question', 'rate', 'right', 'romeo', 'scratch', 'sentence', 'seven',
     'sierra', 'six', 'sky', 'slap', 'slash', 'space', 'star', 'backspace',
     'tab', 'tango', 'three', 'two', 'underscore', 'uniform', 'up', 'victor',
-    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home', 'end', 'pageup', 'pagedown', 'singlequote', 'doublequote', 'delete', 'mod', 'las','bas'
+    'whiskey', 'whisky', 'word', 'x-ray', 'yankee', 'zero', 'zulu', 'home',
+    'end', 'pageup', 'pagedown', 'singlequote', 'doublequote', 'delete', 'mod',
+    'las', 'bas'
 ]
 
 
@@ -30,6 +35,9 @@ class Token:
 
 
 def scan(line):
+
+    keywords = linux_words + python_words + base_keywords
+
     tokens = []
     wordno = 0
 

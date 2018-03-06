@@ -37,6 +37,15 @@ class Automator:
         if (len(k) > 1): k = k.capitalize()
         self.xdo(' key ' + k)
 
+    def type_word(self, k):
+
+        for l in k:
+            if l == ' ':
+                self.xdo(' key Space')
+            else:
+                self.xdo(' key ' + l)
+
+
     def modifier(self, k):
         self.xdo_pre(' key ' + str(k))
 

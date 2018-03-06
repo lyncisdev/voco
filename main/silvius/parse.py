@@ -52,6 +52,8 @@ class CoreParser(GenericParser):
             single_command ::= word_phrase
             single_command ::= window_command
             single_command ::= number
+            single_command ::= type_word
+
         '''
         return args[0]
 
@@ -346,43 +348,38 @@ class CoreParser(GenericParser):
         }
         return AST('raw_char', [value[args[0].type]])
 
+#--------------------------
+    def p_type_word(self, args):
+
+        '''
+            type_word ::= python
+            type_word ::= sudo
+            type_word ::= top
+            type_word ::= grep
+            type_word ::= define
+            type_word ::= class
+            type_word ::= if
+            type_word ::= for
+            type_word ::= in
+        '''
+        value = {
+            'python': 'python3 ',
+            'define': 'def ',
+
+
+        }
+
+        key = args[0].type
+        if key in value:
+            key = value[key]
+        else:
+            key += ' '
+
+        # print("Word: %s" % args[0].type)
+
+        return AST('type_word', [key])
 
 #--------------------------
-#--------------------------
-
-#
-#    def p_english(self, args):
-#        '''
-#            english ::= word ANY
-#        '''
-#        return AST('sequence', [ args[1].extra ])
-#
-#    def p_word_sentence(self, args):
-#        '''
-#            word_sentence ::= sentence word_repeat
-#        '''
-#        if(len(args[1].children) > 0):
-#            args[1].children[0].meta = args[1].children[0].meta.capitalize()
-#        return args[1]
-#
-#    def p_word_phrase(self, args):
-#        '''
-#            word_phrase ::= phrase word_repeat
-#        '''
-#        return args[1]
-#
-#    def p_word_repeat(self, args):
-#        '''
-#            word_repeat ::= ANY
-#            word_repeat ::= ANY word_repeat
-#        '''
-#        if(len(args) == 1):
-#            return AST('word_sequence', None,
-#                [ AST('null', args[0].extra) ])
-#        else:
-#            args[1].children.insert(0, AST('null', args[0].extra))
-#            return args[1]
-
 
 class SingleInputParser(CoreParser):
     def __init__(self):

@@ -5,6 +5,7 @@ from errors import GrammaticalError
 from ast import printAST
 import pdb
 import os
+import subprocess
 
 # the escape keywords are intended for short commands, which start with the escape keyword, that have a vey specific objective and a 1-to-1 mapping between command and action
 
@@ -22,7 +23,8 @@ escape_keywords = [
     'emacs',  # Emacs command to follow
     'keynav',
     'jump',  #jump within EMACS
-    'dictate'
+    'dictate',
+    'repeat'
 ]
 
 letters = [
@@ -215,6 +217,15 @@ def c_jump_commands(word_array):
         cmd = execute(ast, True)
         return cmd
 
+def c_repeat(word_array):
+
+    # check if the terminal is the main focus
+
+
+
+    cmd = XDO_TOOL + "key Up key Return"
+    return cmd
+
 
 def c_dictate_commands(word_array):
     # set a flag that the next audio clip should be processed by the ASPIRE CHAIN MODEL
@@ -234,7 +245,8 @@ function_dict = {
     'paste': c_copypaste_commands,
     'keynav': c_keynav,
     'jump': c_jump_commands,
-    'dictate': c_dictate_commands
+    'dictate': c_dictate_commands,
+    'repeat': c_repeat
 }
 
 
@@ -246,28 +258,50 @@ def check_escape_keywords(line):
         return False
 
 
-def process_line(line):
-    word_array = line.lower().split()
+def process_line(line, flags=""):
 
-    # process locally of one of the escape keywords was used
-    if word_array[0] in escape_keywords:
-        try:
-            level_0 = word_array[0]
-            #            print(level_0)
-            cmd = function_dict[level_0](word_array)
-        except:
-            cmd = ""
 
-    # otherwise send to Silvius
+    # getwindow = XDO_TOOL + 'getactivewindow getwindowname'
+
+    # active_window = subprocess.check_output([XDO_TOOL,'getactivewindow', 'getwindowname'])
+
+    # print(active_window)
+
+
+    if flags == "LITERALMODE":
+
+        cmd = XDO_TOOL
+
+        for l in line:
+            if l == ' ':
+                cmd += "key Space "
+            else:
+                cmd += "key %s " %l
+
+
+
     else:
-        tokens = scan(line)
+        word_array = line.lower().split()
 
-        try:
-            ast = parse(tokens)
-            # printAST(ast)
-            cmd = execute(ast, True)
-        except:
-            cmd = ""
-            print("")
+        # process locally of one of the escape keywords was used
+        if word_array[0] in escape_keywords:
+            try:
+                level_0 = word_array[0]
+                #            print(level_0)
+                cmd = function_dict[level_0](word_array)
+            except:
+                cmd = ""
+
+        # otherwise send to Silvius
+        else:
+            tokens = scan(line)
+
+            try:
+                ast = parse(tokens)
+                # printAST(ast)
+                cmd = execute(ast, True)
+            except:
+                cmd = ""
+                print("")
 
     return cmd

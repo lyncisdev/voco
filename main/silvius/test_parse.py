@@ -9,6 +9,9 @@ import os
 
 
 test_commands = [
+    "python alpha bravo charlie",
+    "python define class",
+    "repeat",
     "charlie slap down two",
     "mod alpha",
     "mod up",
@@ -27,9 +30,11 @@ test_commands = [
 
 
 for line in test_commands:
+    # print("\n%s\n%s" % (line, process_line(line,"LITERALMODE")))
+
+    # tokens = scan(line)
+    # ast = parse(tokens)
+    # printAST(ast)
+
     print("\n%s\n%s" % (line, process_line(line)))
 
-
-#tokens = scan(line)
-#ast = parse(tokens)
-#printAST(ast)
