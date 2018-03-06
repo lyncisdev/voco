@@ -323,8 +323,8 @@ while (True):
             time_start = time_end
 
             if len(result) == 0:
-                # os.system("aplay media/micro.wav")
-                print("")
+                if debug:
+                    print("Zero length command")
             else:
                 try:
 
@@ -343,14 +343,9 @@ while (True):
                     duration_dict['process'] = time_duration
                     time_start = time_end
 
-                    if len(cmd) == 0:
-                        # os.system("aplay media/micro.wav")
-
-                        print("")
-                    else:
-                        print(result)
-                        print(cmd)
-                        print("")
+                    print(result)
+                    print(cmd)
+                    print("")
 
                     if not noexec_mode and not PAUSE_FLAG:
                         subprocess.Popen([cmd], shell=True)
@@ -378,7 +373,6 @@ while (True):
                         print("Wrote log to:" + basedir + "log")
 
                 except Exception as e:
-                    # os.system("aplay media/micro.wav")
                     print(e)
                     tb = traceback.format_exc()
                     print(tb)
