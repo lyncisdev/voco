@@ -52,6 +52,8 @@ class CoreParser(GenericParser):
             single_command ::= word_phrase
             single_command ::= window_command
             single_command ::= number
+            single_command ::= type_word
+
         '''
         return args[0]
 
@@ -346,6 +348,25 @@ class CoreParser(GenericParser):
         }
         return AST('raw_char', [value[args[0].type]])
 
+#--------------------------
+    def p_type_word(self, args):
+
+        '''
+            type_word ::= python
+            type_word ::= sudo
+            type_word ::= top
+            type_word ::= for
+
+            type_word ::= python
+            type_word ::= define
+            type_word ::= if
+            type_word ::= for
+            type_word ::= in
+        '''
+
+        # print("Word: %s" % args[0].type)
+
+        return AST('type_word', [args[0].type])
 
 #--------------------------
 #--------------------------

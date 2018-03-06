@@ -66,21 +66,27 @@ def write_audio_records(basedir, session_counter, audio_sample_file_path, UID):
 
     outputfile = open(basedir + 'wav_sample.scp', 'w')
     outputfile.write(UID + " " + audio_sample_file_path + "\n")
+    outputfile.close()
 
     outputfile = open(basedir + 'utt2spk_sample', 'w')
     outputfile.write(UID + " bartek" + "\n")
+    outputfile.close()
 
     outputfile = open(basedir + 'spk2utt_sample', 'w')
     outputfile.write("bartek " + UID + "\n")
+    outputfile.close()
 
     outputfile = open(basedir + 'wav.scp', 'a')
     outputfile.write(UID + " " + audio_sample_file_path + "\n")
+    outputfile.close()
 
     outputfile = open(basedir + 'utt2spk', 'a')
     outputfile.write(UID + " bartek" + "\n")
+    outputfile.close()
 
     outputfile = open(basedir + 'spk2utt', 'a')
     outputfile.write("bartek " + UID + "\n")
+    outputfile.close()
 
     with open("session_counter.txt", "w") as f:
         f.write(str(session_counter))
@@ -117,6 +123,12 @@ debug = False
 noexec_mode = False
 playback_mode = False
 literal_mode = False
+
+
+i3blocks_text_filename = "i3blocks_text.txt"
+i3blocks_color_filename = "i3blocks_color.txt"
+
+
 
 print(os.environ['VOCO_DATA'])
 
@@ -270,6 +282,15 @@ while (True):
 
     if rec == False:
         if rms >= gate:
+
+            i3blocks_text = open(i3blocks_text_filename,"w")
+            i3blocks_text.write("REC")
+            i3blocks_text.close()
+
+            i3blocks_color = open(i3blocks_color_filename,"w")
+            i3blocks_color.write("#00FF00")
+            i3blocks_color.close()
+
             audio_sample = []
             audio_sample.append(prev_sample)
             audio_sample.append(data)
@@ -284,6 +305,16 @@ while (True):
             timeout += 1
         else:
             # stop recording, write file
+
+            i3blocks_text = open(i3blocks_text_filename,"w")
+            i3blocks_text.write("DECODING")
+            i3blocks_text.close()
+
+            i3blocks_color = open(i3blocks_color_filename,"w")
+            i3blocks_color.write("#00FF00")
+            i3blocks_color.close()
+
+
 
             UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
                 recording_counter).zfill(5)
@@ -349,6 +380,15 @@ while (True):
 
                     if not noexec_mode and not PAUSE_FLAG:
                         subprocess.Popen([cmd], shell=True)
+
+                    i3blocks_text = open(i3blocks_text_filename,"w")
+                    i3blocks_text.write("%s" % result)
+                    i3blocks_text.close()
+
+                    i3blocks_color = open(i3blocks_color_filename,"w")
+                    i3blocks_color.write("#00FF00")
+                    i3blocks_color.close()
+
 
                     time_end = time.time()
                     time_duration = time_end - time_start

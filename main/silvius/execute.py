@@ -24,6 +24,9 @@ class ExecuteCommands(GenericASTTraversal):
     def n_modified(self, node):
         self.automator.modified(node.meta[0])
 
+    def n_type_word(self, node):
+        self.automator.type_word(node.meta[0])
+
 
     def n_char(self, node):
         self.automator.key(node.meta[0])

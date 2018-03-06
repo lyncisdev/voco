@@ -9,6 +9,7 @@ import os
 
 
 test_commands = [
+    "python sudo top for in",
     "charlie slap down two",
     "mod alpha",
     "mod up",
@@ -26,10 +27,12 @@ test_commands = [
 ]
 
 
-for line in test_commands:
-    print("\n%s\n%s" % (line, process_line(line,"LITERALMODE")))
+for line in test_commands[0:1]:
+    # print("\n%s\n%s" % (line, process_line(line,"LITERALMODE")))
 
+    tokens = scan(line)
+    ast = parse(tokens)
+    printAST(ast)
 
-#tokens = scan(line)
-#ast = parse(tokens)
-#printAST(ast)
+    print("\n%s\n%s" % (line, process_line(line)))
+
