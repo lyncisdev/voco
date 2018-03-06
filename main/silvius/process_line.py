@@ -246,28 +246,42 @@ def check_escape_keywords(line):
         return False
 
 
-def process_line(line):
-    word_array = line.lower().split()
+def process_line(line, flags=""):
 
-    # process locally of one of the escape keywords was used
-    if word_array[0] in escape_keywords:
-        try:
-            level_0 = word_array[0]
-            #            print(level_0)
-            cmd = function_dict[level_0](word_array)
-        except:
-            cmd = ""
+    if flags == "LITERALMODE":
 
-    # otherwise send to Silvius
+        cmd = XDO_TOOL
+
+        for l in line:
+            if l == ' ':
+                cmd += "key Space "
+            else:
+                cmd += "key %s " %l
+
+
+
     else:
-        tokens = scan(line)
+        word_array = line.lower().split()
 
-        try:
-            ast = parse(tokens)
-            # printAST(ast)
-            cmd = execute(ast, True)
-        except:
-            cmd = ""
-            print("")
+        # process locally of one of the escape keywords was used
+        if word_array[0] in escape_keywords:
+            try:
+                level_0 = word_array[0]
+                #            print(level_0)
+                cmd = function_dict[level_0](word_array)
+            except:
+                cmd = ""
+
+        # otherwise send to Silvius
+        else:
+            tokens = scan(line)
+
+            try:
+                ast = parse(tokens)
+                # printAST(ast)
+                cmd = execute(ast, True)
+            except:
+                cmd = ""
+                print("")
 
     return cmd

@@ -27,7 +27,7 @@ test_commands = [
 
 
 for line in test_commands:
-    print("\n%s\n%s" % (line, process_line(line)))
+    print("\n%s\n%s" % (line, process_line(line,"LITERALMODE")))
 
 
 #tokens = scan(line)

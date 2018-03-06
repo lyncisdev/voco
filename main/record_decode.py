@@ -116,6 +116,7 @@ stream = None
 debug = False
 noexec_mode = False
 playback_mode = False
+literal_mode = False
 
 print(os.environ['VOCO_DATA'])
 
@@ -131,7 +132,7 @@ except:
 basedir = voco_data_base + "/staging/"
 
 #----------------------------------------------------------------------------
-# Parse input options - noexec, debug, playback
+# Parse input options - noexec, debug, playback, literal
 #----------------------------------------------------------------------------
 
 try:
@@ -147,6 +148,9 @@ try:
         if x == "playback":
             playback_mode = True
             print("playback_mode = True")
+        if x == "literal":
+            literal_mode = True
+            print("literal_mode = True")
         if x == "help":
             print("noexec, debug, playback")
 except:
@@ -324,7 +328,11 @@ while (True):
             else:
                 try:
 
-                    cmd = process_line(result)
+                    if not literal_mode:
+                        cmd = process_line(result)
+                    else:
+                        cmd = process_line(result,"LITERALMODE")
+
 
                     if cmd == "DICTATE_FLAG":
                         DICTATE_FLAG = True
