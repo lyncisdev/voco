@@ -261,11 +261,11 @@ def check_escape_keywords(line):
 def process_line(line, flags=""):
 
 
-    # getwindow = XDO_TOOL + 'getactivewindow getwindowname'
+    # getwindow = XDO_TOOL + 'xdotool getactivewindow getwindowname'
 
-    # active_window = subprocess.check_output([XDO_TOOL,'getactivewindow', 'getwindowname'])
+    active_window = subprocess.check_output([XDO_TOOL.strip(),'getactivewindow', 'getwindowname'])
 
-    # print(active_window)
+    print(active_window)
 
 
     if flags == "LITERALMODE":

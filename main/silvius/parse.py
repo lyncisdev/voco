@@ -359,13 +359,14 @@ class CoreParser(GenericParser):
             type_word ::= define
             type_word ::= class
             type_word ::= if
-            type_word ::= for
+            type_word ::= forloop
             type_word ::= in
+            type_word ::= cat
         '''
         value = {
             'python': 'python3 ',
             'define': 'def ',
-
+            'forloop': 'for '
 
         }
 

@@ -41,7 +41,7 @@ class Automator:
 
         for l in k:
             if l == ' ':
-                self.xdo(' key Space')
+                self.xdo(' key space')
             else:
                 self.xdo(' key ' + l)
 

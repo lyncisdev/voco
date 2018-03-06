@@ -128,7 +128,7 @@ literal_mode = False
 i3blocks_text_filename = "i3blocks_text.txt"
 i3blocks_color_filename = "i3blocks_color.txt"
 
-
+i3blocks_color_dict = {'rec': "#FF0000", 'decoding': "#FFAE00", 'transc':"#FFFFFF"}
 
 print(os.environ['VOCO_DATA'])
 
@@ -284,12 +284,9 @@ while (True):
         if rms >= gate:
 
             i3blocks_text = open(i3blocks_text_filename,"w")
-            i3blocks_text.write("REC")
+            i3blocks_text.write("REC\n\n%s\n" % i3blocks_color_dict['rec'])
             i3blocks_text.close()
-
-            i3blocks_color = open(i3blocks_color_filename,"w")
-            i3blocks_color.write("#00FF00")
-            i3blocks_color.close()
+            subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
 
             audio_sample = []
             audio_sample.append(prev_sample)
@@ -307,13 +304,9 @@ while (True):
             # stop recording, write file
 
             i3blocks_text = open(i3blocks_text_filename,"w")
-            i3blocks_text.write("DECODING")
+            i3blocks_text.write("DECODING\n\n%s\n" % i3blocks_color_dict['decoding'])
             i3blocks_text.close()
-
-            i3blocks_color = open(i3blocks_color_filename,"w")
-            i3blocks_color.write("#00FF00")
-            i3blocks_color.close()
-
+            subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
 
 
             UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
@@ -380,16 +373,11 @@ while (True):
 
                     if not noexec_mode and not PAUSE_FLAG:
                         subprocess.Popen([cmd], shell=True)
-                        subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
 
                     i3blocks_text = open(i3blocks_text_filename,"w")
-                    i3blocks_text.write("%s" % result)
+                    i3blocks_text.write("%s\n\n%s\n" % (result.upper(),i3blocks_color_dict['transc']))
                     i3blocks_text.close()
-
-                    i3blocks_color = open(i3blocks_color_filename,"w")
-                    i3blocks_color.write("#00FF00")
-                    i3blocks_color.close()
-
+                    subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
 
                     time_end = time.time()
                     time_duration = time_end - time_start

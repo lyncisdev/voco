@@ -1,20 +1,40 @@
-000,control shift nine mod five 
-001,foxtrot ten india 
-002,romeo right 
-003,minus minus zulu mod 
-004,mod control four right 
-005,super alt mod alt comma 
-006,one papa alt 
-007,quit mod down 
-008,zulu quit minus 
-009,mike mod 
-010,delta oscar kilo left 
-011,control bravo delta whisky 
-012,four mod delta right mod 
-013,nine down five eight 
-014,tango zulu uniform shift 
-015,alt whisky comma uniform minus 
-016,two mod 
-017,minus foxtrot alt eight 
-018,mod india six 
-019,minus echo 
+000,repeat define 
+001,define define 
+002,minus right 
+003,python repeat repeat alt foxtrot 
+004,python mod git if 
+005,control git repeat 
+006,minus status cat python repeat 
+007,git cat python git 
+008,november las 
+009,alt git python if mod 
+010,cat control 
+011,forloop forloop repeat python 
+012,git repeat repeat cat 
+013,x-ray quebec quit 
+014,define repeat status 
+015,python top alt 
+016,class status top repeat forloop 
+017,minus if romeo forloop 
+018,bas if 
+019,cat cat ten minus 
+020,zulu top 
+021,class define cat minus 
+022,status alpha forloop python minus 
+023,cat bas cat define 
+024,class cat minus 
+025,class forloop define forloop if 
+026,las forloop 
+027,delete delete super git alt 
+028,if git define alt 
+029,top mod minus charlie 
+030,alt comma charlie status 
+031,forloop class 
+032,python status define shift 
+033,class forloop 
+034,git top 
+035,five cat 
+036,las define 
+037,left python 
+038,bas minus bas 
+039,las top if if repeat 
