@@ -8,7 +8,7 @@ from ast import AST, printAST
 
 class CoreParser(GenericParser):
 
-#------------------------------------------------------------------------------------------------------
+    #------------------------------------------------------------------------------------------------------
 
     def __init__(self, start):
         GenericParser.__init__(self, start)
@@ -58,6 +58,7 @@ class CoreParser(GenericParser):
         return args[0]
 
 #--------------------------
+
     def p_chain_start(self, args):
         '''
             chain_start ::= modifier modifier chain_end
@@ -70,6 +71,7 @@ class CoreParser(GenericParser):
         return AST('presstogether', None, args)
 
 #--------------------------
+
     def p_chain_end(self, args):
         '''
             chain_end ::= movement
@@ -84,8 +86,8 @@ class CoreParser(GenericParser):
         return args[0]
 
 #--------------------------
-    def p_modifier(self, args):
 
+    def p_modifier(self, args):
         '''
             modifier ::= control
             modifier ::= alt
@@ -103,7 +105,6 @@ class CoreParser(GenericParser):
 
         val = value[args[0].type]
         return AST('modified', [val])
-
 
     def p_window_command(self, args):
         '''
@@ -136,7 +137,7 @@ class CoreParser(GenericParser):
             'scratch': 'BackSpace',
             'backspace': 'BackSpace',
             'enter': 'Return',
-            'delete' : 'Delete'
+            'delete': 'Delete'
         }
 
         if args[1] != None:
@@ -188,8 +189,7 @@ class CoreParser(GenericParser):
         # else:
         #    return append(AST('movement', [value[args[0].type]]))
 
-
-#--------------------------
+        #--------------------------
 
     def p_repeat(self, args):
         '''
@@ -343,14 +343,14 @@ class CoreParser(GenericParser):
             'question': 'question',
             'along': 'alt',
             'comma': 'comma',
-            'las' : 'bracketleft',
-            'bas' : 'bracketright'
+            'las': 'bracketleft',
+            'bas': 'bracketright'
         }
         return AST('raw_char', [value[args[0].type]])
 
 #--------------------------
-    def p_type_word(self, args):
 
+    def p_type_word(self, args):
         '''
             type_word ::= python
             type_word ::= sudo
@@ -362,13 +362,10 @@ class CoreParser(GenericParser):
             type_word ::= forloop
             type_word ::= in
             type_word ::= cat
+            type_word ::= git
+            type_word ::= status
         '''
-        value = {
-            'python': 'python3 ',
-            'define': 'def ',
-            'forloop': 'for '
-
-        }
+        value = {'python': 'python3 ', 'define': 'def ', 'forloop': 'for '}
 
         key = args[0].type
         if key in value:
@@ -380,7 +377,9 @@ class CoreParser(GenericParser):
 
         return AST('type_word', [key])
 
+
 #--------------------------
+
 
 class SingleInputParser(CoreParser):
     def __init__(self):
