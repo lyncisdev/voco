@@ -7,3 +7,5 @@ main/decode/output
 main/session_counter.txt
 *.DS_Store
 main/i3blocks_text.txt
+*.jpg
+*.wav

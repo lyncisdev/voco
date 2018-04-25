@@ -19,6 +19,11 @@ from silvius.process_line import process_line
 
 import select
 
+
+# loopback
+# pactl load-module module-loopback latency_msec=1
+# pactl unload-module module-loopback
+
 #----------------------------------------------------------------------------
 # write_audio_file function
 #----------------------------------------------------------------------------
@@ -111,18 +116,12 @@ def write_log(basedir, UID, transc, cmd, decode_duration,
 #----------------------------------------------------------------------------
 # Main Loop
 #----------------------------------------------------------------------------
-
-mic = -1
-chunk = 0
-byterate = 16000
-pa = pyaudio.PyAudio()
-sample_rate = byterate
-stream = None
-
 debug = False
 noexec_mode = False
 playback_mode = False
 literal_mode = False
+
+pp = pprint.PrettyPrinter(depth=4, width=5)
 
 
 i3blocks_text_filename = "i3blocks_text.txt"
@@ -130,10 +129,11 @@ i3blocks_color_filename = "i3blocks_color.txt"
 
 i3blocks_color_dict = {'rec': "#FF0000", 'decoding': "#FFAE00", 'transc':"#FFFFFF"}
 
-print(os.environ['VOCO_DATA'])
+
 
 try:
     voco_data_base = os.environ['VOCO_DATA']
+    print(os.environ['VOCO_DATA'])
 except:
     print('VOCO_DATA not defined')
 
@@ -173,10 +173,23 @@ except:
 #------------------------------------------------------------------------
 
 try:
-    chunk = 3 * 512 * 2 * sample_rate / byterate
+
+    mic = -1
+    chunk = 0
+    byterate = 16000
+    pa = pyaudio.PyAudio()
+    sample_rate = byterate
+    stream = None
+    chunk = 128 * 2 * sample_rate / byterate
 
     if mic == -1:
-        mic = pa.get_default_input_device_info()['index']
+
+        mic_info = pa.get_default_input_device_info()
+
+        mic = mic_info['index']
+
+        pp.pprint(mic_info)
+
         if debug:
             print("Selecting default mic")
             print("Using mic " + str(mic))
@@ -189,24 +202,24 @@ try:
         input_device_index=mic,
         frames_per_buffer=chunk)
 
-    pp = pprint.PrettyPrinter(depth=3, width=5)
-    pp.pprint(pa.get_default_input_device_info())
+    if debug:
+        pp = pprint.PrettyPrinter(depth=3, width=5)
+        pp.pprint(pa.get_default_input_device_info())
 
-except IOError, e:
+except IOError as e:
     if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
         new_sample_rate = int(
             pa.get_device_info_by_index(mic)['defaultSampleRate'])
         if (sample_rate != new_sample_rate):
             sample_rate = new_sample_rate
 
-    # print(sys.stderr, "\n", e
-    # print(sys.stderr, "\nCould not open microphone. Please try a different device."
-    global fatal_error
-    fatal_error = True
+    print(sys.stderr, "\nCould not open microphone. Please try a different device.")
     sys.exit(0)
 
-    print("\nLISTENING TO MICROPHONE")
-    last_state = None
+print("\nLISTENING TO MICROPHONE")
+last_state = None
+
+
 
 #----------------------------------------------------------------------------
 # create skp2gender - only needs to be created once
@@ -234,30 +247,128 @@ timeout = 0
 # Benchmark noise floor
 #----------------------------------------------------------------------------
 
-# rms = 0
-# for i in range(0, 10):
-#     data = stream.read(chunk)
-
-#     tmp_rms = audioop.rms(data, 2)
-
-#     rms += tmp_rms
-
-#     if debug:
-#         print(tmp_rms)
-
-# avg_rms = rms / 10.0
-avg_rms = 200
-gate = 1.4 * avg_rms
-end_gate = 1.2 * avg_rms
+avg_rms = 400
+gate = 800
+end_gate = 400
 
 print("Noise floor: " + str(avg_rms))
 print("Start recording gate: " + str(gate))
 print("Stop recording gate: " + str(end_gate))
 
-# gate = 800
-# end_gate = 600
+#----------------------------------------------------------------------------
+# Notify user
+#----------------------------------------------------------------------------
 
-os.system("aplay media/shovel.wav")
+# os.system("aplay media/shovel.wav")
+
+#----------------------------------------------------------------------------
+# Speech test
+#----------------------------------------------------------------------------
+
+speechtest = True
+
+count = 0
+
+if speechtest:
+    while (True):
+
+        data = stream.read(chunk)
+        rms = audioop.rms(data, 2)
+
+        print("%0.2f - %0.2f - %i" % (stream.get_input_latency(),stream.get_cpu_load(),rms))
+
+
+        if debug:
+            print(rms)
+
+        if rec == False:
+            if rms >= gate:
+                print("\nStarting recording - %i" % rms)
+                rec = True
+                timeout = 0
+                audio_sample.append(prev_sample)
+                audio_sample.append(data)
+            # else:
+                # print("Not recording - %i" % rms)
+
+
+        else:
+            if rms >= end_gate:
+                # print("Continuing - %i" % rms)
+                audio_sample.append(data)
+                timeout = 0
+
+            elif (rms < end_gate) and (timeout < 10):
+                # print("Ending - %i" % rms)
+                audio_sample.append(data)
+                timeout += 1
+            else:
+                # stop recording, write file
+
+                filename = "tmp" + str(count) + ".wav"
+                write_audio_data(audio_sample, filename, byterate)
+                os.system("aplay " + filename)
+
+
+                from scipy import fft
+                import matplotlib.pyplot as plt
+                # other usual libraries 
+
+                S = np.fromstring(''.join(audio_sample), dtype=np.int16)
+                N = np.size(S)
+                K = 64
+                Step = 4
+                wind =  0.5*(1 -np.cos(np.array(range(K))*2*np.pi/(K-1) ))
+                ffts = []
+
+                print(np.shape(S))
+                print(np.shape(wind))
+
+                # S = data_hollow['collection_hollow'][0]
+                Spectogram = []
+                for j in range(int(Step*N/K)-Step):
+
+                    # print("%i - %i - %i" % (j, int(j * K/Step),int((j+Step) * K/Step)))
+
+                    vec = S[int(j * K/Step) : int((j+Step) * K/Step)] * wind
+                    Spectogram.append(abs(fft(vec,K)[:int(K/2)]))
+
+
+                Spectogram=np.asarray(Spectogram)
+                print(np.shape(Spectogram))
+                plt.imshow(Spectogram.T,aspect='auto',origin='auto',cmap='spring')
+                plt.axis('off')
+
+                # raw_input("...")
+
+                # import matplotlib.pyplot as plt
+                # from scipy import signal
+                # from scipy.io import wavfile
+
+                # sample_rate, samples = wavfile.read(filename)
+                # # samples = np.fromstring(''.join(audio_sample), dtype=np.int16)
+
+                # frequencies, times, spectogram = signal.spectrogram(samples, sample_rate,mode='psd')
+
+                # plt.pcolormesh(times, frequencies, spectogram)
+                # plt.imshow(spectogram)
+                # plt.ylabel('Frequency [Hz] - %i' % sample_rate)
+                # plt.xlabel('Time [sec]')
+
+
+                plt.savefig("tmp" + str(count) + ".jpg")
+
+
+
+                count += 1
+
+                rec = False
+                audio_sample = []
+                print("Done\n")
+
+        prev_sample = data
+
+
 
 #----------------------------------------------------------------------------
 # start recording
@@ -270,8 +381,11 @@ while (True):
     data = stream.read(chunk)
     rms = audioop.rms(data, 2)
 
-    # if debug:
-    #     print(rms)
+
+    if debug:
+        print(rms)
+
+
 
     if select.select([sys.stdin,],[],[],0.0)[0]:
         line = sys.stdin.readline()
@@ -297,6 +411,8 @@ while (True):
     else:
         if rms >= end_gate:
             audio_sample.append(data)
+
+
         elif (rms < end_gate) and (timeout < 2):
             audio_sample.append(data)
             timeout += 1
@@ -349,6 +465,13 @@ while (True):
             if len(result) == 0:
                 if debug:
                     print("Zero length command")
+
+                    i3blocks_text = open(i3blocks_text_filename,"w")
+                    i3blocks_text.write("NONE\n\n%s\n" % i3blocks_color_dict['decoding'])
+                    i3blocks_text.close()
+                    subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
+
+
             else:
                 try:
 
