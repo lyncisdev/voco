@@ -3,7 +3,8 @@
 #
 import pprint
 import json
-
+import subprocess
+from implementation import *
 
 pp = pprint.PrettyPrinter(depth=4, width=5)
 
@@ -14,7 +15,8 @@ phrases = [
     "type alpha"
 ]
 
-phrases = ["alpha","alpha charlie","alpha charlie three"]
+phrases = ["alpha","alpha charlie","alpha charlie three firefox","alpha charlie three open firefox"]
+phrases = ["sky alpha charlie three open"]
 # phrases = ["alpha"]
 
 #
@@ -24,25 +26,43 @@ phrases = ["alpha","alpha charlie","alpha charlie three"]
 rules_file = open("rules.json", "r")
 rules = json.load(rules_file)
 rules_file.close()
+
+
+variables_file = open("variables.json", "r")
+variables = json.load(variables_file)
+variables_file.close()
+
 # Add a blank rule with the correct format
+# rule = {}
+# rule["NAME"] = "DEFAULT"
+# rule["SIGNATURE"] = "[VAR1][VAR2]"
+# rule["LENGTH"] = 2
+# rule["CONTEXT"] = "ALL"
+# rule["VARIABLES"] = {}
+# rule["VARIABLES"]["VAR1"] = {"opt1": "opt1"}
+# rule["VARIABLES"]["VAR2"] = {"opt1": "opt1"}
 
-rule = {}
-rule["NAME"] = "DEFAULT"
-rule["SIGNATURE"] = "[VAR1][VAR2]"
-rule["LENGTH"] = 2
-rule["CONTEXT"] = "ALL"
-rule["VARIABLES"] = {}
-rule["VARIABLES"]["VARIABLE_LIST"] = ["VAR1", "VAR2"]
-rule["VARIABLES"]["VAR1"] = {"opt1": "opt1"}
-rule["VARIABLES"]["VAR2"] = {"opt1": "opt1"}
+# if rule["NAME"] not in rules:
+#     rules[rule["NAME"]] = rule
 
-if rule["NAME"] not in rules:
-    rules[rule["NAME"]] = rule
+# rules_file = open("rules.json", "w")
+# json.dump(rules, rules_file)
+# rules_file.close()
 
-rules_file = open("rules.json", "w")
-json.dump(rules, rules_file)
-rules_file.close()
+#####################################################
+# insert repeated variables
+#####################################################
 
+
+for rule in rules:
+    for var in rules[rule]["VARIABLES"]:
+
+        val = rules[rule]["VARIABLES"][var]
+        if not isinstance(val,dict):
+            if val in variables:
+                rules[rule]["VARIABLES"][var] = variables[val]
+            else:
+                print("error")
 #####################################################
 # Pre-compile rules
 #####################################################
@@ -51,7 +71,7 @@ var_lookup = {}
 
 for rule in rules:
 
-    for var in rules[rule]["VARIABLES"]["VARIABLE_LIST"]:
+    for var in rules[rule]["SIGNATURE"]:
         for word in rules[rule]["VARIABLES"][var]:
             if word not in var_lookup:
                 var_lookup[word] = []
@@ -93,19 +113,8 @@ for phrase in phrases:
                 if rule not in rule_graph:
                     rule_graph[rule] = []
 
-                rule_graph[rule].append([var, word])
+                rule_graph[rule].append([var, word, c])
 
-
-                graph[c][1].append(keyword)
-
-                if keyword[0] not in rule_opt:
-                    rule_opt[keyword[0]] = 0
-                rule_opt[keyword[0]] += 1
-
-    # for rule in rule_opt:
-    #     rule_opt[rule] = rule_opt[rule] / phrase_lenght
-
-    # pp.pprint(rule_graph)
 
     # Remove rules that don't fit
     new_rule_graph = {}
@@ -145,10 +154,76 @@ for phrase in phrases:
                     match = False
 
             if match == True:
-                print("Matched")
-                matches.append([rule,[subarr]])
-            input("")
+                matches.append([rule,subarr])
 
-    print("\n")
     for match in matches:
         print(match)
+
+
+    print("\n\n")
+    #
+    # Build set representation
+    #
+
+    match_set = {}
+    for x,match in enumerate(matches):
+        tmp = set()
+        for elem in match[1]:
+            tmp.add(elem[2])
+
+        match_set[x] = tmp
+
+    #
+    # try set cover solution
+    #
+    final_match = []
+
+    while len(match_set) > 0:
+        # find largest uncovered set
+
+        m = 0
+        pos = -1
+        for x in match_set:
+            if len(match_set[x]) > m:
+                m = len(match_set[x])
+                pos = x
+
+        final_match.append(matches[pos])
+
+        #
+        # remove overlaps
+        #
+        new_match_set = {}
+        for x in match_set:
+            if len(set.intersection(match_set[pos],match_set[x])) == 0:
+                new_match_set[x] = match_set[x]
+        match_set = new_match_set
+
+    for match in final_match:
+        print(match)
+
+    # convert to dict
+
+    new_final_match = []
+
+    for match in final_match:
+        tmp_dict = {}
+        for elem in match[1]:
+            lookupval = rules[match[0]]["VARIABLES"][elem[0]][elem[1]]
+            tmp_dict[elem[0]] = [elem[1],lookupval]
+        tmp = [match[0], tmp_dict]
+        new_final_match.append(tmp)
+
+    final_match = new_final_match
+
+    for match in final_match:
+        print(match)
+
+
+    print("")
+    # execute command
+    for match in final_match:
+
+        res = locals()[rules[match[0]]["FUNCTION"]](match[1])
+        print(res)
+        subprocess.call(res)

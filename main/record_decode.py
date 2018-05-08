@@ -16,11 +16,12 @@ import time
 import traceback
 import pprint
 from silvius.process_line import process_line
-
+import collections
 import select
 
 
-# loopback
+# Note:
+# adding a loopback listening interface to pulseaudio
 # pactl load-module module-loopback latency_msec=1
 # pactl unload-module module-loopback
 
@@ -112,424 +113,387 @@ def write_log(basedir, UID, transc, cmd, decode_duration,
     outputfile.write(time_stamp + "," + UID + "," + transc + "," + cmd + "," +
                      decode_duration + "," + audio_sample_file_path + "\n")
 
+#----------------------------------------------------------------------------
+# write i3 blocks
+#----------------------------------------------------------------------------
+
+def write_i3blocks(msg, color):
+
+    i3blocks_text_filename = "i3blocks_text.txt"
+    i3blocks_color_dict = {'recording': "#FF0000", 'decoding': "#FFAE00", 'neutral':"#FFFFFF"}
+
+    i3blocks_text = open(i3blocks_text_filename,"w")
+    i3blocks_text.write("%s\n\n%s\n" % (msg,i3blocks_color_dict[color]))
+    i3blocks_text.close()
+    subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
+
+
+
+#----------------------------------------------------------------------------
+# Global variables
+#----------------------------------------------------------------------------
+XDO_TOOL = '/usr/bin/xdotool '
 
 #----------------------------------------------------------------------------
 # Main Loop
 #----------------------------------------------------------------------------
-debug = False
-noexec_mode = False
-playback_mode = False
-literal_mode = False
 
-pp = pprint.PrettyPrinter(depth=4, width=5)
+def main():
 
+    debug = False
+    noexec_mode = False
+    playback_mode = False
+    literal_mode = False
 
-i3blocks_text_filename = "i3blocks_text.txt"
-i3blocks_color_filename = "i3blocks_color.txt"
-
-i3blocks_color_dict = {'rec': "#FF0000", 'decoding': "#FFAE00", 'transc':"#FFFFFF"}
+    pp = pprint.PrettyPrinter(depth=4, width=5)
 
 
 
-try:
-    voco_data_base = os.environ['VOCO_DATA']
-    print(os.environ['VOCO_DATA'])
-except:
-    print('VOCO_DATA not defined')
+    try:
+        voco_data_base = os.environ['VOCO_DATA']
+        print(os.environ['VOCO_DATA'])
+    except:
+        print('VOCO_DATA not defined')
 
-# voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
+    # voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
-# ln -sv ~/Projects/ASR/voco_data/staging/ ~/Projects/ASR/voco/voco_main/decode/data
+    # ln -sv ~/Projects/ASR/voco_data/staging/ ~/Projects/ASR/voco/voco_main/decode/data
 
-basedir = voco_data_base + "/staging/"
+    basedir = voco_data_base + "/staging/"
 
-#----------------------------------------------------------------------------
-# Parse input options - noexec, debug, playback, literal
-#----------------------------------------------------------------------------
+    #----------------------------------------------------------------------------
+    # Parse input options - noexec, debug, playback, literal
+    #----------------------------------------------------------------------------
 
-try:
-    options = sys.argv
+    try:
+        options = sys.argv
 
-    for x in options:
-        if x == "noexec":
-            noexec_mode = True
-            print("noexec_mode = True")
-        if x == "debug":
-            debug = True
-            print("debug = True")
-        if x == "playback":
-            playback_mode = True
-            print("playback_mode = True")
-        if x == "literal":
-            literal_mode = True
-            print("literal_mode = True")
-        if x == "help":
-            print("noexec, debug, playback")
-except:
-    print("Input argument error")
+        for x in options:
+            if x == "noexec":
+                noexec_mode = True
+                print("noexec_mode = True")
+            if x == "debug":
+                debug = True
+                print("debug = True")
+            if x == "playback":
+                playback_mode = True
+                print("playback_mode = True")
+            if x == "literal":
+                literal_mode = True
+                print("literal_mode = True")
+            if x == "help":
+                print("noexec, debug, playback")
+    except:
+        print("Input argument error")
 
-#----------------------------------------------------------------------------
-# set_up mic
-#------------------------------------------------------------------------
+    #----------------------------------------------------------------------------
+    # set_up mic
+    #------------------------------------------------------------------------
 
-try:
+    try:
 
-    mic = -1
-    chunk = 0
-    byterate = 16000
-    pa = pyaudio.PyAudio()
-    sample_rate = byterate
-    stream = None
-    chunk = 128 * 2 * sample_rate / byterate
+        mic = -1
+        chunk = 0
+        byterate = 16000
+        pa = pyaudio.PyAudio()
+        sample_rate = byterate
+        stream = None
+        chunk = 128 * 2 * sample_rate / byterate
 
-    if mic == -1:
+        if mic == -1:
 
-        mic_info = pa.get_default_input_device_info()
+            mic_info = pa.get_default_input_device_info()
 
-        mic = mic_info['index']
+            mic = mic_info['index']
 
-        pp.pprint(mic_info)
+            pp.pprint(mic_info)
+
+            if debug:
+                print("Selecting default mic")
+                print("Using mic " + str(mic))
+
+        stream = pa.open(
+            rate=sample_rate,
+            format=pyaudio.paInt16,
+            channels=1,
+            input=True,
+            input_device_index=mic,
+            frames_per_buffer=chunk)
 
         if debug:
-            print("Selecting default mic")
-            print("Using mic " + str(mic))
+            pp = pprint.PrettyPrinter(depth=3, width=5)
+            pp.pprint(pa.get_default_input_device_info())
 
-    stream = pa.open(
-        rate=sample_rate,
-        format=pyaudio.paInt16,
-        channels=1,
-        input=True,
-        input_device_index=mic,
-        frames_per_buffer=chunk)
+    except IOError as e:
+        if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
+            new_sample_rate = int(
+                pa.get_device_info_by_index(mic)['defaultSampleRate'])
+            if (sample_rate != new_sample_rate):
+                sample_rate = new_sample_rate
 
-    if debug:
-        pp = pprint.PrettyPrinter(depth=3, width=5)
-        pp.pprint(pa.get_default_input_device_info())
+        print(sys.stderr, "\nCould not open microphone. Please try a different device.")
+        sys.exit(0)
 
-except IOError as e:
-    if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
-        new_sample_rate = int(
-            pa.get_device_info_by_index(mic)['defaultSampleRate'])
-        if (sample_rate != new_sample_rate):
-            sample_rate = new_sample_rate
-
-    print(sys.stderr, "\nCould not open microphone. Please try a different device.")
-    sys.exit(0)
-
-print("\nLISTENING TO MICROPHONE")
-last_state = None
+    print("\nLISTENING TO MICROPHONE")
+    last_state = None
 
 
 
-#----------------------------------------------------------------------------
-# create skp2gender - only needs to be created once
-#----------------------------------------------------------------------------
-outputfile = open(basedir + "audio_records/" + 'spk2gender', 'w')
-outputfile.write("bartek m \n")
+    #----------------------------------------------------------------------------
+    # create skp2gender - only needs to be created once
+    #----------------------------------------------------------------------------
+    outputfile = open(basedir + "audio_records/" + 'spk2gender', 'w')
+    outputfile.write("bartek m \n")
 
-#----------------------------------------------------------------------------
-# Setup session and recording counter
-#----------------------------------------------------------------------------
+    #----------------------------------------------------------------------------
+    # Setup session and recording counter
+    #----------------------------------------------------------------------------
 
-try:
-    with open("session_counter.txt") as f:
-        session_counter = int(f.read()) + 1
-except IOError:
-    session_counter = 1
+    try:
+        with open("session_counter.txt") as f:
+            session_counter = int(f.read()) + 1
+    except IOError:
+        session_counter = 1
 
-recording_counter = 0
-audio_sample = []
-rec = False
-prev_sample = ""
-timeout = 0
+    recording_counter = 0
+    audio_samples = collections.deque()
+    audio_frames_prefix = 10
+    audio_timeout_frames = 20
 
-#----------------------------------------------------------------------------
-# Benchmark noise floor
-#----------------------------------------------------------------------------
+    rec = False
+    prev_sample = ""
+    timeout = 0
 
-avg_rms = 400
-gate = 800
-end_gate = 400
+    #----------------------------------------------------------------------------
+    # Benchmark noise floor
+    #----------------------------------------------------------------------------
 
-print("Noise floor: " + str(avg_rms))
-print("Start recording gate: " + str(gate))
-print("Stop recording gate: " + str(end_gate))
+    gate = 1200
+    end_gate = 900
 
-#----------------------------------------------------------------------------
-# Notify user
-#----------------------------------------------------------------------------
+    print("Start recording gate: " + str(gate))
+    print("Stop recording gate: " + str(end_gate))
 
-# os.system("aplay media/shovel.wav")
+    #----------------------------------------------------------------------------
+    # Notify user
+    #----------------------------------------------------------------------------
 
-#----------------------------------------------------------------------------
-# Speech test
-#----------------------------------------------------------------------------
+    # os.system("aplay media/shovel.wav")
 
-speechtest = True
+    #----------------------------------------------------------------------------
+    # Speech test
+    #----------------------------------------------------------------------------
 
-count = 0
+    speechtest = False
 
-if speechtest:
+    count = 0
+
+    if speechtest:
+        while (True):
+
+            sample = stream.read(chunk)
+            rms = audioop.rms(sample, 2)
+            audio_samples.append(sample)
+
+
+            if debug:
+                print("%0.2f - %i - %i" % (stream.get_input_latency(),rms,len(audio_samples)))
+
+            if rec == False:
+                if rms >= gate:
+                    print("\nStarting recording - %i" % rms)
+                    rec = True
+                    timeout = 0
+
+
+                else:
+                    # trim deque
+                    while len(audio_samples) > audio_frames_prefix:
+                        audio_samples.popleft()
+
+
+            else:
+                if rms >= end_gate:
+                    # print("Continuing - %i" % rms)
+                    timeout = 0
+
+                elif (rms < end_gate) and (timeout < audio_timeout_frames):
+                    # print("Ending - %i" % rms)
+                    timeout += 1
+                else:
+                    # stop recording, write file
+
+
+                    filename = "tmp" + str(count) + ".wav"
+                    write_audio_data(audio_samples, filename, byterate)
+                    os.system("aplay " + filename)
+
+
+
+                    # # calculate spectrogram
+                    # from scipy import fft
+                    # import matplotlib.pyplot as plt
+
+                    # S = np.fromstring(''.join(audio_samples), dtype=np.int16)
+                    # N = np.size(S)
+                    # K = 16
+                    # Step = 10
+                    # # wind =  0.5*(1 -np.cos(np.array(range(K))*2*np.pi/(K-1) ))
+                    # ffts = []
+
+                    # # S = data_hollow['collection_hollow'][0]
+                    # Spectogram = []
+                    # for j in range(int(Step*N/K)-Step):
+
+                    #     # print("%i - %i - %i" % (j, int(j * K/Step),int((j+Step) * K/Step)))
+
+                    #     # vec = S[int(j * K/Step) : int((j+Step) * K/Step)] * wind
+                    #     vec = S[int(j * K/Step) : int((j+Step) * K/Step)]
+                    #     Spectogram.append(abs(fft(vec,K)[:int(K/2)]))
+
+
+                    # Spectogram=np.asarray(Spectogram)
+                    # plt.imshow(Spectogram.T,aspect='auto',origin='auto',cmap='spring')
+                    # plt.axis('off')
+
+                    # plt.savefig("tmp" + str(count) + ".jpg")
+
+                    count += 1
+
+                    rec = False
+                    audio_samples.clear()
+                    print("Done\n")
+
+
+
+
+    #----------------------------------------------------------------------------
+    # start recording
+    #----------------------------------------------------------------------------
+
+    DICTATE_FLAG = False
+    PAUSE_FLAG = False
+
     while (True):
 
-        data = stream.read(chunk)
-        rms = audioop.rms(data, 2)
+        sample = stream.read(chunk)
+        rms = audioop.rms(sample, 2)
+        audio_samples.append(sample)
 
-        print("%0.2f - %0.2f - %i" % (stream.get_input_latency(),stream.get_cpu_load(),rms))
+        # if select.select([sys.stdin,],[],[],0.0)[0]:
+        #     line = sys.stdin.readline()
+        #     if line.strip() == "p":
+        #         PAUSE_FLAG = not PAUSE_FLAG
+        #         print("PAUSE FLAG: %s" % PAUSE_FLAG)
 
-
-        if debug:
-            print(rms)
 
         if rec == False:
             if rms >= gate:
-                print("\nStarting recording - %i" % rms)
+
+                write_i3blocks('REC','recording')
+
                 rec = True
                 timeout = 0
-                audio_sample.append(prev_sample)
-                audio_sample.append(data)
-            # else:
-                # print("Not recording - %i" % rms)
+
+            else:
+                while len(audio_samples) > audio_frames_prefix:
+                    audio_samples.popleft()
 
 
         else:
             if rms >= end_gate:
-                # print("Continuing - %i" % rms)
-                audio_sample.append(data)
                 timeout = 0
-
-            elif (rms < end_gate) and (timeout < 10):
-                # print("Ending - %i" % rms)
-                audio_sample.append(data)
+            elif (rms < end_gate) and (timeout < audio_timeout_frames):
                 timeout += 1
             else:
                 # stop recording, write file
 
-                filename = "tmp" + str(count) + ".wav"
-                write_audio_data(audio_sample, filename, byterate)
-                os.system("aplay " + filename)
+                # Get window context
+                active_window = subprocess.check_output([XDO_TOOL.strip(),'getactivewindow', 'getwindowname'])
+
+                write_i3blocks('DECODING','decoding')
+
+                UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
+                    recording_counter).zfill(5)
+
+                audio_sample_file_path = basedir + "audio_data/" + UID + ".wav"
 
 
-                from scipy import fft
-                import matplotlib.pyplot as plt
-                # other usual libraries 
+                # Write the WAV file and the Kaldi records
+                write_audio_data(audio_samples, audio_sample_file_path, byterate)
+                write_audio_records(basedir + "audio_records/", session_counter,audio_sample_file_path, UID)
 
-                S = np.fromstring(''.join(audio_sample), dtype=np.int16)
-                N = np.size(S)
-                K = 64
-                Step = 4
-                wind =  0.5*(1 -np.cos(np.array(range(K))*2*np.pi/(K-1) ))
-                ffts = []
+                # Run the Kaldi script
+                result = subprocess.check_output("./kaldi_decode.sh")
+                result = result.split(" ", 1)[1].strip()
 
-                print(np.shape(S))
-                print(np.shape(wind))
+                # else:
+                #     # pass audio to ASPIRE and reset dictate_flag
+                #     result = subprocess.check_output("./aspire_decode.sh", shell=True)
+                #     print(result)
+                #     DICTATE_FLAG = False
+                #     print("DECODE_FLAG has been set")
 
-                # S = data_hollow['collection_hollow'][0]
-                Spectogram = []
-                for j in range(int(Step*N/K)-Step):
-
-                    # print("%i - %i - %i" % (j, int(j * K/Step),int((j+Step) * K/Step)))
-
-                    vec = S[int(j * K/Step) : int((j+Step) * K/Step)] * wind
-                    Spectogram.append(abs(fft(vec,K)[:int(K/2)]))
-
-
-                Spectogram=np.asarray(Spectogram)
-                print(np.shape(Spectogram))
-                plt.imshow(Spectogram.T,aspect='auto',origin='auto',cmap='spring')
-                plt.axis('off')
-
-                # raw_input("...")
-
-                # import matplotlib.pyplot as plt
-                # from scipy import signal
-                # from scipy.io import wavfile
-
-                # sample_rate, samples = wavfile.read(filename)
-                # # samples = np.fromstring(''.join(audio_sample), dtype=np.int16)
-
-                # frequencies, times, spectogram = signal.spectrogram(samples, sample_rate,mode='psd')
-
-                # plt.pcolormesh(times, frequencies, spectogram)
-                # plt.imshow(spectogram)
-                # plt.ylabel('Frequency [Hz] - %i' % sample_rate)
-                # plt.xlabel('Time [sec]')
-
-
-                plt.savefig("tmp" + str(count) + ".jpg")
-
-
-
-                count += 1
-
-                rec = False
-                audio_sample = []
-                print("Done\n")
-
-        prev_sample = data
-
-
-
-#----------------------------------------------------------------------------
-# start recording
-#----------------------------------------------------------------------------
-
-DICTATE_FLAG = False
-PAUSE_FLAG = False
-
-while (True):
-    data = stream.read(chunk)
-    rms = audioop.rms(data, 2)
-
-
-    if debug:
-        print(rms)
-
-
-
-    if select.select([sys.stdin,],[],[],0.0)[0]:
-        line = sys.stdin.readline()
-        if line.strip() == "p":
-            PAUSE_FLAG = not PAUSE_FLAG
-            print("PAUSE FLAG: %s" % PAUSE_FLAG)
-
-
-    if rec == False:
-        if rms >= gate:
-
-            i3blocks_text = open(i3blocks_text_filename,"w")
-            i3blocks_text.write("REC\n\n%s\n" % i3blocks_color_dict['rec'])
-            i3blocks_text.close()
-            subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
-
-            audio_sample = []
-            audio_sample.append(prev_sample)
-            audio_sample.append(data)
-            rec = True
-            timeout = 0
-
-    else:
-        if rms >= end_gate:
-            audio_sample.append(data)
-
-
-        elif (rms < end_gate) and (timeout < 2):
-            audio_sample.append(data)
-            timeout += 1
-        else:
-            # stop recording, write file
-
-            i3blocks_text = open(i3blocks_text_filename,"w")
-            i3blocks_text.write("DECODING\n\n%s\n" % i3blocks_color_dict['decoding'])
-            i3blocks_text.close()
-            subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
-
-
-            UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
-                recording_counter).zfill(5)
-
-            audio_sample_file_path = basedir + "audio_data/" + UID + ".wav"
-
-            duration_dict = {}
-            time_start = time.time()
-
-            write_audio_data(audio_sample, audio_sample_file_path, byterate)
-            write_audio_records(basedir + "audio_records/", session_counter,
-                                audio_sample_file_path, UID)
-
-            time_end = time.time()
-            time_duration = time_end - time_start
-            duration_dict['write_files'] = time_duration
-            time_start = time_end
-
-            # if not DICTATE_FLAG:
-
-            result = subprocess.check_output("./kaldi_decode.sh")
-            result = result.split(" ", 1)[1].strip()
-
-            # else:
-            #     # pass audio to ASPIRE and reset dictate_flag
-            #     result = subprocess.check_output("./aspire_decode.sh", shell=True)
-            #     print(result)
-            #     DICTATE_FLAG = False
-            #     print("DECODE_FLAG has been set")
-
-            if debug:
-                print(result)
-
-            time_end = time.time()
-            time_duration = time_end - time_start
-            duration_dict['decode'] = time_duration
-            time_start = time_end
-
-            if len(result) == 0:
                 if debug:
-                    print("Zero length command")
-
-                    i3blocks_text = open(i3blocks_text_filename,"w")
-                    i3blocks_text.write("NONE\n\n%s\n" % i3blocks_color_dict['decoding'])
-                    i3blocks_text.close()
-                    subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
-
-
-            else:
-                try:
-
-                    if not literal_mode:
-                        cmd = process_line(result)
-                    else:
-                        cmd = process_line(result,"LITERALMODE")
-
-
-                    if cmd == "DICTATE_FLAG":
-                        DICTATE_FLAG = True
-                        cmd = ""
-
-                    time_end = time.time()
-                    time_duration = time_end - time_start
-                    duration_dict['process'] = time_duration
-                    time_start = time_end
-
+                    print(UID)
                     print(result)
-                    print(cmd)
-                    print("")
 
-                    if not noexec_mode and not PAUSE_FLAG:
-                        subprocess.Popen([cmd], shell=True)
-
-                    i3blocks_text = open(i3blocks_text_filename,"w")
-                    i3blocks_text.write("%s\n\n%s\n" % (result.upper(),i3blocks_color_dict['transc']))
-                    i3blocks_text.close()
-                    subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
-
-                    time_end = time.time()
-                    time_duration = time_end - time_start
-                    duration_dict['execute'] = time_duration
-                    duration_dict['total'] = duration_dict[
-                        'write_files'] + duration_dict[
-                            'decode'] + duration_dict[
-                                'process'] + duration_dict['execute']
+                if len(result) == 0:
 
                     if debug:
-                        print("-----------------")
-                        print(result + "\n")
-                        print(duration_dict['total'])
+                        print("Zero length command")
 
-                    if playback_mode:
-                        os.system("aplay " + audio_sample_file_path)
+                    write_i3blocks('NONE','neutral')
 
-                    write_log(basedir, UID, result, cmd,
-                              str(duration_dict['total']),
-                              audio_sample_file_path)
-                    if debug:
-                        print("Wrote log to:" + basedir + "log")
+                else:
+                    try:
 
-                except Exception as e:
-                    print(e)
-                    tb = traceback.format_exc()
-                    print(tb)
+                        # Replay the audio clip
+                        if playback_mode:
+                            os.system("aplay " + audio_sample_file_path)
 
-            recording_counter += 1
-            rec = False
+                        # Literal mode - prints the word "alpha" instead of "a"
+                        if not literal_mode:
+                            cmd = process_line(result)
+                        else:
+                            cmd = process_line(result,"LITERALMODE")
 
-    prev_sample = data
+                        # Used for ASPIRE model
+                        if cmd == "DICTATE_FLAG":
+                            DICTATE_FLAG = True
+                            cmd = ""
+
+                        # Execute the command
+                        if not noexec_mode and not PAUSE_FLAG:
+                            subprocess.Popen([cmd], shell=True)
+
+                        write_i3blocks(result.upper(),'neutral')
+                        write_log(basedir, UID, result, cmd,
+                                  "0.0",
+                                  audio_sample_file_path)
+
+                        print("%s | %s | %s" % (result, cmd, active_window))
+
+                        if debug:
+                            print("-----------------")
+                            print(result + "\n")
+                            print("Wrote log to:" + basedir + "log")
+
+                    except Exception as e:
+                        print(e)
+                        tb = traceback.format_exc()
+                        print(tb)
+
+                recording_counter += 1
+                rec = False
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        print('\nShutting down\n')
+        write_i3blocks(result.upper(),'neutral')
+        try:
+            sys.exit(0)
+        except SystemExit:
+            os._exit(0)
