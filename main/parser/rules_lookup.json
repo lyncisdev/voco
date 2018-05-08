@@ -1,0 +1,125 @@
+{
+    "open": [
+        ["ACTION_APPLICATION", "ACTION"],
+        ["ACTION_PROJECT", "ACTION"]
+    ],
+    "close": [
+        ["ACTION_APPLICATION", "ACTION"],
+        ["ACTION_PROJECT", "ACTION"]
+    ],
+    "switch": [
+        ["ACTION_APPLICATION", "ACTION"]
+    ],
+    "show": [
+        ["ACTION_APPLICATION", "ACTION"]
+    ],
+    "nautilus": [
+        ["ACTION_APPLICATION", "APPLICATION"]
+    ],
+    "files": [
+        ["ACTION_APPLICATION", "APPLICATION"]
+    ],
+    "firefox": [
+        ["ACTION_APPLICATION", "APPLICATION"]
+    ],
+    "browser": [
+        ["ACTION_APPLICATION", "APPLICATION"]
+    ],
+    "max": [
+        ["ACTION_APPLICATION", "APPLICATION"]
+    ],
+    "terminal": [
+        ["ACTION_APPLICATION", "APPLICATION"]
+    ],
+    "switch to": [
+        ["ACTION_PROJECT", "ACTION"]
+    ],
+    "notes": [
+        ["ACTION_PROJECT", "PROJECT"]
+    ],
+    "voco": [
+        ["ACTION_PROJECT", "PROJECT"]
+    ],
+    "alpha": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "bravo": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "charlie": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "delta": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "echo": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "foxtrot": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "golf": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "hotel": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "india": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "juliet": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "kilo": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "lima": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "mike": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "november": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "oscar": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "papa": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "quebec": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "romeo": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "sierra": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "tango": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "uniform": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "victor": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "whisky": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "x-ray": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "yankee": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "zulu": [
+        ["TYPE_CHARACTER", "CHARACTER"]
+    ],
+    "opt1": [
+        ["DEFAULT", "VAR1"],
+        ["DEFAULT", "VAR2"]
+    ]
+}
