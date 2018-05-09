@@ -36,3 +36,6 @@ def r_type_uppercase_character(variables):
 
     return [XDO_TOOL,"key",char]
 
+
+def r_test():
+    print("Test")

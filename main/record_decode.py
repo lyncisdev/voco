@@ -15,10 +15,10 @@ from datetime import datetime
 import time
 import traceback
 import pprint
-from silvius.process_line import process_line
+# from silvius.process_line import process_line
 import collections
 import select
-
+from parser import parser,implementation
 
 # Note:
 # adding a loopback listening interface to pulseaudio
@@ -198,7 +198,7 @@ def main():
         pa = pyaudio.PyAudio()
         sample_rate = byterate
         stream = None
-        chunk = 128 * 2 * sample_rate / byterate
+        chunk = 128 * 2 * sample_rate // byterate
 
         if mic == -1:
 
@@ -277,6 +277,11 @@ def main():
     #----------------------------------------------------------------------------
     # Notify user
     #----------------------------------------------------------------------------
+    #----------------------------------------------------------------------------
+    # init parser
+    #----------------------------------------------------------------------------
+
+    rules, var_lookup = parser.init()
 
     # os.system("aplay media/shovel.wav")
 
@@ -409,7 +414,29 @@ def main():
                 # stop recording, write file
 
                 # Get window context
-                active_window = subprocess.check_output([XDO_TOOL.strip(),'getactivewindow', 'getwindowname'])
+
+
+
+                active_window = subprocess.check_output(['/usr/bin/xdotool','getactivewindow'])
+
+                active_window = active_window.strip().decode('UTF-8')
+
+                # print(active_window)
+
+
+
+                windowclass = subprocess.check_output(["xprop","-notype","-id",active_window,"WM_CLASS"])
+
+
+                windowclass = windowclass.strip().decode('UTF-8')
+                # print(windowclass)
+
+                expr= "WM_CLASS = \"([^\"]*)\", \"([^\"]*)\""
+                m = re.search(expr, windowclass)
+                context = m.group(2)
+
+
+
 
                 write_i3blocks('DECODING','decoding')
 
@@ -424,7 +451,10 @@ def main():
                 write_audio_records(basedir + "audio_records/", session_counter,audio_sample_file_path, UID)
 
                 # Run the Kaldi script
-                result = subprocess.check_output("./kaldi_decode.sh")
+                result = subprocess.check_output("./kaldi_decode.sh").strip().decode('UTF-8')
+
+
+                print(result)
                 result = result.split(" ", 1)[1].strip()
 
                 # else:
@@ -453,26 +483,33 @@ def main():
                             os.system("aplay " + audio_sample_file_path)
 
                         # Literal mode - prints the word "alpha" instead of "a"
-                        if not literal_mode:
-                            cmd = process_line(result)
-                        else:
-                            cmd = process_line(result,"LITERALMODE")
+                        # if not literal_mode:
+                            # cmd = process_line(result)
+                        commands = parser.parsephrase(rules, var_lookup,result)
+                        print(commands)
+
+                        # else:
+                            # cmd = process_line(result,"LITERALMODE")
 
                         # Used for ASPIRE model
-                        if cmd == "DICTATE_FLAG":
-                            DICTATE_FLAG = True
-                            cmd = ""
+                        # if cmd == "DICTATE_FLAG":
+                            # DICTATE_FLAG = True
+                            # cmd = ""
 
                         # Execute the command
                         if not noexec_mode and not PAUSE_FLAG:
-                            subprocess.Popen([cmd], shell=True)
+
+                            for cmd in commands:
+                                subprocess.call(cmd)
+
+                            # subprocess.Popen([cmd], shell=True)
 
                         write_i3blocks(result.upper(),'neutral')
-                        write_log(basedir, UID, result, cmd,
+                        write_log(basedir, UID, result, "",
                                   "0.0",
                                   audio_sample_file_path)
 
-                        print("%s | %s | %s" % (result, cmd, active_window))
+                        print("%s | %s | %s" % (result,"", context))
 
                         if debug:
                             print("-----------------")
@@ -492,7 +529,7 @@ if __name__ == '__main__':
         main()
     except KeyboardInterrupt:
         print('\nShutting down\n')
-        write_i3blocks(result.upper(),'neutral')
+        write_i3blocks("",'neutral')
         try:
             sys.exit(0)
         except SystemExit:

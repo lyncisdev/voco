@@ -1,11 +1,12 @@
 #
 # Parser unit test
 #
+
 import pprint
 import json
 import subprocess
 from implementation import *
-
+import re
 pp = pprint.PrettyPrinter(depth=4, width=5)
 
 
@@ -199,9 +200,6 @@ for phrase in phrases:
                 new_match_set[x] = match_set[x]
         match_set = new_match_set
 
-    for match in final_match:
-        print(match)
-
     # convert to dict
 
     new_final_match = []
@@ -216,14 +214,30 @@ for phrase in phrases:
 
     final_match = new_final_match
 
-    for match in final_match:
-        print(match)
+    # # execute command
+    # for match in final_match:
+
+    #     res = locals()[rules[match[0]]["FUNCTION"]](match[1])
+    #     subprocess.call(res)
+
+#####################################################
+# test get context 
+#####################################################
+
+active_window = subprocess.check_output(['/usr/bin/xdotool','getactivewindow'])
+
+active_window = active_window.strip().decode('UTF-8')
+
+# print(active_window)
 
 
-    print("")
-    # execute command
-    for match in final_match:
 
-        res = locals()[rules[match[0]]["FUNCTION"]](match[1])
-        print(res)
-        subprocess.call(res)
+windowclass = subprocess.check_output(["xprop","-notype","-id",active_window,"WM_CLASS"])
+
+
+windowclass = windowclass.strip().decode('UTF-8')
+# print(windowclass)
+
+expr= "WM_CLASS = \"([^\"]*)\", \"([^\"]*)\""
+m = re.search(expr, windowclass)
+print(m.group(2))
