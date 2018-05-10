@@ -1,4 +1,5 @@
 {
+    "CHARACTER": ["NUMBER", "LETTER", "SYMBOL", "EDITING","MOVEMENT"],
     "NUMBER": {
         "zero": "0",
         "one": "1",
@@ -12,7 +13,7 @@
         "nine": "9",
         "ten": "10"
     },
-    "CHARACTER": {
+    "LETTER": {
         "alpha": "a",
         "bravo": "b",
         "charlie": "c",
@@ -39,7 +40,75 @@
         "x-ray": "x",
         "yankee": "y",
         "zulu": "z"
+    },
+    "SYMBOL": {
+        "escape": "Escape",
+        "act": "Escape",
+        "colon": "colon",
+        "singlequote": "apostrophe",
+        "doublequote": "quotedbl",
+        "equal": "equal",
+        "space": "Space",
+        "tab": "Tab",
+        "bang": "exclam",
+        "hash": "numbersign",
+        "dollar": "dollar",
+        "percent": "percent",
+        "carrot": "caret",
+        "ampersand": "ampersand",
+        "star": "asterisk",
+        "late": "parenleft",
+        "rate": "parenright",
+        "minus": "minus",
+        "underscore": "underscore",
+        "plus": "plus",
+        "backslash": "backslash",
+        "dot": "period",
+        "slash": "slash",
+        "question": "question",
+        "along": "alt",
+        "comma": "comma",
+        "las": "bracketleft",
+        "bas": "bracketright"
+
+    },
+    "EDITING": {
+        "slap": "Return",
+        "enter": "Return",
+        "return": "Return",
+        "scratch": "BackSpace",
+        "backspace": "BackSpace",
+        "delete": "Delete",
+        "space": "space"
+    },
+    "MODIFIER": {
+        "control": "ctrl",
+        "alt": "alt",
+        "shift": "shift",
+        "super": "super",
+        "mod": "super"
+    },
+    "MOVEMENT": {
+        "up": "Up",
+        "lift": "Up",
+        "down": "Down",
+        "drop": "Down",
+        "left": "Left",
+        "right": "Right",
+        "pageup": "Prior",
+        "pagedown": "Next",
+        "home": "Home",
+        "end": "End"
+    },
+    "APPLICATION":{
+        "firefox":"Mozilla Firefox",
+        "browser":"Mozilla Firefox",
+        "nautilus": "nautilus",
+        "files": "nautilus",
+        "max": "emacs@",
+        "terminal": "mainterm",
+        "term": "mainterm"
+
+
     }
-
-
 }

@@ -5,27 +5,33 @@
 import pprint
 import json
 import subprocess
-from .implementation import *
 import re
 import pprint
+
+
+from .implementation import *
+# from implementation import *
 
 
 
 pp = pprint.PrettyPrinter(depth=4, width=5)
 
 basedir = "parser/"
+# basedir = ""
 
 def init():
 
     #####################################################
-    # load rules files
+    # load dynamic_rules files
     #####################################################
 
-    rules_file = open(basedir + "rules.json", "r")
-    rules = json.load(rules_file)
-    rules_file.close()
+    dynamic_rules_file = open(basedir + "dynamic_rules.json", "r")
+    dynamic_rules = json.load(dynamic_rules_file)
+    dynamic_rules_file.close()
 
-
+    static_rules_file = open(basedir + "static_rules.json", "r")
+    static_rules = json.load(static_rules_file)
+    static_rules_file.close()
 
     variables_file = open(basedir + "variables.json", "r")
     variables = json.load(variables_file)
@@ -36,116 +42,171 @@ def init():
     #####################################################
 
 
-    for rule in rules:
-        for var in rules[rule]["VARIABLES"]:
+    for var in variables:
+        val = variables[var]
+        if isinstance(val,list):
+            tmp_dict = {}
+            for elem in val:
+                tmp_dict.update(variables[elem])
+            variables[var] = tmp_dict
 
-            val = rules[rule]["VARIABLES"][var]
+
+    for rule in dynamic_rules:
+        for var in dynamic_rules[rule]["VARIABLES"]:
+
+            val = dynamic_rules[rule]["VARIABLES"][var]
             if not isinstance(val,dict):
                 if val in variables:
-                    rules[rule]["VARIABLES"][var] = variables[val]
+                    dynamic_rules[rule]["VARIABLES"][var] = variables[val]
                 else:
                     print("error")
 
     #####################################################
-    # Pre-compile rules
+    # Pre-compile dynamic_rules
     #####################################################
 
     var_lookup = {}
 
-    for rule in rules:
+    for rule in dynamic_rules:
 
-        for var in rules[rule]["SIGNATURE"]:
-            for word in rules[rule]["VARIABLES"][var]:
+        for var in dynamic_rules[rule]["SIGNATURE"]:
+            for word in dynamic_rules[rule]["VARIABLES"][var]:
                 if word not in var_lookup:
                     var_lookup[word] = []
 
                 var_lookup[word].append([rule, var])
 
-    rules_lookup_file = open(basedir + "rules_lookup.json", "w")
-    json.dump(var_lookup, rules_lookup_file)
-
-    return rules, var_lookup
-
-def parsephrase(rules, var_lookup,phrase):
+    dynamic_rules_lookup_file = open(basedir + "dynamic_rules_lookup.json", "w")
+    json.dump(var_lookup, dynamic_rules_lookup_file)
 
 
 
-    # pp.pprint(globals())
-    # pp.pprint(locals())
+    json.dump(variables, open(basedir + "variables_final.json","w"))
+    json.dump(dynamic_rules, open(basedir + "dynamic_rules_final.json","w"))
 
+    return dynamic_rules,static_rules, var_lookup
+
+def parsephrase(dynamic_rules,static_rules,var_lookup,phrase,context):
 
     words = phrase.split()
     phrase_lenght = len(words)
 
-    graph = []
-    for word in words:
-        graph.append([word,[]])
+
+    ############################################
+    # match static rules
+    ############################################
+
+    # pp.pprint(static_rules)
+
+
+    matches = []
+    for rule in static_rules:
+        if (static_rules[rule]["CONTEXT"] == "ALL") or (context in static_rules[rule]["CONTEXT"]):
+
+
+            for elem in static_rules[rule]["RULES"]:
+                sig = elem.split(" ")
+
+                l = len(sig)
+                for x in range(0,len(words)-l+1):
+                    subarr = words[x:x+l]
+
+
+
+                    match = True
+                    for y in range(0,l):
+                        if sig[y] != subarr[y]:
+                            match = False
+                    if match == True:
+
+                        tmp = []
+                        for y in range(0,l):
+                            tmp.append([sig[y],sig[y],x+y,static_rules[rule]["RULES"][elem]])
+
+                        matches.append([rule,tmp])
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ############################################
+    # match dynamic rules
+    ############################################
 
     rule_graph = {}
 
     for c,word in enumerate(words):
         if word in var_lookup:
-            for keyword in var_lookup[word]:
-
-                rule = keyword[0]
-                var = keyword[1]
-
+            for elem in var_lookup[word]:
+                rule = elem[0]
+                var = elem[1]
+                lookup_val = dynamic_rules[rule]["VARIABLES"][var][word]
                 if rule not in rule_graph:
                     rule_graph[rule] = []
+                if [var, word, c,lookup_val] not in rule_graph[rule]:
+                    rule_graph[rule].append([var, word, c,lookup_val])
 
-                rule_graph[rule].append([var, word, c])
 
-
-    # Remove rules that don't fit
     new_rule_graph = {}
-
+    # Remove dynamic_rules that don't match context
 
     for rule in rule_graph:
-        if len(rule_graph[rule]) >= rules[rule]["LENGTH"]:
+        if (dynamic_rules[rule]["CONTEXT"] == "ALL") or (context in dynamic_rules[rule]["CONTEXT"]):
+            new_rule_graph[rule] = rule_graph[rule]
+
+    rule_graph = new_rule_graph
+
+
+
+    # Remove dynamic_rules that don't fit
+
+    new_rule_graph = {}
+
+    for rule in rule_graph:
+        if len(rule_graph[rule]) >= len(dynamic_rules[rule]["SIGNATURE"]):
             new_rule_graph[rule] = rule_graph[rule]
 
     rule_graph = new_rule_graph
 
     # pp.pprint(rule_graph)
 
-    matches = []
-    # print candidates
+    #########################################################
+
 
     for rule in rule_graph:
 
-        # print(rules[rule]["SIGNATURE"])
-        # print(rule_graph[rule])
+        # match dynamic_rules by comparing signatures
 
-        # match rules by comparing signatures
-
-        l = rules[rule]["LENGTH"]
+        l = len(dynamic_rules[rule]["SIGNATURE"])
 
         for x in range(0,len(rule_graph[rule])-l+1):
             match = True
 
-            # print(x+l)
-            sig = rules[rule]["SIGNATURE"]
+            sig = dynamic_rules[rule]["SIGNATURE"]
             subarr = rule_graph[rule][x:x+l]
-            # print(sig)
-            # print(subarr)
-
 
             for y in range(0,l):
                 if sig[y] != subarr[y][0]:
                     match = False
-
             if match == True:
                 matches.append([rule,subarr])
 
-    # print("\nCandidate rules")
+    print("\nCandidate dynamic_rules")
+
+    pp.pprint(matches)
     # for match in matches:
-    #     print(match)
+        # print(match)
 
 
-    #
     # Build set representation
-    #
-
     match_set = {}
     for x,match in enumerate(matches):
         tmp = set()
@@ -154,15 +215,10 @@ def parsephrase(rules, var_lookup,phrase):
 
         match_set[x] = tmp
 
-    #
     # try set cover solution
-    #
-
     final_match = []
-
     while len(match_set) > 0:
         # find largest uncovered set
-
         m = 0
         pos = -1
         for x in match_set:
@@ -172,9 +228,7 @@ def parsephrase(rules, var_lookup,phrase):
 
         final_match.append(matches[pos])
 
-        #
         # remove overlaps
-        #
         new_match_set = {}
         for x in match_set:
             if len(set.intersection(match_set[pos],match_set[x])) == 0:
@@ -190,37 +244,29 @@ def parsephrase(rules, var_lookup,phrase):
     final_match.sort(key=lambda elem: elem[1][0][2])
 
 
-    # convert to dict
+    # print("\nSorted Final set")
+    # for match in final_match:
+    #     print(match)
 
-    new_final_match = []
+
+    variables = []
 
     for match in final_match:
-        tmp_dict = {}
+        tmp_arr = []
         for elem in match[1]:
-            lookupval = rules[match[0]]["VARIABLES"][elem[0]][elem[1]]
-            tmp_dict[elem[0]] = [elem[1],lookupval]
-        tmp = [match[0], tmp_dict]
-        new_final_match.append(tmp)
+            lookupval = elem[3]
+            tmp_arr.append(lookupval)
+        variables.append([match[0],tmp_arr])
 
-    final_match = new_final_match
+    # print("\nPassed to function")
+    # for match in final_match:
+    #     print(match)
 
-    print("\n\n\n")
-    for match in final_match:
-        print(match)
-
-    print("\n\n\n")
-    # # execute command
 
     cmd = []
 
-    for match in final_match:
+    for match in variables:
+        function_name = "r_" + match[0].lower()
+        cmd.append(globals()[function_name](match[1],context))
 
-
-        function_name = rules[match[0]]["FUNCTION"]
-        # print(function_name)
-        # tmp = function_name(match[1])
-        cmd.append(globals()[function_name](match[1]))
-
-        # pp.pprint(globals())
-        # t = r_test() 
-    return cmd
+    return cmd, final_match
