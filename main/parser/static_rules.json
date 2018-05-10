@@ -1,0 +1,22 @@
+{
+    "STATIC_EMACS_KEYS": {
+        "CONTEXT": ["EMACS"],
+        "RULES": {
+            "save": ["space","f","s"],
+            "git":  ["space","g","s"],
+            "sidebar":  ["space","p","t"],
+            "search":  ["slash"],
+            "new":  ["space","b","N"],
+            "comment":  ["space","c","l"],
+            "window":["space","b","b"],
+            "window":["space","b","b"],
+            "next":["space","b","n"],
+            "previous":["space","b","p"],
+            "window kill others":["space","b","m"],
+            "window kill":["space","b","d"],
+            "open":["space","p","f"],
+            "find":["space","f","f"]
+
+        }
+    }
+}
