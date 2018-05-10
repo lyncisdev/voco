@@ -268,7 +268,7 @@ def main():
     # Benchmark noise floor
     #----------------------------------------------------------------------------
 
-    gate = 1200
+    gate = 900
     end_gate = 900
 
     print("Start recording gate: " + str(gate))
@@ -281,8 +281,8 @@ def main():
     # init parser
     #----------------------------------------------------------------------------
 
-    rules, var_lookup = parser.init()
 
+    dynamic_rules,static_rules, var_lookup = parser.init()
     # os.system("aplay media/shovel.wav")
 
     #----------------------------------------------------------------------------
@@ -418,23 +418,14 @@ def main():
 
 
                 active_window = subprocess.check_output(['/usr/bin/xdotool','getactivewindow'])
-
                 active_window = active_window.strip().decode('UTF-8')
-
                 # print(active_window)
-
-
-
                 windowclass = subprocess.check_output(["xprop","-notype","-id",active_window,"WM_CLASS"])
-
-
                 windowclass = windowclass.strip().decode('UTF-8')
                 # print(windowclass)
-
                 expr= "WM_CLASS = \"([^\"]*)\", \"([^\"]*)\""
                 m = re.search(expr, windowclass)
-                context = m.group(2)
-
+                context = m.group(2).upper()
 
 
 
@@ -453,9 +444,11 @@ def main():
                 # Run the Kaldi script
                 result = subprocess.check_output("./kaldi_decode.sh").strip().decode('UTF-8')
 
+                try:
+                    result = result.split(" ", 1)[1].strip()
+                except IndexError as e:
+                    result = ""
 
-                print(result)
-                result = result.split(" ", 1)[1].strip()
 
                 # else:
                 #     # pass audio to ASPIRE and reset dictate_flag
@@ -485,7 +478,9 @@ def main():
                         # Literal mode - prints the word "alpha" instead of "a"
                         # if not literal_mode:
                             # cmd = process_line(result)
-                        commands = parser.parsephrase(rules, var_lookup,result)
+
+                        commands,matches = parser.parsephrase(dynamic_rules,static_rules,var_lookup,result,context)
+
                         print(commands)
 
                         # else:
@@ -509,7 +504,7 @@ def main():
                                   "0.0",
                                   audio_sample_file_path)
 
-                        print("%s | %s | %s" % (result,"", context))
+                        print("%s |  %s" % (result, context))
 
                         if debug:
                             print("-----------------")
