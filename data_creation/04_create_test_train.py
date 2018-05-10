@@ -40,21 +40,66 @@ shutil.copy2(src_dir + "corpus.txt", local_dir)
 shutil.copy2(src_dir + "spk2gender", train_dir)
 shutil.copy2(src_dir + "spk2gender", test_dir)
 
+
+
+#
+# Check original files for consistency
+#
+
+
+split_files = ["wav.scp", "text", "utt2spk"]
+
+UID_by_file = {}
+
+for f in split_files:
+
+    with open(src_dir + f, 'r') as original_file:
+
+        lines = original_file.readlines()
+        # reader = csv.reader(original_file, delimiter=' ')
+        # lines = list(reader)
+
+        for  count, line in enumerate(lines):
+
+            parts = line.split(" ")
+
+            uid = parts[0]
+
+            if uid not in UID_by_file:
+               UID_by_file[uid] = count
+
+            if UID_by_file[uid] != count:
+                UID_by_file[uid] = -1
+
+for uid in UID_by_file:
+
+    if UID_by_file[uid] == -1:
+        print(UID)
+
+# pp = pprint.PrettyPrinter(depth=4, width=5)
+# pp.pprint(UID_by_file)
+
+
+
+#
+# Open wavfile
+#
+
 # original_file = open(src_dir + "wav.scp", 'r')
 with open(src_dir + "wav.scp", 'r') as wavfile:
     reader = csv.reader(wavfile, delimiter=' ')
-    WAV = list(reader)
+    wav = list(reader)
 
 UID = []
-for line in WAV:
+for line in wav:
     UID.append(line[0])
+
+# order = sorted(UID)
 
 order = [i[0] for i in sorted(enumerate(UID), key=lambda x: x[1])]
 
 print("Order: %d" % len(order))
-
-# pp = pprint.PrettyPrinter(depth=4, width=5)
-# pp.pprint(UID)
+print(order)
 
 split_assignments = []
 l = len(order)
@@ -70,7 +115,6 @@ for x in range(0, l):
         num_test += 1
         split_assignments.append(False)
 
-split_files = ["wav.scp", "text", "utt2spk"]
 
 for f in split_files:
 

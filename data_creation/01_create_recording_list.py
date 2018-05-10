@@ -15,7 +15,7 @@ import pprint
 
 ################[INPUTS]################
 
-command_file = open('commands.csv', 'r')
+command_file = open('commands-core.csv', 'r')
 
 recording_list_file = open('recording_list.txt', 'w')
 
@@ -33,14 +33,14 @@ for x in commands[1:]:
 
     phrase = parts[0]
     freq = int(parts[1])
-    group = int(parts[2])
+    # group = parts[2]
 
-    if group == 0:
-        for x in range(1, freq):
-            unmixed_command_list.append(phrase)
-    else:
-        for x in range(1, freq):
-            mixed_command_list.append(phrase)
+    # if group == "UNMIXED":
+    for x in range(1, freq):
+        # unmixed_command_list.append(phrase)
+    # else:
+    #     for x in range(1, freq):
+        mixed_command_list.append(phrase)
 
 #print(mixed_command_list)
 #print(unmixed_command_list)
@@ -51,7 +51,7 @@ recording_list = []
 # i = random.randint(0,len(unmixed_command_list)-1)
 # recording_list.append(unmixed_command_list[i])
 
-for x in range(0, 40):
+for x in range(0, 100):
     tmp = ""
     for y in range(0, random.randint(2, 5)):
         i = random.randint(0, len(mixed_command_list) - 1)
