@@ -7,7 +7,6 @@
 # Parser rules implementation
 #
 
-
 XDO_TOOL = '/usr/bin/xdotool'
 
 def r_type_character(variables,context):
@@ -74,15 +73,6 @@ def r_repeat_character(variables,context):
 
 
 
-def r_static_emacs_keys(variables,context):
-    print(variables)
-    key_seq = [XDO_TOOL]
-    for key in variables[0]:
-        key_seq.append("key")
-        key_seq.append(key)
-
-    return key_seq
-
 
 def r_emacs_jump_letter(variables,context):
 
@@ -118,8 +108,59 @@ def r_emacs_jump_line_3(variables,context):
     return key_seq
 
 
+def r_static_emacs_keys(variables,context):
+    key_seq = [XDO_TOOL]
+    for key in variables[0]:
+        key_seq.append("key")
+        key_seq.append(key)
+
+    return key_seq
 
 
+def r_static_firefox_keys(variables,context):
+    key_seq = [XDO_TOOL]
+    for key in variables[0]:
+        key_seq.append("key")
+        key_seq.append(key)
+
+    return key_seq
+
+
+def r_static_firefox_modified_keys(variables,context):
+
+    key_seq = [XDO_TOOL]
+
+    key_seq.append("key")
+
+    tmp = ""
+    tmp += variables[0][0]
+    for key in variables[0][1:]:
+        tmp += "+" + key
+
+    key_seq.append(tmp)
+    return key_seq
+
+
+
+def r_static_terminal_keys(variables,context):
+
+    key_seq = [XDO_TOOL]
+
+    key_seq.append("key")
+
+    tmp = ""
+    tmp += variables[0][0]
+    for key in variables[0][1:]:
+        tmp += "+" + key
+
+    key_seq.append(tmp)
+    return key_seq
+
+def r_static_emacs_buffer_functions(variables,context):
+    print(variables)
+    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s))" % variables[0] ]
+
+    return cmd
 
 def r_test():
     print("Test")

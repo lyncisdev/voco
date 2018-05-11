@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
 import wave
@@ -495,7 +495,7 @@ def main():
                         if not noexec_mode and not PAUSE_FLAG:
 
                             for cmd in commands:
-                                subprocess.call(cmd)
+                                subprocess.Popen(cmd,shell=False,stdin=None,stdout=None,stderr=None,close_fds=True)
 
                             # subprocess.Popen([cmd], shell=True)
 

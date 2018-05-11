@@ -2,21 +2,68 @@
     "STATIC_EMACS_KEYS": {
         "CONTEXT": ["EMACS"],
         "RULES": {
-            "save": ["space","f","s"],
-            "git":  ["space","g","s"],
-            "sidebar":  ["space","p","t"],
-            "search":  ["slash"],
-            "new":  ["space","b","N"],
-            "comment":  ["space","c","l"],
-            "window":["space","b","b"],
-            "window":["space","b","b"],
-            "next":["space","b","n"],
-            "previous":["space","b","p"],
-            "window kill others":["space","b","m"],
-            "window kill":["space","b","d"],
-            "open":["space","p","f"],
-            "find":["space","f","f"]
+            "search": ["slash"],
+            "new": ["space", "b", "N"],
+            "copy": ["y"],
+            "copy line": ["y", gs "y"],
+            "paste": ["p"]
+        }
+    },
+    "STATIC_EMACS_BUFFER_FUNCTIONS": {
+        "CONTEXT": ["EMACS"],
+        "RULES": {
+            "save": "save-buffer",
+            "git": "magit-status",
+            "window": "helm-mini",
+            "undo": "undo-tree-visualize",
+            "kill": "kill-this-buffer",
+            "window kill others": "spacemacs/kill-other-buffers",
+            "ring": "helm-show-kill-ring",
+            "find": "spacemacs/helm-find-files",
+            "snippet": "helm-yas",
+            "complete": "hippie-expand",
+            "comment": "spacemacs/comment-or-uncomment-lines 1",
+            "project": "helm-projectile-switch-project",
+            "open": "helm-projectile-find-file",
+            "sidebar": "neotree-find-project-root",
+            "scratch": "switch-to-scratch-buffer",
+            "next": "next-buffer",
+            "previous": "previous-buffer"
 
         }
+    },
+    "STATIC_FIREFOX_MODIFIED_KEYS": {
+        "CONTEXT": ["FIREFOX"],
+        "RULES": {
+            "sidebar": ["ctrl", "h"],
+            "new": ["ctrl", "t"],
+            "next": ["ctrl", "Next"],
+            "previous": ["ctrl", "Prior"],
+            "copy": ["ctrl", "c"],
+            "paste": ["ctrl", "v"]
+
+        }
+    },
+    "STATIC_FIREFOX_KEYS": {
+        "CONTEXT": ["FIREFOX"],
+        "RULES": {
+            "search": ["slash"],
+            "window": ["b"],
+            "kill": ["d"],
+            "open": ["f"]
+        }
+    },
+    "STATIC_TERMINAL_KEYS": {
+        "CONTEXT": ["GNOME-TERMINAL"],
+        "RULES": {
+            "new": ["ctrl", "shift", "t"],
+            "open": ["ctrl", "shift", "t"],
+            "next": ["ctrl", "Next"],
+            "previous": ["ctrl", "Prior"],
+            "kill": ["ctrl", "shift", "d"],
+            "copy": ["ctrl", "shift", "c"],
+            "paste": ["ctrl", "shift", "v"]
+        }
     }
+
 }

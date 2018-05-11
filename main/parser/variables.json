@@ -69,7 +69,8 @@
         "along": "alt",
         "comma": "comma",
         "las": "bracketleft",
-        "bas": "bracketright"
+        "bas": "bracketright",
+        "space": "space"
 
     },
     "EDITING": {
@@ -78,8 +79,7 @@
         "return": "Return",
         "scratch": "BackSpace",
         "backspace": "BackSpace",
-        "delete": "Delete",
-        "space": "space"
+        "delete": "Delete"
     },
     "MODIFIER": {
         "control": "ctrl",
