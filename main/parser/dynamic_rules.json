@@ -1,11 +1,8 @@
 {
     "SWITCH_APPLICATION": {
-        "SIGNATURE": ["ACTION", "APPLICATION"],
+        "SIGNATURE": ["APPLICATION"],
         "CONTEXT": "ALL",
         "VARIABLES": {
-            "ACTION": {
-                "switch": "switch"
-            },
             "APPLICATION": "APPLICATION"
         }
     },

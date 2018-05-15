@@ -46,11 +46,11 @@ def r_modifier_double(variables,context):
 def r_switch_application(variables,context):
     # "SIGNATURE": ["ACTION", "APPLICATION"],
 
-    return [XDO_TOOL,"search","--name",variables[1],"windowactivate"]
+    return [XDO_TOOL,"search","--name",variables[0],"windowactivate"]
 
 def r_repeat_movement(variables,context):
 
-    print(variables)
+    # print(variables)
     key_seq = [XDO_TOOL]
     for x in range(0,int(variables[1])):
         key_seq.append("key")
@@ -62,7 +62,7 @@ def r_repeat_movement(variables,context):
 
 def r_repeat_character(variables,context):
 
-    print(variables)
+    # print(variables)
     key_seq = [XDO_TOOL]
     for x in range(0,int(variables[1])):
         key_seq.append("key")
@@ -157,10 +157,22 @@ def r_static_terminal_keys(variables,context):
     return key_seq
 
 def r_static_emacs_buffer_functions(variables,context):
-    print(variables)
     cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s))" % variables[0] ]
 
     return cmd
+
+def r_static_pause(variables,context):
+    # print("pause")
+    return []
+
+def r_static_expansion(variables,context):
+
+    # print("exp")
+    # print(variables)
+    return [XDO_TOOL,"type",variables[0]]
+
+
+
 
 def r_test():
     print("Test")
