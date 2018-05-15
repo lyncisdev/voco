@@ -98,8 +98,8 @@ for line in wav:
 
 order = [i[0] for i in sorted(enumerate(UID), key=lambda x: x[1])]
 
-print("Order: %d" % len(order))
-print(order)
+# print("Order: %d" % len(order))
+# print(order)
 
 split_assignments = []
 l = len(order)
