@@ -482,7 +482,7 @@ def main():
                         commands,matches = parser.parsephrase(dynamic_rules,static_rules,var_lookup,result,context)
 
                         print(commands)
-
+                        print(matches)
                         # else:
                             # cmd = process_line(result,"LITERALMODE")
 
@@ -495,7 +495,11 @@ def main():
                         if not noexec_mode and not PAUSE_FLAG:
 
                             for cmd in commands:
-                                subprocess.Popen(cmd,shell=False,stdin=None,stdout=None,stderr=None,close_fds=True)
+
+                                if cmd[0] == "/usr/bin/xdotool":
+                                    subprocess.call(cmd)
+                                else:
+                                    subprocess.Popen(cmd,shell=False,stdin=None,stdout=None,stderr=None,close_fds=True)
 
                             # subprocess.Popen([cmd], shell=True)
 
