@@ -10,7 +10,7 @@ import numpy as np
 import os
 import re
 import subprocess
-import pdb
+# import pdb
 from datetime import datetime
 import time
 import traceback
@@ -18,7 +18,7 @@ import pprint
 # from silvius.process_line import process_line
 import collections
 import select
-from parser import parser,implementation
+from parser import parser, implementation
 
 # Note:
 # adding a loopback listening interface to pulseaudio
@@ -113,20 +113,25 @@ def write_log(basedir, UID, transc, cmd, decode_duration,
     outputfile.write(time_stamp + "," + UID + "," + transc + "," + cmd + "," +
                      decode_duration + "," + audio_sample_file_path + "\n")
 
+
 #----------------------------------------------------------------------------
 # write i3 blocks
 #----------------------------------------------------------------------------
 
+
 def write_i3blocks(msg, color):
 
     i3blocks_text_filename = "i3blocks_text.txt"
-    i3blocks_color_dict = {'recording': "#FF0000", 'decoding': "#FFAE00", 'neutral':"#FFFFFF"}
+    i3blocks_color_dict = {
+        'recording': "#FF0000",
+        'decoding': "#FFAE00",
+        'neutral': "#FFFFFF"
+    }
 
-    i3blocks_text = open(i3blocks_text_filename,"w")
-    i3blocks_text.write("%s\n\n%s\n" % (msg,i3blocks_color_dict[color]))
+    i3blocks_text = open(i3blocks_text_filename, "w")
+    i3blocks_text.write("%s\n\n%s\n" % (msg, i3blocks_color_dict[color]))
     i3blocks_text.close()
     subprocess.Popen(["pkill", "-RTMIN+12", "i3blocks"])
-
 
 
 #----------------------------------------------------------------------------
@@ -138,6 +143,7 @@ XDO_TOOL = '/usr/bin/xdotool '
 # Main Loop
 #----------------------------------------------------------------------------
 
+
 def main():
 
     debug = False
@@ -145,19 +151,13 @@ def main():
     playback_mode = False
     literal_mode = False
 
-    pp = pprint.PrettyPrinter(depth=4, width=5)
-
-
+    pp = pprint.PrettyPrinter(depth=4, width=60)
 
     try:
         voco_data_base = os.environ['VOCO_DATA']
         print(os.environ['VOCO_DATA'])
     except:
         print('VOCO_DATA not defined')
-
-    # voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
-
-    # ln -sv ~/Projects/ASR/voco_data/staging/ ~/Projects/ASR/voco/voco_main/decode/data
 
     basedir = voco_data_base + "/staging/"
 
@@ -231,13 +231,11 @@ def main():
             if (sample_rate != new_sample_rate):
                 sample_rate = new_sample_rate
 
-        print(sys.stderr, "\nCould not open microphone. Please try a different device.")
+        print(sys.stderr,
+              "\nCould not open microphone. Please try a different device.")
         sys.exit(0)
 
     print("\nLISTENING TO MICROPHONE")
-    last_state = None
-
-
 
     #----------------------------------------------------------------------------
     # create skp2gender - only needs to be created once
@@ -261,15 +259,14 @@ def main():
     audio_timeout_frames = 20
 
     rec = False
-    prev_sample = ""
     timeout = 0
 
     #----------------------------------------------------------------------------
     # Benchmark noise floor
     #----------------------------------------------------------------------------
 
-    gate = 900
-    end_gate = 900
+    gate = 800
+    end_gate = 800
 
     print("Start recording gate: " + str(gate))
     print("Stop recording gate: " + str(end_gate))
@@ -277,100 +274,14 @@ def main():
     #----------------------------------------------------------------------------
     # Notify user
     #----------------------------------------------------------------------------
+
+    # os.system("aplay media/shovel.wav")
+
     #----------------------------------------------------------------------------
     # init parser
     #----------------------------------------------------------------------------
 
-
-    dynamic_rules,static_rules, var_lookup = parser.init()
-    # os.system("aplay media/shovel.wav")
-
-    #----------------------------------------------------------------------------
-    # Speech test
-    #----------------------------------------------------------------------------
-
-    speechtest = False
-
-    count = 0
-
-    if speechtest:
-        while (True):
-
-            sample = stream.read(chunk)
-            rms = audioop.rms(sample, 2)
-            audio_samples.append(sample)
-
-
-            if debug:
-                print("%0.2f - %i - %i" % (stream.get_input_latency(),rms,len(audio_samples)))
-
-            if rec == False:
-                if rms >= gate:
-                    print("\nStarting recording - %i" % rms)
-                    rec = True
-                    timeout = 0
-
-
-                else:
-                    # trim deque
-                    while len(audio_samples) > audio_frames_prefix:
-                        audio_samples.popleft()
-
-
-            else:
-                if rms >= end_gate:
-                    # print("Continuing - %i" % rms)
-                    timeout = 0
-
-                elif (rms < end_gate) and (timeout < audio_timeout_frames):
-                    # print("Ending - %i" % rms)
-                    timeout += 1
-                else:
-                    # stop recording, write file
-
-
-                    filename = "tmp" + str(count) + ".wav"
-                    write_audio_data(audio_samples, filename, byterate)
-                    os.system("aplay " + filename)
-
-
-
-                    # # calculate spectrogram
-                    # from scipy import fft
-                    # import matplotlib.pyplot as plt
-
-                    # S = np.fromstring(''.join(audio_samples), dtype=np.int16)
-                    # N = np.size(S)
-                    # K = 16
-                    # Step = 10
-                    # # wind =  0.5*(1 -np.cos(np.array(range(K))*2*np.pi/(K-1) ))
-                    # ffts = []
-
-                    # # S = data_hollow['collection_hollow'][0]
-                    # Spectogram = []
-                    # for j in range(int(Step*N/K)-Step):
-
-                    #     # print("%i - %i - %i" % (j, int(j * K/Step),int((j+Step) * K/Step)))
-
-                    #     # vec = S[int(j * K/Step) : int((j+Step) * K/Step)] * wind
-                    #     vec = S[int(j * K/Step) : int((j+Step) * K/Step)]
-                    #     Spectogram.append(abs(fft(vec,K)[:int(K/2)]))
-
-
-                    # Spectogram=np.asarray(Spectogram)
-                    # plt.imshow(Spectogram.T,aspect='auto',origin='auto',cmap='spring')
-                    # plt.axis('off')
-
-                    # plt.savefig("tmp" + str(count) + ".jpg")
-
-                    count += 1
-
-                    rec = False
-                    audio_samples.clear()
-                    print("Done\n")
-
-
-
+    dynamic_rules, static_rules, var_lookup = parser.init()
 
     #----------------------------------------------------------------------------
     # start recording
@@ -385,17 +296,10 @@ def main():
         rms = audioop.rms(sample, 2)
         audio_samples.append(sample)
 
-        # if select.select([sys.stdin,],[],[],0.0)[0]:
-        #     line = sys.stdin.readline()
-        #     if line.strip() == "p":
-        #         PAUSE_FLAG = not PAUSE_FLAG
-        #         print("PAUSE FLAG: %s" % PAUSE_FLAG)
-
-
         if rec == False:
             if rms >= gate:
 
-                write_i3blocks('REC','recording')
+                write_i3blocks('REC', 'recording')
 
                 rec = True
                 timeout = 0
@@ -403,7 +307,6 @@ def main():
             else:
                 while len(audio_samples) > audio_frames_prefix:
                     audio_samples.popleft()
-
 
         else:
             if rms >= end_gate:
@@ -413,60 +316,52 @@ def main():
             else:
                 # stop recording, write file
 
+                #----------------------------------------------------------------------------
                 # Get window context
+                #----------------------------------------------------------------------------
 
-
-
-                active_window = subprocess.check_output(['/usr/bin/xdotool','getactivewindow'])
+                active_window = subprocess.check_output(
+                    ['/usr/bin/xdotool', 'getactivewindow'])
                 active_window = active_window.strip().decode('UTF-8')
-                # print(active_window)
-                windowclass = subprocess.check_output(["xprop","-notype","-id",active_window,"WM_CLASS"])
+                windowclass = subprocess.check_output(
+                    ["xprop", "-notype", "-id", active_window, "WM_CLASS"])
                 windowclass = windowclass.strip().decode('UTF-8')
-                # print(windowclass)
-                expr= "WM_CLASS = \"([^\"]*)\", \"([^\"]*)\""
+                expr = "WM_CLASS = \"([^\"]*)\", \"([^\"]*)\""
                 m = re.search(expr, windowclass)
                 context = m.group(2).upper()
 
-
-
-                write_i3blocks('DECODING','decoding')
+                write_i3blocks('DECODING', 'decoding')
 
                 UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
                     recording_counter).zfill(5)
 
                 audio_sample_file_path = basedir + "audio_data/" + UID + ".wav"
 
-
                 # Write the WAV file and the Kaldi records
-                write_audio_data(audio_samples, audio_sample_file_path, byterate)
-                write_audio_records(basedir + "audio_records/", session_counter,audio_sample_file_path, UID)
+                write_audio_data(audio_samples, audio_sample_file_path,
+                                 byterate)
+                write_audio_records(basedir + "audio_records/",
+                                    session_counter, audio_sample_file_path,
+                                    UID)
 
                 # Run the Kaldi script
-                result = subprocess.check_output("./kaldi_decode.sh").strip().decode('UTF-8')
+                result = subprocess.check_output(
+                    "./kaldi_decode.sh").strip().decode('UTF-8')
 
                 try:
                     result = result.split(" ", 1)[1].strip()
                 except IndexError as e:
                     result = ""
 
-
-                # else:
-                #     # pass audio to ASPIRE and reset dictate_flag
-                #     result = subprocess.check_output("./aspire_decode.sh", shell=True)
-                #     print(result)
-                #     DICTATE_FLAG = False
-                #     print("DECODE_FLAG has been set")
-
                 if debug:
                     print(UID)
                     print(result)
 
                 if len(result) == 0:
-
                     if debug:
                         print("Zero length command")
 
-                    write_i3blocks('NONE','neutral')
+                    write_i3blocks('NONE', 'neutral')
 
                 else:
                     try:
@@ -475,21 +370,9 @@ def main():
                         if playback_mode:
                             os.system("aplay " + audio_sample_file_path)
 
-                        # Literal mode - prints the word "alpha" instead of "a"
-                        # if not literal_mode:
-                            # cmd = process_line(result)
-
-                        commands,matches = parser.parsephrase(dynamic_rules,static_rules,var_lookup,result,context)
-
-                        print(commands)
-                        print(matches)
-                        # else:
-                            # cmd = process_line(result,"LITERALMODE")
-
-                        # Used for ASPIRE model
-                        # if cmd == "DICTATE_FLAG":
-                            # DICTATE_FLAG = True
-                            # cmd = ""
+                        commands, matches = parser.parsephrase(
+                            dynamic_rules, static_rules, var_lookup, result,
+                            context)
 
                         # Execute the command
                         if not noexec_mode and not PAUSE_FLAG:
@@ -499,13 +382,17 @@ def main():
                                 if cmd[0] == "/usr/bin/xdotool":
                                     subprocess.call(cmd)
                                 else:
-                                    subprocess.Popen(cmd,shell=False,stdin=None,stdout=None,stderr=None,close_fds=True)
+                                    subprocess.Popen(
+                                        cmd,
+                                        shell=False,
+                                        stdin=None,
+                                        stdout=None,
+                                        stderr=None,
+                                        close_fds=True)
 
-                            # subprocess.Popen([cmd], shell=True)
 
-                        write_i3blocks(result.upper(),'neutral')
-                        write_log(basedir, UID, result, "",
-                                  "0.0",
+                        write_i3blocks(result.upper(), 'neutral')
+                        write_log(basedir, UID, result, "", "0.0",
                                   audio_sample_file_path)
 
                         print("%s |  %s" % (result, context))
@@ -523,12 +410,13 @@ def main():
                 recording_counter += 1
                 rec = False
 
+
 if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
         print('\nShutting down\n')
-        write_i3blocks("",'neutral')
+        write_i3blocks("", 'neutral')
         try:
             sys.exit(0)
         except SystemExit:
