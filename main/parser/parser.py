@@ -11,6 +11,20 @@ from .implementation import *
 # base directory defines where the rules files are located, in this configuration
 basedir = "parser/"
 
+# dynamic_rules.json:
+# this file defines the dynamic rules that the parser matches against.
+# Dynamic rules are rules that use variables. For instance, the rule type_character looks for a single word that matches the values that the variable character can take on.
+# A rule is defined by its signature where the signature is an ordered array of variables. Each variable defined in the signature must be present as a key in the variables dictionary. the value for each key is a dictionary of possible values the variable can take on maped to some useful informationthe can be used by the implantation function when creating the command for this rule.
+
+# rule context:
+# A rules context is the application in which it applies. So for example a rule with an Emacs context will not be a possible match if Firefox is the currently selected window. The context "ALL" applies to all windows. Context can also be used in the implementation to change behaviour based on the application currently selected e.g. copy works differently in Firefox, the terminal and Emacs. In such a case the rules context should be "all" and the different behaviours should be set in implementation.
+
+# variables.json
+# To reduce repeating commonly used variables in the dynamic rules file they are stored in variables.json and referenced here just by their name.
+# when the parser is initialised this file is processed and all commonly used variables are replaced by their full definition. The resulting file is stored in [[]]
+
+# static_rules.json
+# static rules are phrases that when said result in some action.
 
 
 def init():
@@ -57,9 +71,9 @@ def init():
                 # else:
                 # print("error")
 
-    ############################################
-    # Pre-compile dynamic_rules
-    ############################################
+                ############################################
+                # Pre-compile dynamic_rules
+                ############################################
     var_lookup = {}
 
     for rule in dynamic_rules:
@@ -70,8 +84,6 @@ def init():
                     var_lookup[word] = []
 
                 var_lookup[word].append([rule, var])
-
-
 
     ############################################
     # save the final rules files
@@ -92,11 +104,9 @@ def parsephrase(dynamic_rules,
                 phrase,
                 context,
                 ignore_context=False):
-
     '''
     This function takes the transcribed phrase and matches the various static and dynamic rules against. it returns a list of commands to execute.
     '''
-
 
     words = phrase.split()
     phrase_lenght = len(words)
@@ -156,7 +166,7 @@ def parsephrase(dynamic_rules,
     ############################################
 
     for rule in rule_graph:
-        if ("ALL" in dynamic_rules[rule]["CONTEXT"] ) or (
+        if ("ALL" in dynamic_rules[rule]["CONTEXT"]) or (
                 context in dynamic_rules[rule]["CONTEXT"]) or (ignore_context):
             new_rule_graph[rule] = rule_graph[rule]
 
@@ -179,7 +189,6 @@ def parsephrase(dynamic_rules,
     ############################################
     for rule in rule_graph:
 
-
         l = len(dynamic_rules[rule]["SIGNATURE"])
 
         for x in range(0, len(rule_graph[rule]) - l + 1):
@@ -193,7 +202,6 @@ def parsephrase(dynamic_rules,
                     match = False
             if match == True:
                 matches.append([rule, subarr])
-
 
     ############################################
     # Build a set representation of the rules that makes using union operations such as intersection easier
@@ -228,13 +236,11 @@ def parsephrase(dynamic_rules,
                 new_match_set[x] = match_set[x]
         match_set = new_match_set
 
-
     ############################################
     # sort the matches array in order of the spoken words
     ############################################
 
     final_match.sort(key=lambda elem: elem[1][0][2])
-
 
     ############################################
     # only process cases where the matching set of rules covers all of the words in the transcription
@@ -249,7 +255,6 @@ def parsephrase(dynamic_rules,
     if len(coverage) == len(words):
 
         variables = []
-
 
         ############################################
         # build the array of variables to pass to the implementation

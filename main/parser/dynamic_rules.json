@@ -1,17 +1,3 @@
-
-// Dynamic Rules:
-// this file deines the dynamic rules that the parser matches against. Dynamic rules are rules that use variables. For instance, the rule type_character
-// looks for a single word that matches the values that the variable character can take on.
-
-// a rule is defined by its signature where the signature is an ordered array of variables. Each variable defined in the signature must be present as a key in the variables dictionary. the value for each key is a dictionary of possible values the variable can take on maped to some useful informationthe can be used by the implantation function when creating the command for this rule.
-
-// a rules context is the application in which it applies. So for example a rule with an Emacs context will not be a possible match if Firefox is the currently selected window. The context "ALL" applies to all windows.
-// Context can also be used in the implementation to change behaviour based on the application currently selected e.g. copy works differently in Firefox, the terminal and Emacs. In such a case the rules context should be "all" and the different behaviours should be set in implementation.
-
-// To reduce repeating commonly used variables in the dynamic rules file they are stored in variables.json and referenced here just by their name.
-
-// when the parser is initialised this file is processed and all commonly used variables are replaced by their full definition. The resulting file is stored in [[]]
-
 {
     "SWITCH_APPLICATION": {
         "SIGNATURE": ["APPLICATION"],
