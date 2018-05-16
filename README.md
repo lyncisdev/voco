@@ -19,7 +19,7 @@ Voco packages the following things together:
 
 ## Why use Voco
 
-By using Da training set that is representive of what Voco will see during operation and by keeping the dictionary of possible words small Voco is able to provide the following advantages:
+By using a training set that is representive of what Voco will see during operation and by keeping the dictionary of possible words small Voco is able to provide the following advantages:
 
 1. **Low error rates:**
 By keeping the dictionary small (I am currently using ~90 possible commands) and by training on the microphone and noise profile that will be used during operation the system is able to achieve WER (word error rates) of ~0.5% and SER (sentence error rates) of ~1.35%. This is achieved with a low cost USB microphone (Platronics 628 USB) that has very poor signal sepperation. In my opinion these error rates are the mininum for a keyboard replacement system since anything higher results in frustration.
@@ -49,18 +49,27 @@ See INSTALL.md
 
 ## How to use Voco
 
-Training overview video [[]]
+Once you have trained a model execute Python3 record_decode.py in the main direcotry to run voco.
 
 
 ## Customizing
 
 ### Adding a new word to the dictionary
 
-Modify the commands.csv file to include the new word. If you already have a training dataset then increase the frequency of the new word so that it is sampled more frequently in the recording list. Then follow the same process as with training your first model.
+1. Modify the commands.csv file to include the new word. 
+2. Then execute data_creation/1_create_recording_list.py, this will randomly sample the commands list and create a "script" of phrases for you to say.
+3. Executing 2_record.py will present you with the phrases generated above, one at a time, and ask you to say them.
+4. You can then run 3_create_training_set.sh which will generate the files required by Kaldi to train your model.
+5. Execute training/run.sh to train the model.
 
-### Linking a word to a command
+### Adding new rule 
 
-All commands that are not supported by Silvius are handled by the process_line.py file. Commands starting with a keyword contained in the Escape_keywords dictionary are handled by functions withing process_line.py and all others are passed to Silvius. Escape keywords are mapped to functions by function_dict.
+Rules can either be static or dynamic. Static rules are phrases that execute a specific action when the phrase is said. For example, "open" opens a new window.\\
+An example of a dynamic rule would be "sky Charlie" which should be equivalent to shift+c. You would want this rule to be generic and work for any letter of the alphabet. 
+
+Static rules are defined in main/parser/static_rules.json.
+Dynamic rules are defined in main/parser/dynamic_rules.json.
+Comments in both the above files will help you write your own rules. each rule will also require an implementation function to be defined in main/parser/implementation.py
 
 ## Next steps:
 
