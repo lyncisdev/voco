@@ -1,0 +1,88 @@
+{
+    "STATIC_EXPANSION": {
+        "CONTEXT": ["ALL"],
+        "RULES": {
+            "python": "python3"
+        }
+    },
+    "STATIC_PAUSE": {
+        "CONTEXT": ["ALL"],
+        "RULES": {
+            "pause": "pause"
+        }
+    },
+    "STATIC_EMACS_KEYS": {
+        "CONTEXT": ["EMACS"],
+        "RULES": {
+            "search": ["slash"],
+            "new": ["space", "b", "N"]
+        }
+    },
+    "STATIC_EMACS_BUFFER_FUNCTIONS": {
+        "CONTEXT": ["EMACS"],
+        "RULES": {
+            "save": "save-buffer",
+            "git": "magit-status",
+            "window": "helm-mini",
+            "undo": "undo-tree-visualize",
+            "kill": "kill-this-buffer",
+            "window kill others": "spacemacs/kill-other-buffers",
+            "kill ring": "helm-show-kill-ring",
+            "find": "spacemacs/helm-find-files",
+            "snippet": "yas-expand",
+            "expand": "yas-expand",
+            "complete": "company-complete",
+            "comment": "spacemacs/comment-or-uncomment-lines 1",
+            "project": "helm-projectile-switch-project",
+            "open": "helm-projectile-find-file",
+            "sidebar": "neotree-find-project-root",
+            "window scratch": "spacemacs/switch-to-scratch-buffer",
+            "next": "next-buffer",
+            "previous": "previous-buffer",
+            "back": "python-nav-beginning-of-block",
+            "forward": "python-nav-end-of-block",
+            "copy": "evil-yank",
+            "copy line": "voco-copy-line",
+            "copy path":"copy-file-name-to-clipboard",
+            "paste": "evil-paste-after",
+            "evaluate": "eval-region",
+            "jump character": "evil-avy-goto-char",
+            "jump line": "evil-avy-goto-char"
+        }
+    },
+    "STATIC_FIREFOX_MODIFIED_KEYS": {
+        "CONTEXT": ["FIREFOX"],
+        "RULES": {
+            "sidebar": ["ctrl", "h"],
+            "new": ["ctrl", "t"],
+            "next": ["ctrl", "Next"],
+            "previous": ["ctrl", "Prior"],
+            "copy": ["ctrl", "c"],
+            "paste": ["ctrl", "v"],
+            "back": ["shift", "h"],
+            "forward": ["shift", "L"]
+        }
+    },
+    "STATIC_FIREFOX_KEYS": {
+        "CONTEXT": ["FIREFOX"],
+        "RULES": {
+            "search": ["slash"],
+            "window": ["b"],
+            "kill": ["d"],
+            "open": ["f"]
+        }
+    },
+    "STATIC_TERMINAL_KEYS": {
+        "CONTEXT": ["GNOME-TERMINAL"],
+        "RULES": {
+            "new": ["ctrl", "shift", "t"],
+            "open": ["ctrl", "shift", "t"],
+            "next": ["ctrl", "Next"],
+            "previous": ["ctrl", "Prior"],
+            "kill": ["ctrl", "shift", "d"],
+            "copy": ["ctrl", "shift", "c"],
+            "paste": ["ctrl", "shift", "v"]
+        }
+    }
+
+}

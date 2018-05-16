@@ -1,0 +1,115 @@
+{
+    "SWITCH_APPLICATION": {
+        "SIGNATURE": ["APPLICATION"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "APPLICATION": "APPLICATION"
+        }
+    },
+    "ACTION_PROJECT": {
+        "SIGNATURE": ["ACTION", "PROJECT"],
+        "CONTEXT": "emacs",
+        "VARIABLES": {
+            "ACTION": {
+                "open": "open",
+                "close": "pkill",
+                "switch to": "switch"
+            },
+            "PROJECT": {
+                "notes": "notes",
+                "voco": "voco"
+            }
+        }
+    },
+    "REPEAT_CHARACTER": {
+        "SIGNATURE": ["CHARACTER", "REPEAT"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "CHARACTER": "EDITING",
+            "REPEAT": "NUMBER"
+        }
+    },
+    "REPEAT_MOVEMENT": {
+        "SIGNATURE": ["MOVEMENT", "REPEAT"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "MOVEMENT": "MOVEMENT",
+            "REPEAT": "NUMBER"
+        }
+    },
+    "TYPE_CHARACTER": {
+        "SIGNATURE": ["CHARACTER"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "CHARACTER": "CHARACTER"
+        }
+    },
+    "TYPE_UPPERCASE_CHARACTER": {
+        "SIGNATURE": ["SKY", "LETTER"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "SKY": {
+                "sky": ""
+            },
+            "LETTER": "LETTER"
+        }
+    },
+    "MODIFIER_SINGLE": {
+        "SIGNATURE": ["MODIFIER", "CHARACTER"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "MODIFIER": "MODIFIER",
+            "CHARACTER": "CHARACTER"
+        }
+    },
+    "MODIFIER_DOUBLE": {
+        "SIGNATURE": ["MODIFIER", "MODIFIER", "CHARACTER"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "MODIFIER": "MODIFIER",
+            "CHARACTER": "CHARACTER"
+        }
+    },
+    "EMACS_JUMP_LETTER": {
+        "SIGNATURE": ["JUMP", "LETTER"],
+        "CONTEXT": "EMACS",
+        "VARIABLES": {
+            "JUMP": {
+                "jump": "jump"
+            },
+            "LETTER": "LETTER"
+        }
+    },
+    "EMACS_JUMP_LINE_2": {
+        "SIGNATURE": ["JUMP", "LINE", "LINE"],
+        "CONTEXT": "EMACS",
+        "VARIABLES": {
+            "JUMP": {
+                "jump": ""
+            },
+            "LINE": "NUMBER"
+        }
+    },
+    "EMACS_JUMP_LINE_3": {
+        "SIGNATURE": ["JUMP", "LINE", "LINE", "LINE"],
+        "CONTEXT": "EMACS",
+        "VARIABLES": {
+            "JUMP": {
+                "jump": ""
+            },
+            "LINE": "NUMBER"
+        }
+    },
+    "DEFAULT": {
+        "SIGNATURE": ["VAR1", "VAR2"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "VAR1": {
+                "opt1": "opt1"
+            },
+            "VAR2": {
+                "opt1": "opt1"
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+1,jump three five eight
+2,jump two six zero
+3,jump four six one
+4,jump four five six
+5,jump three eight 
+6,jump nine nine 
+7,jump eight six 
+8,jump nine  
+9,jump two six zero
+10,jump two zero two
+11,jump bravo alpha 
+12,jump delta foxtrot 
+13,jump oscar kilo 
+14,jump echo romeo 
+15,jump whisky  
+16,jump quebec  
+17,jump oscar kilo 
+18,jump papa lima 
+19,jump sierra echo 
+20,jump delta echo 
+21,jump mike yankee 
+22,jump quebec lima 
+23,jump papa sierra 
+24,jump romeo foxtrot 
+25,jump foxtrot romeo 
+26,jump hotel alpha 
+27,jump zulu x-ray 
+28,jump papa oscar 
+29,jump romeo foxtrot 
+30,jump delta foxtrot 
+31,jump alpha  
+32,jump bravo  
+33,jump charlie  
+34,jump delta  
+35,jump echo  
+36,jump foxtrot  
+37,jump golf  
+38,jump hotel  
+39,jump india  
+40,jump juliet  
+41,jump kilo  
+42,jump lima  
+43,jump mike  
+44,jump november  
+45,jump oscar  
+46,jump papa  
+47,jump quebec  
+48,jump romeo  
+49,jump sierra  
+50,jump tango  
+51,jump uniform  
+52,jump victor  
+53,jump whisky  
+54,jump x-ray  
+55,jump yankee  
+56,jump zulu  
