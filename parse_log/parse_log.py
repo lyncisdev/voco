@@ -7,7 +7,7 @@ import os
 
 # voco_data_base = "/home/bartek/Projects/ASR/voco_data/"
 
-voco_data_base = "/Users/bartek/other/voco_data/"
+voco_data_base = "/home/lyncis/proj/voco/data/"
 audio_data_directory = voco_data_base + "audio_data/"
 audio_records_directory = voco_data_base + "audio_records/"
 
@@ -63,7 +63,8 @@ for x in log:
     if True:
         print("---------------------------")
         print(UID + "\n")
-        print(audio_sample_file_path + "\n")
+        print("%d - %d\n" % (parse_counter, len(log)))
+        # print(audio_sample_file_path + "\n")
         print("")
         print(phrase + "\n\n")
 
@@ -72,30 +73,27 @@ for x in log:
 
             # os.system("aplay " + audio_sample_file_path)
 
-            os.system("afplay " + audio_sample_file_path.replace(
-                "/home/bartek/Projects/ASR/voco_data/",
-                "/Users/bartek/other/voco_data/"))
+            os.system("aplay " + audio_sample_file_path)
 
-            accept = raw_input("accept?")
+            accept = raw_input("\naccept (enter) / replay (r) / reject (n)?")
 
             if accept == "n":
                 with open("error_log", "a") as f:
                     f.write(x)
-                print("Rejected!")
+                print("-------> Rejected!")
                 processed = True
 
             elif accept == "r":
                 processed = False
+                print("-------> Replay")
 
             else:
                 shutil.move(
-                    audio_sample_file_path.replace(
-                        "/home/bartek/Projects/ASR/voco_data/",
-                        "/Users/bartek/other/voco_data/"),
+                    audio_sample_file_path,
                     audio_data_directory + UID + ".wav")
 
                 outputfile = open(audio_records_directory + 'wav.scp', 'a')
-                outputfile.write(UID + " " + "ROOT/voco_data/audio_data/" + UID
+                outputfile.write(UID + " " + audio_data_directory + UID
                                  + ".wav" + "\n")
 
                 outputfile = open(audio_records_directory + "text", 'a')
@@ -110,7 +108,7 @@ for x in log:
                           "w") as f:
                     f.write(str(naming_list_counter))
 
-                print("accepted")
+                print("-------> Accepted")
                 processed = True
 
     parse_counter += 1

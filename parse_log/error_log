@@ -242,3 +242,5 @@
 2017-11-19 20:49:23.406284,LIVE00000207_00026,india,/usr/bin/xdotool key i,0.325736999512,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000207_00026.wav
 2017-11-19 20:51:00.243678,LIVE00000207_00052,two down two sky golf,/usr/bin/xdotool key 2 key Down key 2 key G,0.300732851028,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000207_00052.wav
 2017-11-19 20:51:10.734897,LIVE00000207_00056,two one two sky golf,/usr/bin/xdotool key 2 key 1 key 2 key G,0.285327196121,/home/bartek/Projects/ASR/voco_data/staging/LIVE00000207_00056.wav
+2018-01-16 21:37:45.538520,LIVE00000238_00002,right,/usr/bin/xdotool key Right,0.199523925781,/home/lyncis/proj/voco/data/staging/audio_data/LIVE00000238_00002.wav
+2018-01-16 21:40:24.295253,LIVE00000240_00003,right,/usr/bin/xdotool key Right,0.183236837387,/home/lyncis/proj/voco/data/staging/audio_data/LIVE00000240_00003.wav

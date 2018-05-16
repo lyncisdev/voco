@@ -1,0 +1,13 @@
+data/*
+training/data
+training/exp
+training/mfcc
+main/decode/output
+*.pyc
+main/session_counter.txt
+*.DS_Store
+main/i3blocks_text.txt
+*.jpg
+*.wav
+data_creation/recording_list.txt
+data_creation/recording_list_counter.txt

@@ -1,3 +1,11 @@
+#!/usr/bin/env bash
+
+
+
+. ./path.sh
+. ./cmd.sh
+
+# cd kaldi/egs/aspire/s5
 
 
 # online2-wav-nnet3-latgen-faster
@@ -8,22 +16,12 @@
 # clat_wspecifier
 
 
+# exp/tdnn_7b_chain_online/conf/online.conf
 
-
-./path.sh
-./cmd.sh
-
-
-export KALDI_ROOT=~/Projects/ASR/kaldi_mar_17
-export PATH=$KALDI_ROOT/src/online2bin:$PATH
-
-data=decode/data
+data=aspire
+# modeldir=$KALDI_ROOT/exp/tdnn_7b_chain_online
 modeldir=$KALDI_ROOT/egs/aspire/s5/exp/tdnn_7b_chain_online
-
 # copy all files locally
-
-ffmpeg -i dictate.wav -acodec pcm_s16le -ac 1 -ar 8000 dictate8k.wav
-
 
 online2-wav-nnet3-latgen-faster \
   --online=true \
@@ -38,6 +36,5 @@ online2-wav-nnet3-latgen-faster \
   $modeldir/final.mdl \
   $modeldir/graph_pp/HCLG.fst \
   'ark:echo utterance-id1 utterance-id1|' \
-  'scp:echo utterance-id1 dictate8k.wav|' \
+  'scp:echo utterance-id1 aspire/test8k.wav|' \
   'ark:/dev/null'
-
