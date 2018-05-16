@@ -7,8 +7,6 @@
 
 
 . ./path.sh
-. ./cmd.sh
-
 
 basedir=decode
 
