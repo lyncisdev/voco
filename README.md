@@ -79,4 +79,4 @@ Some features planned for the future:
 3. Better support for Emacs snippets,
 
 ## Contact:
-If you are using voco, would like to or have any questions, please email voco at lyncis dot co dot za]
+If you are using voco, would like to or have any questions, please email bartek at lyncis dot co dot za]
