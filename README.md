@@ -64,7 +64,7 @@ Once you have trained a model execute Python3 record_decode.py in the main direc
 
 ### Adding new rule 
 
-Rules can either be static or dynamic. Static rules are phrases that execute a specific action when the phrase is said. For example, "open" opens a new window.\\
+Rules can either be static or dynamic. Static rules are phrases that execute a specific action when the phrase is said. For example, "open" opens a new window.
 An example of a dynamic rule would be "sky Charlie" which should be equivalent to shift+c. You would want this rule to be generic and work for any letter of the alphabet. 
 
 Static rules are defined in main/parser/static_rules.json.
