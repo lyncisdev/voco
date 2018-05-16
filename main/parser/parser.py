@@ -11,32 +11,52 @@ from .implementation import *
 # base directory defines where the rules files are located, in this configuration
 basedir = "parser/"
 
+############################################
 # dynamic_rules.json:
-# this file defines the dynamic rules that the parser matches against.
-# Dynamic rules are rules that use variables. For instance, the rule type_character looks for a single word that matches the values that the variable character can take on.
-# A rule is defined by its signature where the signature is an ordered array of variables. Each variable defined in the signature must be present as a key in the variables dictionary. the value for each key is a dictionary of possible values the variable can take on maped to some useful informationthe can be used by the implantation function when creating the command for this rule.
+############################################
+# This file defines the dynamic rules that the parser matches against.
+# Dynamic rules are rules that use variables. For instance, the rule type_character
+# looks for a single word that matches the values that the variable character can take on.
+# A rule is defined by its signature and the signature is stored as an ordered array of variables.
+# Each variable defined in the signature must be present as a key in the variables dictionary.
+# The value of each key is another dictionary of possible values the variable can take on maped to some
+# useful informationthe can be used by the implantation function when creating the command for this rule.
+# If this seems confusing look at an example rule which should explain it.
 
+############################################
 # rule context:
-# A rules context is the application in which it applies. So for example a rule with an Emacs context will not be a possible match if Firefox is the currently selected window. The context "ALL" applies to all windows. Context can also be used in the implementation to change behaviour based on the application currently selected e.g. copy works differently in Firefox, the terminal and Emacs. In such a case the rules context should be "all" and the different behaviours should be set in implementation.
+############################################
+# A rules context is the application in which it applies. For example a rule with an Emacs
+# context will not be a possible match if Firefox is the currently selected window.
+# The context "ALL" applies to all windows. Context can also be used in the implementation
+# to change behaviour based on the application currently selected e.g. copy works differently in Firefox,
+# the terminal and Emacs. In such a case the rules context should be "ALL" and the different
+# behaviours should be set in implementation.
 
+############################################
 # variables.json
-# To reduce repeating commonly used variables in the dynamic rules file they are stored in variables.json and referenced here just by their name.
-# when the parser is initialised this file is processed and all commonly used variables are replaced by their full definition. The resulting file is stored in [[]]
+############################################
+# To reduce repeating commonly used variables in the dynamic rules file they
+# are stored in variables.json and referenced in the variables list by their name.
+# When the parser is initialised this file is processed and all the commonly
+# used variables are replaced by their full definitions.
 
+############################################
 # static_rules.json
+############################################
 # static rules are phrases that when said result in some action.
 
 
 def init():
-    '''
+    ############################################
+    # This function initialises the parser by loading the dynamic and static rules.
+    # it also loads the variables file and insert the commonly repeated variables into the dynamic rules.
+    # It then "compiles" the rules into var_lookup creating a dictionary mapping each
+    # possible word to the rules of that word is present in.
+    # For example, the word "Alpha" can occur in the type character rule but also the type
+    # uppercase character rule. this dictionary makes it easier to match the transcription to rules.
+    ############################################
 
-    This function initialises the parser by loading the dynamic and static rules.
-    it also loads the variables file and insert the commonly repeated variables into the dynamic rules.
-
-    It then "compiles" the rules into var_lookup creating a dictionary mapping each possible word to the rules of that word is present in.
-    for example, the word "Alpha" can occur in the type character rule but also the type uppercase character rule. this dictionary makes it easier to match the transcription to rules.
-
-    '''
 
     dynamic_rules_file = open(basedir + "dynamic_rules.json", "r")
     dynamic_rules = json.load(dynamic_rules_file)
