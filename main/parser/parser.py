@@ -1,6 +1,4 @@
-#
 # Parser.py
-#
 
 import pprint
 import json
@@ -9,20 +7,22 @@ import re
 import pprint
 
 from .implementation import *
-# from implementation import *
 
-pp = pprint.PrettyPrinter(depth=4, width=5)
-
+# base directory defines where the rules files are located, in this configuration
 basedir = "parser/"
 
-# basedir = ""
 
 
 def init():
+    '''
 
-    #####################################################
-    # load dynamic_rules files
-    #####################################################
+    This function initialises the parser by loading the dynamic and static rules.
+    it also loads the variables file and insert the commonly repeated variables into the dynamic rules.
+
+    It then "compiles" the rules into var_lookup creating a dictionary mapping each possible word to the rules of that word is present in.
+    for example, the word "Alpha" can occur in the type character rule but also the type uppercase character rule. this dictionary makes it easier to match the transcription to rules.
+
+    '''
 
     dynamic_rules_file = open(basedir + "dynamic_rules.json", "r")
     dynamic_rules = json.load(dynamic_rules_file)
@@ -36,10 +36,9 @@ def init():
     variables = json.load(variables_file)
     variables_file.close()
 
-    #####################################################
+    ############################################
     # insert repeated variables
-    #####################################################
-
+    ############################################
     for var in variables:
         val = variables[var]
         if isinstance(val, list):
@@ -58,10 +57,9 @@ def init():
                 # else:
                 # print("error")
 
-                #####################################################
-                # Pre-compile dynamic_rules
-                #####################################################
-
+    ############################################
+    # Pre-compile dynamic_rules
+    ############################################
     var_lookup = {}
 
     for rule in dynamic_rules:
@@ -73,6 +71,11 @@ def init():
 
                 var_lookup[word].append([rule, var])
 
+
+
+    ############################################
+    # save the final rules files
+    ############################################
     dynamic_rules_lookup_file = open(basedir + "dynamic_rules_lookup.json",
                                      "w")
     json.dump(var_lookup, dynamic_rules_lookup_file)
@@ -90,15 +93,18 @@ def parsephrase(dynamic_rules,
                 context,
                 ignore_context=False):
 
+    '''
+    This function takes the transcribed phrase and matches the various static and dynamic rules against. it returns a list of commands to execute.
+    '''
+
+
     words = phrase.split()
     phrase_lenght = len(words)
 
     ############################################
     # match static rules
+    # matches are stored in an array where each element is of the form ["rule name",[variable name,variable value, word number, dictionary value]]
     ############################################
-
-    # pp.pprint(static_rules)
-
     matches = []
     for rule in static_rules:
         if ("ALL" in static_rules[rule]["CONTEXT"]) or (
@@ -107,7 +113,6 @@ def parsephrase(dynamic_rules,
             for elem in static_rules[rule]["RULES"]:
 
                 sig = elem.split(" ")
-                # print(sig)
                 l = len(sig)
                 for x in range(0, len(words) - l + 1):
                     subarr = words[x:x + l]
@@ -127,10 +132,6 @@ def parsephrase(dynamic_rules,
 
                         matches.append([rule, tmp])
 
-    # print("match")
-    # print(matches)
-    # print(phrase)
-    # print(words)
     ############################################
     # match dynamic rules
     ############################################
@@ -149,7 +150,10 @@ def parsephrase(dynamic_rules,
                     rule_graph[rule].append([var, word, c, lookup_val])
 
     new_rule_graph = {}
+
+    ############################################
     # Remove dynamic_rules that don't match context
+    ############################################
 
     for rule in rule_graph:
         if ("ALL" in dynamic_rules[rule]["CONTEXT"] ) or (
@@ -158,7 +162,9 @@ def parsephrase(dynamic_rules,
 
     rule_graph = new_rule_graph
 
-    # Remove dynamic_rules that don't fit
+    ############################################
+    # Remove dynamic_rules that don't fit the length of the signature
+    ############################################
 
     new_rule_graph = {}
 
@@ -168,13 +174,11 @@ def parsephrase(dynamic_rules,
 
     rule_graph = new_rule_graph
 
-    # pp.pprint(rule_graph)
-
-    #########################################################
-
+    ############################################
+    # match dynamic_rules by comparing signatures
+    ############################################
     for rule in rule_graph:
 
-        # match dynamic_rules by comparing signatures
 
         l = len(dynamic_rules[rule]["SIGNATURE"])
 
@@ -190,13 +194,10 @@ def parsephrase(dynamic_rules,
             if match == True:
                 matches.append([rule, subarr])
 
-    # print("\nCandidate dynamic_rules")
 
-    # pp.pprint(matches)
-    # for match in matches:
-    # print(match)
-
-    # Build set representation
+    ############################################
+    # Build a set representation of the rules that makes using union operations such as intersection easier
+    ############################################
     match_set = {}
     for x, match in enumerate(matches):
         tmp = set()
@@ -205,7 +206,9 @@ def parsephrase(dynamic_rules,
 
         match_set[x] = tmp
 
+    ############################################
     # try set cover solution
+    ############################################
     final_match = []
     while len(match_set) > 0:
         # find largest uncovered set
@@ -225,17 +228,17 @@ def parsephrase(dynamic_rules,
                 new_match_set[x] = match_set[x]
         match_set = new_match_set
 
-    # print("\nFinal set")
-    # for match in final_match:
-    #     print(match)
 
-    # sort by index
+    ############################################
+    # sort the matches array in order of the spoken words
+    ############################################
 
     final_match.sort(key=lambda elem: elem[1][0][2])
 
-    # print("\nSorted Final set")
-    # for match in final_match:
-    #     print(match)
+
+    ############################################
+    # only process cases where the matching set of rules covers all of the words in the transcription
+    ############################################
 
     coverage = set()
 
@@ -247,6 +250,10 @@ def parsephrase(dynamic_rules,
 
         variables = []
 
+
+        ############################################
+        # build the array of variables to pass to the implementation
+        ############################################
         for match in final_match:
             tmp_arr = []
             for elem in match[1]:
@@ -254,12 +261,11 @@ def parsephrase(dynamic_rules,
                 tmp_arr.append(lookupval)
             variables.append([match[0], tmp_arr])
 
-        # print("\nPassed to function")
-        # for match in final_match:
-        #     print(match)
-
         cmd = []
 
+        ############################################
+        # called implementation function by looking up the rule name, prepended with "r_", in in the global variables dictionary
+        ############################################
         for match in variables:
             function_name = "r_" + match[0].lower()
             cmd.append(globals()[function_name](match[1], context))

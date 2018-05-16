@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+#
+# this script does the Kaldi transcription. It's probably not the fastest way to do this,
+# however it's quite explicit and easy to debug.
+#
 
 
 . ./path.sh

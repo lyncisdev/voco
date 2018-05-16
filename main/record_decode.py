@@ -10,12 +10,10 @@ import numpy as np
 import os
 import re
 import subprocess
-# import pdb
 from datetime import datetime
 import time
 import traceback
 import pprint
-# from silvius.process_line import process_line
 import collections
 import select
 from parser import parser, implementation
@@ -25,12 +23,12 @@ from parser import parser, implementation
 # pactl load-module module-loopback latency_msec=1
 # pactl unload-module module-loopback
 
-#----------------------------------------------------------------------------
-# write_audio_file function
-#----------------------------------------------------------------------------
-
 
 def write_audio_data(audio_sample, audio_sample_file_path, byterate):
+    '''
+    This function writes out the WAV file to disk
+    TODO: update scaling factors
+    '''
 
     new_audio_sample = []
     rms = []
@@ -63,6 +61,7 @@ def write_audio_data(audio_sample, audio_sample_file_path, byterate):
 
 #----------------------------------------------------------------------------
 # write_audio_file function
+# This function writes out the audio records required by Kaldi to perform transcription.
 #----------------------------------------------------------------------------
 
 
@@ -116,6 +115,7 @@ def write_log(basedir, UID, transc, cmd, decode_duration,
 
 #----------------------------------------------------------------------------
 # write i3 blocks
+# This function rights of the supporting file required by i3 blocks. I3 blocks is a GUI element of i3wm tiling window manager.
 #----------------------------------------------------------------------------
 
 
@@ -136,23 +136,28 @@ def write_i3blocks(msg, color):
 
 #----------------------------------------------------------------------------
 # Global variables
+# XDO_TOOL is the application that executes the keystrokes given to it by the parser.
+# It also provides other convenient functions such as getting the window context (the currently selected window)
+# from the window manager and switching between windows.
 #----------------------------------------------------------------------------
 XDO_TOOL = '/usr/bin/xdotool '
 
 #----------------------------------------------------------------------------
 # Main Loop
+# The main four loop performs 5 major functions.
+# 1. process any audio received by the microphone and determine if the user speaking
+# 2. if speech is detected record the speech until the speaking stops
+# 3. save the audio and call Kaldi to transcribe the recorded speech
+# 4. Pass the transcribed speech to the parser and receive back an array of commands to execute
+# 5. Execute the required commands by calling subprocess
 #----------------------------------------------------------------------------
 
 
 def main():
-
-    debug = False
-    noexec_mode = False
-    playback_mode = False
-    literal_mode = False
-
     pp = pprint.PrettyPrinter(depth=4, width=60)
 
+
+    # VOCO_DATA is the environment variable that points to where VOCO saves audio data and records
     try:
         voco_data_base = os.environ['VOCO_DATA']
         print(os.environ['VOCO_DATA'])
@@ -162,8 +167,16 @@ def main():
     basedir = voco_data_base + "/staging/"
 
     #----------------------------------------------------------------------------
-    # Parse input options - noexec, debug, playback, literal
+    # Parse input options - noexec, debug, playback
+    # noexec - don't execute any commands, useful for debugging
+    # debug - show additional debugging information during runtime
+    # playback - playback the audio recorded
     #----------------------------------------------------------------------------
+
+    debug = False
+    noexec_mode = False
+    playback_mode = False
+
 
     try:
         options = sys.argv
@@ -178,16 +191,14 @@ def main():
             if x == "playback":
                 playback_mode = True
                 print("playback_mode = True")
-            if x == "literal":
-                literal_mode = True
-                print("literal_mode = True")
             if x == "help":
                 print("noexec, debug, playback")
     except:
         print("Input argument error")
 
     #----------------------------------------------------------------------------
-    # set_up mic
+    # set_up pyaudio
+    # important to note here is that the chunk size affects the latency, so smaller chunk size is better
     #------------------------------------------------------------------------
 
     try:
@@ -201,15 +212,10 @@ def main():
         chunk = 128 * 2 * sample_rate // byterate
 
         if mic == -1:
-
             mic_info = pa.get_default_input_device_info()
-
             mic = mic_info['index']
-
             pp.pprint(mic_info)
-
             if debug:
-                print("Selecting default mic")
                 print("Using mic " + str(mic))
 
         stream = pa.open(
@@ -231,8 +237,6 @@ def main():
             if (sample_rate != new_sample_rate):
                 sample_rate = new_sample_rate
 
-        print(sys.stderr,
-              "\nCould not open microphone. Please try a different device.")
         sys.exit(0)
 
     print("\nLISTENING TO MICROPHONE")
@@ -245,6 +249,7 @@ def main():
 
     #----------------------------------------------------------------------------
     # Setup session and recording counter
+    # the session and recording counters are combined to form a unique identifier ( called UID in Kaldi) for example
     #----------------------------------------------------------------------------
 
     try:
@@ -262,7 +267,8 @@ def main():
     timeout = 0
 
     #----------------------------------------------------------------------------
-    # Benchmark noise floor
+    # setup gates
+    # these two variables set the sound levels (RMS) the recorded signal 
     #----------------------------------------------------------------------------
 
     gate = 800
@@ -279,19 +285,20 @@ def main():
 
     #----------------------------------------------------------------------------
     # init parser
+    # Load the static and dynamic rules from file
     #----------------------------------------------------------------------------
 
     dynamic_rules, static_rules, var_lookup = parser.init()
 
     #----------------------------------------------------------------------------
     # start recording
+    # Begin the main loop
     #----------------------------------------------------------------------------
 
-    DICTATE_FLAG = False
-    PAUSE_FLAG = False
 
     while (True):
 
+        # read the sample, calculated its RMS and appended to the queue
         sample = stream.read(chunk)
         rms = audioop.rms(sample, 2)
         audio_samples.append(sample)
@@ -299,12 +306,15 @@ def main():
         if rec == False:
             if rms >= gate:
 
+                # notify the user the system has started recording
                 write_i3blocks('REC', 'recording')
 
                 rec = True
                 timeout = 0
 
             else:
+                # if the system is not recording trim the queue to only keep a few historic samples.
+                # This is so that when speech is detected the system has some initial samples of the signal, which helps in decoding.
                 while len(audio_samples) > audio_frames_prefix:
                     audio_samples.popleft()
 
@@ -314,10 +324,11 @@ def main():
             elif (rms < end_gate) and (timeout < audio_timeout_frames):
                 timeout += 1
             else:
-                # stop recording, write file
+                # Stop recording transcribe the audio and execute the commands
 
                 #----------------------------------------------------------------------------
                 # Get window context
+                # this function gets the class of window that is currently selected, for example Firefox or Emacs
                 #----------------------------------------------------------------------------
 
                 active_window = subprocess.check_output(
@@ -330,8 +341,10 @@ def main():
                 m = re.search(expr, windowclass)
                 context = m.group(2).upper()
 
+                # notify the user decoding has started
                 write_i3blocks('DECODING', 'decoding')
 
+                # create the UID
                 UID = "LIVE" + str(session_counter).zfill(8) + "_" + str(
                     recording_counter).zfill(5)
 
@@ -340,17 +353,19 @@ def main():
                 # Write the WAV file and the Kaldi records
                 write_audio_data(audio_samples, audio_sample_file_path,
                                  byterate)
+
                 write_audio_records(basedir + "audio_records/",
                                     session_counter, audio_sample_file_path,
                                     UID)
 
-                # Run the Kaldi script
+                # Run Kaldi, the script decodes for your sample and saves the transcription to a text file.
                 result = subprocess.check_output(
                     "./kaldi_decode.sh").strip().decode('UTF-8')
 
                 try:
                     result = result.split(" ", 1)[1].strip()
                 except IndexError as e:
+                    # this error occurs if Kaldi did not manage to transcribe anything
                     result = ""
 
                 if debug:
@@ -365,19 +380,26 @@ def main():
 
                 else:
                     try:
-
-                        # Replay the audio clip
+                        # Replay the audio clip if playback mode is on
                         if playback_mode:
                             os.system("aplay " + audio_sample_file_path)
 
+                        # parse the transcription
                         commands, matches = parser.parsephrase(
                             dynamic_rules, static_rules, var_lookup, result,
                             context)
 
                         # Execute the command
-                        if not noexec_mode and not PAUSE_FLAG:
-
+                        if not noexec_mode:
                             for cmd in commands:
+
+                                # if the command requires XDOTOOL then use subprocess.call
+                                # since that waits for each command to complete before the next commander started.
+                                # This is usefull for commands where order is important such as keystrokes since
+                                # it prevents them being executed in the wrong order.
+                                # Otherwise use pop open since this prevents VOCO locking up while waiting for the command to complete.
+                                # For instance in Emacs if you issue a command to helm this command will not complete until Helm is closed
+                                # and this will prevent VOCO decoding any further commands.
 
                                 if cmd[0] == "/usr/bin/xdotool":
                                     subprocess.call(cmd)
@@ -390,8 +412,10 @@ def main():
                                         stderr=None,
                                         close_fds=True)
 
-
+                        # show the user what the Kaldi transcribed
                         write_i3blocks(result.upper(), 'neutral')
+
+                        # write the log
                         write_log(basedir, UID, result, "", "0.0",
                                   audio_sample_file_path)
 
@@ -415,6 +439,9 @@ if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
+
+        # clean up when the user issues the control+c command
+
         print('\nShutting down\n')
         write_i3blocks("", 'neutral')
         try:

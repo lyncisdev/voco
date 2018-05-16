@@ -10,7 +10,9 @@
 # conf/queue.conf in http://kaldi-asr.org/doc/queue.html for more information,
 # or search for the string 'default_config' in utils/queue.pl or utils/slurm.pl.
 
-export train_cmd=queue.pl
-export decode_cmd=queue.pl
-export mkgraph_cmd=queue.pl
-export cuda_cmd="queue.pl --gpu 1"
+
+
+# export train_cmd=queue.pl
+# export decode_cmd=queue.pl
+# export mkgraph_cmd=queue.pl
+# export cuda_cmd="queue.pl --gpu 1"

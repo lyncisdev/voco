@@ -1,11 +1,19 @@
-
-
-
-
-
-#
 # Parser rules implementation
+
+# This file defines the implementation for each rule (both static and dynamic).
+# Each rule's implementation is a Python function whose name is the name of the rule (in lowercase) preceded by "r_".
+
+# Each implementation function receives two variables named variables and context.
 #
+# Context is the class of the window currently selected (e.g. Firefox).
+#
+# Variables is an array of items we each item is the value from the rules dictionary where
+# the key is the word that was spoken.
+# For example, saying the phrase "Alpha Bravo Charlie" will match the type_character rule three times
+# and each time the r_type_character function will be called and variables will be an array with one element
+# corresponding to the appropriate letter ("a","b","c")
+
+# each implementation function returns an array of strings that can be understood by the subprocess module
 
 XDO_TOOL = '/usr/bin/xdotool'
 

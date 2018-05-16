@@ -1,3 +1,10 @@
+//
+// static rules
+// static rules are phrases that when said result in some action.
+//
+
+
+
 {
     "STATIC_EXPANSION": {
         "CONTEXT": ["ALL"],

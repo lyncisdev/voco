@@ -1,14 +1,7 @@
-;; (defun voco-copy-line (&optional arg)
-;;       "Copy the whole line that point is on and move to the beginning of the next line.
-;;     Consecutive calls to this command append each line to the
-;;     kill-ring."
-;;       (interactive)
-;;       (let ((beg (line-beginning-position 1))
-;;             (end (line-beginning-position 2)))
-;;         (if (eq last-command 'quick-copy-line)
-;;             (kill-append (buffer-substring beg end) (< end beg))
-;;           (kill-new (buffer-substring beg end))))
-;;       (beginning-of-line 2))
+;; these are custom VOCO Emacs functions, you should copy them from here to your Emacs init file
+
+
+
 
 (defun voco-copy-line (arg)
   "Copy lines (as many as prefix argument) in the kill ring"
