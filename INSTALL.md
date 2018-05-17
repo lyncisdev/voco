@@ -160,7 +160,11 @@ Create symlink: main/decode/model --> training/exp/tri1_ali
 ```bash
 ln -s $VOCO_ROOT/training/exp/tri1_ali $VOCO_ROOT/main/decode/model
 ```
+make output directory
 
+```bash
+mkdir $VOCO_ROOT/main/decode/output/scoring
+```
 
 Create symlink: main/decode/data --> data/staging
 
