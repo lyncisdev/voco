@@ -8,7 +8,7 @@
     },
     "ACTION_PROJECT": {
         "SIGNATURE": ["ACTION", "PROJECT"],
-        "CONTEXT": "emacs",
+        "CONTEXT": "EMACS",
         "VARIABLES": {
             "ACTION": {
                 "open": "open",

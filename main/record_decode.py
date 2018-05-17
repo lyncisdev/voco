@@ -23,12 +23,13 @@ from parser import parser, implementation
 # pactl load-module module-loopback latency_msec=1
 # pactl unload-module module-loopback
 
+#----------------------------------------------------------------------------
+# write_audio_data function
+# This function writes out the WAV file to disk
+#----------------------------------------------------------------------------
+
 
 def write_audio_data(audio_sample, audio_sample_file_path, byterate):
-    '''
-    This function writes out the WAV file to disk
-    TODO: update scaling factors
-    '''
 
     new_audio_sample = []
     rms = []
