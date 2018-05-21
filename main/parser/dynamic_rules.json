@@ -21,6 +21,29 @@
             }
         }
     },
+    "EMACS_LINE_ACTIONS": {
+        "SIGNATURE": ["ACTION", "LINES"],
+        "CONTEXT": "EMACS",
+        "VARIABLES": {
+            "ACTION": {
+                "copy": "voco-copy-line",
+                "select": "evil-visual-char",
+                "delete": "",
+                "comment": "spacemacs/comment-or-uncomment-lines"
+            },
+            "LINES": "NUMBER"
+        }
+    },
+    "I3WM": {
+        "SIGNATURE": ["LAYOUT", "NUMBER"],
+        "CONTEXT": "ALL",
+        "VARIABLES": {
+            "LAYOUT": {
+                "layout": ""
+            },
+            "NUMBER": "NUMBER"
+        }
+    },
     "REPEAT_CHARACTER": {
         "SIGNATURE": ["CHARACTER", "REPEAT"],
         "CONTEXT": "ALL",

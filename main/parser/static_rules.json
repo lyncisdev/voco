@@ -2,7 +2,8 @@
     "STATIC_EXPANSION": {
         "CONTEXT": ["ALL"],
         "RULES": {
-            "python": "python3"
+            "python": "python3",
+            "todo":"todo"
         }
     },
     "STATIC_PAUSE": {
@@ -24,10 +25,10 @@
             "save": "save-buffer",
             "git": "magit-status",
             "window": "helm-mini",
-            "undo": "undo-tree-visualize",
+            "undo window": "undo-tree-visualize",
             "kill": "kill-this-buffer",
             "window kill others": "spacemacs/kill-other-buffers",
-            "kill ring": "helm-show-kill-ring",
+            "clipboard": "helm-show-kill-ring",
             "find": "spacemacs/helm-find-files",
             "snippet": "yas-expand",
             "expand": "yas-expand",
@@ -42,12 +43,13 @@
             "back": "python-nav-beginning-of-block",
             "forward": "python-nav-end-of-block",
             "copy": "evil-yank",
-            "copy line": "voco-copy-line",
-            "copy path":"copy-file-name-to-clipboard",
+            "copy line": "voco-copy-line 1",
+            "copy path": "copy-file-name-to-clipboard",
             "paste": "evil-paste-after",
             "evaluate": "eval-region",
             "jump character": "evil-avy-goto-char",
-            "jump line": "evil-avy-goto-char"
+            "jump line": "evil-avy-goto-char",
+            "undo": "undo"
         }
     },
     "STATIC_FIREFOX_MODIFIED_KEYS": {
@@ -81,8 +83,25 @@
             "previous": ["ctrl", "Prior"],
             "kill": ["ctrl", "shift", "d"],
             "copy": ["ctrl", "shift", "c"],
-            "paste": ["ctrl", "shift", "v"]
+            "paste": ["ctrl", "shift", "v"],
+            "repeat": ["up","Return"]
+        }
+    },
+    "STATIC_TERMINAL_TYPE": {
+        "CONTEXT": ["GNOME-TERMINAL"],
+        "RULES": {
+            "back": "..",
+            "list": "ls",
+            "ranger": "ranger",
+            "change": "cd "
+        }
+    },
+    "STATIC_I3WM": {
+        "CONTEXT": ["ALL"],
+        "RULES": {
+            "exit": ""
         }
     }
+
 
 }

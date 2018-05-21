@@ -272,8 +272,8 @@ def main():
     # these two variables set the sound levels (RMS) the recorded signal 
     #----------------------------------------------------------------------------
 
-    gate = 800
-    end_gate = 800
+    gate = 500
+    end_gate = 500
 
     print("Start recording gate: " + str(gate))
     print("Stop recording gate: " + str(end_gate))
