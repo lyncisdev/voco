@@ -1,22 +1,18 @@
 #!/usr/bin/python3
-
 import sys
-import wave
-import pyaudio
-import audioop
-import unicodedata
-import time
-import numpy as np
 import os
-import re
+import re # for getting context
 import subprocess
 from datetime import datetime
-import time
-import traceback
-import pprint
 import collections
-import select
-from parser import parser, implementation
+import pprint
+
+import audioop
+import wave
+import pyaudio
+
+
+from parser import parser
 
 # Note:
 # adding a loopback listening interface to pulseaudio
@@ -34,30 +30,30 @@ def write_audio_data(audio_sample, audio_sample_file_path, byterate):
     new_audio_sample = []
     rms = []
 
-    # calculate RMS of each point
-    for x in audio_sample:
-        rms.append(audioop.rms(x, 2))
+    # # calculate RMS of each point
+    # for x in audio_sample:
+    #     rms.append(audioop.rms(x, 2))
 
-    # calculate scaling factor
-    sample_mean = np.mean(rms)
-    scaling_factor = 4000 / sample_mean
+    # # calculate scaling factor
+    # sample_mean = np.mean(rms)
+    # scaling_factor = 4000 / sample_mean
 
-    # multiply samples by scaling factor
-    for x in audio_sample:
-        new_audio_sample.append(audioop.mul(x, 2, scaling_factor))
+    # # multiply samples by scaling factor
+    # for x in audio_sample:
+    #     new_audio_sample.append(audioop.mul(x, 2, scaling_factor))
 
     # Write audio file
-    audio_sample_file = open(audio_sample_file_path, 'w+')
+    # audio_sample_file = open(audio_sample_file_path, 'w+')
 
-    w = wave.open(audio_sample_file_path, "w")
-    w.setnchannels(1)
-    w.setsampwidth(2)
-    w.setframerate(byterate)
+    wav_file = wave.open(audio_sample_file_path, "w")
+    wav_file.setnchannels(1)
+    wav_file.setsampwidth(2)
+    wav_file.setframerate(byterate)
 
-    for x in new_audio_sample:
-        w.writeframes(x)
+    for x in audio_sample:
+        wav_file.writeframes(x)
 
-    w.close()
+    wav_file.close()
 
 
 #----------------------------------------------------------------------------
@@ -67,8 +63,6 @@ def write_audio_data(audio_sample, audio_sample_file_path, byterate):
 
 
 def write_audio_records(basedir, session_counter, audio_sample_file_path, UID):
-
-    # Write sample files - should these not be permanent?
 
     outputfile = open(basedir + 'wav_sample.scp', 'w')
     outputfile.write(UID + " " + audio_sample_file_path + "\n")
@@ -94,8 +88,8 @@ def write_audio_records(basedir, session_counter, audio_sample_file_path, UID):
     outputfile.write("bartek " + UID + "\n")
     outputfile.close()
 
-    with open("session_counter.txt", "w") as f:
-        f.write(str(session_counter))
+    with open("session_counter.txt", "w") as tmp_file:
+        tmp_file.write(str(session_counter))
 
 
 #----------------------------------------------------------------------------
@@ -157,7 +151,6 @@ XDO_TOOL = '/usr/bin/xdotool '
 def main():
     pp = pprint.PrettyPrinter(depth=4, width=60)
 
-
     # VOCO_DATA is the environment variable that points to where VOCO saves audio data and records
     try:
         voco_data_base = os.environ['VOCO_DATA']
@@ -177,7 +170,6 @@ def main():
     debug = False
     noexec_mode = False
     playback_mode = False
-
 
     try:
         options = sys.argv
@@ -266,10 +258,11 @@ def main():
 
     rec = False
     timeout = 0
+    pause_flag = False
 
     #----------------------------------------------------------------------------
     # setup gates
-    # these two variables set the sound levels (RMS) the recorded signal 
+    # these two variables set the sound levels (RMS) the recorded signal
     #----------------------------------------------------------------------------
 
     gate = 500
@@ -295,7 +288,6 @@ def main():
     # start recording
     # Begin the main loop
     #----------------------------------------------------------------------------
-
 
     while (True):
 
@@ -381,17 +373,25 @@ def main():
 
                 else:
                     try:
+
+                        if result == "pause":
+                            pause_flag = not pause_flag
+
+                        if pause_flag:
+                            write_i3blocks("PAUSE", 'neutral')
+
                         # Replay the audio clip if playback mode is on
                         if playback_mode:
                             os.system("aplay " + audio_sample_file_path)
 
-                        # parse the transcription
-                        commands, matches = parser.parsephrase(
-                            dynamic_rules, static_rules, var_lookup, result,
-                            context)
+                        if (not noexec_mode) and (not pause_flag):
 
-                        # Execute the command
-                        if not noexec_mode:
+                            # parse the transcription
+                            commands, matches = parser.parsephrase(
+                                dynamic_rules, static_rules, var_lookup,
+                                result, context)
+
+                            # Execute the command
                             for cmd in commands:
 
                                 # if the command requires XDOTOOL then use subprocess.call
@@ -402,19 +402,20 @@ def main():
                                 # For instance in Emacs if you issue a command to helm this command will not complete until Helm is closed
                                 # and this will prevent VOCO decoding any further commands.
 
-                                if cmd[0] == "/usr/bin/xdotool":
-                                    subprocess.call(cmd)
-                                else:
-                                    subprocess.Popen(
-                                        cmd,
-                                        shell=False,
-                                        stdin=None,
-                                        stdout=None,
-                                        stderr=None,
-                                        close_fds=True)
+                                if len(cmd) > 0:
+                                    if cmd[0] == "/usr/bin/xdotool":
+                                        subprocess.call(cmd)
+                                    else:
+                                        subprocess.Popen(
+                                            cmd,
+                                            shell=False,
+                                            stdin=None,
+                                            stdout=None,
+                                            stderr=None,
+                                            close_fds=True)
 
-                        # show the user what the Kaldi transcribed
-                        write_i3blocks(result.upper(), 'neutral')
+                            # show the user what the Kaldi transcribed
+                            write_i3blocks(result.upper(), 'neutral')
 
                         # write the log
                         write_log(basedir, UID, result, "", "0.0",
