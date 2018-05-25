@@ -1,6 +1,7 @@
 {
     "SWITCH_APPLICATION": {
         "SIGNATURE": ["APPLICATION"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "APPLICATION": "APPLICATION"
@@ -8,6 +9,7 @@
     },
     "ACTION_PROJECT": {
         "SIGNATURE": ["ACTION", "PROJECT"],
+        "COMMENT": "",
         "CONTEXT": "EMACS",
         "VARIABLES": {
             "ACTION": {
@@ -23,6 +25,7 @@
     },
     "EMACS_LINE_ACTIONS": {
         "SIGNATURE": ["ACTION", "LINES"],
+        "COMMENT": "",
         "CONTEXT": "EMACS",
         "VARIABLES": {
             "ACTION": {
@@ -36,6 +39,7 @@
     },
     "I3WM": {
         "SIGNATURE": ["LAYOUT", "NUMBER"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "LAYOUT": {
@@ -46,6 +50,7 @@
     },
     "REPEAT_CHARACTER": {
         "SIGNATURE": ["CHARACTER", "REPEAT"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "CHARACTER": "EDITING",
@@ -54,6 +59,7 @@
     },
     "REPEAT_MOVEMENT": {
         "SIGNATURE": ["MOVEMENT", "REPEAT"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "MOVEMENT": "MOVEMENT",
@@ -62,6 +68,7 @@
     },
     "TYPE_CHARACTER": {
         "SIGNATURE": ["CHARACTER"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "CHARACTER": "CHARACTER"
@@ -69,6 +76,7 @@
     },
     "TYPE_UPPERCASE_CHARACTER": {
         "SIGNATURE": ["SKY", "LETTER"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "SKY": {
@@ -79,6 +87,7 @@
     },
     "MODIFIER_SINGLE": {
         "SIGNATURE": ["MODIFIER", "CHARACTER"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "MODIFIER": "MODIFIER",
@@ -87,6 +96,7 @@
     },
     "MODIFIER_DOUBLE": {
         "SIGNATURE": ["MODIFIER", "MODIFIER", "CHARACTER"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "MODIFIER": "MODIFIER",
@@ -95,6 +105,7 @@
     },
     "EMACS_JUMP_LETTER": {
         "SIGNATURE": ["JUMP", "LETTER"],
+        "COMMENT": "",
         "CONTEXT": "EMACS",
         "VARIABLES": {
             "JUMP": {
@@ -105,6 +116,7 @@
     },
     "EMACS_JUMP_LINE_2": {
         "SIGNATURE": ["JUMP", "LINE", "LINE"],
+        "COMMENT": "",
         "CONTEXT": "EMACS",
         "VARIABLES": {
             "JUMP": {
@@ -115,6 +127,7 @@
     },
     "EMACS_JUMP_LINE_3": {
         "SIGNATURE": ["JUMP", "LINE", "LINE", "LINE"],
+        "COMMENT": "",
         "CONTEXT": "EMACS",
         "VARIABLES": {
             "JUMP": {
@@ -125,6 +138,7 @@
     },
     "DEFAULT": {
         "SIGNATURE": ["VAR1", "VAR2"],
+        "COMMENT": "",
         "CONTEXT": "ALL",
         "VARIABLES": {
             "VAR1": {

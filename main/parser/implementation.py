@@ -182,10 +182,11 @@ def r_emacs_line_actions(variables,context):
 
     return cmd
 def r_static_i3wm(variables,context):
-    # print("pause")
     return []
-def r_i3wm8(variables,context):
-    # print("pause")
+
+def r_i3wm(variables,context):
+    # i3-save-tree --workspace 1 > ~/.i3/workspace-1.json
+    # i3-msg "workspace 1; append_layout $VOCO_ROOT/main/layouts/workspace-2.json"
     return []
 
 def r_static_pause(variables,context):

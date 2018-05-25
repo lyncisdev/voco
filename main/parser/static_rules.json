@@ -1,5 +1,6 @@
 {
     "STATIC_EXPANSION": {
+        "COMMENT": "",
         "CONTEXT": ["ALL"],
         "RULES": {
             "python": "python3",
@@ -7,12 +8,14 @@
         }
     },
     "STATIC_PAUSE": {
+        "COMMENT": "",
         "CONTEXT": ["ALL"],
         "RULES": {
             "pause": "pause"
         }
     },
     "STATIC_EMACS_KEYS": {
+        "COMMENT": "",
         "CONTEXT": ["EMACS"],
         "RULES": {
             "search": ["slash"],
@@ -20,6 +23,7 @@
         }
     },
     "STATIC_EMACS_BUFFER_FUNCTIONS": {
+        "COMMENT": "",
         "CONTEXT": ["EMACS"],
         "RULES": {
             "save": "save-buffer",
@@ -53,6 +57,7 @@
         }
     },
     "STATIC_FIREFOX_MODIFIED_KEYS": {
+        "COMMENT": "",
         "CONTEXT": ["FIREFOX"],
         "RULES": {
             "sidebar": ["ctrl", "h"],
@@ -66,6 +71,7 @@
         }
     },
     "STATIC_FIREFOX_KEYS": {
+        "COMMENT": "",
         "CONTEXT": ["FIREFOX"],
         "RULES": {
             "search": ["slash"],
@@ -75,6 +81,7 @@
         }
     },
     "STATIC_TERMINAL_KEYS": {
+        "COMMENT": "",
         "CONTEXT": ["GNOME-TERMINAL"],
         "RULES": {
             "new": ["ctrl", "shift", "t"],
@@ -88,6 +95,7 @@
         }
     },
     "STATIC_TERMINAL_TYPE": {
+        "COMMENT": "",
         "CONTEXT": ["GNOME-TERMINAL"],
         "RULES": {
             "back": "..",
@@ -97,6 +105,7 @@
         }
     },
     "STATIC_I3WM": {
+        "COMMENT": "",
         "CONTEXT": ["ALL"],
         "RULES": {
             "exit": ""
