@@ -264,9 +264,14 @@ def main():
     # setup gates
     # these two variables set the sound levels (RMS) the recorded signal
     #----------------------------------------------------------------------------
+    # Normal environment 
+    # gate = 600
+    # end_gate = 500
 
-    gate = 500
-    end_gate = 500
+    # noisy environement
+    gate = 800
+    end_gate = 800
+
 
     print("Start recording gate: " + str(gate))
     print("Stop recording gate: " + str(end_gate))
@@ -366,19 +371,25 @@ def main():
                     print(result)
 
                 if len(result) == 0:
+                    if pause_flag:
+                        write_i3blocks("PAUSED", 'neutral')
+                    else:
+                        write_i3blocks('NONE', 'neutral')
+
                     if debug:
                         print("Zero length command")
 
-                    write_i3blocks('NONE', 'neutral')
 
                 else:
                     try:
 
                         if result == "pause":
+                            if pause_flag:
+                                write_i3blocks("UNPAUSED", 'neutral')
                             pause_flag = not pause_flag
 
                         if pause_flag:
-                            write_i3blocks("PAUSE", 'neutral')
+                            write_i3blocks("PAUSED", 'neutral')
 
                         # Replay the audio clip if playback mode is on
                         if playback_mode:
