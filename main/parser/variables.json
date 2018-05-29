@@ -102,13 +102,13 @@
     },
     "APPLICATION":{
         "firefox":"Mozilla Firefox",
+        "fox":"Mozilla Firefox",
         "browser":"Mozilla Firefox",
+        "blender":"blender",
         "nautilus": "nautilus",
         "files": "nautilus",
         "max": "emacs@",
         "terminal": "mainterm",
         "term": "mainterm"
-
-
     }
 }
