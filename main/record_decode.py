@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 import os
-import re # for getting context
+import re  # for getting context
 import subprocess
 from datetime import datetime
 import collections
@@ -10,7 +10,6 @@ import pprint
 import audioop
 import wave
 import pyaudio
-
 
 from parser import parser
 
@@ -264,14 +263,13 @@ def main():
     # setup gates
     # these two variables set the sound levels (RMS) the recorded signal
     #----------------------------------------------------------------------------
-    # Normal environment 
-    # gate = 600
-    # end_gate = 500
+    # Normal
+    gate = 600
+    end_gate = 500
 
-    # noisy environement
-    gate = 800
-    end_gate = 800
-
+    # noisy
+    # gate = 800
+    # end_gate = 800
 
     print("Start recording gate: " + str(gate))
     print("Stop recording gate: " + str(end_gate))
@@ -328,16 +326,18 @@ def main():
                 # Get window context
                 # this function gets the class of window that is currently selected, for example Firefox or Emacs
                 #----------------------------------------------------------------------------
-
-                active_window = subprocess.check_output(
-                    ['/usr/bin/xdotool', 'getactivewindow'])
-                active_window = active_window.strip().decode('UTF-8')
-                windowclass = subprocess.check_output(
-                    ["xprop", "-notype", "-id", active_window, "WM_CLASS"])
-                windowclass = windowclass.strip().decode('UTF-8')
-                expr = "WM_CLASS = \"([^\"]*)\", \"([^\"]*)\""
-                m = re.search(expr, windowclass)
-                context = m.group(2).upper()
+                try:
+                    active_window = subprocess.check_output(
+                        ['/usr/bin/xdotool', 'getactivewindow'])
+                    active_window = active_window.strip().decode('UTF-8')
+                    windowclass = subprocess.check_output(
+                        ["xprop", "-notype", "-id", active_window, "WM_CLASS"])
+                    windowclass = windowclass.strip().decode('UTF-8')
+                    expr = "WM_CLASS = \"([^\"]*)\", \"([^\"]*)\""
+                    m = re.search(expr, windowclass)
+                    context = m.group(2).upper()
+                except:
+                    context = ""
 
                 # notify the user decoding has started
                 write_i3blocks('DECODING', 'decoding')
@@ -379,7 +379,6 @@ def main():
                     if debug:
                         print("Zero length command")
 
-
                 else:
                     try:
 
@@ -417,6 +416,7 @@ def main():
                                     if cmd[0] == "/usr/bin/xdotool":
                                         subprocess.call(cmd)
                                     else:
+                                        print(cmd)
                                         subprocess.Popen(
                                             cmd,
                                             shell=False,
@@ -432,7 +432,8 @@ def main():
                         write_log(basedir, UID, result, "", "0.0",
                                   audio_sample_file_path)
 
-                        print("%s |  %s" % (result, context))
+                        print("%s |  %s" %
+                              (result.rjust(20), context.rjust(20)))
 
                         if debug:
                             print("-----------------")

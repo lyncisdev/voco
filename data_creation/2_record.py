@@ -43,7 +43,7 @@ for x in dirs:
     if not os.path.exists(x):
         os.makedirs(x)
 
-recording_list_file = open('recording_list.txt', 'r')
+recording_list_file = open('../main/recording_list.txt', 'r')
 
 #
 # initalize recording recording_list_counter
