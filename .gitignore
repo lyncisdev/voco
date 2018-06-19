@@ -10,4 +10,6 @@ main/i3blocks_text.txt
 *.jpg
 *.wav
 data_creation/recording_list.txt
+main/recording_list.txt
 data_creation/recording_list_counter.txt
+research/
