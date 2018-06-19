@@ -4,7 +4,7 @@
         "CONTEXT": ["ALL"],
         "RULES": {
             "python": "python3",
-            "todo":"todo"
+            "todo": "todo"
         }
     },
     "STATIC_PAUSE": {
@@ -34,7 +34,7 @@
             "window kill others": "spacemacs/kill-other-buffers",
             "clipboard": "helm-show-kill-ring",
             "find": "spacemacs/helm-find-files",
-            "snippet": "yas-expand",
+            "snippet": "helm-yas-complete",
             "expand": "yas-expand",
             "complete": "company-complete",
             "comment": "spacemacs/comment-or-uncomment-lines 1",
@@ -70,6 +70,14 @@
             "forward": ["shift", "L"]
         }
     },
+    "STATIC_COPY_PASTE": {
+        "COMMENT": "",
+        "CONTEXT": ["EVINCE"],
+        "RULES": {
+            "copy": ["ctrl", "c"],
+            "paste": ["ctrl", "v"]
+        }
+    },
     "STATIC_FIREFOX_KEYS": {
         "COMMENT": "",
         "CONTEXT": ["FIREFOX"],
@@ -77,7 +85,7 @@
             "search": ["slash"],
             "window": ["b"],
             "kill": ["d"],
-            "open": ["f"]
+            "open": ["F"]
         }
     },
     "STATIC_TERMINAL_KEYS": {
@@ -91,19 +99,27 @@
             "kill": ["ctrl", "shift", "d"],
             "copy": ["ctrl", "shift", "c"],
             "paste": ["ctrl", "shift", "v"],
-            "repeat": ["up","Return"]
+            "repeat": ["Up", "Return"]
+        }
+    },
+    "STATIC_TERMINAL_TYPE_RETURN": {
+        "COMMENT": "",
+        "CONTEXT": ["GNOME-TERMINAL"],
+        "RULES": {
+            "back": "..",
+            "list": "ls",
+            "ranger": "ranger"
         }
     },
     "STATIC_TERMINAL_TYPE": {
         "COMMENT": "",
         "CONTEXT": ["GNOME-TERMINAL"],
         "RULES": {
-            "back": "..",
-            "list": "ls",
-            "ranger": "ranger",
-            "change": "cd "
+            "change": "cd ",
+            "run": "./"
         }
     },
+
     "STATIC_I3WM": {
         "COMMENT": "",
         "CONTEXT": ["ALL"],

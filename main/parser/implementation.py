@@ -150,6 +150,21 @@ def r_static_firefox_modified_keys(variables,context):
     key_seq.append(tmp)
     return key_seq
 
+def r_static_copy_paste(variables,context):
+
+    key_seq = [XDO_TOOL]
+
+    key_seq.append("key")
+
+    tmp = ""
+    tmp += variables[0][0]
+    for key in variables[0][1:]:
+        tmp += "+" + key
+
+    key_seq.append(tmp)
+    return key_seq
+
+
 
 
 def r_static_terminal_keys(variables,context):
@@ -167,9 +182,14 @@ def r_static_terminal_keys(variables,context):
     key_seq.append(tmp)
     return key_seq
 
-def r_static_terminal_type(variables,context):
+def r_static_terminal_type_return(variables,context):
 
     return [XDO_TOOL,"type","--args","1",variables[0],"key","Return"]
+
+def r_static_terminal_type(variables,context):
+
+    return [XDO_TOOL,"type","--args","1",variables[0]]
+
 
 def r_static_emacs_buffer_functions(variables,context):
     cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s))" % variables[0] ]
