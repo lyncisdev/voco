@@ -2,12 +2,13 @@
 # Check coverage
 #
 
-
-
 import os
 import pprint
 from random import shuffle
 from parser import parser,implementation
+from collections import OrderedDict
+
+from operator import itemgetter    
 
 try:
     voco_data_base = os.environ['VOCO_DATA']
@@ -25,35 +26,18 @@ dynamic_rules,static_rules, var_lookup = parser.init()
 rule_freq = {}
 rule_UID = {}
 for rule in static_rules:
-
-
     for sig in static_rules[rule]["RULES"]: 
         # print(sig)
         rule_UID[sig] = []
         rule_freq[sig] = 0
 
-# for rule in dynamic_rules:
-#     rule_freq[rule] = {}
-#     # for sig in dynamic_rules[rule]["SIGNATURE"]: 
-#         rule_freq[rule][sig] = 0
-
-
-# pp = pprint.PrettyPrinter(depth=4, width=100)
-# pp.pprint(rule_freq)
-
 passed_parser = set()
 
 for line in lines:
     UID, phrase = line.strip().split(" ",1)
-
-
-    commands,matches = parser.parsephrase(dynamic_rules,static_rules,var_lookup,phrase,"",ignore_context=True)
-
-
-    print(phrase)
-    print(len(matches))
+    # print(phrase)
+    commands,matches = parser.parsephrase(dynamic_rules,static_rules,var_lookup,phrase,"",ignore_context=True, all_matches=True)
     if len(matches) > 0:
-
         for match in matches:
             tmp = ""
             for elem in match[1]:
@@ -65,10 +49,16 @@ for line in lines:
                 rule_freq[tmp] += 1
         passed_parser.add(UID)
 
-
+rule_freq = OrderedDict(sorted(rule_freq.items(), key=itemgetter(1)))
 print("Rule Freq")
-pp = pprint.PrettyPrinter(depth=4, width=5)
+pp = pprint.PrettyPrinter(depth=4, width=200)
 pp.pprint(rule_freq)
+
+
+with open("static_freq.txt", "w") as f:
+    f.truncate()
+    for key in rule_freq:
+        f.write("%s,%i\n" % (key,rule_freq[key]))
 
 
 print("Passed parser %i" % len(passed_parser))
@@ -97,3 +87,6 @@ if update_recoding_list:
         for x in rules_to_sample:
             recording_list_file.write(str(count).zfill(3) + "," + x + "\n")
             count += 1
+
+with open("../data_creation/recording_list_counter.txt", "w") as f:
+        f.write(str("0"))
