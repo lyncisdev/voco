@@ -3,15 +3,40 @@
         "COMMENT": "",
         "CONTEXT": ["ALL"],
         "RULES": {
-            "python": "python3",
-            "todo": "todo"
+            "python": "python3 ",
+            "todo": "todo "
         }
     },
-    "STATIC_PAUSE": {
+    "PYTHON_KEYWORDS": {
+        "COMMENT": "",
+        "CONTEXT": ["EMACS"],
+        "RULES": {
+            "and": "and",
+            "or": "or",
+            "if": "if",
+            "for loop": "for",
+            "while": "while",
+            "in": "in",
+            "length": "len",
+            "not": "not",
+            "try": "try:",
+            "raise": "raise",
+            "else": "else",
+            "else if": "elif",
+            "true": "True",
+            "false": "False",
+            "define": "def",
+            "import": "import",
+            "from": "from",
+            "append": "append"
+        }
+    },
+    "STATIC_VOCO": {
         "COMMENT": "",
         "CONTEXT": ["ALL"],
         "RULES": {
-            "pause": "pause"
+            "pause": "pause",
+            "dictate": "dictate"
         }
     },
     "STATIC_EMACS_KEYS": {
@@ -51,9 +76,8 @@
             "copy path": "copy-file-name-to-clipboard",
             "paste": "evil-paste-after",
             "evaluate": "eval-region",
-            "jump character": "evil-avy-goto-char",
-            "jump line": "evil-avy-goto-char",
-            "undo": "undo"
+            "undo": "undo",
+            "replace": "query-replace"
         }
     },
     "STATIC_FIREFOX_MODIFIED_KEYS": {
@@ -107,8 +131,12 @@
         "CONTEXT": ["GNOME-TERMINAL"],
         "RULES": {
             "back": "..",
-            "list": "ls",
-            "ranger": "ranger"
+            "list": "ls -1 -l -h --group-directories-first",
+            "ranger": "ranger",
+            "tree": "tree -L 2",
+            "history": "history",
+            "home": "~",
+            "git status": "gst"
         }
     },
     "STATIC_TERMINAL_TYPE": {
@@ -116,7 +144,9 @@
         "CONTEXT": ["GNOME-TERMINAL"],
         "RULES": {
             "change": "cd ",
-            "run": "./"
+            "run": "./",
+            "permissions": "chmod",
+            "sudo": "sudo"
         }
     },
 

@@ -220,6 +220,13 @@ def r_static_expansion(variables,context):
     return [XDO_TOOL,"type",variables[0]]
 
 
+def r_python_keywords(variables,context):
+    # print("exp")
+    # print(variables)
+    return [XDO_TOOL,"type",variables[0] + " "]
+
+
+
 
 
 def r_test():
