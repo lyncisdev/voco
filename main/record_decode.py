@@ -169,6 +169,7 @@ def main():
     debug = False
     noexec_mode = False
     playback_mode = False
+    deepspeech = False
 
     try:
         options = sys.argv
@@ -185,6 +186,9 @@ def main():
                 print("playback_mode = True")
             if x == "help":
                 print("noexec, debug, playback")
+            if x == "deepspeech":
+                deepspeech = True
+                print("deepspeech = True")
     except:
         print("Input argument error")
 
@@ -356,94 +360,108 @@ def main():
                                     session_counter, audio_sample_file_path,
                                     UID)
 
-                # Run Kaldi, the script decodes for your sample and saves the transcription to a text file.
-                result = subprocess.check_output(
-                    "./kaldi_decode.sh").strip().decode('UTF-8')
+                if deepspeech:
+                    print("deepspeech")
+                    model_dir = "/home/lyncis/proj/deepspeech"
+                    audio_text = open("%s/audio.txt" % model_dir, "w")
+                    audio_text.write(audio_sample_file_path)
+                    audio_text.close()
+                    result = subprocess.check_output(
+                        "./deepspeech.sh").strip().decode('UTF-8')
 
-                try:
-                    result = result.split(" ", 1)[1].strip()
-                except IndexError as e:
-                    # this error occurs if Kaldi did not manage to transcribe anything
-                    result = ""
-
-                if debug:
-                    print(UID)
                     print(result)
 
-                if len(result) == 0:
-                    if pause_flag:
-                        write_i3blocks("PAUSED", 'neutral')
-                    else:
-                        write_i3blocks('NONE', 'neutral')
-
-                    if debug:
-                        print("Zero length command")
 
                 else:
+
+                    # Run Kaldi, the script decodes for your sample and saves the transcription to a text file.
+                    result = subprocess.check_output(
+                        "./kaldi_decode.sh").strip().decode('UTF-8')
+
                     try:
+                        result = result.split(" ", 1)[1].strip()
+                    except IndexError as e:
+                        # this error occurs if Kaldi did not manage to transcribe anything
+                        result = ""
 
-                        if result == "pause":
-                            if pause_flag:
-                                write_i3blocks("UNPAUSED", 'neutral')
-                            pause_flag = not pause_flag
+                    if debug:
+                        print(UID)
+                        print(result)
 
+                    if len(result) == 0:
                         if pause_flag:
                             write_i3blocks("PAUSED", 'neutral')
-
-                        # Replay the audio clip if playback mode is on
-                        if playback_mode:
-                            os.system("aplay " + audio_sample_file_path)
-
-                        if (not noexec_mode) and (not pause_flag):
-
-                            # parse the transcription
-                            commands, matches = parser.parsephrase(
-                                dynamic_rules, static_rules, var_lookup,
-                                result, context)
-
-                            # Execute the command
-                            for cmd in commands:
-
-                                # if the command requires XDOTOOL then use subprocess.call
-                                # since that waits for each command to complete before the next commander started.
-                                # This is usefull for commands where order is important such as keystrokes since
-                                # it prevents them being executed in the wrong order.
-                                # Otherwise use pop open since this prevents VOCO locking up while waiting for the command to complete.
-                                # For instance in Emacs if you issue a command to helm this command will not complete until Helm is closed
-                                # and this will prevent VOCO decoding any further commands.
-
-                                if len(cmd) > 0:
-                                    if cmd[0] == "/usr/bin/xdotool":
-                                        subprocess.call(cmd)
-                                    else:
-                                        print(cmd)
-                                        subprocess.Popen(
-                                            cmd,
-                                            shell=False,
-                                            stdin=None,
-                                            stdout=None,
-                                            stderr=None,
-                                            close_fds=True)
-
-                            # show the user what the Kaldi transcribed
-                            write_i3blocks(result.upper(), 'neutral')
-
-                        # write the log
-                        write_log(basedir, UID, result, "", "0.0",
-                                  audio_sample_file_path)
-
-                        print("%s |  %s" %
-                              (result.rjust(20), context.rjust(20)))
+                        else:
+                            write_i3blocks('NONE', 'neutral')
 
                         if debug:
-                            print("-----------------")
-                            print(result + "\n")
-                            print("Wrote log to:" + basedir + "log")
+                            print("Zero length command")
 
-                    except Exception as e:
-                        print(e)
-                        tb = traceback.format_exc()
-                        print(tb)
+                    else:
+                        try:
+
+                            if result == "pause":
+                                if pause_flag:
+                                    write_i3blocks("UNPAUSED", 'neutral')
+                                pause_flag = not pause_flag
+
+                            if pause_flag:
+                                write_i3blocks("PAUSED", 'neutral')
+
+                            # Replay the audio clip if playback mode is on
+                            if playback_mode:
+                                os.system("aplay " + audio_sample_file_path)
+
+                            if (not noexec_mode) and (not pause_flag):
+
+                                # parse the transcription
+                                commands, matches = parser.parsephrase(
+                                    dynamic_rules, static_rules, var_lookup,
+                                    result, context)
+
+                                # Execute the command
+                                for cmd in commands:
+
+                                    # if the command requires XDOTOOL then use subprocess.call
+                                    # since that waits for each command to complete before the next commander started.
+                                    # This is usefull for commands where order is important such as keystrokes since
+                                    # it prevents them being executed in the wrong order.
+                                    # Otherwise use pop open since this prevents VOCO locking up while waiting for the command to complete.
+                                    # For instance in Emacs if you issue a command to helm this command will not complete until Helm is closed
+                                    # and this will prevent VOCO decoding any further commands.
+
+                                    if len(cmd) > 0:
+                                        if cmd[0] == "/usr/bin/xdotool":
+                                            subprocess.call(cmd)
+                                        else:
+                                            print(cmd)
+                                            subprocess.Popen(
+                                                cmd,
+                                                shell=False,
+                                                stdin=None,
+                                                stdout=None,
+                                                stderr=None,
+                                                close_fds=True)
+
+                                # show the user what the Kaldi transcribed
+                                write_i3blocks(result.upper(), 'neutral')
+
+                            # write the log
+                            write_log(basedir, UID, result, "", "0.0",
+                                      audio_sample_file_path)
+
+                            print("%s |  %s" %
+                                  (result.rjust(20), context.rjust(20)))
+
+                            if debug:
+                                print("-----------------")
+                                print(result + "\n")
+                                print("Wrote log to:" + basedir + "log")
+
+                        except Exception as e:
+                            print(e)
+                            # tb = traceback.format_exc()
+                            # print(tb)
 
                 recording_counter += 1
                 rec = False
