@@ -88,34 +88,28 @@ def r_emacs_jump_letter(variables,context):
 
     key_seq = [XDO_TOOL,"key","space","key","j","key","j","key",variables[1]]
 
-
     return key_seq
+
+    # cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (evil-avy-goto-char))"]
+
+    # print(" ".join(cmd))
+    # return cmd
+
+
 
 
 def r_emacs_jump_line_2(variables,context):
 
-    key_seq = [XDO_TOOL]
-    for key in variables[1:]:
-        key_seq.append("key")
-        key_seq.append(key)
+    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (goto-line %s%s))" % (variables[1], variables[2]) ]
+    return cmd
 
-    key_seq.append("key")
-    key_seq.append("G")
-
-    return key_seq
 
 
 def r_emacs_jump_line_3(variables,context):
 
-    key_seq = [XDO_TOOL]
-    for key in variables[1:]:
-        key_seq.append("key")
-        key_seq.append(key)
+    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (goto-line %s%s%s))" % (variables[1], variables[2], variables[3]) ]
+    return cmd
 
-    key_seq.append("key")
-    key_seq.append("G")
-
-    return key_seq
 
 
 def r_static_emacs_keys(variables,context):
@@ -192,15 +186,16 @@ def r_static_terminal_type(variables,context):
 
 
 def r_static_emacs_buffer_functions(variables,context):
-    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s))" % variables[0] ]
 
+    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s))" % variables[0] ]
     return cmd
 
 def r_emacs_line_actions(variables,context):
     # print(variables)
-    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s %s))" % (variables[0],variables[1]) ]
 
+    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s %s))" % (variables[0],variables[1]) ]
     return cmd
+
 def r_static_i3wm(variables,context):
     return []
 
@@ -223,11 +218,12 @@ def r_static_expansion(variables,context):
 def r_python_keywords(variables,context):
     # print("exp")
     # print(variables)
-    return [XDO_TOOL,"type",variables[0] + " "]
+    return [XDO_TOOL,"type",variables[0]]
 
 
 
-
+def r_static_voco(variables,context):
+    return []
 
 def r_test():
     print("Test")

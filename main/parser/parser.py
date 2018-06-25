@@ -123,7 +123,7 @@ def parsephrase(dynamic_rules,
                 var_lookup,
                 phrase,
                 context,
-                ignore_context=False):
+                ignore_context=False, all_matches=False):
     '''
     This function takes the transcribed phrase and matches the various static and dynamic rules against. it returns a list of commands to execute.
     '''
@@ -222,6 +222,15 @@ def parsephrase(dynamic_rules,
                     match = False
             if match == True:
                 matches.append([rule, subarr])
+
+    ###
+    cmd = []
+    if all_matches:
+        for match in matches:
+            function_name = "r_" + match[0].lower()
+            cmd.append("")
+
+        return cmd, matches 
 
     ############################################
     # Build a set representation of the rules that makes using union operations such as intersection easier

@@ -136,6 +136,31 @@
             "LINE": "NUMBER"
         }
     },
+    "EMACS_REGISTER_MARK": {
+        "SIGNATURE": ["REGISTER", "MARK", "LETTER"],
+        "COMMENT": "",
+        "CONTEXT": "EMACS",
+        "VARIABLES": {
+            "REGISTER": {
+                "register": ""
+            },
+            "MARK": {
+                "mark": ""
+            },
+            "LETTER": "LETTER"
+        }
+    },
+    "EMACS_REGISTER_ACCESS": {
+        "SIGNATURE": ["REGISTER", "LETTER"],
+        "COMMENT": "",
+        "CONTEXT": "EMACS",
+        "VARIABLES": {
+            "REGISTER": {
+                "register": ""
+            },
+            "LETTER": "LETTER"
+        }
+    },
     "DEFAULT": {
         "SIGNATURE": ["VAR1", "VAR2"],
         "COMMENT": "",

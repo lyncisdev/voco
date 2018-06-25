@@ -72,7 +72,7 @@ if update_recoding_list:
     rules_to_sample = []
 
     for rule in rule_freq:
-        if rule_freq[rule] < 20:
+        if rule_freq[rule] < 15:
             rules_to_sample.append(rule)
 
     recording_list_file = open('recording_list.txt', 'w')

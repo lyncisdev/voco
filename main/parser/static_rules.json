@@ -11,24 +11,29 @@
         "COMMENT": "",
         "CONTEXT": ["EMACS"],
         "RULES": {
-            "and": "and",
-            "or": "or",
-            "if": "if",
-            "for loop": "for",
-            "while": "while",
-            "in": "in",
+            "and": "and ",
+            "or": "or ",
+            "if": "if ",
+            "for loop": "for ",
+            "while": "while ",
+            "in": "in ",
             "length": "len",
-            "not": "not",
-            "try": "try:",
-            "raise": "raise",
-            "else": "else",
-            "else if": "elif",
+            "not": "not ",
+            "try": "try: ",
+            "raise": "raise ",
+            "else": "else:",
+            "else if": "elif ",
             "true": "True",
             "false": "False",
-            "define": "def",
-            "import": "import",
-            "from": "from",
-            "append": "append"
+            "define": "def ",
+            "import": "import ",
+            "from": "from ",
+            "append": "append ",
+            "self": "self.",
+            "assign": " = ",
+            "with": "with",
+            "list": "[]",
+            "dictionary": {}
         }
     },
     "STATIC_VOCO": {
@@ -44,7 +49,8 @@
         "CONTEXT": ["EMACS"],
         "RULES": {
             "search": ["slash"],
-            "new": ["space", "b", "N"]
+            "new": ["space", "b", "N"],
+            "command": ["alt", "x"]
         }
     },
     "STATIC_EMACS_BUFFER_FUNCTIONS": {
@@ -75,9 +81,14 @@
             "copy line": "voco-copy-line 1",
             "copy path": "copy-file-name-to-clipboard",
             "paste": "evil-paste-after",
-            "evaluate": "eval-region",
+            "evaluate": "eval-buffer",
             "undo": "undo",
-            "replace": "query-replace"
+            "replace": "query-replace",
+            "mark": "set-mark-command",
+            "mark ring": "helm-all-mark-rings",
+            "zip": "evil-forward-word-begin"
+
+
         }
     },
     "STATIC_FIREFOX_MODIFIED_KEYS": {

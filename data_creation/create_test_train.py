@@ -50,6 +50,7 @@ shutil.copy2(src_dir + "spk2gender", test_dir)
 split_files = ["wav.scp", "text", "utt2spk"]
 
 UID_by_file = {}
+errors = []
 
 for f in split_files:
 
@@ -59,25 +60,35 @@ for f in split_files:
         # reader = csv.reader(original_file, delimiter=' ')
         # lines = list(reader)
 
-        for  count, line in enumerate(lines):
+        for  line_num, line in enumerate(lines):
 
             parts = line.split(" ")
 
             uid = parts[0]
 
             if uid not in UID_by_file:
-               UID_by_file[uid] = count
+               UID_by_file[uid] = line_num
 
-            if UID_by_file[uid] != count:
+            if UID_by_file[uid] != line_num:
                 UID_by_file[uid] = -1
+                errors.append(uid)
 
-for uid in UID_by_file:
+print(errors)
 
-    if UID_by_file[uid] == -1:
-        print(UID)
+for f in split_files:
+    with open(src_dir + f, 'r') as original_file:
+        with open(src_dir + f + ".new", 'w') as new_file:
+            lines = original_file.readlines()
 
-# pp = pprint.PrettyPrinter(depth=4, width=5)
-# pp.pprint(UID_by_file)
+            for  line in lines:
+                uid = line.split(" ")[0]
+                if uid not in errors:
+                    new_file.write(line)
+
+for f in split_files:
+    shutil.move(src_dir + f + ".new",src_dir + f )
+# error - Number of UID's dont match
+# pprint.pprint(UID_by_file, width=200, indent=4)
 
 
 

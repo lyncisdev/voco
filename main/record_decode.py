@@ -262,14 +262,14 @@ def main():
     rec = False
     timeout = 0
     pause_flag = False
-
+    dictate_flag = False 
     #----------------------------------------------------------------------------
     # setup gates
     # these two variables set the sound levels (RMS) the recorded signal
     #----------------------------------------------------------------------------
     # Normal
-    gate = 600
-    end_gate = 500
+    gate = 400
+    end_gate = 400
 
     # noisy
     # gate = 800
@@ -360,7 +360,7 @@ def main():
                                     session_counter, audio_sample_file_path,
                                     UID)
 
-                if deepspeech:
+                if deepspeech or dictate_flag:
                     print("deepspeech")
                     model_dir = "/home/lyncis/proj/deepspeech"
                     audio_text = open("%s/audio.txt" % model_dir, "w")
@@ -369,8 +369,8 @@ def main():
                     result = subprocess.check_output(
                         "./deepspeech.sh").strip().decode('UTF-8')
 
-                    print(result)
-
+                    dictate_flag = False
+                    write_i3blocks(result.upper(), 'neutral')
 
                 else:
 
@@ -408,11 +408,19 @@ def main():
                             if pause_flag:
                                 write_i3blocks("PAUSED", 'neutral')
 
+                            if result == "dictate":
+                                dictate_flag = True
+                                write_i3blocks("DICTATE", 'neutral')
+                            else:
+                                dictate_flag = False 
+
+
+
                             # Replay the audio clip if playback mode is on
                             if playback_mode:
                                 os.system("aplay " + audio_sample_file_path)
 
-                            if (not noexec_mode) and (not pause_flag):
+                            if (not noexec_mode) and (not pause_flag) and (not dictate_flag):
 
                                 # parse the transcription
                                 commands, matches = parser.parsephrase(
@@ -434,7 +442,7 @@ def main():
                                         if cmd[0] == "/usr/bin/xdotool":
                                             subprocess.call(cmd)
                                         else:
-                                            print(cmd)
+                                            # print(cmd)
                                             subprocess.Popen(
                                                 cmd,
                                                 shell=False,
