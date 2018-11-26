@@ -19,74 +19,76 @@
 
 XDO_TOOL = '/usr/bin/xdotool'
 
-def r_type_character(variables,context):
+
+def r_type_character(variables, context):
     # "SIGNATURE": ["CHARACTER"],
 
     char = variables[0]
 
-    return [XDO_TOOL,"key",char]
+    return [XDO_TOOL, "key", char]
 
 
-def r_type_uppercase_character(variables,context):
+def r_type_uppercase_character(variables, context):
     # "SIGNATURE": ["CHARACTER"],
     char = variables[1].upper()
 
-    return [XDO_TOOL,"key",char]
+    return [XDO_TOOL, "key", char]
 
 
-
-def r_modifier_single(variables,context):
+def r_modifier_single(variables, context):
     # "SIGNATURE": ["MODIFIER","CHARACTER"],
-
 
     mod = variables[0]
     char = variables[1]
 
-    return [XDO_TOOL,"key",mod + "+" + char]
+    return [XDO_TOOL, "key", mod + "+" + char]
 
-def r_modifier_double(variables,context):
+
+def r_modifier_double(variables, context):
     # "SIGNATURE": ["MODIFIER","MODIFIER","CHARACTER"],
 
     mod1 = variables[0]
     mod2 = variables[1]
     char = variables[2]
 
-    return [XDO_TOOL,"key",mod1 + "+" + mod2 + "+" + char]
+    return [XDO_TOOL, "key", mod1 + "+" + mod2 + "+" + char]
 
-def r_switch_application(variables,context):
+
+def r_switch_application(variables, context):
     # "SIGNATURE": ["ACTION", "APPLICATION"],
 
-    return [XDO_TOOL,"search","--name",variables[0],"windowactivate"]
+    # print(" ".join([XDO_TOOL,"search","--name",variables[0],"windowactivate"]))
 
-def r_repeat_movement(variables,context):
+    return [XDO_TOOL, "search", "--name", variables[0], "windowactivate"]
 
-    # print(variables)
+
+def r_repeat_movement(variables, context):
+
+    print(variables)
     key_seq = [XDO_TOOL]
-    for x in range(0,int(variables[1])):
+    for x in range(0, int(variables[1])):
         key_seq.append("key")
         key_seq.append(variables[0])
-
 
     return key_seq
 
 
-def r_repeat_character(variables,context):
+def r_repeat_character(variables, context):
 
     # print(variables)
     key_seq = [XDO_TOOL]
-    for x in range(0,int(variables[1])):
+    for x in range(0, int(variables[1])):
         key_seq.append("key")
         key_seq.append(variables[0])
-
 
     return key_seq
 
 
+def r_emacs_jump_letter(variables, context):
 
-
-def r_emacs_jump_letter(variables,context):
-
-    key_seq = [XDO_TOOL,"key","space","key","j","key","j","key",variables[1]]
+    key_seq = [
+        XDO_TOOL, "key", "space", "key", "j", "key", "j", "key", variables[1]
+    ]
 
     return key_seq
 
@@ -96,23 +98,27 @@ def r_emacs_jump_letter(variables,context):
     # return cmd
 
 
+def r_emacs_jump_line_2(variables, context):
 
-
-def r_emacs_jump_line_2(variables,context):
-
-    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (goto-line %s%s))" % (variables[1], variables[2]) ]
+    cmd = [
+        "emacsclient", "--eval",
+        "(with-current-buffer (window-buffer (selected-window)) (goto-line %s%s))"
+        % (variables[1], variables[2])
+    ]
     return cmd
 
 
+def r_emacs_jump_line_3(variables, context):
 
-def r_emacs_jump_line_3(variables,context):
-
-    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (goto-line %s%s%s))" % (variables[1], variables[2], variables[3]) ]
+    cmd = [
+        "emacsclient", "--eval",
+        "(with-current-buffer (window-buffer (selected-window)) (goto-line %s%s%s))"
+        % (variables[1], variables[2], variables[3])
+    ]
     return cmd
 
 
-
-def r_static_emacs_keys(variables,context):
+def r_static_emacs_keys(variables, context):
     key_seq = [XDO_TOOL]
     for key in variables[0]:
         key_seq.append("key")
@@ -121,7 +127,7 @@ def r_static_emacs_keys(variables,context):
     return key_seq
 
 
-def r_static_firefox_keys(variables,context):
+def r_static_firefox_keys(variables, context):
     key_seq = [XDO_TOOL]
     for key in variables[0]:
         key_seq.append("key")
@@ -130,21 +136,7 @@ def r_static_firefox_keys(variables,context):
     return key_seq
 
 
-def r_static_firefox_modified_keys(variables,context):
-
-    key_seq = [XDO_TOOL]
-
-    key_seq.append("key")
-
-    tmp = ""
-    tmp += variables[0][0]
-    for key in variables[0][1:]:
-        tmp += "+" + key
-
-    key_seq.append(tmp)
-    return key_seq
-
-def r_static_copy_paste(variables,context):
+def r_static_firefox_modified_keys(variables, context):
 
     key_seq = [XDO_TOOL]
 
@@ -159,10 +151,7 @@ def r_static_copy_paste(variables,context):
     return key_seq
 
 
-
-
-def r_static_terminal_keys(variables,context):
-
+def r_static_copy_paste(variables, context):
 
     key_seq = [XDO_TOOL]
 
@@ -176,54 +165,84 @@ def r_static_terminal_keys(variables,context):
     key_seq.append(tmp)
     return key_seq
 
-def r_static_terminal_type_return(variables,context):
 
-    return [XDO_TOOL,"type","--args","1",variables[0],"key","Return"]
+def r_static_terminal_keys(variables, context):
 
-def r_static_terminal_type(variables,context):
+    key_seq = [XDO_TOOL]
 
-    return [XDO_TOOL,"type","--args","1",variables[0]]
+    key_seq.append("key")
+
+    tmp = ""
+    tmp += variables[0][0]
+    for key in variables[0][1:]:
+        tmp += "+" + key
+
+    key_seq.append(tmp)
+    return key_seq
 
 
-def r_static_emacs_buffer_functions(variables,context):
+def r_static_terminal_type_return(variables, context):
 
-    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s))" % variables[0] ]
+    return [XDO_TOOL, "type", "--args", "1", variables[0], "key", "Return"]
+
+
+def r_static_terminal_type(variables, context):
+
+    return [XDO_TOOL, "type", "--args", "1", variables[0]]
+
+
+def r_static_emacs_buffer_functions(variables, context):
+
+    cmd = [
+        "emacsclient", "--eval",
+        "(with-current-buffer (window-buffer (selected-window)) (%s))" %
+        variables[0]
+    ]
     return cmd
 
-def r_emacs_line_actions(variables,context):
+
+def r_emacs_line_actions(variables, context):
     # print(variables)
 
-    cmd = ["emacsclient","--eval", "(with-current-buffer (window-buffer (selected-window)) (%s %s))" % (variables[0],variables[1]) ]
+    cmd = [
+        "emacsclient", "--eval",
+        "(with-current-buffer (window-buffer (selected-window)) (%s %s))" %
+        (variables[0], variables[1])
+    ]
     return cmd
 
-def r_static_i3wm(variables,context):
+
+def r_static_i3wm(variables, context):
     return []
 
-def r_i3wm(variables,context):
+
+def r_i3wm(variables, context):
     # i3-save-tree --workspace 1 > ~/.i3/workspace-1.json
     # i3-msg "workspace 1; append_layout $VOCO_ROOT/main/layouts/workspace-2.json"
     return []
 
-def r_static_pause(variables,context):
+
+def r_static_pause(variables, context):
     # print("pause")
     return []
 
-def r_static_expansion(variables,context):
+
+def r_static_expansion(variables, context):
 
     # print("exp")
     # print(variables)
-    return [XDO_TOOL,"type",variables[0]]
+    return [XDO_TOOL, "type", variables[0]]
 
 
-def r_python_keywords(variables,context):
+def r_python_keywords(variables, context):
     # print("exp")
     # print(variables)
-    return [XDO_TOOL,"type",variables[0]]
+    return [XDO_TOOL, "type", variables[0]]
 
 
-
-def r_static_voco(variables,context):
+def r_static_voco(variables, context):
     return []
+
 
 def r_test():
     print("Test")

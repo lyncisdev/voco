@@ -101,6 +101,7 @@
             "previous": ["ctrl", "Prior"],
             "copy": ["ctrl", "c"],
             "paste": ["ctrl", "v"],
+            "kill": ["ctrl", "w"],
             "back": ["shift", "h"],
             "forward": ["shift", "L"]
         }
@@ -119,7 +120,6 @@
         "RULES": {
             "search": ["slash"],
             "window": ["b"],
-            "kill": ["d"],
             "open": ["F"]
         }
     },

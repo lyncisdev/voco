@@ -13,3 +13,10 @@ data_creation/recording_list.txt
 main/recording_list.txt
 data_creation/recording_list_counter.txt
 research/
+
+training/data
+training/utils
+training/steps
+main/decode/data
+main/decode/model
+.#INSTALL.md

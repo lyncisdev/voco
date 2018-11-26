@@ -227,6 +227,7 @@ def main():
             pp.pprint(pa.get_default_input_device_info())
 
     except IOError as e:
+        print("Setup error: %s" % e)
         if (e.errno == -9997 or e.errno == 'Invalid sample rate'):
             new_sample_rate = int(
                 pa.get_device_info_by_index(mic)['defaultSampleRate'])
@@ -240,7 +241,12 @@ def main():
     #----------------------------------------------------------------------------
     # create skp2gender - only needs to be created once
     #----------------------------------------------------------------------------
+
+    if not os.path.exists(basedir + "audio_records/"):
+        os.makedirs(basedir + "audio_records/")
+
     outputfile = open(basedir + "audio_records/" + 'spk2gender', 'w')
+
     outputfile.write("bartek m \n")
 
     #----------------------------------------------------------------------------
@@ -262,7 +268,7 @@ def main():
     rec = False
     timeout = 0
     pause_flag = False
-    dictate_flag = False 
+    dictate_flag = False
     #----------------------------------------------------------------------------
     # setup gates
     # these two variables set the sound levels (RMS) the recorded signal
@@ -388,6 +394,8 @@ def main():
                         print(UID)
                         print(result)
 
+                    # print("aplay %s" % audio_sample_file_path)
+
                     if len(result) == 0:
                         if pause_flag:
                             write_i3blocks("PAUSED", 'neutral')
@@ -412,15 +420,14 @@ def main():
                                 dictate_flag = True
                                 write_i3blocks("DICTATE", 'neutral')
                             else:
-                                dictate_flag = False 
-
-
+                                dictate_flag = False
 
                             # Replay the audio clip if playback mode is on
                             if playback_mode:
                                 os.system("aplay " + audio_sample_file_path)
 
-                            if (not noexec_mode) and (not pause_flag) and (not dictate_flag):
+                            if (not noexec_mode) and (not pause_flag) and (
+                                    not dictate_flag):
 
                                 # parse the transcription
                                 commands, matches = parser.parsephrase(
@@ -431,11 +438,15 @@ def main():
                                 for cmd in commands:
 
                                     # if the command requires XDOTOOL then use subprocess.call
-                                    # since that waits for each command to complete before the next commander started.
-                                    # This is usefull for commands where order is important such as keystrokes since
+                                    # since that waits for each command to complete before the
+                                    # next commander started.
+                                    # This is usefull for commands where order is important such
+                                    # as keystrokes since
                                     # it prevents them being executed in the wrong order.
-                                    # Otherwise use pop open since this prevents VOCO locking up while waiting for the command to complete.
-                                    # For instance in Emacs if you issue a command to helm this command will not complete until Helm is closed
+                                    # Otherwise use pop open since this prevents VOCO locking up
+                                    # while waiting for the command to complete.
+                                    # For instance in Emacs if you issue a command to helm this
+                                    # command will not complete until Helm is closed
                                     # and this will prevent VOCO decoding any further commands.
 
                                     if len(cmd) > 0:

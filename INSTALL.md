@@ -1,3 +1,19 @@
+
+
+# Note:
+
+install pyaudio 
+install pavucontrol
+
+mkdir /home/lyncis/proj/voco/data/staging/audio_data/
+
+
+install i3blocks
+link i3 blocks to config
+
+
+change terminal name to mainterm
+
 # Starting point
 Start here to install and configure Voco on a fresh installation of Ubuntu 17.10. 
 
@@ -118,7 +134,7 @@ The config file complained about not finding ATLAS. I tried ```sudo apt-get inst
 ```bash
 cd $KALDI_ROOT/tools
 sudo apt install gfortran
-tools/extras/install_openblas.sh
+extras/install_openblas.sh
 ```
 
 Now compile Kaldi:

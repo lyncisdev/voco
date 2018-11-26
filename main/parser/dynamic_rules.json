@@ -31,7 +31,6 @@
             "ACTION": {
                 "copy": "voco-copy-line",
                 "select": "evil-visual-char",
-                "delete": "",
                 "comment": "spacemacs/comment-or-uncomment-lines"
             },
             "LINES": "NUMBER"
