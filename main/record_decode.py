@@ -29,21 +29,6 @@ def write_audio_data(audio_sample, audio_sample_file_path, byterate):
     new_audio_sample = []
     rms = []
 
-    # # calculate RMS of each point
-    # for x in audio_sample:
-    #     rms.append(audioop.rms(x, 2))
-
-    # # calculate scaling factor
-    # sample_mean = np.mean(rms)
-    # scaling_factor = 4000 / sample_mean
-
-    # # multiply samples by scaling factor
-    # for x in audio_sample:
-    #     new_audio_sample.append(audioop.mul(x, 2, scaling_factor))
-
-    # Write audio file
-    # audio_sample_file = open(audio_sample_file_path, 'w+')
-
     wav_file = wave.open(audio_sample_file_path, "w")
     wav_file.setnchannels(1)
     wav_file.setsampwidth(2)
