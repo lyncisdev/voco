@@ -1,3 +1,4 @@
+main/env/*
 data/*
 training/data
 training/exp
